@@ -1,0 +1,8 @@
+{
+  "python": "3.14.8",
+  "ssl_openssl": "OpenSSL 3.5.9 29 Sep 2026",
+  "cryptography_openssl": "OpenSSL 4.0.3 29 Sep 2026",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "seed": 20261010,
+  "lock_sha256": "7df4bb9ccc12a304acf094d16eb52dea48bb682f16cfa86ffd08ce33474dd872"
+}

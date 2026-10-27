@@ -1,0 +1,14 @@
+{
+  "rsa": {"minimum_key_size": 2048},
+  "ec": {"minimum_key_size": 256},
+  "dsa": {"minimum_key_size": 2048},
+  "hash": {
+    "allowed": ["sha256", "sha384", "sha512"],
+    "blocked": ["md5", "sha1"],
+    "allowed_without_external_hash": ["ED25519", "ED448"]
+  },
+  "public_key_algorithms": {
+    "allowed": ["RSA", "EC", "Ed25519", "Ed448"],
+    "blocked": ["DSA"]
+  }
+}

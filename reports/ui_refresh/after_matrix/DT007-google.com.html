@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="vi" class=""><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DT007 — Kiểm tra chứng thư X.509, tên miền, thời hạn, chuỗi tin cậy, thuật toán và Certificate Transparency.">
+  <title>google.com · Kết quả xác minh · DT007</title>
+  
+  
+<style>/* Shared local UI. No external fonts or frontend dependencies. */
+:root{color-scheme:light;--navy:#142c4e;--blue:#255ad5;--ink:#20334d;--muted:#607086;--line:#dfe6ef;--canvas:#f4f7fb;--green:#166b47;--amber:#865209;--red:#ac3041;--radius:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;color:var(--ink);background:var(--canvas);font:16px/1.6 "Segoe UI",Arial,sans-serif}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}button,input,select{font:inherit}button,summary{cursor:pointer}button:disabled{cursor:wait;opacity:.7}:focus-visible{outline:3px solid #5c89ef;outline-offset:4px}[hidden]{display:none!important}
+h1,h2,h3,p,dl,ul,ol{margin:0}h1,h2,h3{color:var(--navy);line-height:1.3;letter-spacing:-.025em}h1{font-size:clamp(1.9rem,3.6vw,3rem);font-weight:700}h2{font-size:1.2rem;font-weight:650}h3{font-size:1rem;font-weight:650}p+p,p+details,dl+p{margin-top:12px}strong{font-weight:650}small{font-size:.875rem}svg{display:block;width:24px;height:24px}
+.container{width:min(1200px,calc(100% - 64px));margin-inline:auto}main.container{padding-top:32px;padding-bottom:48px;min-height:calc(100vh - 170px)}.site-header{background:#fff;border-bottom:1px solid var(--line)}.header-inner{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;color:var(--navy);flex-shrink:0}.brand:hover{text-decoration:none}.brand-mark{width:42px;height:46px;display:grid;place-items:center;color:var(--blue);background:#edf3ff;border-radius:12px}.brand-mark svg{width:27px;height:27px}.brand strong{display:block;font-size:1.2rem;letter-spacing:.03em;line-height:1.2}.brand-caption{font-size:.75rem;color:var(--muted);display:block;margin-top:4px}
+.local-label{display:flex;gap:8px;align-items:center;font-size:.9rem;font-weight:600}.local-label a{padding:11px 16px;color:var(--muted);border-radius:8px}.local-label a:hover,.local-label a[aria-current=page]{color:var(--blue);background:#eef3ff;text-decoration:none}.nav-toggle{display:none;border:1px solid var(--line);background:white;color:var(--navy);border-radius:8px;min-height:44px;padding:8px 14px}.site-footer{border-top:1px solid var(--line);padding-block:22px;display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.8rem}.skip-link{position:absolute;left:16px;top:-100px;background:white;padding:12px;z-index:10}.skip-link:focus{top:8px}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.eyebrow{color:var(--muted);font-size:.73rem;letter-spacing:.1em;font-weight:700;line-height:1.5}.home-hero{padding:35px 0 30px;text-align:center}.home-hero .eyebrow{color:var(--blue);margin-bottom:14px}.hero-description{color:var(--muted);max-width:720px;line-height:1.75;margin:16px auto 0}
+.scan-card,.card,.case-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 3px 16px #18325006;min-width:0}.scan-card{padding:30px;max-width:920px;margin:0 auto}.scan-heading{display:flex;align-items:center;gap:12px;margin-bottom:24px}.scan-heading p,.demo-controls p{color:var(--muted);font-size:.9rem;margin-top:4px}.step-number{background:#edf3ff;color:var(--blue);display:grid;place-items:center;border-radius:10px;width:40px;height:40px;font-weight:700;font-size:.85rem;flex-shrink:0}
+label{display:block;font-size:.9rem;font-weight:600;margin-bottom:8px;color:var(--navy)}.input-row{display:flex;align-items:stretch;gap:12px}input[type=text],select{width:100%;min-width:0;min-height:54px;border:1px solid #cbd6e4;border-radius:9px;padding:12px 16px;color:var(--navy);background:#fff}input[type=text]{font-size:1.05rem}input::placeholder{color:#8291a6}input[aria-invalid=true]{border-color:var(--red);background:#fff9fa}input:focus,select:focus{border-color:var(--blue)}
+.button{display:inline-flex;justify-content:center;align-items:center;gap:10px;min-height:46px;padding:11px 18px;border-radius:9px;border:1px solid transparent;font-size:.85rem;font-weight:650;text-align:center;line-height:1.4;text-decoration:none;transition:background .15s,border-color .15s}.button:hover{text-decoration:none}.button-primary{background:var(--blue);color:#fff}.button-primary:hover{background:#1c46a6}.button-secondary{background:#fff;color:var(--navy);border-color:#cfd9e7}.button-secondary:hover{background:#f0f5fc;border-color:#9eb5d7}.input-row .button{flex-shrink:0}.button-arrow{font-size:1.1rem}.input-help,.input-help code{font-size:.82rem;color:var(--muted)}.input-help{margin-top:10px}
+summary{list-style:none}summary::-webkit-details-marker{display:none}.advanced-options{border-top:1px solid var(--line);margin-top:22px;padding-top:16px}.advanced-options summary{display:flex;align-items:center;gap:9px;font-size:.9rem;font-weight:600;color:var(--navy);min-height:36px}.advanced-options summary::after,.quick-select summary::after{content:'+';margin-left:auto;font-size:1.1rem;color:var(--muted)}.advanced-options[open] summary::after,.quick-select[open] summary::after{content:'−'}.optional-label{font-size:.72rem;padding:2px 8px;border:1px solid var(--line);border-radius:5px;color:var(--muted);font-weight:400}.advanced-body{padding-top:16px}.checkbox-label{display:flex;align-items:flex-start;gap:10px;margin:0;font-weight:500}.checkbox-label input{accent-color:var(--blue);width:18px;height:18px;margin:4px 0 0;flex-shrink:0}.checkbox-label small{display:block;color:var(--muted);font-weight:400;margin-top:5px}
+.notice{border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-block:16px;overflow-wrap:anywhere;line-height:1.65}.notice-error{background:#fff0f2;border-color:#f0cbd1;color:#8f2938}.notice-warning{background:#fff5dd;border-color:#eeddb3;color:#754b10}.notice-info{background:#eef4ff;border-color:#d4e1fb;color:#31527c;display:flex;gap:12px;align-items:flex-start}.notice-symbol{font-size:1.2rem;font-weight:700;flex-shrink:0;line-height:1.5}.form-error{color:var(--red);margin-top:12px;font-size:.9rem}.scan-progress,.batch-progress,#demo-progress{color:var(--blue);font-size:.9rem;margin-top:14px}.spinner{width:16px;height:16px;border:2px solid #ffffff60;border-top-color:#fff;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.feature-grid{max-width:920px;margin:28px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.feature-grid article{padding:12px 8px}.feature-number{font-size:.68rem;letter-spacing:.08em;font-weight:700;color:var(--blue)}.feature-grid h3{margin:8px 0;font-size:1rem}.feature-grid p{font-size:.87rem;color:var(--muted)}.home-footnote{max-width:920px;margin:20px auto 0;color:var(--muted);text-align:center;font-size:.82rem}.home-footnote a{display:inline-block;margin-top:8px}
+.result-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:24px}.back-link{font-size:.87rem;font-weight:600}.result-hero{display:flex;justify-content:space-between;gap:24px;align-items:center;margin-bottom:24px}.result-hero h1{font-size:clamp(1.9rem,3vw,2.7rem);overflow-wrap:anywhere;margin:5px 0 9px}.runtime{font-size:.83rem;color:var(--muted)}.checked-at{display:inline-block}.final-block{display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex-shrink:0}.final-result .badge{font-size:.9rem;padding:8px 14px}
+.overview-grid{display:grid;grid-template-columns:210px minmax(0,1.5fr) minmax(240px,1fr);gap:18px}.card{padding:24px}.score-card{display:flex;flex-direction:column}.score-card h2{font-size:.9rem;color:var(--muted);letter-spacing:0}.score-value{display:flex;align-items:baseline;gap:6px;margin:7px 0 8px;color:var(--muted)}.score-value strong{font-size:2.8rem;line-height:1.2;color:var(--navy);letter-spacing:-.06em}.score-card p{font-size:.73rem;color:var(--muted);margin-top:10px}meter{width:100%;height:9px;appearance:none;border:0;background:#eaf0fa;border-radius:6px;overflow:hidden}meter::-webkit-meter-bar{background:#eaf0fa;border:0}meter::-webkit-meter-optimum-value{background:var(--blue)}
+.certificate-overview h2{font-size:1rem;margin:10px 0;overflow-wrap:anywhere}.certificate-overview .kv-row{grid-template-columns:105px minmax(0,1fr);font-size:.82rem;padding-block:7px}.export-card h2{margin:8px 0;font-size:1rem}.export-card p:not(.eyebrow){font-size:.82rem;color:var(--muted)}.export-actions{display:flex;gap:8px;margin-top:17px;flex-wrap:wrap}.export-actions .button{flex:1;padding-inline:10px;white-space:nowrap}.verdict-note{display:flex;gap:14px;font-size:.85rem;margin-block:18px}.verdict-note p{margin-top:5px}
+.summary-checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}.overview-item{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:10px;font-size:.8rem;min-width:0}.badge{display:inline-flex;align-items:center;gap:6px;width:fit-content;max-width:100%;padding:4px 9px;border-radius:6px;font-size:.72rem;font-weight:700;line-height:1.45;letter-spacing:.015em;vertical-align:middle;overflow-wrap:anywhere}.badge::before{content:'•';font-size:.9em;flex-shrink:0}.status-pass{color:var(--green);background:#eaf6ef}.status-pass::before{content:'✓'}.status-warning{color:var(--amber);background:#fff5dd}.status-warning::before{content:'!'}.status-fail{color:var(--red);background:#fff0f2}.status-fail::before{content:'×'}.status-neutral{color:#536277;background:#eef1f5}
+.badge[data-status=ERROR]{color:#9a2b40;background:#fff0f3;border:1px solid #eebdca}.badge[data-status=ERROR]::before{content:'!'}.badge[data-status=UNKNOWN]::before{content:'?'}.badge[data-status=NOT_CHECKED]{color:#626a77;background:#f0f1f3}.badge[data-status=NOT_CHECKED]::before{content:'−'}.badge[data-status=NOT_VERIFIED]{color:#64548b;background:#f1edf8}.badge[data-status=NOT_VERIFIED]::before{content:'◌'}.badge[data-status=UNSUPPORTED]{color:#46677e;background:#edf3f6}.badge[data-status=UNSUPPORTED]::before{content:'⊘'}
+.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin:30px 0 16px}.section-heading h2{font-size:1.4rem;margin-top:5px}.section-heading .input-help{margin:0}.result-grid{display:flex;flex-direction:column;gap:12px}.detail-panel{background:#fff;border:1px solid var(--line);border-radius:12px;min-width:0;box-shadow:0 3px 16px #18325006;scroll-margin-top:24px}.detail-panel>summary{display:flex;gap:14px;align-items:center;min-height:88px;padding:18px 22px}.detail-panel>summary:hover{background:#fafcff;border-radius:12px}.panel-icon{display:grid;place-items:center;flex-shrink:0;width:40px;height:40px;border-radius:10px;background:#edf3fc;color:var(--blue);font-size:1.3rem}.panel-label{flex:1;min-width:0}.panel-title{display:block;color:var(--navy);font-size:.97rem;font-weight:650}.panel-description{display:block;color:var(--muted);font-size:.8rem;margin-top:3px}.panel-chevron{flex-shrink:0;font-size:1.2rem;color:var(--muted);transition:transform .15s}.detail-panel[open]>.panel-body{border-top:1px solid var(--line)}.detail-panel[open]>summary .panel-chevron{transform:rotate(180deg)}.panel-body{padding:24px;min-width:0}.panel-body h3{margin-block:18px 10px}.panel-body>.card,.panel-body .subsection{box-shadow:none;border:0;border-radius:0;padding:0;margin-bottom:24px}.panel-body>.card:last-child,.panel-body .subsection:last-child{margin-bottom:0}.panel-body>.card+.card,.panel-body .subsection+.subsection{border-top:1px solid var(--line);padding-top:24px}.card-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:16px}.card-number{color:#8596ad;font-size:.8rem}
+.kv-list{margin:12px 0;min-width:0}.kv-row{display:grid;grid-template-columns:minmax(150px,.7fr) minmax(0,2fr);gap:16px;border-bottom:1px solid #edf0f5;padding:11px 0;font-size:.88rem;min-width:0}.kv-row:last-child{border:0}dt{color:var(--muted)}dd{margin:0;min-width:0;overflow-wrap:anywhere}.mono,pre,code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.84em;overflow-wrap:anywhere}pre{white-space:pre-wrap;word-break:break-word;background:#f5f7fb;border:1px solid var(--line);border-radius:8px;padding:16px;max-width:100%;overflow:auto;font-size:.8rem;line-height:1.7;margin-block:12px}.data-value,.chain-subject,.chain-issuer{overflow-wrap:anywhere}.check-message,.reasons,.interval-note,.empty-state{font-size:.87rem;color:var(--muted)}.reasons{padding-left:20px}.reasons li+li{margin-top:12px}
+.technical-details,.san-details,.sct-card{margin-top:12px;border:1px solid var(--line);border-radius:9px;background:#fff;min-width:0}.technical-details>summary,.san-details>summary,.sct-card>summary{padding:12px 15px;color:var(--navy);font-size:.85rem;min-height:44px}.technical-details>summary::before,.san-details>summary::before,.sct-card>summary::before{content:'+';color:var(--blue);font-weight:700;margin-right:10px}.technical-details[open]>summary::before,.san-details[open]>summary::before,.sct-card[open]>summary::before{content:'−'}.technical-details>pre{margin:0 12px 12px;max-width:calc(100% - 24px)}.san-preview,.san-list{padding:12px 16px 12px 34px;font-size:.85rem;overflow-wrap:anywhere}.count-label{padding:2px 6px;margin-left:5px;background:#edf3ff;border-radius:4px}abbr{cursor:help;text-decoration:underline dotted;text-underline-offset:3px}
+.chain-length{font-size:.87rem;margin-top:14px}.chain-list{list-style:none;padding:0;margin:20px 0}.chain-list li{display:flex;gap:16px;position:relative;padding:0 0 24px;min-width:0}.chain-list li>div{min-width:0}.chain-list li::before{content:'';position:absolute;top:35px;left:15px;bottom:0;width:1px;background:var(--line)}.chain-list li:last-child::before{display:none}.chain-index{position:relative;z-index:1;background:#edf3ff;border:1px solid #d1dffc;color:var(--blue);width:32px;height:32px;display:grid;place-items:center;border-radius:50%;flex-shrink:0;font-size:.8rem;font-weight:700}.chain-role{font-size:.82rem;font-weight:700;color:var(--blue)}.chain-subject{font-size:.9rem;font-weight:600;margin-top:3px}.chain-issuer,.chain-dates,.node-status{font-size:.82rem;color:var(--muted);display:block;margin-top:6px}.check-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px}.check-grid .kv-row{grid-template-columns:1fr 1fr}
+.table-scroll{max-width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:10px;overscroll-behavior-x:contain;margin:16px 0}table{border-collapse:collapse;width:100%;font-size:.83rem;text-align:left}th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}thead th{background:#f4f7fc;color:var(--muted);font-weight:600;font-size:.75rem}tbody tr:last-child>*{border-bottom:0}tbody th{font-weight:600}.policy-fail{background:#fff8f9}.policy-table td .check-message{margin-top:8px}
+.ct-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-block:16px}.ct-metrics>div{border:1px solid var(--line);background:#f8faff;border-radius:9px;padding:14px;min-width:0;color:var(--muted);font-size:.8rem}.ct-metrics strong{display:block;font-size:1.6rem;color:var(--navy);margin-top:6px}.ct-metrics .badge{margin-top:8px}.sct-heading{display:flex;align-items:center;gap:12px}.sct-heading>span:first-of-type{flex:1}.sct-card>.kv-list,.sct-card>.reasons{margin:0 18px 18px}.sct-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}.sct-grid .kv-row{display:block}.sct-grid dd{margin-top:5px}.finding{border-left:3px solid #d6b36a;padding-left:18px;margin-top:18px}.finding h3{font-size:.95rem}.summary-final{margin-top:16px;display:flex;gap:12px;align-items:center;font-size:.9rem}.summary-reasons{margin-top:20px}.result-bottom{display:flex;justify-content:space-between;gap:16px;font-size:.82rem;color:var(--muted);margin-top:24px}
+.page-heading{padding:12px 0 24px}.page-heading h1{font-size:clamp(1.7rem,3vw,2.4rem);margin-top:8px}.page-heading .hero-description{margin:10px 0 0;max-width:780px;font-size:.95rem}.demo-controls{max-width:none;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:24px}.demo-controls>.notice,.quick-select{flex-basis:100%}.quick-select{border-top:1px solid var(--line);padding-top:14px}.quick-select summary{display:flex;min-height:32px;align-items:center;color:var(--muted);font-size:.85rem}.quick-select form{padding-top:16px}.demo-case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:28px}.case-card{display:flex;flex-direction:column;padding:22px;transition:border-color .15s}.case-card:hover{border-color:#aebfda}.case-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:16px}.case-number{color:var(--blue);font-size:.82rem;font-weight:700;border-radius:6px;background:#edf3ff;padding:4px 8px}.case-category{color:var(--muted);font-size:.72rem}.case-card h3{font-size:1rem}.case-card>p{color:var(--muted);font-size:.85rem;line-height:1.65;margin:8px 0 20px}.case-form{margin-top:auto}.case-form .button{width:100%;justify-content:space-between}.demo-result{margin-block:20px}.demo-result>p{font-size:.9rem;margin-top:12px}.demo-result h2{margin-bottom:12px}.demo-result .ct-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.demo-verdicts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-block:20px}.demo-verdicts .badge{margin-top:12px;font-size:.83rem}#batch-results table{min-width:1000px}.batch-evidence{padding:0 18px 18px}
+@media(min-width:1600px){.container{width:min(1360px,calc(100% - 96px))}.home-hero{padding-top:54px}.overview-grid{grid-template-columns:230px minmax(0,1.6fr) minmax(280px,1fr)}.demo-case-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:1000px){.overview-grid{grid-template-columns:185px minmax(0,1fr)}.export-card{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.export-card>.eyebrow{display:none}.export-card h2{margin:0}.export-actions{margin:0;flex-shrink:0}.export-card #export-status{flex-basis:100%;margin:0}.demo-case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ct-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.checked-at{display:block}}
+@media(max-width:700px){.container{width:calc(100% - 32px)}main.container{padding-top:22px;padding-bottom:32px}.header-inner{min-height:72px;flex-wrap:wrap;gap:0;padding-block:12px;justify-content:space-between}.brand-caption{font-size:.65rem;max-width:190px}.brand-mark{width:36px;height:40px}.nav-toggle{display:inline-flex;gap:8px;align-items:center}.local-label{width:100%;margin-top:12px;display:flex;border-top:1px solid var(--line);padding-top:10px}.js .local-label{display:none}.js .local-label.is-open{display:flex}.local-label a{flex:1;text-align:center;font-size:.83rem;padding:10px 8px}.site-footer{flex-direction:column;font-size:.73rem}.home-hero{padding:22px 0 26px;text-align:left}.home-hero h1{font-size:2rem}.hero-description{font-size:.95rem;margin-top:12px}.desktop-break{display:none}.scan-card{padding:22px}.scan-heading{align-items:flex-start;gap:10px;margin-bottom:20px}.scan-heading h2{font-size:1.1rem}.input-row{flex-direction:column;gap:10px}.input-row .button{min-height:52px}.input-help{line-height:1.7}.feature-grid{grid-template-columns:1fr;gap:0;margin-top:20px}.feature-grid article{padding:18px 0;border-bottom:1px solid var(--line)}.feature-grid article:last-child{border-bottom:0}.feature-grid h3{margin:5px 0}.home-footnote{text-align:left}.result-toolbar{margin-bottom:20px}.result-toolbar .eyebrow{display:none}.result-hero{align-items:flex-start;flex-direction:column;gap:14px;margin-bottom:20px}.result-hero h1{font-size:2rem}.final-block{flex-direction:row;align-items:center;gap:12px}.final-block .eyebrow{font-size:.65rem}.final-result .badge{font-size:.78rem;padding:6px 10px}.overview-grid{grid-template-columns:1fr;gap:12px}.card{padding:20px}.score-card{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:16px}.score-card h2{font-size:1rem}.score-value{margin:0}.score-value strong{font-size:2.2rem}.score-card meter,.score-card p{grid-column:1/-1}.score-card meter{margin-top:12px}.certificate-overview .kv-row{grid-template-columns:90px minmax(0,1fr)}.export-card{display:block;grid-column:auto}.export-card p{margin-top:6px}.export-actions{margin-top:14px}.verdict-note{padding:14px;gap:10px}.summary-checks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.overview-item{padding:12px;font-size:.75rem}.section-heading{align-items:flex-start;flex-direction:column;gap:6px;margin-top:26px}.section-heading h2{font-size:1.25rem}.detail-panel>summary{padding:16px 30px 16px 14px;gap:10px;flex-wrap:wrap;position:relative}.panel-icon{width:32px;height:34px;font-size:1.1rem}.panel-label{flex-basis:calc(100% - 80px)}.panel-title{font-size:.9rem}.panel-description{font-size:.75rem}.detail-panel>summary>.badge{margin-left:42px;max-width:calc(100% - 42px)}.panel-chevron{position:absolute;right:16px;top:18px}.panel-body{padding:18px 16px}.kv-row,.check-grid .kv-row{grid-template-columns:1fr;gap:5px;padding-block:11px}.kv-row{font-size:.85rem}.check-grid,.sct-grid{grid-template-columns:1fr}.ct-metrics{gap:8px}.ct-metrics>div{padding:12px}.ct-metrics .badge{font-size:.65rem}.sct-heading{flex-wrap:wrap}.sct-heading>.badge{margin-left:18px}.result-bottom{flex-direction:column}.page-heading{padding-top:4px}.demo-controls{padding:20px;gap:16px}.demo-controls>.batch-form{width:100%}.batch-run{width:100%;min-height:52px}.demo-case-grid{grid-template-columns:1fr;gap:12px}.case-card{padding:20px}.case-top{margin-bottom:12px}.demo-verdicts{grid-template-columns:1fr;gap:10px}.demo-result .ct-metrics{grid-template-columns:1fr}.notice{font-size:.85rem}.summary-final{flex-wrap:wrap}.chain-list li{gap:10px}.export-actions .button{min-height:48px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition:none!important}}
+.identity-statuses{display:flex;flex-direction:column;gap:5px;font-size:.72rem;color:var(--muted)}
+@media(max-width:700px){.identity-statuses{margin-left:42px}.detail-panel>summary>.input-help{margin:0 0 0 42px}}
+@media print{body{background:white}.site-header,.site-footer,.result-toolbar,.export-card,.result-bottom{display:none}.container{width:100%}.detail-panel{break-inside:avoid}.detail-panel>.panel-body{display:block!important}.card,.detail-panel{box-shadow:none}}
+</style></head>
+<body>
+  <a class="skip-link" href="#main">Đến nội dung chính</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="DT007 — Trang chủ">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 20 6v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" stroke="currentColor" stroke-width="1.6"></path><path d="m8.5 12 2.3 2.3 4.7-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        <span><strong>DT007</strong><span class="brand-caption">Trình xác minh an toàn chứng thư số</span></span>
+      </a>
+      
+      <nav class="local-label" id="main-nav" aria-label="Điều hướng chính"><a href="/" aria-current="page">Kiểm tra chứng thư</a><a href="/demo">Phòng Demo</a></nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+
+
+<div class="result-toolbar"><a class="back-link" href="/">← Kiểm tra tên miền khác</a><span class="eyebrow">KẾT QUẢ XÁC MINH</span></div>
+<section class="result-hero" aria-labelledby="result-title">
+  <div><p class="eyebrow">CHỨNG THƯ TLS · CỔNG 443</p><h1 id="result-title">google.com</h1><p class="runtime">Thời gian xử lý <span class="mono">6.7313 giây</span><span class="checked-at"> · 2026-10-18T15:49:30.509655+00:00</span></p></div>
+  <div class="final-block"><span class="eyebrow">KẾT QUẢ CUỐI CÙNG</span><span id="final-result" class="final-result">
+<span class="badge status-warning" data-status="WARNING">CẢNH BÁO</span></span></div>
+</section>
+
+<div class="overview-grid">
+  <section class="card score-card" aria-labelledby="score-title"><h2 id="score-title">Điểm đánh giá</h2><div class="score-value"><strong id="security-score">90</strong><span>/ 100</span></div><meter min="0" max="100" value="90" aria-label="Điểm đánh giá">90/100</meter><p>Năm hạng mục · Đạt 20 / Cảnh báo 10 / Khác 0 điểm.</p></section>
+  <section class="card certificate-overview"><p class="eyebrow">CHỨNG THƯ MÁY CHỦ</p><h2>CN=*.google.com</h2><dl class="kv-list"><div class="kv-row"><dt>Đơn vị cấp</dt><dd><span class="data-value">CN=WR2,O=Google Trust Services,C=US</span></dd></div><div class="kv-row"><dt>Có hiệu lực đến</dt><dd><span class="data-value">2026-12-21T18:38:00+00:00</span></dd></div></dl></section>
+  <section class="card export-card"><p class="eyebrow">BÁO CÁO KIỂM TRA</p><h2>Lưu kết quả này</h2><p>Xuất đúng dữ liệu của lần kiểm tra vừa chạy.</p><div class="export-actions"></div><p id="export-status" class="input-help" role="status" aria-live="polite">Bản lưu của lần kiểm tra, không tự cập nhật dữ liệu.</p></section>
+</div>
+<div class="verdict-note notice notice-warning"><span class="notice-symbol" aria-hidden="true">!</span><div>
+<strong>Vì sao điểm 90/100 nhưng kết quả CẢNH BÁO?</strong><p>Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.</p>
+<p>Điểm số chỉ dùng để trực quan hóa, không phải chứng nhận an toàn tiêu chuẩn. <strong>90/100 không có nghĩa website thiếu 10% an toàn.</strong> Điểm không thay đổi trạng thái cuối cùng.</p></div></div>
+<section class="overview" aria-label="Tổng quan kiểm tra"><div class="summary-checks"><div class="overview-item" data-score-scope="true"><span>Thời hạn chứng thư</span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></div><div class="overview-item" data-score-scope="true"><span>Tên miền</span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></div><div class="overview-item" data-score-scope="true"><span>Chuỗi chứng thư</span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></div><div class="overview-item" data-score-scope="true"><span>Chính sách thuật toán</span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></div><div class="overview-item" data-score-scope="true"><span>Certificate Transparency</span>
+<span class="badge status-warning" data-status="WARNING">CẢNH BÁO</span></div><div class="overview-item" data-score-scope="false"><span>Trạng thái thu hồi</span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></div></div></section>
+<div class="section-heading"><div><p class="eyebrow">BẰNG CHỨNG &amp; PHÂN TÍCH</p><h2>Chi tiết xác minh</h2></div><span class="input-help">Mở từng nhóm để xem dữ liệu đầy đủ</span></div>
+<div class="result-grid">
+
+<details class="detail-panel" id="certificate" open="">
+  <summary><span class="panel-icon" aria-hidden="true">▤</span><span class="panel-label"><span class="panel-title">Thông tin chứng thư X.509</span><span class="panel-description">Chủ thể, đơn vị cấp và định danh chứng thư</span></span><span class="input-help">Đã thu thập</span><span class="panel-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="panel-body">
+<dl class="kv-list certificate-fields"><div class="kv-row"><dt>Chủ thể</dt><dd><span class="data-value">CN=*.google.com</span></dd></div><div class="kv-row"><dt>Đơn vị cấp</dt><dd><span class="data-value">CN=WR2,O=Google Trust Services,C=US</span></dd></div><div class="kv-row"><dt>Số sê-ri</dt><dd><span class="data-value">113008320809552024517172734962922031200</span></dd></div><div class="kv-row"><dt>Phiên bản</dt><dd><span class="data-value">v3</span></dd></div><div class="kv-row"><dt>Có hiệu lực từ</dt><dd><span class="data-value">2026-09-28T18:38:01+00:00</span></dd></div><div class="kv-row"><dt>Có hiệu lực đến</dt><dd><span class="data-value">2026-12-21T18:38:00+00:00</span></dd></div></dl></div>
+</details>
+<details class="detail-panel" id="identity-checks" open="">
+  <summary><span class="panel-icon" aria-hidden="true">⌖</span><span class="panel-label"><span class="panel-title">Thời hạn và hostname / SAN</span><span class="panel-description">Kiểm tra thời gian và danh tính được bảo vệ</span></span><span class="identity-statuses"><span>Thời hạn 
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></span><span>Hostname 
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></span></span><span class="panel-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="panel-body"><section class="subsection" id="hostname"><div class="card-heading"><h2 id="hostname-title">Kiểm tra tên miền</h2><span class="card-number">02</span></div>
+<dl class="kv-list"><div class="kv-row"><dt>Tên miền yêu cầu</dt><dd><span class="data-value">google.com</span></dd></div><div class="kv-row"><dt>Số lượng SAN</dt><dd><span class="data-value">65</span></dd></div><div class="kv-row"><dt>Trạng thái</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div></dl><p class="check-message">Hostname khớp SAN của certificate.</p><details class="technical-details" open=""><summary>Chi tiết kỹ thuật</summary><pre>Hostname khớp SAN của certificate.</pre></details><h3><abbr tabindex="0" title="Danh sách tên miền được chứng thư bảo vệ (Subject Alternative Name).">SAN</abbr></h3><ul class="san-preview"><li>*.google.com</li><li>*.appengine.google.com</li><li>*.bdn.dev</li></ul>
+<details class="san-details" open=""><summary>Xem tất cả SAN <span class="count-label">65</span></summary><ul class="san-list"><li>*.google.com</li><li>*.appengine.google.com</li><li>*.bdn.dev</li><li>*.origin-test.bdn.dev</li><li>*.cloud.google.com</li><li>*.crowdsource.google.com</li><li>*.datacompute.google.com</li><li>*.google.ca</li><li>*.google.cl</li><li>*.google.co.in</li><li>*.google.co.jp</li><li>*.google.co.uk</li><li>*.google.com.ar</li><li>*.google.com.au</li><li>*.google.com.br</li><li>*.google.com.co</li><li>*.google.com.mx</li><li>*.google.com.tr</li><li>*.google.com.vn</li><li>*.google.de</li><li>*.google.es</li><li>*.google.fr</li><li>*.google.hu</li><li>*.google.it</li><li>*.google.nl</li><li>*.google.pl</li><li>*.google.pt</li><li>*.gemini.cloud.google.com</li><li>*.gstatic.com</li><li>*.metric.gstatic.com</li><li>*.gvt1.com</li><li>*.gcpcdn.gvt1.com</li><li>*.gvt2.com</li><li>*.gcp.gvt2.com</li><li>*.url.google.com</li><li>*.youtube-nocookie.com</li><li>*.ytimg.com</li><li>ai.android</li><li>android.com</li><li>*.android.com</li><li>*.flash.android.com</li><li>g.co</li><li>*.g.co</li><li>goo.gl</li><li>www.goo.gl</li><li>google-analytics.com</li><li>*.google-analytics.com</li><li>google.com</li><li>googlecommerce.com</li><li>*.googlecommerce.com</li><li>urchin.com</li><li>*.urchin.com</li><li>youtu.be</li><li>youtube.com</li><li>*.youtube.com</li><li>music.youtube.com</li><li>*.music.youtube.com</li><li>youtubeeducation.com</li><li>*.youtubeeducation.com</li><li>youtubekids.com</li><li>*.youtubekids.com</li><li>yt.be</li><li>*.yt.be</li><li>android.clients.google.com</li><li>*.aistudio.google.com</li></ul></details></section><section class="subsection" id="validity"><div class="card-heading"><h2 id="validity-title">Kiểm tra thời hạn chứng thư</h2><span class="card-number">03</span></div>
+<dl class="kv-list"><div class="kv-row"><dt>Trạng thái</dt><dd>
+<span class="badge status-pass" data-status="VALID">CÒN HIỆU LỰC</span></dd></div><div class="kv-row"><dt>Có hiệu lực từ</dt><dd><span class="data-value">2026-09-28T18:38:01+00:00</span></dd></div><div class="kv-row"><dt>Có hiệu lực đến</dt><dd><span class="data-value">2026-12-21T18:38:00+00:00</span></dd></div><div class="kv-row"><dt>Thời điểm kiểm tra</dt><dd><span class="data-value">2026-10-18T15:49:30.509655+00:00</span></dd></div></dl><p class="check-message">Certificate đang trong khoảng thời gian có hiệu lực.</p><details class="technical-details" open=""><summary>Chi tiết kỹ thuật</summary><pre>Certificate đang trong khoảng thời gian có hiệu lực.</pre></details></section></div>
+</details>
+<details class="detail-panel" id="chain" open="">
+  <summary><span class="panel-icon" aria-hidden="true">♧</span><span class="panel-label"><span class="panel-title">Chuỗi chứng thư và CA</span><span class="panel-description">Đường dẫn tới điểm neo tin cậy độc lập</span></span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span><span class="panel-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="panel-body">
+<p class="interval-note">Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký.</p><p class="chain-length">Độ dài đường dẫn xác minh <strong>4</strong> · <abbr tabindex="0" title="Tổ chức phát hành hoặc xác nhận chứng thư.">CA</abbr></p><ol class="chain-list chain-timeline"><li><span class="chain-index">1</span><div><span class="chain-role">Chứng thư máy chủ</span><p class="chain-subject" title="CN=*.google.com">CN=*.google.com</p><p class="chain-issuer">Đơn vị cấp: CN=WR2,O=Google Trust Services,C=US</p><p class="chain-issuer">Nguồn: Máy chủ gửi qua TLS</p><p class="chain-dates">2026-09-28T18:38:01+00:00 → 2026-12-21T18:38:00+00:00</p><span class="node-status">Tính hợp lệ trong chuỗi: 
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></span></div></li><li><span class="chain-index">2</span><div><span class="chain-role">Chứng thư trung gian #1</span><p class="chain-subject" title="CN=WR2,O=Google Trust Services,C=US">CN=WR2,O=Google Trust Services,C=US</p><p class="chain-issuer">Đơn vị cấp: CN=GTS Root R1,O=Google Trust Services LLC,C=US</p><p class="chain-issuer">Nguồn: Máy chủ gửi qua TLS</p><p class="chain-dates">2023-12-13T09:00:00+00:00 → 2029-02-20T14:00:00+00:00</p><span class="node-status">Tính hợp lệ trong chuỗi: 
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></span></div></li><li><span class="chain-index">3</span><div><span class="chain-role">Chứng thư trung gian #2</span><p class="chain-subject" title="CN=GTS Root R1,O=Google Trust Services LLC,C=US">CN=GTS Root R1,O=Google Trust Services LLC,C=US</p><p class="chain-issuer">Đơn vị cấp: CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE</p><p class="chain-issuer">Nguồn: Máy chủ gửi qua TLS</p><p class="chain-dates">2020-06-19T00:00:42+00:00 → 2028-01-28T00:00:42+00:00</p><span class="node-status">Tính hợp lệ trong chuỗi: 
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></span></div></li><li><span class="chain-index">4</span><div><span class="chain-role">Chứng thư gốc / Điểm neo tin cậy</span><p class="chain-subject" title="CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE">CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE</p><p class="chain-issuer">Đơn vị cấp: CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE</p><p class="chain-issuer">Nguồn: Bổ sung từ trust store / đường dẫn đã xác minh; không nằm trong chuỗi máy chủ gửi</p><p class="chain-dates">1998-09-01T12:00:00+00:00 → 2028-01-28T12:00:00+00:00</p><span class="node-status">Tính hợp lệ trong chuỗi: 
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></span></div></li></ol><p class="interval-note">Trạng thái tại mỗi bước phản ánh kiểm tra thời hạn toàn chuỗi, không phải kết luận riêng về từng chứng thư.</p><dl class="kv-list check-grid"><div class="kv-row"><dt>Liên kết Issuer/Subject</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Xác minh chữ ký</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Ràng buộc CA</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Tính hợp lệ chuỗi</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Đường dẫn tới điểm neo tin cậy</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Điểm neo đã xác minh</dt><dd><span class="data-value">CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE</span></dd></div><div class="kv-row"><dt>Trạng thái chuỗi</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div></dl></div>
+</details>
+<details class="detail-panel" id="algorithm-checks" open="">
+  <summary><span class="panel-icon" aria-hidden="true">⚙</span><span class="panel-label"><span class="panel-title">Chính sách thuật toán mật mã</span><span class="panel-description">Thuật toán, độ dài khóa và chữ ký số</span></span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span><span class="panel-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="panel-body"><section class="subsection" id="cryptography"><div class="card-heading"><h2 id="crypto-title">Thông tin mật mã</h2><span class="card-number">04</span></div>
+<h3>KHÓA CÔNG KHAI</h3><dl class="kv-list"><div class="kv-row"><dt>Thuật toán khóa công khai</dt><dd><span class="data-value">EC</span></dd></div><div class="kv-row"><dt>Độ dài khóa</dt><dd><span class="data-value">256 bit</span></dd></div></dl><h3 class="crypto-subtitle">CHỮ KÝ SỐ</h3><dl class="kv-list"><div class="kv-row"><dt>Thuật toán chữ ký</dt><dd><span class="data-value">RSA_WITH_SHA256</span></dd></div><div class="kv-row"><dt>OID chữ ký</dt><dd><span class="data-value">1.2.840.113549.1.1.11</span></dd></div><div class="kv-row"><dt>Thuật toán băm</dt><dd><span class="data-value">SHA256</span></dd></div></dl></section><section class="subsection" id="policy"><div class="card-heading"><h2 id="policy-title">Chính sách thuật toán</h2>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></div>
+<div class="table-scroll"><table class="policy-table"><thead><tr><th scope="col">Kiểm tra</th><th scope="col">Giá trị</th><th scope="col">Kết quả</th></tr></thead><tbody><tr class=""><th scope="row">Thuật toán khóa công khai</th><td class="mono">EC</td><td>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span><p class="check-message">Thuật toán khóa công khai được phép: EC</p><details class="technical-details" open=""><summary>Chi tiết kỹ thuật</summary><pre>Allowed public key algorithm: EC</pre></details></td></tr><tr class=""><th scope="row">Độ dài khóa</th><td class="mono">256 bit</td><td>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span><p class="check-message">Độ dài khóa đạt mức tối thiểu của chính sách (256 bit).</p><details class="technical-details" open=""><summary>Chi tiết kỹ thuật</summary><pre>Key size meets policy minimum (256 bits)</pre></details></td></tr><tr class=""><th scope="row">Thuật toán băm</th><td class="mono">SHA256</td><td>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span><p class="check-message">Thuật toán băm chữ ký được phép: SHA256</p><details class="technical-details" open=""><summary>Chi tiết kỹ thuật</summary><pre>Allowed signature hash: sha256</pre></details></td></tr></tbody></table></div><dl class="kv-list"><div class="kv-row"><dt>Trạng thái chính sách</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div></dl></section></div>
+</details>
+<details class="detail-panel" id="ct" open="">
+  <summary><span class="panel-icon" aria-hidden="true">◎</span><span class="panel-label"><span class="panel-title">Certificate Transparency</span><span class="panel-description">Đối chiếu CT Log, SCT và bằng chứng inclusion</span></span>
+<span class="badge status-warning" data-status="WARNING">CẢNH BÁO</span><span class="panel-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="panel-body"><p class="interval-note"><abbr tabindex="0" title="Cam kết có chữ ký của CT Log về việc ghi nhận chứng thư; cần xác minh để xác nhận.">SCT</abbr> · <abbr tabindex="0" title="Nhật ký công khai dùng để ghi nhận chứng thư số.">CT Log</abbr> · <abbr tabindex="0" title="Thời gian tối đa để một mục được đưa vào cây nhật ký.">MMD</abbr></p>
+<div class="ct-metrics"><div><span>Số lượng SCT</span><strong>2</strong></div><div><span>SCT khớp dữ liệu</span><strong>2</strong></div><div><span>Xác minh chữ ký SCT</span>
+<span class="badge status-pass" data-status="VALID">HỢP LỆ</span></div><div><span>Xác minh inclusion proof</span>
+<span class="badge status-pass" data-status="VALID">HỢP LỆ</span></div></div><p class="interval-note">Khoảng thời gian của CT Log áp dụng cho ngày hết hạn chứng thư. Thời điểm SCT được kiểm tra riêng.</p>
+<details class="sct-card sct-accordion" open=""><summary class="sct-heading"><span>SCT #1 · DigiCert</span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></summary><dl class="kv-list sct-grid"><div class="kv-row"><dt>Log ID</dt><dd><span class="data-value">lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=</span></dd></div><div class="kv-row"><dt>Phiên bản</dt><dd><span class="data-value">v1</span></dd></div><div class="kv-row"><dt>Đơn vị vận hành</dt><dd><span class="data-value">DigiCert</span></dd></div><div class="kv-row"><dt>CT Log</dt><dd><span class="data-value">DigiCert 'Sphinx2026h2'</span></dd></div><div class="kv-row"><dt>Trạng thái CT Log</dt><dd><span class="data-value">Đang sử dụng</span></dd></div><div class="kv-row"><dt>MMD (giây)</dt><dd><span class="data-value">86400</span></dd></div><div class="kv-row"><dt>Địa chỉ CT Log</dt><dd><span class="data-value">https://sphinx.ct.digicert.com/2026h2/</span></dd></div><div class="kv-row"><dt>Thời điểm ghi nhận</dt><dd><span class="data-value">2026-09-28T19:38:28.152000+00:00</span></dd></div><div class="kv-row"><dt>Bắt đầu khoảng thời gian</dt><dd><span class="data-value">2026-07-01T00:00:00Z</span></dd></div><div class="kv-row"><dt>Kết thúc khoảng thời gian</dt><dd><span class="data-value">2027-01-01T00:00:00Z</span></dd></div><div class="kv-row"><dt>Đối chiếu SCT với temporal_interval</dt><dd>
+<span class="badge status-neutral" data-status="NOT_APPLICABLE">KHÔNG ÁP DỤNG</span></dd></div><div class="kv-row"><dt>Khoảng hết hạn chứng thư</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Đối chiếu Log ID</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Chính sách trạng thái</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Trạng thái SCT</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div></dl></details><details class="sct-card sct-accordion" open=""><summary class="sct-heading"><span>SCT #2 · Google</span>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></summary><dl class="kv-list sct-grid"><div class="kv-row"><dt>Log ID</dt><dd><span class="data-value">1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=</span></dd></div><div class="kv-row"><dt>Phiên bản</dt><dd><span class="data-value">v1</span></dd></div><div class="kv-row"><dt>Đơn vị vận hành</dt><dd><span class="data-value">Google</span></dd></div><div class="kv-row"><dt>CT Log</dt><dd><span class="data-value">Google 'Argon2026h2' log</span></dd></div><div class="kv-row"><dt>Trạng thái CT Log</dt><dd><span class="data-value">Đang sử dụng</span></dd></div><div class="kv-row"><dt>MMD (giây)</dt><dd><span class="data-value">86400</span></dd></div><div class="kv-row"><dt>Địa chỉ CT Log</dt><dd><span class="data-value">https://ct.googleapis.com/logs/us1/argon2026h2/</span></dd></div><div class="kv-row"><dt>Thời điểm ghi nhận</dt><dd><span class="data-value">2026-09-28T19:38:27.148000+00:00</span></dd></div><div class="kv-row"><dt>Bắt đầu khoảng thời gian</dt><dd><span class="data-value">2026-07-01T00:00:00Z</span></dd></div><div class="kv-row"><dt>Kết thúc khoảng thời gian</dt><dd><span class="data-value">2027-01-01T00:00:00Z</span></dd></div><div class="kv-row"><dt>Đối chiếu SCT với temporal_interval</dt><dd>
+<span class="badge status-neutral" data-status="NOT_APPLICABLE">KHÔNG ÁP DỤNG</span></dd></div><div class="kv-row"><dt>Khoảng hết hạn chứng thư</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Đối chiếu Log ID</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Chính sách trạng thái</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Trạng thái SCT</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div></dl></details><dl class="kv-list"><div class="kv-row"><dt>Trạng thái Certificate Transparency</dt><dd>
+<span class="badge status-warning" data-status="WARNING">CẢNH BÁO</span></dd></div></dl><ul class="reasons"><li><p class="check-message">Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.</p><details class="technical-details" open=""><summary>Chi tiết kỹ thuật</summary><pre>Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.</pre></details></li></ul>
+<div id="advanced-checks"><h3>Nguồn khóa CT đã xác thực</h3>
+<span class="badge status-pass" data-status="VALID">HỢP LỆ</span><p>Danh sách Google CT có chữ ký publisher hợp lệ với khóa đã pin.</p><details class="technical-details" open=""><summary>Bằng chứng nguồn khóa</summary><pre>{
+  "reason": "Danh s\u00e1ch Google CT c\u00f3 ch\u1eef k\u00fd publisher h\u1ee3p l\u1ec7 v\u1edbi kh\u00f3a \u0111\u00e3 pin.",
+  "sha256": "2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988",
+  "status": "VALID",
+  "timestamp": "2026-10-17T13:37:58+00:00"
+}</pre></details>
+<h3>Xác minh chữ ký SCT</h3><p>
+<span class="badge status-pass" data-status="VALID">HỢP LỆ</span> Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.</p><details class="technical-details" open=""><summary>Log ID và bằng chứng chữ ký</summary><pre>{
+  "log_id": "lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=",
+  "reason": "Ch\u1eef k\u00fd SCT h\u1ee3p l\u1ec7 v\u1edbi kh\u00f3a log tin c\u1eady; ch\u01b0a ch\u1ee9ng minh inclusion.",
+  "signed_data_sha256": "af8b1be6b736cbddc61817a3f2e9e303068d4fbd8b8d331f2c9fbeaaaf3432a8",
+  "status": "VALID"
+}</pre></details><p>
+<span class="badge status-pass" data-status="VALID">HỢP LỆ</span> Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.</p><details class="technical-details" open=""><summary>Log ID và bằng chứng chữ ký</summary><pre>{
+  "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+  "reason": "Ch\u1eef k\u00fd SCT h\u1ee3p l\u1ec7 v\u1edbi kh\u00f3a log tin c\u1eady; ch\u01b0a ch\u1ee9ng minh inclusion.",
+  "signed_data_sha256": "06a9a7f728949800e14d303375a509a8a72de8a545131e93e036c5f927075d66",
+  "status": "VALID"
+}</pre></details>
+<h3>Bằng chứng đưa vào CT Log</h3>
+<span class="badge status-pass" data-status="VALID">HỢP LỆ</span><p>Kết quả từng SCT ở bằng chứng; giới hạn hai truy vấn proof, consistency chưa có checkpoint độc lập.</p><details class="technical-details" open=""><summary>STH, Merkle path và consistency</summary><pre>{
+  "evidence": [
+    {
+      "audit_path": [
+        "rKfo30Qd/sj74No9ZWwgNBiXh8if36s6Kj1qvpdsfpQ=",
+        "7bhcz4G2CaXFAvJRsRYtjByG8N/sEmSl/OeV7lghgOY=",
+        "375OZg6yPyO7FtXQ2qmVM9QQddIqbPOvicv9Izo7Gqc=",
+        "8c1n60oGgFaJYPCbbQrAc++Q0sSpMtfOMWCTTQ6u4pI=",
+        "BvAdSBdIrXHLNxJ+xe5eW7W/dbOZbei4ddi/e6NiZVM=",
+        "FPwXPUWr3IbmLSv2b+ei47262j8xM6dgj+Jk4Ax2sSs=",
+        "WTw90PvZU/T/VYKAMnRLFDMsUyhWevATYvP5QIJcVik=",
+        "bK8aC0NPExawfzuqnTcizY1DcodzIUWzk/bQJGAW4Jc=",
+        "2fT/V+KB+dAfR6Af1Wnty9+l0fiZ26uzYCEwguds6+k=",
+        "GweqhbmJeVmNb/iue7QL1+I9fBRAlWsSDco6Fb6YHIk=",
+        "nzZ2bVUo6e7Ugj26nntHQ/GBQ/PckQoyvaEuPCf678s=",
+        "roUa4Wa7lX6wPMucmDCKw6/k7wiL+5bPs1DErS045LM=",
+        "PVwzVRD8XM4qz/thgVP6FuLZCzg/mDtE+kdtbWXZFQ0=",
+        "WGmIgjbE3MgN4SvwvioPs2d3kOFuhXP7P0/12mOTzjE=",
+        "tfMO6krwMmnfUDlCfGO8kMisCD7Qd9W3zNPzHBcPGPE=",
+        "p3SlRuc9zg9q7+vJYDpxL1oZZpxWs706KqyG2j8tAz4=",
+        "ecsoMQYOtAuYUDz2r/A4r5XyGtDuOOizVi1n3vl8gsY=",
+        "O2LpuD4CwgukGcpzoaXUMQvX+wmjvLyN+zRdgOi3VgA=",
+        "8m9QV2yt9KoxkjmIOuw7xSb/TC9hJqHc0l9W8Usd5Ws=",
+        "tD1UP+vFHa0cWrsUjgvOgdU8sHx5fqxzVChF87aq6gQ=",
+        "vJAL6kX5g7RFZRZDfLLjhs5EYfBsTjPa/kVLaOew+v0=",
+        "Vl6F2znl/4h4kQS+tgvKPxEzn0xMRyXdQo+EXAwkh/w=",
+        "46j0Y3SIiheq0gBzQsE9fcs1Ix7+IIvXSYekTFD5OS4=",
+        "MwE3fAHs1fNh2zhGwjN5rULKuZGjY54Vgbgzfj4PGdQ=",
+        "2NTHD4abbcktqqSmMO5/ByWPBrglODGdT11IflWv6L8=",
+        "1v7CEuOZ42w6Tygq95p1o8WY+ZYN8LN51fwsCOiHE1g=",
+        "nJKUPceplSnJaxpZH6LZcY9zeTdoRfpYkw+VprY2aeU=",
+        "hM04crk6AdJLUHonBjxBgM3kwEBFKg1eZb/V0c9S8b4=",
+        "iaIbpPmkM2JZq/Gt0KOgTARE/eNlySDNeET5pCxgUkk=",
+        "dHtL38eJXUl76xAFn1aM84Ae7+qx/f4hJQUtMAbKFw4=",
+        "Pp+7oZs35zCQVJjVWSiUuxtkz6Fzvn5AIaNDC4UmiJc="
+      ],
+      "consistency": "NOT_VERIFIED",
+      "leaf_hash": "YkvAvuO3eWg4aGr6bscR1vZvpqpY1fTTAXy3CGurBOY=",
+      "leaf_index": 2082536234,
+      "log_id": "lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=",
+      "reason": "SCT c\u00f3 ch\u1eef k\u00fd h\u1ee3p l\u1ec7; leaf kh\u1edbp inclusion proof trong STH c\u00f2n m\u1edbi \u0111\u00e3 x\u00e1c th\u1ef1c. Ch\u01b0a ki\u1ec3m tra consistency/gossip.",
+      "registry_sha256": "2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988",
+      "signed_tree_head": {
+        "sha256_root_hash": "nSoonKIDo5UHxEHbLXIDD9hKolbmuNEdTPVR9TAnfvk=",
+        "timestamp": 1792338571862,
+        "tree_head_signature": "BAMARjBEAiAKBLAaqZqddYkfmDDzM6b4MVBGYLHIv4P8jYyeOV7+VgIgefA7ztQraXjG8vt5cma/T6dXXOP5b8dBjaee0anhRW0=",
+        "tree_size": 2138159628
+      },
+      "source": "https://sphinx.ct.digicert.com/2026h2/ct/v1/",
+      "status": "VALID",
+      "sth_timestamp": 1792338571862,
+      "tree_size": 2138159628
+    },
+    {
+      "audit_path": [
+        "GPfF3RHvu39Ehbrn3hTxuGqPyLR9Ofqp3oF2bmHjYKs=",
+        "mcsOxp4mgqiLLrHOpG8JpTNmHmQTcf04DwASCKacnsY=",
+        "MPs936FjHWWFCZd5xRdH4xgylSHorSSzydw8I0sxbBY=",
+        "MxTPRlNvXLfKTRNDBtwUyNjzstMHRhw+sdB641JdKzI=",
+        "eB+LWiByBm+BCW1UMHuJX+QzLrCz4tUVfVnyOqoq9BU=",
+        "rq4JR6B9u++ao8hvRMY38k0k9RvjnroqR5M+1krLPn4=",
+        "Q4wVG2OMeKCX9Wegl25r/NgnfqF0hd3gqnRyIWnqpB8=",
+        "oRFCQuZaR1wh70u/a/ftglmFqzvYRESIKCJNsx6vUls=",
+        "MqKDcTSJsTd+lhwNXsyOl6wNMXpAH3I3EHsAqSYpces=",
+        "2ieX/mZZ1ha8PAyECeD1abqPu93MpozpkUdlfZMPFWU=",
+        "Ug9JVgdaZD2j+9VUd/fLOYYneWEiLaX42QG6gP0BQuI=",
+        "b6p8hWQyke/qid8+X7XuXlTcT1EXl0cd2KZ+gZ6Nyuc=",
+        "uIuqOnJ9y6cCWoc1W4D4JXQX7vVNvPh6zKC1wsWypdI=",
+        "uCHk/OIvO211p0gpNwOidP1U626WfsZoXHaF89Sd9KM=",
+        "w0pXPGLPhskrnpNfB2u5LNhImIGr13v3aHA6e8iaiso=",
+        "/1MzhyWtMelwR5w+q0kZIWPRWIDwjoxGIMWKUnCVsJo=",
+        "ztriSZ+1NsXeaMS88NFzjdkf+G8ACNhLNF4z7YWwREg=",
+        "0fy4xfnIoN74FMO7U9hZ7n0xO7amf2vxwvEPhSlO4oY=",
+        "WbGlBpA1DndkY27nhSiVhM3nB/jMK/XExwlVRz74Xms=",
+        "uMnPn1Nfq8rLRwYwxBaBFcbJ8DK1faMMOHBW1v0H9YM=",
+        "lyEnLcNBuFF++CE2pfZzbMwaUYvGRrZHLyBmvrVnZN0=",
+        "PzIF37t237v3clFEGkMV4ssnz/VuLdEm2SZWG43INY8=",
+        "aHg92bGr+RCIT8QyOlocrasX9d4YSXP3RQjltLUSYFg=",
+        "8vLH82Hemoi5KlF4+vqHX00r9k82xPJFo0fXonDUlqQ=",
+        "ndoE91AK+JtUm0kqE2Pn2MCK98JNlxDVXDv8xN74cXU=",
+        "XZfhiwW+RTk5Peqh9C9pRC5n2iw+P5SUDb7gZcaEq30=",
+        "7wfmpQokxwUOfP2Nw4V/8S6cDdxOrsqpk+fn+WKFCbI=",
+        "IRMQQA2Q+r0BMEgxCHZyJqemIpu5ZjYaU71B5jrE3os=",
+        "U1YogAXbB7V8I3/QSIv7cQ50/agtffsBG1RkAsIFwBs=",
+        "cURe7rkd05jj7Qk2CbppYcJ8027YazrpDFxg99TxU6Q="
+      ],
+      "consistency": "NOT_VERIFIED",
+      "leaf_hash": "GEBBm84UX1Aaf+LT62jkYh6AdHdRsQ/xZ6Ugx8+Cenc=",
+      "leaf_index": 3334165330,
+      "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+      "reason": "SCT c\u00f3 ch\u1eef k\u00fd h\u1ee3p l\u1ec7; leaf kh\u1edbp inclusion proof trong STH c\u00f2n m\u1edbi \u0111\u00e3 x\u00e1c th\u1ef1c. Ch\u01b0a ki\u1ec3m tra consistency/gossip.",
+      "registry_sha256": "2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988",
+      "signed_tree_head": {
+        "sha256_root_hash": "+/AFk6XzVHuRzIl808swfa+h0ZI3yLLs4285lcPErSw=",
+        "timestamp": 1792338514700,
+        "tree_head_signature": "BAMASDBGAiEA67Y/NgZWS3AI170tLHhB7se8bJsL5TgtFM91dyB+GZcCIQD7ALtr8v4SKLcCGoJ5qMMTYyME9YwAiqT21EMJVq6WhQ==",
+        "tree_size": 3442991577
+      },
+      "source": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/",
+      "status": "VALID",
+      "sth_timestamp": 1792338514700,
+      "tree_size": 3442991577
+    }
+  ],
+  "reason": "K\u1ebft qu\u1ea3 t\u1eebng SCT \u1edf b\u1eb1ng ch\u1ee9ng; gi\u1edbi h\u1ea1n hai truy v\u1ea5n proof, consistency ch\u01b0a c\u00f3 checkpoint \u0111\u1ed9c l\u1eadp.",
+  "status": "VALID"
+}</pre></details></div>
+</div>
+</details>
+<details class="detail-panel" id="revocation" open="">
+  <summary><span class="panel-icon" aria-hidden="true">◷</span><span class="panel-label"><span class="panel-title">Thu hồi OCSP / CRL</span><span class="panel-description">Trạng thái thu hồi và phạm vi bằng chứng</span></span>
+<span class="badge status-pass" data-status="GOOD">CHƯA BỊ THU HỒI (CÓ BẰNG CHỨNG)</span><span class="panel-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="panel-body">
+
+<span class="badge status-pass" data-status="GOOD">CHƯA BỊ THU HỒI (CÓ BẰNG CHỨNG)</span><p>Có bằng chứng thu hồi hợp lệ tại thời điểm kiểm tra; không phải kết luận website an toàn.</p><p>Điểm số chỉ gồm năm thành phần lịch sử, không bao gồm thu hồi. Điểm cao không phủ định kết quả KHÔNG ĐẠT do chứng thư bị thu hồi.</p><pre>{
+  "evidence": [
+    {
+      "issuer_verified": true,
+      "method": "CRL",
+      "next_update": "2026-10-28T10:44:30+00:00",
+      "reason": "S\u1ed1 s\u00ea-ri kh\u00f4ng c\u00f3 trong CRL \u0111\u1ea7y \u0111\u1ee7 c\u1ee7a issuer; ch\u1eef k\u00fd v\u00e0 th\u1eddi h\u1ea1n h\u1ee3p l\u1ec7.",
+      "revoked_at": null,
+      "sha256": "ac0253288900a3f1bfe2a0401fb1bc4ba0cd90cc26ad0135ba395f83890a9b97",
+      "signature_verified": true,
+      "source": "http://c.pki.goog/wr2/75r4ZyA3vA0.crl",
+      "status": "GOOD",
+      "this_update": "2026-10-18T11:44:31+00:00"
+    }
+  ],
+  "reason": "C\u00f3 b\u1eb1ng ch\u1ee9ng thu h\u1ed3i h\u1ee3p l\u1ec7 t\u1ea1i th\u1eddi \u0111i\u1ec3m ki\u1ec3m tra; kh\u00f4ng ph\u1ea3i k\u1ebft lu\u1eadn website an to\u00e0n.",
+  "status": "GOOD"
+}</pre>
+</div>
+</details>
+<details class="detail-panel" id="aia" open="">
+  <summary><span class="panel-icon" aria-hidden="true">⇄</span><span class="panel-label"><span class="panel-title">AIA và nguồn chứng thư</span><span class="panel-description">Bổ sung chuỗi và nguồn dữ liệu TLS</span></span>
+<span class="badge status-neutral" data-status="NOT_CHECKED">CHƯA KIỂM TRA</span><span class="panel-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="panel-body">
+<h3>Bổ sung chuỗi qua AIA</h3>
+<span class="badge status-neutral" data-status="NOT_CHECKED">CHƯA KIỂM TRA</span><p>Chuỗi đã xác minh; không cần tải AIA.</p><pre>{
+  "downloads": [],
+  "reason": "Chu\u1ed7i \u0111\u00e3 x\u00e1c minh; kh\u00f4ng c\u1ea7n t\u1ea3i AIA.",
+  "status": "NOT_CHECKED"
+}</pre><h3>Nguồn thu thập TLS</h3>
+<span class="badge status-neutral" data-status="NOT_CHECKED">CHƯA KIỂM TRA</span><p>Không dùng thu thập TLS chưa tin cậy.</p><pre>{
+  "reason": "Kh\u00f4ng d\u00f9ng thu th\u1eadp TLS ch\u01b0a tin c\u1eady.",
+  "status": "NOT_CHECKED"
+}</pre>
+</div>
+</details>
+<details class="detail-panel" id="evidence" open="">
+  <summary><span class="panel-icon" aria-hidden="true">≡</span><span class="panel-label"><span class="panel-title">Chi tiết kỹ thuật và bằng chứng</span><span class="panel-description">Nguyên nhân, tổng hợp và toàn bộ dữ liệu gốc</span></span>
+<span class="badge status-warning" data-status="WARNING">CẢNH BÁO</span><span class="panel-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="panel-body">
+
+<section class="card findings-card" id="detected-findings" aria-labelledby="findings-title">
+<h2 id="findings-title">VẤN ĐỀ PHÁT HIỆN</h2>
+<article class="finding"><h3>Certificate Transparency · Vấn đề phát hiện khi kiểm tra</h3><dl class="kv-list"><div class="kv-row"><dt>Nguyên nhân</dt><dd><span class="data-value">Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.</span></dd></div><div class="kv-row"><dt>Mức độ ảnh hưởng</dt><dd><span class="data-value">Cần lưu ý theo chính sách hoặc dữ liệu hiện có.</span></dd></div><div class="kv-row"><dt>Khuyến nghị</dt><dd><span class="data-value">Đối chiếu CT Log, ngày hết hạn và trạng thái nhật ký; xác minh thêm bằng công cụ CT đầy đủ.</span></dd></div></dl><details class="technical-details" open=""><summary>Chi tiết kỹ thuật</summary><pre>Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.</pre></details></article>
+</section>
+
+<section class="card summary-card full-width" id="security-summary" aria-labelledby="summary-title"><div class="card-heading"><h2 id="summary-title">Tổng hợp an toàn</h2>
+<span class="badge status-warning" data-status="WARNING">CẢNH BÁO</span></div><dl class="kv-list check-grid"><div class="kv-row"><dt>Thời hạn chứng thư</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Tên miền</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Chuỗi chứng thư</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Chính sách thuật toán</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div><div class="kv-row"><dt>Certificate Transparency</dt><dd>
+<span class="badge status-warning" data-status="WARNING">CẢNH BÁO</span></dd></div><div class="kv-row"><dt>Trạng thái thu hồi</dt><dd>
+<span class="badge status-pass" data-status="PASS">ĐẠT</span></dd></div></dl><div class="summary-final"><strong>KẾT QUẢ CUỐI CÙNG:</strong> 
+<span class="badge status-warning" data-status="WARNING">CẢNH BÁO</span></div><div class="summary-reasons"><h3>Lý do</h3><ul class="reasons"><li><p class="check-message">Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.</p><details class="technical-details" open=""><summary>Chi tiết kỹ thuật</summary><pre>Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.</pre></details></li></ul></div></section>
+<details class="technical-details" open=""><summary>Toàn bộ dữ liệu phân tích (JSON)</summary><pre id="raw-result">{
+  "algorithm_policy": {
+    "algorithm": "EC",
+    "hash_algorithm": "sha256",
+    "hash_rule": {
+      "message": "Allowed signature hash: sha256",
+      "status": "PASS"
+    },
+    "key_size": 256,
+    "key_size_rule": {
+      "message": "Key size meets policy minimum (256 bits)",
+      "status": "PASS"
+    },
+    "public_key": {
+      "message": "Allowed public key algorithm: EC",
+      "status": "PASS"
+    },
+    "reasons": [],
+    "status": "PASS"
+  },
+  "certificate": {
+    "issuer": "CN=WR2,O=Google Trust Services,C=US",
+    "not_after": "2026-12-21T18:38:00+00:00",
+    "not_before": "2026-09-28T18:38:01+00:00",
+    "serial_number": "113008320809552024517172734962922031200",
+    "subject": "CN=*.google.com",
+    "version": "v3"
+  },
+  "chain": {
+    "ca_constraints": "PASS",
+    "certificates": [
+      {
+        "is_trust_anchor": false,
+        "issuer": "CN=WR2,O=Google Trust Services,C=US",
+        "not_after": "2026-12-21T18:38:00+00:00",
+        "not_before": "2026-09-28T18:38:01+00:00",
+        "origin": "M\u00e1y ch\u1ee7 g\u1eedi qua TLS",
+        "role": "Leaf",
+        "subject": "CN=*.google.com"
+      },
+      {
+        "is_trust_anchor": false,
+        "issuer": "CN=GTS Root R1,O=Google Trust Services LLC,C=US",
+        "not_after": "2029-02-20T14:00:00+00:00",
+        "not_before": "2023-12-13T09:00:00+00:00",
+        "origin": "M\u00e1y ch\u1ee7 g\u1eedi qua TLS",
+        "role": "Intermediate #1",
+        "subject": "CN=WR2,O=Google Trust Services,C=US"
+      },
+      {
+        "is_trust_anchor": false,
+        "issuer": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "not_after": "2028-01-28T00:00:42+00:00",
+        "not_before": "2020-06-19T00:00:42+00:00",
+        "origin": "M\u00e1y ch\u1ee7 g\u1eedi qua TLS",
+        "role": "Intermediate #2",
+        "subject": "CN=GTS Root R1,O=Google Trust Services LLC,C=US"
+      },
+      {
+        "is_trust_anchor": true,
+        "issuer": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "not_after": "2028-01-28T12:00:00+00:00",
+        "not_before": "1998-09-01T12:00:00+00:00",
+        "origin": "B\u1ed5 sung t\u1eeb trust store / \u0111\u01b0\u1eddng d\u1eabn \u0111\u00e3 x\u00e1c minh; kh\u00f4ng n\u1eb1m trong chu\u1ed7i m\u00e1y ch\u1ee7 g\u1eedi",
+        "role": "Root CA / Trust Anchor",
+        "subject": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE"
+      }
+    ],
+    "issuer_subject_links": "PASS",
+    "length": 4,
+    "reasons": [],
+    "signature_validation": "PASS",
+    "status": "PASS",
+    "tls_usage": "PASS",
+    "trust_anchor_subject": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+    "trust_explanation": "\u0110\u01b0\u1eddng d\u1eabn \u0111\u00e3 \u0111\u01b0\u1ee3c OpenSSL x\u00e1c minh t\u1edbi CA trong trust store \u0111\u1ed9c l\u1eadp. \u0110i\u1ec3m neo c\u00f3 th\u1ec3 l\u00e0 CA trung gian \u0111\u01b0\u1ee3c tin c\u1eady tr\u1ef1c ti\u1ebfp, kh\u00f4ng nh\u1ea5t thi\u1ebft l\u00e0 root t\u1ef1 k\u00fd.",
+    "trusted_root": "PASS",
+    "validity": "PASS"
+  },
+  "cryptography": {
+    "hash_algorithm": "sha256",
+    "key_size": 256,
+    "public_key_algorithm": "EC",
+    "signature_algorithm": "RSA_WITH_SHA256",
+    "signature_oid": "1.2.840.113549.1.1.11"
+  },
+  "ct": {
+    "inclusion_validation": "VALID",
+    "matched_scts": 2,
+    "reasons": [
+      "Ki\u1ec3m tra CT b\u1ed5 sung: ch\u1eef k\u00fd VALID; inclusion VALID; ch\u01b0a ki\u1ec3m tra consistency v\u1edbi checkpoint \u0111\u1ed9c l\u1eadp."
+    ],
+    "sct_count": 2,
+    "scts": [
+      {
+        "certificate_interval": "PASS",
+        "description": "DigiCert \u0027Sphinx2026h2\u0027",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "log_id": "lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=",
+        "log_id_match": "PASS",
+        "mmd": 86400,
+        "operator": "DigiCert",
+        "reasons": [],
+        "start_interval": "2026-07-01T00:00:00Z",
+        "state": "usable",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "timestamp": "2026-09-28T19:38:28.152000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "url": "https://sphinx.ct.digicert.com/2026h2/",
+        "version": "v1"
+      },
+      {
+        "certificate_interval": "PASS",
+        "description": "Google \u0027Argon2026h2\u0027 log",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "log_id_match": "PASS",
+        "mmd": 86400,
+        "operator": "Google",
+        "reasons": [],
+        "start_interval": "2026-07-01T00:00:00Z",
+        "state": "usable",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "timestamp": "2026-09-28T19:38:27.148000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "url": "https://ct.googleapis.com/logs/us1/argon2026h2/",
+        "version": "v1"
+      }
+    ],
+    "signature_validation": "VALID",
+    "status": "WARNING"
+  },
+  "errors": [],
+  "extensions": {
+    "aia": {
+      "downloads": [],
+      "reason": "Chu\u1ed7i \u0111\u00e3 x\u00e1c minh; kh\u00f4ng c\u1ea7n t\u1ea3i AIA.",
+      "status": "NOT_CHECKED"
+    },
+    "ct_key_source": {
+      "reason": "Danh s\u00e1ch Google CT c\u00f3 ch\u1eef k\u00fd publisher h\u1ee3p l\u1ec7 v\u1edbi kh\u00f3a \u0111\u00e3 pin.",
+      "sha256": "2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988",
+      "status": "VALID",
+      "timestamp": "2026-10-17T13:37:58+00:00"
+    },
+    "inclusion": {
+      "evidence": [
+        {
+          "audit_path": [
+            "rKfo30Qd/sj74No9ZWwgNBiXh8if36s6Kj1qvpdsfpQ=",
+            "7bhcz4G2CaXFAvJRsRYtjByG8N/sEmSl/OeV7lghgOY=",
+            "375OZg6yPyO7FtXQ2qmVM9QQddIqbPOvicv9Izo7Gqc=",
+            "8c1n60oGgFaJYPCbbQrAc++Q0sSpMtfOMWCTTQ6u4pI=",
+            "BvAdSBdIrXHLNxJ+xe5eW7W/dbOZbei4ddi/e6NiZVM=",
+            "FPwXPUWr3IbmLSv2b+ei47262j8xM6dgj+Jk4Ax2sSs=",
+            "WTw90PvZU/T/VYKAMnRLFDMsUyhWevATYvP5QIJcVik=",
+            "bK8aC0NPExawfzuqnTcizY1DcodzIUWzk/bQJGAW4Jc=",
+            "2fT/V+KB+dAfR6Af1Wnty9+l0fiZ26uzYCEwguds6+k=",
+            "GweqhbmJeVmNb/iue7QL1+I9fBRAlWsSDco6Fb6YHIk=",
+            "nzZ2bVUo6e7Ugj26nntHQ/GBQ/PckQoyvaEuPCf678s=",
+            "roUa4Wa7lX6wPMucmDCKw6/k7wiL+5bPs1DErS045LM=",
+            "PVwzVRD8XM4qz/thgVP6FuLZCzg/mDtE+kdtbWXZFQ0=",
+            "WGmIgjbE3MgN4SvwvioPs2d3kOFuhXP7P0/12mOTzjE=",
+            "tfMO6krwMmnfUDlCfGO8kMisCD7Qd9W3zNPzHBcPGPE=",
+            "p3SlRuc9zg9q7+vJYDpxL1oZZpxWs706KqyG2j8tAz4=",
+            "ecsoMQYOtAuYUDz2r/A4r5XyGtDuOOizVi1n3vl8gsY=",
+            "O2LpuD4CwgukGcpzoaXUMQvX+wmjvLyN+zRdgOi3VgA=",
+            "8m9QV2yt9KoxkjmIOuw7xSb/TC9hJqHc0l9W8Usd5Ws=",
+            "tD1UP+vFHa0cWrsUjgvOgdU8sHx5fqxzVChF87aq6gQ=",
+            "vJAL6kX5g7RFZRZDfLLjhs5EYfBsTjPa/kVLaOew+v0=",
+            "Vl6F2znl/4h4kQS+tgvKPxEzn0xMRyXdQo+EXAwkh/w=",
+            "46j0Y3SIiheq0gBzQsE9fcs1Ix7+IIvXSYekTFD5OS4=",
+            "MwE3fAHs1fNh2zhGwjN5rULKuZGjY54Vgbgzfj4PGdQ=",
+            "2NTHD4abbcktqqSmMO5/ByWPBrglODGdT11IflWv6L8=",
+            "1v7CEuOZ42w6Tygq95p1o8WY+ZYN8LN51fwsCOiHE1g=",
+            "nJKUPceplSnJaxpZH6LZcY9zeTdoRfpYkw+VprY2aeU=",
+            "hM04crk6AdJLUHonBjxBgM3kwEBFKg1eZb/V0c9S8b4=",
+            "iaIbpPmkM2JZq/Gt0KOgTARE/eNlySDNeET5pCxgUkk=",
+            "dHtL38eJXUl76xAFn1aM84Ae7+qx/f4hJQUtMAbKFw4=",
+            "Pp+7oZs35zCQVJjVWSiUuxtkz6Fzvn5AIaNDC4UmiJc="
+          ],
+          "consistency": "NOT_VERIFIED",
+          "leaf_hash": "YkvAvuO3eWg4aGr6bscR1vZvpqpY1fTTAXy3CGurBOY=",
+          "leaf_index": 2082536234,
+          "log_id": "lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=",
+          "reason": "SCT c\u00f3 ch\u1eef k\u00fd h\u1ee3p l\u1ec7; leaf kh\u1edbp inclusion proof trong STH c\u00f2n m\u1edbi \u0111\u00e3 x\u00e1c th\u1ef1c. Ch\u01b0a ki\u1ec3m tra consistency/gossip.",
+          "registry_sha256": "2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988",
+          "signed_tree_head": {
+            "sha256_root_hash": "nSoonKIDo5UHxEHbLXIDD9hKolbmuNEdTPVR9TAnfvk=",
+            "timestamp": 1792338571862,
+            "tree_head_signature": "BAMARjBEAiAKBLAaqZqddYkfmDDzM6b4MVBGYLHIv4P8jYyeOV7+VgIgefA7ztQraXjG8vt5cma/T6dXXOP5b8dBjaee0anhRW0=",
+            "tree_size": 2138159628
+          },
+          "source": "https://sphinx.ct.digicert.com/2026h2/ct/v1/",
+          "status": "VALID",
+          "sth_timestamp": 1792338571862,
+          "tree_size": 2138159628
+        },
+        {
+          "audit_path": [
+            "GPfF3RHvu39Ehbrn3hTxuGqPyLR9Ofqp3oF2bmHjYKs=",
+            "mcsOxp4mgqiLLrHOpG8JpTNmHmQTcf04DwASCKacnsY=",
+            "MPs936FjHWWFCZd5xRdH4xgylSHorSSzydw8I0sxbBY=",
+            "MxTPRlNvXLfKTRNDBtwUyNjzstMHRhw+sdB641JdKzI=",
+            "eB+LWiByBm+BCW1UMHuJX+QzLrCz4tUVfVnyOqoq9BU=",
+            "rq4JR6B9u++ao8hvRMY38k0k9RvjnroqR5M+1krLPn4=",
+            "Q4wVG2OMeKCX9Wegl25r/NgnfqF0hd3gqnRyIWnqpB8=",
+            "oRFCQuZaR1wh70u/a/ftglmFqzvYRESIKCJNsx6vUls=",
+            "MqKDcTSJsTd+lhwNXsyOl6wNMXpAH3I3EHsAqSYpces=",
+            "2ieX/mZZ1ha8PAyECeD1abqPu93MpozpkUdlfZMPFWU=",
+            "Ug9JVgdaZD2j+9VUd/fLOYYneWEiLaX42QG6gP0BQuI=",
+            "b6p8hWQyke/qid8+X7XuXlTcT1EXl0cd2KZ+gZ6Nyuc=",
+            "uIuqOnJ9y6cCWoc1W4D4JXQX7vVNvPh6zKC1wsWypdI=",
+            "uCHk/OIvO211p0gpNwOidP1U626WfsZoXHaF89Sd9KM=",
+            "w0pXPGLPhskrnpNfB2u5LNhImIGr13v3aHA6e8iaiso=",
+            "/1MzhyWtMelwR5w+q0kZIWPRWIDwjoxGIMWKUnCVsJo=",
+            "ztriSZ+1NsXeaMS88NFzjdkf+G8ACNhLNF4z7YWwREg=",
+            "0fy4xfnIoN74FMO7U9hZ7n0xO7amf2vxwvEPhSlO4oY=",
+            "WbGlBpA1DndkY27nhSiVhM3nB/jMK/XExwlVRz74Xms=",
+            "uMnPn1Nfq8rLRwYwxBaBFcbJ8DK1faMMOHBW1v0H9YM=",
+            "lyEnLcNBuFF++CE2pfZzbMwaUYvGRrZHLyBmvrVnZN0=",
+            "PzIF37t237v3clFEGkMV4ssnz/VuLdEm2SZWG43INY8=",
+            "aHg92bGr+RCIT8QyOlocrasX9d4YSXP3RQjltLUSYFg=",
+            "8vLH82Hemoi5KlF4+vqHX00r9k82xPJFo0fXonDUlqQ=",
+            "ndoE91AK+JtUm0kqE2Pn2MCK98JNlxDVXDv8xN74cXU=",
+            "XZfhiwW+RTk5Peqh9C9pRC5n2iw+P5SUDb7gZcaEq30=",
+            "7wfmpQokxwUOfP2Nw4V/8S6cDdxOrsqpk+fn+WKFCbI=",
+            "IRMQQA2Q+r0BMEgxCHZyJqemIpu5ZjYaU71B5jrE3os=",
+            "U1YogAXbB7V8I3/QSIv7cQ50/agtffsBG1RkAsIFwBs=",
+            "cURe7rkd05jj7Qk2CbppYcJ8027YazrpDFxg99TxU6Q="
+          ],
+          "consistency": "NOT_VERIFIED",
+          "leaf_hash": "GEBBm84UX1Aaf+LT62jkYh6AdHdRsQ/xZ6Ugx8+Cenc=",
+          "leaf_index": 3334165330,
+          "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+          "reason": "SCT c\u00f3 ch\u1eef k\u00fd h\u1ee3p l\u1ec7; leaf kh\u1edbp inclusion proof trong STH c\u00f2n m\u1edbi \u0111\u00e3 x\u00e1c th\u1ef1c. Ch\u01b0a ki\u1ec3m tra consistency/gossip.",
+          "registry_sha256": "2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988",
+          "signed_tree_head": {
+            "sha256_root_hash": "+/AFk6XzVHuRzIl808swfa+h0ZI3yLLs4285lcPErSw=",
+            "timestamp": 1792338514700,
+            "tree_head_signature": "BAMASDBGAiEA67Y/NgZWS3AI170tLHhB7se8bJsL5TgtFM91dyB+GZcCIQD7ALtr8v4SKLcCGoJ5qMMTYyME9YwAiqT21EMJVq6WhQ==",
+            "tree_size": 3442991577
+          },
+          "source": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/",
+          "status": "VALID",
+          "sth_timestamp": 1792338514700,
+          "tree_size": 3442991577
+        }
+      ],
+      "reason": "K\u1ebft qu\u1ea3 t\u1eebng SCT \u1edf b\u1eb1ng ch\u1ee9ng; gi\u1edbi h\u1ea1n hai truy v\u1ea5n proof, consistency ch\u01b0a c\u00f3 checkpoint \u0111\u1ed9c l\u1eadp.",
+      "status": "VALID"
+    },
+    "revocation": {
+      "evidence": [
+        {
+          "issuer_verified": true,
+          "method": "CRL",
+          "next_update": "2026-10-28T10:44:30+00:00",
+          "reason": "S\u1ed1 s\u00ea-ri kh\u00f4ng c\u00f3 trong CRL \u0111\u1ea7y \u0111\u1ee7 c\u1ee7a issuer; ch\u1eef k\u00fd v\u00e0 th\u1eddi h\u1ea1n h\u1ee3p l\u1ec7.",
+          "revoked_at": null,
+          "sha256": "ac0253288900a3f1bfe2a0401fb1bc4ba0cd90cc26ad0135ba395f83890a9b97",
+          "signature_verified": true,
+          "source": "http://c.pki.goog/wr2/75r4ZyA3vA0.crl",
+          "status": "GOOD",
+          "this_update": "2026-10-18T11:44:31+00:00"
+        }
+      ],
+      "reason": "C\u00f3 b\u1eb1ng ch\u1ee9ng thu h\u1ed3i h\u1ee3p l\u1ec7 t\u1ea1i th\u1eddi \u0111i\u1ec3m ki\u1ec3m tra; kh\u00f4ng ph\u1ea3i k\u1ebft lu\u1eadn website an to\u00e0n.",
+      "status": "GOOD"
+    },
+    "sct_verification": [
+      {
+        "log_id": "lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=",
+        "reason": "Ch\u1eef k\u00fd SCT h\u1ee3p l\u1ec7 v\u1edbi kh\u00f3a log tin c\u1eady; ch\u01b0a ch\u1ee9ng minh inclusion.",
+        "signed_data_sha256": "af8b1be6b736cbddc61817a3f2e9e303068d4fbd8b8d331f2c9fbeaaaf3432a8",
+        "status": "VALID"
+      },
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "reason": "Ch\u1eef k\u00fd SCT h\u1ee3p l\u1ec7 v\u1edbi kh\u00f3a log tin c\u1eady; ch\u01b0a ch\u1ee9ng minh inclusion.",
+        "signed_data_sha256": "06a9a7f728949800e14d303375a509a8a72de8a545131e93e036c5f927075d66",
+        "status": "VALID"
+      }
+    ],
+    "tls_collection": {
+      "reason": "Kh\u00f4ng d\u00f9ng thu th\u1eadp TLS ch\u01b0a tin c\u1eady.",
+      "status": "NOT_CHECKED"
+    }
+  },
+  "hostname": "google.com",
+  "hostname_validation": {
+    "message": "Hostname kh\u1edbp SAN c\u1ee7a certificate.",
+    "requested_hostname": "google.com",
+    "san": [
+      "*.google.com",
+      "*.appengine.google.com",
+      "*.bdn.dev",
+      "*.origin-test.bdn.dev",
+      "*.cloud.google.com",
+      "*.crowdsource.google.com",
+      "*.datacompute.google.com",
+      "*.google.ca",
+      "*.google.cl",
+      "*.google.co.in",
+      "*.google.co.jp",
+      "*.google.co.uk",
+      "*.google.com.ar",
+      "*.google.com.au",
+      "*.google.com.br",
+      "*.google.com.co",
+      "*.google.com.mx",
+      "*.google.com.tr",
+      "*.google.com.vn",
+      "*.google.de",
+      "*.google.es",
+      "*.google.fr",
+      "*.google.hu",
+      "*.google.it",
+      "*.google.nl",
+      "*.google.pl",
+      "*.google.pt",
+      "*.gemini.cloud.google.com",
+      "*.gstatic.com",
+      "*.metric.gstatic.com",
+      "*.gvt1.com",
+      "*.gcpcdn.gvt1.com",
+      "*.gvt2.com",
+      "*.gcp.gvt2.com",
+      "*.url.google.com",
+      "*.youtube-nocookie.com",
+      "*.ytimg.com",
+      "ai.android",
+      "android.com",
+      "*.android.com",
+      "*.flash.android.com",
+      "g.co",
+      "*.g.co",
+      "goo.gl",
+      "www.goo.gl",
+      "google-analytics.com",
+      "*.google-analytics.com",
+      "google.com",
+      "googlecommerce.com",
+      "*.googlecommerce.com",
+      "urchin.com",
+      "*.urchin.com",
+      "youtu.be",
+      "youtube.com",
+      "*.youtube.com",
+      "music.youtube.com",
+      "*.music.youtube.com",
+      "youtubeeducation.com",
+      "*.youtubeeducation.com",
+      "youtubekids.com",
+      "*.youtubekids.com",
+      "yt.be",
+      "*.yt.be",
+      "android.clients.google.com",
+      "*.aistudio.google.com"
+    ],
+    "san_count": 65,
+    "status": "PASS"
+  },
+  "runtime_seconds": 6.7312536999816075,
+  "scan_error": null,
+  "security": {
+    "checks": {
+      "Algorithm Policy": "PASS",
+      "Certificate Chain": "PASS",
+      "Certificate Transparency": "WARNING",
+      "Hostname": "PASS",
+      "Revocation": "PASS",
+      "Validity": "PASS"
+    },
+    "reasons": [
+      "Ki\u1ec3m tra CT b\u1ed5 sung: ch\u1eef k\u00fd VALID; inclusion VALID; ch\u01b0a ki\u1ec3m tra consistency v\u1edbi checkpoint \u0111\u1ed9c l\u1eadp."
+    ],
+    "status": "WARNING"
+  },
+  "target": "google.com:443",
+  "validity": {
+    "current_time": "2026-10-18T15:49:30.509655+00:00",
+    "message": "Certificate \u0111ang trong kho\u1ea3ng th\u1eddi gian c\u00f3 hi\u1ec7u l\u1ef1c.",
+    "not_after": "2026-12-21T18:38:00+00:00",
+    "not_before": "2026-09-28T18:38:01+00:00",
+    "status": "VALID"
+  }
+}</pre></details>
+</div>
+</details>
+</div>
+<p class="result-bottom"><span>Kết quả phản ánh chứng thư tại thời điểm kiểm tra; không xác nhận an toàn nội dung website.</span><a class="back-link" href="/">Kiểm tra tên miền khác →</a></p>
+
+</main>
+  <footer class="site-footer container">
+    <span>DT007 · Trình xác minh chuỗi chứng thư số và chính sách thuật toán</span>
+    <span>Công cụ nghiên cứu · Giao diện chạy tại localhost</span>
+  </footer>
+
+</body></html>

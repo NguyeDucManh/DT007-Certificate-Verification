@@ -1,0 +1,20 @@
+{
+  "pdf_pages": 27,
+  "within_20_30_pages": true,
+  "sections": 27,
+  "slides": 14,
+  "pytest": {
+    "tests": 426,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "study_source": "C:\\Users\\ADMIN\\Downloads\\DT007\\reports\\research_expanded\\post_tls_20261010\\summary.json",
+  "study_sha256": "d322dc5435d7ad1c6affa9d539ee245fa20d8a6ace6d1b73683dcfe0e31eaa34",
+  "artifacts_sha256": {
+    "scientific_report.pdf": "a53481f2596dc104af4337ebf3c02ab357a08493d081290fc8aa7efca81ee7c8",
+    "scientific_report.html": "10faa36c51a484235e501fcec6f42ccd05c46dc745cd05eece6f8b9842e156d5",
+    "defense_slides.html": "5cb766458cdce61f34d119e69ad4e6c992ea10c60f4e459d3c040df41d106635"
+  },
+  "limits": "Draft technical report; student details, institutional formatting and oral/video defense remain to complete. Browser interaction not verified by PDF page count."
+}

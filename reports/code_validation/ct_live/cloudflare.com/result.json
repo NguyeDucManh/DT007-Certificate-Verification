@@ -1,0 +1,334 @@
+{
+  "extensions": {
+    "tls_collection": {
+      "status": "NOT_CHECKED",
+      "reason": "Không dùng thu thập TLS chưa tin cậy."
+    },
+    "revocation": {
+      "status": "GOOD",
+      "reason": "Có bằng chứng thu hồi hợp lệ tại thời điểm kiểm tra; không phải kết luận website an toàn.",
+      "evidence": [
+        {
+          "method": "CRL",
+          "status": "GOOD",
+          "reason": "Số sê-ri không có trong CRL đầy đủ của issuer; chữ ký và thời hạn hợp lệ.",
+          "source": "http://c.pki.goog/we1/gAooAfzx9uw.crl",
+          "sha256": "8c7c1ab4b37e775d4caf2e0df12ee33d2ccf40043b58f0857880594307fc5fb9",
+          "signature_verified": true,
+          "issuer_verified": true,
+          "this_update": "2026-10-10T07:24:45+00:00",
+          "next_update": "2026-10-20T06:24:44+00:00",
+          "revoked_at": null
+        }
+      ]
+    },
+    "aia": {
+      "status": "NOT_CHECKED",
+      "reason": "Chuỗi đã xác minh; không cần tải AIA.",
+      "downloads": []
+    },
+    "sct_verification": [
+      {
+        "log_id": "wjF+V0UZo0XufzjespBB68fCIVoiv3/Vta12mtkOUs0=",
+        "status": "VALID",
+        "reason": "Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.",
+        "signed_data_sha256": "ea2071b5025aad7eb596961b8ad305cfcf1ffe0b88f023f42f32cec47c4cff6d"
+      },
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "status": "VALID",
+        "reason": "Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.",
+        "signed_data_sha256": "a6007800deb92bcf595fede11199e3966254243d38109bec464fcb601bc067f9"
+      }
+    ],
+    "inclusion": {
+      "status": "VALID",
+      "reason": "Kết quả từng SCT ở bằng chứng; giới hạn hai truy vấn proof, consistency chưa có checkpoint độc lập.",
+      "evidence": [
+        {
+          "status": "VALID",
+          "reason": "SCT có chữ ký hợp lệ; leaf khớp inclusion proof trong STH còn mới đã xác thực. Chưa kiểm tra consistency/gossip.",
+          "log_id": "wjF+V0UZo0XufzjespBB68fCIVoiv3/Vta12mtkOUs0=",
+          "consistency": "NOT_VERIFIED",
+          "leaf_hash": "6yFdx7YOBMQUvNrfv6GQHEoQBElbVsjGg1sbm1KMDl4=",
+          "tree_size": 2152765955,
+          "leaf_index": 1875017730,
+          "sth_timestamp": 1791622199778,
+          "source": "https://wyvern.ct.digicert.com/2026h2/ct/v1/",
+          "signed_tree_head": {
+            "tree_size": 2152765955,
+            "timestamp": 1791622199778,
+            "sha256_root_hash": "FNt1wSjKoToV9QkNv9YVb7k066FrSzckxesyiQ2NQTo=",
+            "tree_head_signature": "BAMARzBFAiA4Au90K2FYqlbM+S+pbIIsP+SmJuW6pehHX0Gpy9usEwIhAIjiZqd2AUW+I42ghvHoyAVUcl1rm3l6BRnVPPo3F48J"
+          },
+          "audit_path": [
+            "OEv2QS0TSIAn3E2haDM35bPItgrLE+ut8iwlW0uvO7Q=",
+            "VSUPcdD2L8JfHtA4SmEzznl3o8x/y6dsFsV79BslsPs=",
+            "PEIAAJx3cbwtb+UF0vfebdKpTBclzLRjMJ1YalzAqN4=",
+            "01fjC2obBwKdksmeODcW5DXFUz1qntf0YsIlnCut92s=",
+            "VLFyXCW3ycBQ2e+rdT/gBHznhs7nzHNOSa4l+KEanqc=",
+            "ocFxq+7pGp2hQrPNFs1UqGJB5dH3QesUfnR7dbkBIcI=",
+            "t+RPM6No9dDxJH9EZfnKdo0VbheWbbEBPkUm1KVlOek=",
+            "y2k9yeaNrBoMh0NQjmVZwz4Qqtyn0lineLOR+1IqkXc=",
+            "c9NH47L0hUT4lii77TWgiG4BhXyv73Eht71n/a1tieE=",
+            "tFQ0y9uKNfQMGaFl0vWZk46LM04rBT0F4/8Xdx4KRy4=",
+            "yAMua9/6u3SHtA7M5KmlRC4nUfVGeWeM8VbYH/K0CA0=",
+            "40pS0f0hWwzc7YoSyyH4wzwpYimJ781QMP0dwopIKd4=",
+            "9hzl7/DKapQLymLCT38a+GWXTTq5c5isjZA1ZHxIOPc=",
+            "j+A8xe61+cGo6Su5zsAuqhbpZImzSA3ghWk/sGFXies=",
+            "4UbGaOnIx6Tj1okt3f/TPPpM1biqRqEFgcvTV5nflqo=",
+            "9tAxZBUPh6p4h+B9AxV/0vcpKxSMMbxTztwN4mr5EQY=",
+            "oucsPEUBevaz2jtqSPM5Q85lA+J8mibrmM2gWORvnhU=",
+            "7+NZ2bC1BM3NZSUcPfyWxGSzkAXnx/zjPmxUMXG1ARQ=",
+            "8sbOjo7hJeHfTm9IYBtAa2IaJ2L70IcNr/YlJ/CVVl8=",
+            "dJv8/MhXovO86t0xilakg23QUdcSksZsKu3EFf/ucFU=",
+            "HLhiB4pR3vb6nVm5CyxIKkTCBeqeptm9OiqjQMuozb0=",
+            "ZoKtQKQojEt/PlNR7n7/R9tYGxHHFcwvvqsHynx+6qI=",
+            "5543hvu8J+c6vpbYB9fPbLj+nftpHz7zwLusSQlCRSQ=",
+            "y3tNlUf5w9L+Nb11/p55a8qiJKatBx4EWlDj7prVV7w=",
+            "/5IJ2OABITOz8DHfBfYhkktw0QaQGuVwvC13b9RjZ3o=",
+            "H9c7xMxP3j18K7B6ES7kimZfkgpunBRQ9TaX1jVftdQ=",
+            "euUsVQrVUtwr5uxzl5alhzz6yy5uL9VJ78CHBR3wHks=",
+            "BzF6pxwpefuBjisoKNWTCAFsffg3oIn7TqyAwOW94p4=",
+            "X863zoqpT2GOTsHFPVR7cmAJlrtiF4/pkbLEJzrZ15Q=",
+            "cYpNa6sP5nfmeDjIvnFXoFzRbsRlfI7z9qhewZsM6S4=",
+            "VLYpNUbURj5yoE3JhKFCc955gqPB+R0OkaBVPVnCJfQ=",
+            "ZNQMaTCENjFSH0NEwEpcO6hI3Gexe9ACbv3Tuz8iA1Y="
+          ],
+          "registry_sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+        },
+        {
+          "status": "VALID",
+          "reason": "SCT có chữ ký hợp lệ; leaf khớp inclusion proof trong STH còn mới đã xác thực. Chưa kiểm tra consistency/gossip.",
+          "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+          "consistency": "NOT_VERIFIED",
+          "leaf_hash": "4kk4qQ/linZERQv4Q2k7F/vMZezGOn1pLr10bYPyr8c=",
+          "tree_size": 3423873120,
+          "leaf_index": 2915431221,
+          "sth_timestamp": 1791622142656,
+          "source": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/",
+          "signed_tree_head": {
+            "tree_size": 3423873120,
+            "timestamp": 1791622142656,
+            "sha256_root_hash": "EIskCyrQR1aymRjWWSPtLe6lFTpmR0PN/57NrlEDmis=",
+            "tree_head_signature": "BAMARjBEAiAAxabGdtEANGzmQpptyuzZnnNCBaVkpGgeM//vfbBvSQIgPGa20gvMPNH+gYTSn23K89rpyoXbVsth1ZTuHl3eK7w="
+          },
+          "audit_path": [
+            "4uEDBuvTcKxR1XcvLUHl3iOxg7mI/Fl0SoAfvvvBxmM=",
+            "p0AXCOFj+nK/pjPJvKa9Hyk4fkn8sSNBy1YhzgjfxuU=",
+            "fu0HiPmA/ymyLloj7YdJNzjQD+AMZpMzh0KV/ufBLb4=",
+            "3sZfPmMdY7Mw7HlP/Ywv+pQa6zDp4zTgu+dbrnsuUJk=",
+            "rjDWsFSP6QfRHxv22v5cVhXJN7elORkugbpytDc/rBo=",
+            "IN4thzTyFNNhNUEx6G19qUjmiO8LDev26QySeGO+5wo=",
+            "QRRgD5iYBazaFqvSNizz5NkIohS0NYhpOFaqwA2Vfjo=",
+            "gilmXDrHslU+Yk7lCrJ2loM0H/228gO4NPvjYnEnYM4=",
+            "JQWjzpIb36lYekqC09PE1JOtRDZuAiNtiy2x7PfJ/ME=",
+            "3cQi35bGEfKKbSb5eDEi+TUl7CjyVo19NA0I99RUBnk=",
+            "gvPBXZ8eJOaMeZU50KASqXa5r+NHvHLbXAFmsAwDZoE=",
+            "f4nOA13u2iXq1tr+QieDE9Y0vfScwkLZFVjMvlxXnGY=",
+            "Tq0wJhao2cmL6gBvGSEDhBrOn9stg2t0dZYIqmg9iuA=",
+            "VlanrCj1084+WsA1YyIYiVENuUSW4FYgBxGfPgc/U30=",
+            "kwDn53gaPPLVMJ1F7j0pVgOc/w7LJLO2WLUxwL1nnuQ=",
+            "H4WQQnxUH1ma3s1HETdzPIuq3JGsivMK7Eipa/lJqYw=",
+            "Hp73xfFFAqM6LdsaQi6QhasimELM8S606Oi6fEx4ZV8=",
+            "WsO1i5hpyzfI+mHvFY/Z2y2OM8D4JmpNa4n4k6T9/zQ=",
+            "cKJOVh8vzG8yZBRnR69zqeSbySFGM+WjdRh3dnzYzWE=",
+            "qm2GtKuBym3w/ueiD1EB/i/1kPClGZzTXkQdDixPOik=",
+            "Cc5Yq4OXfdyZ1FHAuS7heZZaymNRNdMY+1IBLkKShbU=",
+            "gWBxAhm472z7LJA2zBm9DXOfmUQgYa/prIFrZ6bXLZg=",
+            "dyuP/9M7cF5KbGVNBMkU1OzNNWcf4IdxAao9V9V0mZ4=",
+            "fWz5UOVtr/CA5xZNFxmT2eOComxuc6o8vaoN78JG78c=",
+            "fioQjpwbKC+PPj2oTF+HfqYBfyNSLNXN1NHrbW5Tn5k=",
+            "3ur/2aQiKorGwkHCeHowP6JBWNmsEG1IjZOixRMYMSg=",
+            "vVgq9OVYcYCbsgQ0do9iYBNQxjm5FUp9sSjtPRP/7DI=",
+            "16VJ6uTLVV6HIAkvXMMUFssWbSxZ/U6mYF/IEpRLBLs=",
+            "Lk5q27J/Zs+hNazxAvTGP7NGD+rT58WdbvSnRylpBFU=",
+            "EXrkToMYUjmvrjWMNpuUlN7ojPkxW/gnzdPqRV7WQBY=",
+            "FhnFneXnAsUPSxQ6vpJvfThCIbYSpxlNTmFJWqJcmgg=",
+            "cURe7rkd05jj7Qk2CbppYcJ8027YazrpDFxg99TxU6Q="
+          ],
+          "registry_sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+        }
+      ]
+    },
+    "ct_key_source": {
+      "status": "VALID",
+      "reason": "Danh sách Google CT có chữ ký publisher hợp lệ với khóa đã pin.",
+      "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32",
+      "timestamp": "2026-10-09T13:41:13+00:00"
+    }
+  },
+  "hostname": "cloudflare.com",
+  "target": "cloudflare.com:443",
+  "runtime_seconds": 6.796108199981973,
+  "scan_error": null,
+  "certificate": {
+    "subject": "CN=cloudflare.com",
+    "issuer": "CN=WE1,O=Google Trust Services,C=US",
+    "serial_number": "283175262338558411663964591884949194155",
+    "version": "v3",
+    "not_before": "2026-09-05T22:29:39+00:00",
+    "not_after": "2026-12-04T23:29:33+00:00"
+  },
+  "hostname_validation": {
+    "requested_hostname": "cloudflare.com",
+    "san_count": 5,
+    "san": [
+      "cloudflare.com",
+      "ns.cloudflare.com",
+      "*.ns.cloudflare.com",
+      "*.secondary.cloudflare.com",
+      "secondary.cloudflare.com"
+    ],
+    "status": "PASS",
+    "message": "Hostname khớp SAN của certificate."
+  },
+  "validity": {
+    "status": "VALID",
+    "message": "Certificate đang trong khoảng thời gian có hiệu lực.",
+    "not_before": "2026-09-05T22:29:39+00:00",
+    "not_after": "2026-12-04T23:29:33+00:00",
+    "current_time": "2026-10-10T08:49:57.552905+00:00"
+  },
+  "cryptography": {
+    "public_key_algorithm": "EC",
+    "key_size": 256,
+    "signature_algorithm": "ECDSA_WITH_SHA256",
+    "signature_oid": "1.2.840.10045.4.3.2",
+    "hash_algorithm": "sha256"
+  },
+  "chain": {
+    "length": 4,
+    "certificates": [
+      {
+        "role": "Leaf",
+        "subject": "CN=cloudflare.com",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=WE1,O=Google Trust Services,C=US",
+        "not_before": "2026-09-05T22:29:39+00:00",
+        "not_after": "2026-12-04T23:29:33+00:00"
+      },
+      {
+        "role": "Intermediate #1",
+        "subject": "CN=WE1,O=Google Trust Services,C=US",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=GTS Root R4,O=Google Trust Services LLC,C=US",
+        "not_before": "2023-12-13T09:00:00+00:00",
+        "not_after": "2029-02-20T14:00:00+00:00"
+      },
+      {
+        "role": "Intermediate #2",
+        "subject": "CN=GTS Root R4,O=Google Trust Services LLC,C=US",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "not_before": "2023-11-15T03:43:21+00:00",
+        "not_after": "2028-01-28T00:00:42+00:00"
+      },
+      {
+        "role": "Root CA / Trust Anchor",
+        "subject": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "origin": "Bổ sung từ trust store / đường dẫn đã xác minh; không nằm trong chuỗi máy chủ gửi",
+        "is_trust_anchor": true,
+        "issuer": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "not_before": "1998-09-01T12:00:00+00:00",
+        "not_after": "2028-01-28T12:00:00+00:00"
+      }
+    ],
+    "issuer_subject_links": "PASS",
+    "signature_validation": "PASS",
+    "ca_constraints": "PASS",
+    "validity": "PASS",
+    "tls_usage": "PASS",
+    "trusted_root": "PASS",
+    "status": "PASS",
+    "reasons": [],
+    "trust_anchor_subject": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+    "trust_explanation": "Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký."
+  },
+  "algorithm_policy": {
+    "algorithm": "EC",
+    "key_size": 256,
+    "hash_algorithm": "sha256",
+    "public_key": {
+      "status": "PASS",
+      "message": "Allowed public key algorithm: EC"
+    },
+    "key_size_rule": {
+      "status": "PASS",
+      "message": "Key size meets policy minimum (256 bits)"
+    },
+    "hash_rule": {
+      "status": "PASS",
+      "message": "Allowed signature hash: sha256"
+    },
+    "status": "PASS",
+    "reasons": []
+  },
+  "ct": {
+    "sct_count": 2,
+    "matched_scts": 2,
+    "signature_validation": "VALID",
+    "inclusion_validation": "VALID",
+    "status": "WARNING",
+    "scts": [
+      {
+        "log_id": "wjF+V0UZo0XufzjespBB68fCIVoiv3/Vta12mtkOUs0=",
+        "version": "v1",
+        "operator": "DigiCert",
+        "description": "DigiCert 'Wyvern2026h2'",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://wyvern.ct.digicert.com/2026h2/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-05T23:29:40.554000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      },
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "version": "v1",
+        "operator": "Google",
+        "description": "Google 'Argon2026h2' log",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://ct.googleapis.com/logs/us1/argon2026h2/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-05T23:29:40.535000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      }
+    ],
+    "reasons": [
+      "Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập."
+    ]
+  },
+  "security": {
+    "status": "WARNING",
+    "checks": {
+      "Validity": "PASS",
+      "Hostname": "PASS",
+      "Certificate Chain": "PASS",
+      "Algorithm Policy": "PASS",
+      "Certificate Transparency": "WARNING",
+      "Revocation": "PASS"
+    },
+    "reasons": [
+      "Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập."
+    ]
+  },
+  "errors": [],
+  "checked_at": "2026-10-10T08:49:57.552877+00:00"
+}

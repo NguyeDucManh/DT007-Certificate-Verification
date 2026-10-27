@@ -1,0 +1,36 @@
+{
+  "protected_files": {
+    "experiments/synthetic_cases.py": {
+      "before": "c79ed4ae5937e3b367928586dbbaa31551e5d1afe3973b67afabcd1961e4591b",
+      "after": "c79ed4ae5937e3b367928586dbbaa31551e5d1afe3973b67afabcd1961e4591b",
+      "unchanged": true
+    },
+    "experiments/test_cases.json": {
+      "before": "43210e8ed19df5b33571bb15ebd572b68b074d69aa4ee65c331b6c8db7df7c0d",
+      "after": "43210e8ed19df5b33571bb15ebd572b68b074d69aa4ee65c331b6c8db7df7c0d",
+      "unchanged": true
+    },
+    "config/algorithm_policy.json": {
+      "before": "e3c408eeea3b32b7cd956428d7461fac36faf0b9f5ab3c87479f5b044be02981",
+      "after": "e3c408eeea3b32b7cd956428d7461fac36faf0b9f5ab3c87479f5b044be02981",
+      "unchanged": true
+    },
+    "data/log_list.json": {
+      "before": "d0da723b9957e4f74f024278e7311c422e09b6c6452c8457c8dbf9a29f2817b9",
+      "after": "d0da723b9957e4f74f024278e7311c422e09b6c6452c8457c8dbf9a29f2817b9",
+      "unchanged": true
+    },
+    "reports/research_results/raw_results.csv": {
+      "before": "49a33b8a3dd36e1028cb74105131e631cab148c98880e96e712bd11b4b368fab",
+      "after": "49a33b8a3dd36e1028cb74105131e631cab148c98880e96e712bd11b4b368fab",
+      "unchanged": true
+    },
+    "reports/research_expanded/post_tls_20261010/raw_results.csv": {
+      "before": "d22d0ae3afb9fd8de1c662ab7f3abb5b768cf71fc8967b95ea2f173b0a71409b",
+      "after": "d22d0ae3afb9fd8de1c662ab7f3abb5b768cf71fc8967b95ea2f173b0a71409b",
+      "unchanged": true
+    }
+  },
+  "all_unchanged": true,
+  "scientific_pdf_unchanged": true
+}

@@ -1,0 +1,45 @@
+{
+  "modified_files": [
+    "static/css/style.css",
+    "templates/index.html",
+    "templates/result.html"
+  ],
+  "backend_or_js_changed": false,
+  "pytest": {
+    "tests": 539,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "browser_passed": true,
+  "browser_checks": 43,
+  "viewports": [
+    390,
+    768,
+    1366,
+    1920
+  ],
+  "demo_passed": 14,
+  "screenshots_before": "reports/color_refresh/before",
+  "screenshots_after": "reports/color_refresh/after",
+  "contrast": {
+    "method": "sRGB relative luminance contrast on specified solid foreground/background pairs",
+    "ratios": {
+      "PASS": 6.49,
+      "WARNING": 6.37,
+      "FAIL": 6.8,
+      "ERROR": 6.91,
+      "UNKNOWN": 6.5,
+      "NOT_CHECKED": 6.74,
+      "NOT_VERIFIED": 6.17,
+      "UNSUPPORTED": 6.6,
+      "PRIMARY_BUTTON": 6.7
+    },
+    "all_at_least_4_5": true
+  },
+  "preservation": {
+    "files_checked": 126,
+    "changed": [],
+    "preserved": true
+  }
+}

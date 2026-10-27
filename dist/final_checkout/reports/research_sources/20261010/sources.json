@@ -1,0 +1,33 @@
+{
+  "paper_crossref.json": {
+    "url": "https://api.crossref.org/works/10.1093/cybsec/tyaf018",
+    "retrieved_utc": "2026-10-10T06:38:53.722313+00:00",
+    "http_status": 200,
+    "final_url": "https://api.crossref.org/works/10.1093/cybsec/tyaf018",
+    "sha256": "4555c32ca93b27ad0e8e7064ee7333d5f28f42a0021481599fdd0339e7de4500",
+    "size_bytes": 18916
+  },
+  "journal_about.html": {
+    "url": "https://academic.oup.com/cybersecurity/pages/About",
+    "retrieved_utc": "2026-10-10T06:38:54.623230+00:00",
+    "http_status": 403,
+    "final_url": "https://academic.oup.com/cybersecurity/pages/About",
+    "error": "403 Client Error: Forbidden for url: https://academic.oup.com/cybersecurity/pages/About"
+  },
+  "ct_log_lists.md": {
+    "url": "https://raw.githubusercontent.com/GoogleChrome/CertificateTransparency/main/log_lists.md",
+    "retrieved_utc": "2026-10-10T06:38:54.883438+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/GoogleChrome/CertificateTransparency/main/log_lists.md",
+    "sha256": "d12796227cddb76c549a90245e7015197127561d43a47fc29fd2da6b69b6a62c",
+    "size_bytes": 3351
+  },
+  "ct_log_list_schema.json": {
+    "url": "https://www.gstatic.com/ct/log_list/v3/log_list_schema.json",
+    "retrieved_utc": "2026-10-10T06:38:55.498290+00:00",
+    "http_status": 200,
+    "final_url": "https://www.gstatic.com/ct/log_list/v3/log_list_schema.json",
+    "sha256": "a391f85bd3cd2ada41dbaa73845d0196cb6f56ecaaa7cdc4d4f33aefbbf53fbf",
+    "size_bytes": 10726
+  }
+}

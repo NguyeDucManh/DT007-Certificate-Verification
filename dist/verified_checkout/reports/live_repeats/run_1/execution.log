@@ -1,0 +1,47 @@
+========================================
+ DT007 - EXPERIMENT RUNNER
+========================================
+
+Total cases                : 19
+Evaluated                  : 19
+Correct                    : 19
+Incorrect                  : 0
+Errors / Skipped           : 0 / 0
+Accuracy                   : 100.0000 %
+Misconfiguration Coverage  : 100.0000 %
+False Positives            : 0
+False Negatives            : 0
+False Positive Rate        : 0.0000 %
+False Negative Rate        : 0.0000 %
+Runtime Average            : 0.0555 s
+Runtime Median             : 0.0026 s
+Runtime Min                : 0.0020 s
+Runtime Max                : 0.2301 s
+
+Results:
+reports\live_repeats\run_1\results.csv
+
+Summary:
+reports\live_repeats\run_1\summary.json
+
+========================================
+[PASS] case_001 google.com (actual=WARNING, expected=PASS|WARNING)
+[PASS] case_002 github.com (actual=WARNING, expected=PASS|WARNING)
+[PASS] case_003 cloudflare.com (actual=WARNING, expected=PASS|WARNING)
+[PASS] case_004 microsoft.com (actual=WARNING, expected=PASS|WARNING)
+[PASS] case_005 wikipedia.org (actual=WARNING, expected=PASS|WARNING)
+[PASS] case_101 EXPIRED_CERTIFICATE (actual=FAIL, expected=FAIL)
+[PASS] case_102 NOT_YET_VALID_CERTIFICATE (actual=FAIL, expected=FAIL)
+[PASS] case_103 HOSTNAME_MISMATCH (actual=FAIL, expected=FAIL)
+[PASS] case_104 RSA_1024 (actual=FAIL, expected=FAIL)
+[PASS] case_105 SHA1_SIGNATURE (actual=FAIL, expected=FAIL)
+[PASS] case_106 MD5_SIGNATURE (actual=FAIL, expected=FAIL)
+[PASS] case_107 BROKEN_CHAIN (actual=FAIL, expected=FAIL)
+[PASS] case_108 INVALID_SIGNATURE (actual=FAIL, expected=FAIL)
+[PASS] case_109 NON_CA_INTERMEDIATE (actual=FAIL, expected=FAIL)
+[PASS] case_110 SELF_SIGNED_LEAF (actual=FAIL, expected=FAIL)
+[PASS] case_111 UNKNOWN_CT_LOG (actual=FAIL, expected=FAIL)
+[PASS] case_112 RETIRED_CT_LOG (actual=FAIL, expected=FAIL)
+[PASS] case_113 SCT_TIMESTAMP_OUTSIDE_INTERVAL (actual=WARNING, expected=WARNING)
+[PASS] case_114 NO_SCT (actual=WARNING, expected=WARNING)
+

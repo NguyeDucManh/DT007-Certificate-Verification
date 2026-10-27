@@ -1,0 +1,5 @@
+2026/10/10-14:08:06.025 5230 Creating DB C:\Users\ADMIN\Downloads\DT007\.cache\browser_1a6b2e8685054818a0cc31d4aea8f5e7\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/10/10-14:08:06.060 5230 Reusing MANIFEST C:\Users\ADMIN\Downloads\DT007\.cache\browser_1a6b2e8685054818a0cc31d4aea8f5e7\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/10/10-14:08:07.399 5878 Level-0 table #5: started
+2026/10/10-14:08:07.402 5878 Level-0 table #5: 683273 bytes OK
+2026/10/10-14:08:07.404 5878 Delete type=0 #3

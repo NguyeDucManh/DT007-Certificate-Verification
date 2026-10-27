@@ -1,0 +1,36 @@
+{
+  "modified_ui_files": [
+    "templates/base.html",
+    "templates/index.html",
+    "templates/result.html",
+    "templates/demo.html",
+    "static/css/style.css",
+    "static/js/main.js"
+  ],
+  "backend_python_modified": false,
+  "new_verification_script": "reports/ui_refresh/ui_browser_check.py",
+  "pytest": {
+    "tests": 539,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pytest_evidence": "reports/ui_refresh/full_verified",
+  "initial_full_suite": "538 passed, 1 localhost TLS timeout; preserved in full_suite; isolated recheck and final suite passed without engine/test changes",
+  "browser_checks": 43,
+  "browser_passed": true,
+  "viewports": [
+    390,
+    768,
+    1366,
+    1920
+  ],
+  "screenshots_before": "reports/ui_refresh/before_matrix",
+  "screenshots_after": "reports/ui_refresh/after_matrix",
+  "protected_hashes": {
+    "checked": 88,
+    "changed": [],
+    "preserved": true
+  },
+  "research_zip_unchanged": true
+}

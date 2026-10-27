@@ -1,0 +1,440 @@
+{
+  "created_utc": "2026-10-10T06:37:49.071034+00:00",
+  "python": "3.14.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "repeats": 3,
+  "observations": 114,
+  "total_wall_seconds_including_setup": 2.183167899987893,
+  "setups": [
+    {
+      "repeat": 1,
+      "profile": "baseline",
+      "wall_seconds": 0.10739439999451861,
+      "cpu_seconds": 0.109375,
+      "rss_after_bytes": 36216832
+    },
+    {
+      "repeat": 1,
+      "profile": "extended",
+      "wall_seconds": 0.17693630000576377,
+      "cpu_seconds": 0.15625,
+      "rss_after_bytes": 38240256
+    },
+    {
+      "repeat": 2,
+      "profile": "extended",
+      "wall_seconds": 0.23022619998664595,
+      "cpu_seconds": 0.203125,
+      "rss_after_bytes": 38457344
+    },
+    {
+      "repeat": 2,
+      "profile": "baseline",
+      "wall_seconds": 0.11571209999965504,
+      "cpu_seconds": 0.125,
+      "rss_after_bytes": 38768640
+    },
+    {
+      "repeat": 3,
+      "profile": "baseline",
+      "wall_seconds": 0.13167629999225028,
+      "cpu_seconds": 0.140625,
+      "rss_after_bytes": 38912000
+    },
+    {
+      "repeat": 3,
+      "profile": "extended",
+      "wall_seconds": 0.10534969999571331,
+      "cpu_seconds": 0.109375,
+      "rss_after_bytes": 39034880
+    }
+  ],
+  "profiles": {
+    "baseline": {
+      "runs": [
+        {
+          "repeat": 1,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 71.42857142857143,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "agreement_percent": 78.94736842105263,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 0.3034156000067014,
+          "wall_mean_seconds": 0.015969242105615865,
+          "synthetic_wall_mean_seconds": 0.0032276785724596785,
+          "control_wall_mean_seconds": 0.051645619998453185,
+          "cpu_total_seconds": 0.28125,
+          "rss_boundary_max_bytes": 38195200
+        },
+        {
+          "repeat": 2,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 71.42857142857143,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "agreement_percent": 78.94736842105263,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 0.3068415999878198,
+          "wall_mean_seconds": 0.01614955789409578,
+          "synthetic_wall_mean_seconds": 0.0028516642819990273,
+          "control_wall_mean_seconds": 0.05338366000796668,
+          "cpu_total_seconds": 0.3125,
+          "rss_boundary_max_bytes": 38912000
+        },
+        {
+          "repeat": 3,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 71.42857142857143,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "agreement_percent": 78.94736842105263,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 0.21470630000112578,
+          "wall_mean_seconds": 0.01130033157900662,
+          "synthetic_wall_mean_seconds": 0.0029073857128553626,
+          "control_wall_mean_seconds": 0.03480058000423014,
+          "cpu_total_seconds": 0.21875,
+          "rss_boundary_max_bytes": 39034880
+        }
+      ],
+      "FP": 0,
+      "FN": 6,
+      "positive_completed": 36,
+      "controls_completed": 15,
+      "descriptive": {
+        "coverage_percent": {
+          "n": 3,
+          "mean": 71.42857142857143,
+          "sample_std": 0.0,
+          "min": 71.42857142857143,
+          "max": 71.42857142857143,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            71.42857142857143,
+            71.42857142857143
+          ]
+        },
+        "misconfiguration_coverage_percent": {
+          "n": 3,
+          "mean": 76.92307692307692,
+          "sample_std": 0.0,
+          "min": 76.92307692307692,
+          "max": 76.92307692307692,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            76.92307692307692,
+            76.92307692307692
+          ]
+        },
+        "wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.014473043859572755,
+          "sample_std": 0.0027491281995089194,
+          "min": 0.01130033157900662,
+          "max": 0.01614955789409578,
+          "cv_percent": 18.994817028006118,
+          "t95_mean_interval": [
+            0.007643830824479531,
+            0.02130225689466598
+          ]
+        },
+        "synthetic_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.0029955761891046896,
+          "sample_std": 0.00020292820585977953,
+          "min": 0.0028516642819990273,
+          "max": 0.0032276785724596785,
+          "cv_percent": 6.774262881306658,
+          "t95_mean_interval": [
+            0.002491474580131619,
+            0.00349967779807776
+          ]
+        },
+        "control_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.046609953336883336,
+          "sample_std": 0.010264071787119999,
+          "min": 0.03480058000423014,
+          "max": 0.05338366000796668,
+          "cv_percent": 22.02120159386181,
+          "t95_mean_interval": [
+            0.021112585533427045,
+            0.07210732114033963
+          ]
+        },
+        "cpu_total_seconds": {
+          "n": 3,
+          "mean": 0.2708333333333333,
+          "sample_std": 0.047735163489123336,
+          "min": 0.21875,
+          "max": 0.3125,
+          "cv_percent": 17.62529113444554,
+          "t95_mean_interval": [
+            0.152252613528975,
+            0.3894140531376916
+          ]
+        }
+      }
+    },
+    "extended": {
+      "runs": [
+        {
+          "repeat": 1,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 100.0,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 100.0,
+          "agreement_percent": 100.0,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 0.0950368000776507,
+          "wall_mean_seconds": 0.005001936846192142,
+          "synthetic_wall_mean_seconds": 0.002637607147335075,
+          "control_wall_mean_seconds": 0.01162206000299193,
+          "cpu_total_seconds": 0.109375,
+          "rss_boundary_max_bytes": 38457344
+        },
+        {
+          "repeat": 2,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 100.0,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 100.0,
+          "agreement_percent": 100.0,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 0.1426152999920305,
+          "wall_mean_seconds": 0.007506068420633183,
+          "synthetic_wall_mean_seconds": 0.002778914285175103,
+          "control_wall_mean_seconds": 0.02074209999991581,
+          "cpu_total_seconds": 0.109375,
+          "rss_boundary_max_bytes": 38768640
+        },
+        {
+          "repeat": 3,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 100.0,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 100.0,
+          "agreement_percent": 100.0,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 0.08552759999292903,
+          "wall_mean_seconds": 0.004501452631206791,
+          "synthetic_wall_mean_seconds": 0.002740271426903616,
+          "control_wall_mean_seconds": 0.00943276000325568,
+          "cpu_total_seconds": 0.09375,
+          "rss_boundary_max_bytes": 39084032
+        }
+      ],
+      "FP": 0,
+      "FN": 0,
+      "positive_completed": 36,
+      "controls_completed": 15,
+      "descriptive": {
+        "coverage_percent": {
+          "n": 3,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            100.0,
+            100.0
+          ]
+        },
+        "misconfiguration_coverage_percent": {
+          "n": 3,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            100.0,
+            100.0
+          ]
+        },
+        "wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.005669819299344039,
+          "sample_std": 0.0016098072055183322,
+          "min": 0.004501452631206791,
+          "max": 0.007506068420633183,
+          "cv_percent": 28.392566332838445,
+          "t95_mean_interval": [
+            0.0016708365113181434,
+            0.009668802087369935
+          ]
+        },
+        "synthetic_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.0027189309531379315,
+          "sample_std": 7.303073782006515e-05,
+          "min": 0.002637607147335075,
+          "max": 0.002778914285175103,
+          "cv_percent": 2.686009283751028,
+          "t95_mean_interval": [
+            0.0025375125431953338,
+            0.002900349363080529
+          ]
+        },
+        "control_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.01393230666872114,
+          "sample_std": 0.005998184936495276,
+          "min": 0.00943276000325568,
+          "max": 0.02074209999991581,
+          "cv_percent": 43.05234645718472,
+          "t95_mean_interval": [
+            -0.0009680107346398993,
+            0.028832624072082178
+          ]
+        },
+        "cpu_total_seconds": {
+          "n": 3,
+          "mean": 0.10416666666666667,
+          "sample_std": 0.009021097956087902,
+          "min": 0.09375,
+          "max": 0.109375,
+          "cv_percent": 8.660254037844386,
+          "t95_mean_interval": [
+            0.08175701703171212,
+            0.12657631630162122
+          ]
+        }
+      }
+    }
+  },
+  "raw_sha256": "aa545901453bd463ffa60eae802a77ccb51141ed707d586ab329abc2aec1a6a1",
+  "limitations": [
+    "CPU time is process-wide at case boundaries; Windows timer may quantize short cases to zero",
+    "RSS sampled before/after; process peak is lifetime high-water mark, NOT each case peak",
+    "Runtime includes fixture generation and oracle; setup measured separately",
+    "Profiles have matched properties, freshly generated different keys; not byte-identical paired input",
+    "Only 5 control types repeated 3 times; not 15 independent population samples",
+    "t95 intervals assume independent approximately normal repeat means; n=3, descriptive only; identical fixture coverage does not prove population coverage",
+    "Control oracle shares OpenSSL backend with engine; independent invocation and predetermined labels, not independent implementation",
+    "CT fixtures structured placeholders, SCT signatures/inclusion proofs NOT_VERIFIED",
+    "CT ablation is DT007 baseline; not reproduction of the governance paper's quantitative findings"
+  ]
+}

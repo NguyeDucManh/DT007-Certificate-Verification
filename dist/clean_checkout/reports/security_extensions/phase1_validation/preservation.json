@@ -1,0 +1,22 @@
+{
+  "before": {
+    "experiments/synthetic_cases.py": "c79ed4ae5937e3b367928586dbbaa31551e5d1afe3973b67afabcd1961e4591b",
+    "experiments/test_cases.json": "43210e8ed19df5b33571bb15ebd572b68b074d69aa4ee65c331b6c8db7df7c0d",
+    "config/algorithm_policy.json": "e3c408eeea3b32b7cd956428d7461fac36faf0b9f5ab3c87479f5b044be02981",
+    "data/log_list.json": "d0da723b9957e4f74f024278e7311c422e09b6c6452c8457c8dbf9a29f2817b9",
+    "reports/research_results/raw_results.csv": "49a33b8a3dd36e1028cb74105131e631cab148c98880e96e712bd11b4b368fab",
+    "reports/research_expanded/post_tls_20261010/raw_results.csv": "d22d0ae3afb9fd8de1c662ab7f3abb5b768cf71fc8967b95ea2f173b0a71409b",
+    "reports/scientific/scientific_report.pdf": "a53481f2596dc104af4337ebf3c02ab357a08493d081290fc8aa7efca81ee7c8"
+  },
+  "demo_case_count": 14,
+  "after": {
+    "experiments/synthetic_cases.py": "c79ed4ae5937e3b367928586dbbaa31551e5d1afe3973b67afabcd1961e4591b",
+    "experiments/test_cases.json": "43210e8ed19df5b33571bb15ebd572b68b074d69aa4ee65c331b6c8db7df7c0d",
+    "config/algorithm_policy.json": "e3c408eeea3b32b7cd956428d7461fac36faf0b9f5ab3c87479f5b044be02981",
+    "data/log_list.json": "d0da723b9957e4f74f024278e7311c422e09b6c6452c8457c8dbf9a29f2817b9",
+    "reports/research_results/raw_results.csv": "49a33b8a3dd36e1028cb74105131e631cab148c98880e96e712bd11b4b368fab",
+    "reports/research_expanded/post_tls_20261010/raw_results.csv": "d22d0ae3afb9fd8de1c662ab7f3abb5b768cf71fc8967b95ea2f173b0a71409b",
+    "reports/scientific/scientific_report.pdf": "a53481f2596dc104af4337ebf3c02ab357a08493d081290fc8aa7efca81ee7c8"
+  },
+  "unchanged": true
+}

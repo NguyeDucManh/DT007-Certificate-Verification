@@ -1,0 +1,25 @@
+<!doctype html><html lang="vi"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>DT007 — Báo cáo chứng thư</title>
+<style>body{font:16px system-ui;max-width:1000px;margin:2rem auto;padding:1rem;color:#153447;background:#f3f7fa}section{padding:1rem;background:white;margin:1rem 0;border-radius:12px}table{width:100%;border-collapse:collapse}td,th{padding:.6rem;text-align:left;border-bottom:1px solid #ddd}.PASS{color:#167340}.WARNING{color:#935400}.FAIL{color:#b02020}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:1.7rem}@media print{body{background:white;margin:0}}</style>
+<h1>Trình xác minh an toàn chứng thư số</h1><p>Tên miền kiểm tra: example.test:443</p>
+<section><h2>Kết quả cuối cùng: <span class="FAIL">KHÔNG ĐẠT</span></h2>
+<p>Thời gian xử lý: 0.010000 giây</p>
+<table><tr><th>Thành phần kiểm tra</th><th>Kết quả</th></tr><tr><td>Certificate Transparency</td><td class="WARNING">CẢNH BÁO</td></tr></table>
+<h3>Lý do</h3><p>Chữ ký SCT và bằng chứng đưa vào nhật ký chưa được xác minh đầy đủ; kết quả Certificate Transparency hiện chỉ dựa trên việc đối chiếu CT Log trong bộ dữ liệu.</p></section>
+
+<section><h2>Giới hạn diễn giải</h2><p>Kết quả kiểm tra chứng thư không xác nhận độ an toàn của nội dung hoặc hoạt động kinh doanh website. NOT_VERIFIED về chữ ký SCT/inclusion proof là giới hạn xác minh; không tự kết luận SCT không hợp lệ.</p></section>
+<section><h2>Chi tiết kỹ thuật — dữ liệu gốc</h2><p>Các mã trạng thái và lý do gốc được giữ nguyên để đối chiếu engine.</p><pre>{
+  &#34;target&#34;: &#34;example.test:443&#34;,
+  &#34;runtime_seconds&#34;: 0.01,
+  &#34;certificate&#34;: null,
+  &#34;security&#34;: {
+    &#34;status&#34;: &#34;FAIL&#34;,
+    &#34;checks&#34;: {
+      &#34;Certificate Transparency&#34;: &#34;WARNING&#34;
+    },
+    &#34;reasons&#34;: [
+      &#34;SCT signatures/inclusion proofs are NOT_VERIFIED&#34;
+    ]
+  }
+}</pre></section>
+<footer>DT007 — Trình xác minh chuỗi chứng thư số và chính sách thuật toán</footer></html>

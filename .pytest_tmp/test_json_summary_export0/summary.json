@@ -1,0 +1,33 @@
+{
+  "total_cases": 4,
+  "evaluated_cases": 4,
+  "correct_cases": 2,
+  "incorrect_cases": 2,
+  "error_cases": 0,
+  "skipped_cases": 0,
+  "accuracy_percent": 50.0,
+  "misconfiguration_coverage_percent": 33.333333333333336,
+  "misconfiguration_types_total": 3,
+  "misconfiguration_types_detected": 1,
+  "covered_types": [
+    "EXPIRED_CERTIFICATE"
+  ],
+  "uncovered_types": [
+    "BROKEN_CHAIN",
+    "NO_SCT"
+  ],
+  "false_positives": 1,
+  "false_negatives": 1,
+  "true_positives": 1,
+  "true_negatives": 1,
+  "positive_cases": 2,
+  "negative_cases": 2,
+  "false_positive_rate_percent": 50.0,
+  "false_negative_rate_percent": 50.0,
+  "runtime": {
+    "average": 2.5,
+    "median": 2.5,
+    "min": 1.0,
+    "max": 4.0
+  }
+}

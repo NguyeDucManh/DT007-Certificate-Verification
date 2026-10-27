@@ -1,0 +1,3890 @@
+[
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "277054946086327002592341327312266891273921774860",
+        "sha256": "3869e18752f8afda3e9fdef555238157e7118d52938deb0a0e7d79b7b00fbfb2",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "474898310336447617806681712194608111184495989891",
+        "sha256": "432f80d396208c96edbf097da71812b7431d3be24802176cd1b34c4e3057ea33",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "control_ec384",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 384,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICTTCCATWgAwIBAgIUNhbi/Xn6pA0ozTytbZFVw35+RdgwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAASErhduG2aN8CD75VM2D9ItGIgHSKcm\nhFQ5GHnNtVN/+KekheJ8I2qq/7Hi1LuSM0yDs2JMGQjlI4GqBCkyvpuasF9vx+B8\nXdRCN3fUzn6HNo2eESqvQjDgk/iCqFPK4VOjMTAvMAwGA1UdEwEB/wQCMAAwHwYD\nVR0RBBgwFoIUY29udHJvbC5leGFtcGxlLnRlc3QwDQYJKoZIhvcNAQEMBQADggEB\nAF0dxhJ+CxAzDoGxot5sFfYMxgTW9Huu2Lh1P+yUP2mEvc3N7eAaMb+ZtERDIbrs\n6BzPhU5FjqrO286NGXHeVsJuJsYkQYntlnRv7kx0XfwKp/lE5zh8cQ6YT0N5zsIz\n+TyfoPgNf1v3ZRndnpjpclGVEHttg6PMV86a7CvCapeSUgP1fzlEykmSym7ehrDh\nw1itlbc7O6QzOL9XSLILNwuZn75AofYtfiCv4nlZBM0weQr/t0lN89+5QWM/h3Kw\nT0WnkbWRtyfvP4vA8/S419XSKme/Cf5n7kSpS3Unih/jZCisZYN4tBbMgQRr3bH8\nhAlp7DdvZYJcfWJeNFkC/is=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUczMrY64qdA+UQHEheDVivqf2km4wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk+SOJ0A8oqLEiywPLnPK\nbp2hivOKS9bJEi7dtIs6j6TJ8GIF5A0eeGwebk8IDWlbPrFEbQRDVXdv2o4jEJhp\nUv9A2znP7V5/mWgbDdGDwXY3DqHMiQbvSM4qu9X+iM4hkiUUbFEncp5o93/Zuho0\n5Y++fJl4xbm4wpg3WOahJzKT43jxDO3wJvf9X8kd+aMIhLnqHDNLPhuCL52m1r9u\nCLSTHNuYLRahoezy2+qXyg8E6ZCS3PsDYv6b+sPAQLFVBsHw0Av5L9yHyghD2GmM\nFQJaOHEYmYiEGMt3AxN7i33AK+iOFtNouj80Dv2nartONjfrCm5xggwTnKwvT2+1\nDQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQADScQgFWMr1BFhMUolCo//3gGlsdsNYCHyC5SNGEVteVhS2pwaK18rI41CAtAY\nmideZ1SeKrrGwJ/U9Chs8ImyqTTSiXi6tlvySrBIbFgKlARldywK/bnXSRp7wCoG\nrVOvfjnZ8qgGRGkhSD6Gyte9z2qP9fSQUez1hVTE79K9CgIjjIpk9vlqPgdtvrQd\nzX5vHPi5B/fGMEod/3u1KXJbnF2uyOx0QxvBLaYL3756EI0VrfwWBgr3reGzYfgD\nfAhvy4AgYoRw3NXyXTyuiJAixxFKnMeo96DGSk8wzI0J5DQHY/OMYwR8sFM1UCKK\n4aa0s8+29o0op58s6etQWH6T\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "control_ec256",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 256,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICMDCCARigAwIBAgIUNmPeTGCUJioUF/9/krGq/Hd0rDkwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQaC1wAzQ0Shy2Ctl11VikO2kIU\njSJ0ZB/l4FYgJEcQN5G2scwTMB49cO1vmBhS/XcItMEKGWZKslyrp9fDPK6xozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQAlhkyL/TyweetUd+7nPZdRabfj4+GgWKMdEmrj\nMCm4WRibXRn/zwK0fe9wNRsW8vN3xdb7je2v8SCAxZT8LECBBjHXm97D1cLrwwmz\nY8RZzjhUv1CCaAD5pEhQ6ybJFS60QlAFqRqRDldRQ5Qt8UrgGCpkGhzh/+zJEfwE\nW5jISSKmu6jeufNM6UtGbbkveqwUz66VcoNTOI3ybr3XkmopTrj7hrTE7ZKfTPI2\n8ZF6JjpAa+tnckm718GMG7oFroxv5uyNDQHlcZiMhl9f3k/wy+lbE2KyjyXSFKo+\nN9wnXxU/BJv0g/p6E5Y0/LRbvafhgccihDt2HopjfDFzBNs4\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUczMrY64qdA+UQHEheDVivqf2km4wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk+SOJ0A8oqLEiywPLnPK\nbp2hivOKS9bJEi7dtIs6j6TJ8GIF5A0eeGwebk8IDWlbPrFEbQRDVXdv2o4jEJhp\nUv9A2znP7V5/mWgbDdGDwXY3DqHMiQbvSM4qu9X+iM4hkiUUbFEncp5o93/Zuho0\n5Y++fJl4xbm4wpg3WOahJzKT43jxDO3wJvf9X8kd+aMIhLnqHDNLPhuCL52m1r9u\nCLSTHNuYLRahoezy2+qXyg8E6ZCS3PsDYv6b+sPAQLFVBsHw0Av5L9yHyghD2GmM\nFQJaOHEYmYiEGMt3AxN7i33AK+iOFtNouj80Dv2nartONjfrCm5xggwTnKwvT2+1\nDQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQADScQgFWMr1BFhMUolCo//3gGlsdsNYCHyC5SNGEVteVhS2pwaK18rI41CAtAY\nmideZ1SeKrrGwJ/U9Chs8ImyqTTSiXi6tlvySrBIbFgKlARldywK/bnXSRp7wCoG\nrVOvfjnZ8qgGRGkhSD6Gyte9z2qP9fSQUez1hVTE79K9CgIjjIpk9vlqPgdtvrQd\nzX5vHPi5B/fGMEod/3u1KXJbnF2uyOx0QxvBLaYL3756EI0VrfwWBgr3reGzYfgD\nfAhvy4AgYoRw3NXyXTyuiJAixxFKnMeo96DGSk8wzI0J5DQHY/OMYwR8sFM1UCKK\n4aa0s8+29o0op58s6etQWH6T\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "512813375294906868675950447695727227506648914316",
+        "sha256": "de9985213655ea3bcba21f029f7d90a5e7d14075e959803c2958faf70ad36750",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "499176204945011836382902419772790788057245019935",
+        "sha256": "585bdc025500e78bf994548e0d3a1d22c38f0f6d4ba9af6b4188f030f85c24c4",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "control_ed25519",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "Ed25519",
+        "key_size": null,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICADCB6aADAgECAhQx0s2ekiHZVX8QMdz3JPeJuWpVTDANBgkqhkiG9w0BAQsF\nADAdMRswGQYDVQQDDBJEVDAwNyBDb250cm9sIFJvb3QwHhcNMjYwOTI3MDAwMDAw\nWhcNMjYxMTA2MDAwMDAwWjAfMR0wGwYDVQQDDBRjb250cm9sLmV4YW1wbGUudGVz\ndDAqMAUGAytlcAMhANQXqArhHPeoeU2VJ2alVE433xcLCkNwtkRKGw+TwhPwozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQCQp+/sCzDCE+bKmZAbwVO5K2fCEt8Y9uWDmXO3\nmfYyo2oLy6mgjXkQTx2bOEDxWhXjPhudNXeQBCF16Mv4+SZEVqhgShDq2DtNGan6\nEpPjetEJmiqjEg6ZQUbkzg3M1ABePfGFxvH6l3O2Yhq0BXFGG1G1BZH1D17ZJxKW\n3ijpqeLt4HqmxOUF/AiqiOt0n5r9//8RU3yMghK7SOSPVlt1IgOyYlzxIqvsPEAO\njMYP/uEwg9fZCdUpP9RaGJ1PpdglHRxn9knVSN/b0fVPgD8qMIalOSUpxhanY6oC\nhia5hapbf2LvYg+oUZQJ9Nlj7JJDJMLnBeYQaIQNslOBMLj/\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUczMrY64qdA+UQHEheDVivqf2km4wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk+SOJ0A8oqLEiywPLnPK\nbp2hivOKS9bJEi7dtIs6j6TJ8GIF5A0eeGwebk8IDWlbPrFEbQRDVXdv2o4jEJhp\nUv9A2znP7V5/mWgbDdGDwXY3DqHMiQbvSM4qu9X+iM4hkiUUbFEncp5o93/Zuho0\n5Y++fJl4xbm4wpg3WOahJzKT43jxDO3wJvf9X8kd+aMIhLnqHDNLPhuCL52m1r9u\nCLSTHNuYLRahoezy2+qXyg8E6ZCS3PsDYv6b+sPAQLFVBsHw0Av5L9yHyghD2GmM\nFQJaOHEYmYiEGMt3AxN7i33AK+iOFtNouj80Dv2nartONjfrCm5xggwTnKwvT2+1\nDQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQADScQgFWMr1BFhMUolCo//3gGlsdsNYCHyC5SNGEVteVhS2pwaK18rI41CAtAY\nmideZ1SeKrrGwJ/U9Chs8ImyqTTSiXi6tlvySrBIbFgKlARldywK/bnXSRp7wCoG\nrVOvfjnZ8qgGRGkhSD6Gyte9z2qP9fSQUez1hVTE79K9CgIjjIpk9vlqPgdtvrQd\nzX5vHPi5B/fGMEod/3u1KXJbnF2uyOx0QxvBLaYL3756EI0VrfwWBgr3reGzYfgD\nfAhvy4AgYoRw3NXyXTyuiJAixxFKnMeo96DGSk8wzI0J5DQHY/OMYwR8sFM1UCKK\n4aa0s8+29o0op58s6etQWH6T\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "control_rsa2048",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIC+zCCAeOgAwIBAgIUa0ZyAGS1M7EvK3Qi2FQerpMZdLwwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxokxx4bcNFylexdUd\nBdSkZEx0n1epJoX/CihRvLrvF2Olg1HQRRR1UQKuyFphdm0u4hYYurmoPAsIdhn9\npGAa7NCHUW1wiAtLrLaqfS9twT/Z56MHLJAbXbE83jDcvtsP1nRssyzQ+g3nFcMX\nvNWU+M8RNaVxWtRA6EkzQnDrHd/Js7mzyplm0Hrs+u+fwFUmlYhjHb4af6WeWyoj\n5ymqvV/kVL45ykL2PV/+sxzrV/zNeSBd6/dFRzsqk2eKabjQuW5Teu6/4aO2CJSs\ndaWO1OR5cV/QI499rDxm61OJGJJJ0X7VDZPkoONr1IwZ9Yf1xr+LbJtac5aHV/Qe\nkpMxAgMBAAGjMTAvMAwGA1UdEwEB/wQCMAAwHwYDVR0RBBgwFoIUY29udHJvbC5l\neGFtcGxlLnRlc3QwDQYJKoZIhvcNAQELBQADggEBACthhc3qlcbSxBs2+2nElipY\nknWlpkOsnfcGQADPGJhhuIO2fzW65mxhIF6WolcrdWWTv1VfCiS/a8VPqCOj+rkr\nlPPFDkoJmSun1HEdWqdsTqAudqOEs6m+ltBL6N2mUYwzQO4PopJek+wakhdqwh0t\nIA8PprK3cQDD6RTMBv9+3Artq+o0zfsv+PK2QVQwpWCgd9A7CvOwbk7KV8vQXl7t\n2jHev/NvMHaBQcjvbTOzj1+NdoGldtvr/uANxJwtBWhbMgACy1EOv3jJ6dpAn8aN\nQfS6Bah221GbyNQRs8aRBhTUmuDtMzsyv5cq+qq2KI237aqSc9Ad2z/NiBWufvE=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUczMrY64qdA+UQHEheDVivqf2km4wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk+SOJ0A8oqLEiywPLnPK\nbp2hivOKS9bJEi7dtIs6j6TJ8GIF5A0eeGwebk8IDWlbPrFEbQRDVXdv2o4jEJhp\nUv9A2znP7V5/mWgbDdGDwXY3DqHMiQbvSM4qu9X+iM4hkiUUbFEncp5o93/Zuho0\n5Y++fJl4xbm4wpg3WOahJzKT43jxDO3wJvf9X8kd+aMIhLnqHDNLPhuCL52m1r9u\nCLSTHNuYLRahoezy2+qXyg8E6ZCS3PsDYv6b+sPAQLFVBsHw0Av5L9yHyghD2GmM\nFQJaOHEYmYiEGMt3AxN7i33AK+iOFtNouj80Dv2nartONjfrCm5xggwTnKwvT2+1\nDQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQADScQgFWMr1BFhMUolCo//3gGlsdsNYCHyC5SNGEVteVhS2pwaK18rI41CAtAY\nmideZ1SeKrrGwJ/U9Chs8ImyqTTSiXi6tlvySrBIbFgKlARldywK/bnXSRp7wCoG\nrVOvfjnZ8qgGRGkhSD6Gyte9z2qP9fSQUez1hVTE79K9CgIjjIpk9vlqPgdtvrQd\nzX5vHPi5B/fGMEod/3u1KXJbnF2uyOx0QxvBLaYL3756EI0VrfwWBgr3reGzYfgD\nfAhvy4AgYoRw3NXyXTyuiJAixxFKnMeo96DGSk8wzI0J5DQHY/OMYwR8sFM1UCKK\n4aa0s8+29o0op58s6etQWH6T\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "33337098390333540609077051921561868426942394302",
+        "sha256": "a2bacffc62ff3732281cb01f6ef1203b2cf9b95cc560c3737cbb159751f34aa9",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "76007648424192001822106812887922847114852339587",
+        "sha256": "848afcfa96e4e2fff816a64623a3f169cea320d03bfc68439678af4e1b8f992e",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "control_rsa3072",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 3072,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIDezCCAmOgAwIBAgIUNmR/XKPXRJv0E1c9kpJunH4dNSgwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQDJIOBFib0Ds3618GIs\nan/JjzmAYBrtGrm41BII7I5T/4sLNHFenB7PUg/nyTWwCLNM+yAQu9/KbnrfVCkg\nGIv0bKLUfyuk/PYSng//2/lIK5vvaa/ZpwPobvq5EiebAVVY+TE57okbTUESmgUQ\nJEEt3X6DjXspzuwYk/PBHB60dbuV2OIkMp/XVPQ8rcocq0PVquEl/OLTVwM7ypaP\nbn7TZypWN+C1BcY0L6dYNjhFhcR8ZMS1qwy7mjH4OZ/yN4u1qNGxfd+tLJlPKkno\nTeQR01Kk67dScoNX22js+spe4WH4/QlNv+XfMBBp1BYUvSnmquJNpAlM2x/7TkUM\nnraCDm60gnRg1kvDNHq/1tZtvP8pV78R9WK4S2vrM9ZmGRbyfQyRdqXvBAf3kv1T\nuEfDcXpIy+icJ/lLLF1KUJobohCDMzczN6Xdfjy1MUfWrfaqbLgzC5lgyU53F0TE\n4nO/G3HSOBENCJf4f41WvN2eOgCi6HFYUCzBdQ0hGmqqniMCAwEAAaMxMC8wDAYD\nVR0TAQH/BAIwADAfBgNVHREEGDAWghRjb250cm9sLmV4YW1wbGUudGVzdDANBgkq\nhkiG9w0BAQwFAAOCAQEAZte1eHTasSLo1MZeYy487vO1Va6Af7TI8yTW1PhYh0Ov\nRQX1IorR3fZ5dE94s/6fPFycc1YFtxEK7fMBnj/sQiTsMQExYcKJD6jh9Lm1+oxj\n59ErDuPEeZ3P9WDMsZ5ZeNSJq3it0xRU0NfB5ucC6jfdsgcU7cPOx+82Lom1vQfN\nMspvbkllxyNnMzDVBoGBqnud0od2epuTKVeVXKfZZXFEKep5PxJk12OWVDM8/Rtw\nVG3pCSFZB2Z7T2+B3UFYCYA1oko/13X+AzayEYuJuYp6SziCggcIdhHJjsnFmIB8\nZm4tuFdgCQ2olODgDCPzZL0pgIlAbM985+tquUfNoQ==\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUczMrY64qdA+UQHEheDVivqf2km4wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk+SOJ0A8oqLEiywPLnPK\nbp2hivOKS9bJEi7dtIs6j6TJ8GIF5A0eeGwebk8IDWlbPrFEbQRDVXdv2o4jEJhp\nUv9A2znP7V5/mWgbDdGDwXY3DqHMiQbvSM4qu9X+iM4hkiUUbFEncp5o93/Zuho0\n5Y++fJl4xbm4wpg3WOahJzKT43jxDO3wJvf9X8kd+aMIhLnqHDNLPhuCL52m1r9u\nCLSTHNuYLRahoezy2+qXyg8E6ZCS3PsDYv6b+sPAQLFVBsHw0Av5L9yHyghD2GmM\nFQJaOHEYmYiEGMt3AxN7i33AK+iOFtNouj80Dv2nartONjfrCm5xggwTnKwvT2+1\nDQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQADScQgFWMr1BFhMUolCo//3gGlsdsNYCHyC5SNGEVteVhS2pwaK18rI41CAtAY\nmideZ1SeKrrGwJ/U9Chs8ImyqTTSiXi6tlvySrBIbFgKlARldywK/bnXSRp7wCoG\nrVOvfjnZ8qgGRGkhSD6Gyte9z2qP9fSQUez1hVTE79K9CgIjjIpk9vlqPgdtvrQd\nzX5vHPi5B/fGMEod/3u1KXJbnF2uyOx0QxvBLaYL3756EI0VrfwWBgr3reGzYfgD\nfAhvy4AgYoRw3NXyXTyuiJAixxFKnMeo96DGSk8wzI0J5DQHY/OMYwR8sFM1UCKK\n4aa0s8+29o0op58s6etQWH6T\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "614060627227965656329377196854204104910410742669",
+        "sha256": "676491aabfb7cf6ae70cc7aef44c2e18ccf99973e6df57d8026004d3f8fc12db",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "347501855848800615819294333526854185010972129101",
+        "sha256": "4ac5a6ee35afc15062070d691ed4e3ffd17256bc73630b0f2f56b1c09506bb42",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "251273596427059274645775391437981590450948955896",
+        "sha256": "7d14d417adc36bf97f82bd116116ef14e8566425e41ba0250a938060b3b4a1e6",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "725744400564087180386786756097942105014718242326",
+        "sha256": "65945501a2c886376e4bda1a0f54a8ad955b261c02adee8b91a2f826172bc4a7",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "205837102381605637820926230006726910294958546792",
+        "sha256": "0efee4a24410b9732aeecad238a433c397f22ff1a25a2d4700790e1599b71ff7",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "187169241297793958032376622728787453102134473505",
+        "sha256": "a77f4aa04c2d59f7cf3f3b5f22c60800a001857bd84554e88f20d636c6f9a044",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "72857747926882261429142103847285862481319393534",
+        "sha256": "127be8eb1d1e32d6e9cbd602d92e51326efd0becbc3bec135c54dbf496689912",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "399571785716871217756606676875397757928339728177",
+        "sha256": "d4d1b9979bfdd60edbeb0d54d5f46ce7c8892126abbf4316fccb4e59c71ebcc8",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "control_ed25519",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "Ed25519",
+        "key_size": null,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICADCB6aADAgECAhRHStAL5+SYqT0dI2Z7xp1rfjPBBTANBgkqhkiG9w0BAQsF\nADAdMRswGQYDVQQDDBJEVDAwNyBDb250cm9sIFJvb3QwHhcNMjYwOTI3MDAwMDAw\nWhcNMjYxMTA2MDAwMDAwWjAfMR0wGwYDVQQDDBRjb250cm9sLmV4YW1wbGUudGVz\ndDAqMAUGAytlcAMhAKhtg5JqOPaE+tzT3pd8rWNX45WcGf3Wgm+RwsCTEwnAozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQA18vu7OIAF5OOhf4+aX2MD7nhpRjGH0oRtKAjx\ndtc1iy4OpZp7xE28u87p3Xga17tJhTAoTuNUu2fg59Z/jNcGTaRg3SKdnMJEqQuC\ndiYcUuG1B+AkFqMsE6LyKoTjmq7WsiaTlV46K/J/G6v4aFHo5NISgKKmIHWpBpqi\nkMyN/Ox8OCiiHEAGDsSONespJVBoBfgqKDPKdoUEQwtVH4lqDW4vES3uKB6Rj9rv\nJYAmPEXLMuuCGPnQRIW+xFnC8UNQ7DrV8j9dDcI0N0BFMY79Ya9hxH6m+0zwuUEW\nHAEkMglAQu/ZmSySg9Q1O4kts6lD7A3amOMJmy6fHUrx/JMK\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUdIlxCgvwzm5LiLeZnYLP4zQB5RQwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr6DowN+7Bq3GpVRu4Ii+\n/+Cd1KX8sedJbKiV4vKo7xke7kJ1srGKaLAOjRhGtiD1e3VdqFOWAsnVSeRdiLTo\nr8lVhNIPHXUJL6OsQjNFz5tHF7sjmBuJmnS3X+cO+rUL/lxxqO0KACKNIlBzlYt7\nhMUABXl0LFcHpmuDBu1NsSR0xJwq1ZKalbhYEtIEHugFmVqEzEhjTPPQhkevmWuu\nzBp/sBu5xu4qMWB77ObWEAJITjsgxZ2L2z9EgS5zr7vSzlNgKvxXPzABD16/fCec\n4FpYFCgm7ngoMShFhRwqfCAGadq7NIHFJQp1mZmkyijpBTEy9upgkQsVSoLOPjlE\n+QIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfPDvjL/kK9O7McFZcEB9L01bfAkB6Z5nq8vuVJSHJxTZg8NE5Y9wKbzc/nLE3\n6mtVZ2HKB9CbqyLuIil5RXIn9NZxzSloSItyvmaymrEQ04GCKgPiYNR/rWu/PYwH\n45q9sxKEDFiVnmnv+yuiOtf0YELkgI3ODJhHi+XUjN31CYQqqGBpm6+APiyaoIQU\nj5Gdz+INvhh1pgPBMVVqGwBdmd7muy/7tlkiDTdORWxeV4Hn/8kkuF2DDg0AUXCu\nr/WfXk9KDPUAse5ItSKN1yYZk/MBg6lkSVowqSVqmbgRVZkiYN5K88GwiBCyn14A\njIZ6lvaY3CNWea8GfnUfD5ej\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "425205969173381362915374989789617533680243166792",
+        "sha256": "295adc5515a3bdce1911b661baeaa98a5b8838decab9ab4523eb0a018625991f",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "350074162513860620779099858112347273014648775342",
+        "sha256": "8928f7f6061b130b378e52a08cd51d65454897dc11d99437ecf293d7379bb602",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "control_rsa3072",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 3072,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIDezCCAmOgAwIBAgIUUTEP7UCAkN05SV6enDWHN2XC5AAwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQDAxHWmIWnW17QW1LlV\nXWQPbO3FCZwMmbTD7yC9u+Mgtio3iZvl5+86rZghbRl4wtRxqN23PocwZDXwVK2W\nAx6auUChnxZ8zCXiH4ifN3B4Zzbs0ZL2Dyh6qH/EN6Y+Dprux35Tmobv9bT37nTD\nn/b84QHsifZSV8OldS6Q2XA2oVym9PusZK5N7A/e4NaDO1PUL04VP8IcZI14iR3r\nR6r0GOlTGvSxVk6LrpBT7D8D5VXoYx2ysdRy8xTRAmbfFdxNM1a0477zHEk6axL+\naj6zXKFCZpu+QdU9bU7D74VaJmFP7Vd2kjN4DRQh1J+nE0912ICMhA9XucR7RK+L\nFxWC/nQcFnOhle9eDJ5Jet75NJLH+mTnUF9sHtt9gCjCidIISq0vyyHrktLTa1sw\nYEN89q4hLRWZRteXRze3hVUWjAPybjsQsFAzbGf6mddgUr2XnXXk0sejlmnb1pwR\nfZ6dpcWp4SV0ctK656mgNbYrb32QKdPjhmu/PPPpxdVR3V8CAwEAAaMxMC8wDAYD\nVR0TAQH/BAIwADAfBgNVHREEGDAWghRjb250cm9sLmV4YW1wbGUudGVzdDANBgkq\nhkiG9w0BAQwFAAOCAQEAWGRsS83xtwlqw+USqdhlXVvhuA06cPqrNJa6cWRLppQe\nTwMnPx8ZWtVFRb91+5NkHp5H9a1KP0bNrbvuCGRGGbhSTWD9LBix8gC6qZ+Nvd/S\ni7Yyx7bv2SwfpoZUFh3KBSnIj6ZBZZkAMkARPru9BZt388ddfCL0JK/4AWztPrEm\nrbWqP5jA2+PX8Om3sJelZlQlh4WCn2SymBuAu6bg7CsU6bQBu5Jn3qyS0UnfFpwQ\nJ2zliq0wnDl1hRzdGedbl/FXQ4Xe6FAiyIKN5d3yKqVRqEWsvtmSSmZ/+YZSYaXH\nRQINGUoZ6/m1IEWvkM+3x8imkdWvT3WF8rRsiVtMUA==\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUdIlxCgvwzm5LiLeZnYLP4zQB5RQwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr6DowN+7Bq3GpVRu4Ii+\n/+Cd1KX8sedJbKiV4vKo7xke7kJ1srGKaLAOjRhGtiD1e3VdqFOWAsnVSeRdiLTo\nr8lVhNIPHXUJL6OsQjNFz5tHF7sjmBuJmnS3X+cO+rUL/lxxqO0KACKNIlBzlYt7\nhMUABXl0LFcHpmuDBu1NsSR0xJwq1ZKalbhYEtIEHugFmVqEzEhjTPPQhkevmWuu\nzBp/sBu5xu4qMWB77ObWEAJITjsgxZ2L2z9EgS5zr7vSzlNgKvxXPzABD16/fCec\n4FpYFCgm7ngoMShFhRwqfCAGadq7NIHFJQp1mZmkyijpBTEy9upgkQsVSoLOPjlE\n+QIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfPDvjL/kK9O7McFZcEB9L01bfAkB6Z5nq8vuVJSHJxTZg8NE5Y9wKbzc/nLE3\n6mtVZ2HKB9CbqyLuIil5RXIn9NZxzSloSItyvmaymrEQ04GCKgPiYNR/rWu/PYwH\n45q9sxKEDFiVnmnv+yuiOtf0YELkgI3ODJhHi+XUjN31CYQqqGBpm6+APiyaoIQU\nj5Gdz+INvhh1pgPBMVVqGwBdmd7muy/7tlkiDTdORWxeV4Hn/8kkuF2DDg0AUXCu\nr/WfXk9KDPUAse5ItSKN1yYZk/MBg6lkSVowqSVqmbgRVZkiYN5K88GwiBCyn14A\njIZ6lvaY3CNWea8GfnUfD5ej\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "control_ec384",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 384,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICTTCCATWgAwIBAgIUEi+L2QL9ueVIgZ3iln8F2g+bvMowDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAQa64G3Pheiy5ib8LW/OAI3gcr+6DBF\nD1IltB7PQ2Yixi4WBYmy7lfA37phZHQN/xaLDS+ay7BaXk0eJYqaIfSlYJCaYhX+\nEXM0cEIIhK81Hdwp+c/uVxSn6vVPDfFmDzOjMTAvMAwGA1UdEwEB/wQCMAAwHwYD\nVR0RBBgwFoIUY29udHJvbC5leGFtcGxlLnRlc3QwDQYJKoZIhvcNAQEMBQADggEB\nAKysPtxhXeX+7zMxdSRBPEBt1xpwyE6UGsXZ2BPdDSupGrdlaDu7qqsezHQzDi3V\n0k4QU7j/lywK5bps1wyfFAfPYkh/W3Sb9LmNACFl0ogY17nToqBtX12RX0LkW2lw\nsPqfdH3kxri6IP8v6BT88zdImqooGQyhHSQDvEOMHpbWwTfABWH/+LT6n5IOvYWq\nMw7S3Fiqjfv7Qoi/d+zZlkXERDC7kF7qrVSSJBzpDMZ0s+suiPsQohTwf7/NagzN\nhKqTC1+z4SbJf2U5xB8Bqa/XRPgHKWqkasMyXfQ0A0fCkJTcRYC4Fe0NU6s1cny/\nNmJZ+J4pGeLKK8bBFAfs2uY=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUdIlxCgvwzm5LiLeZnYLP4zQB5RQwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr6DowN+7Bq3GpVRu4Ii+\n/+Cd1KX8sedJbKiV4vKo7xke7kJ1srGKaLAOjRhGtiD1e3VdqFOWAsnVSeRdiLTo\nr8lVhNIPHXUJL6OsQjNFz5tHF7sjmBuJmnS3X+cO+rUL/lxxqO0KACKNIlBzlYt7\nhMUABXl0LFcHpmuDBu1NsSR0xJwq1ZKalbhYEtIEHugFmVqEzEhjTPPQhkevmWuu\nzBp/sBu5xu4qMWB77ObWEAJITjsgxZ2L2z9EgS5zr7vSzlNgKvxXPzABD16/fCec\n4FpYFCgm7ngoMShFhRwqfCAGadq7NIHFJQp1mZmkyijpBTEy9upgkQsVSoLOPjlE\n+QIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfPDvjL/kK9O7McFZcEB9L01bfAkB6Z5nq8vuVJSHJxTZg8NE5Y9wKbzc/nLE3\n6mtVZ2HKB9CbqyLuIil5RXIn9NZxzSloSItyvmaymrEQ04GCKgPiYNR/rWu/PYwH\n45q9sxKEDFiVnmnv+yuiOtf0YELkgI3ODJhHi+XUjN31CYQqqGBpm6+APiyaoIQU\nj5Gdz+INvhh1pgPBMVVqGwBdmd7muy/7tlkiDTdORWxeV4Hn/8kkuF2DDg0AUXCu\nr/WfXk9KDPUAse5ItSKN1yYZk/MBg6lkSVowqSVqmbgRVZkiYN5K88GwiBCyn14A\njIZ6lvaY3CNWea8GfnUfD5ej\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "622346448219148376326376717893610784462474305228",
+        "sha256": "6cfcafeaa592c15273f24713aa5fe6e406a3e1326696cb6ade9d244006e83aa9",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "127988326636878176140790386347624192772769997756",
+        "sha256": "99474377ba75917b64af5adb6a4bb24c0fa729f752bad4b9b19ecb23edf3130b",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "other.example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "control_rsa2048",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIC+zCCAeOgAwIBAgIUJkdtwHTVwrgxRToICsd2kQ5Ig8gwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCfbe2mNhjzA9wXqZ+o\nRFMGb3I/Kt6wJPnHGFSdAfHi/F7/gJ4ELnU1kPGGQfh2KmNFO7qZsskiviHn12qo\narozsVx/cj6ayq9q9L2VGL1hKWRgEyBWH8mzVPALaAE+p5Iy1yK/Gn2LjGX4VUFo\n/2ZNcj6JZIdRuWBjVGEaSGCAggNbXJ2HEFicvwrz7OigLQkRK+xdOwf8hxy0NCzZ\nK1dM11Hr7clBlhveGL0Hhev3h6KQPT4RSXUtYMheOFpSx87jLN9p8xDu+5QloQTW\nda32IUBCvbC4S2xAng8jusXnLZjL/X/nciw1squ68Yx/sYWktT1Rf3cNgyjzKYSs\nvZitAgMBAAGjMTAvMAwGA1UdEwEB/wQCMAAwHwYDVR0RBBgwFoIUY29udHJvbC5l\neGFtcGxlLnRlc3QwDQYJKoZIhvcNAQELBQADggEBAFyj3bPIt+AMf7fH0s7zHdLh\n4DD4gnOOOJayD6WgPhMIBQnWY7yIIrOFDRhKJIutIzktnftK2ws/8hJbZ1WNpZy+\n5sRI4TGS2Gzzi0Ucp1Kuym0QTKw17ER8ShEvt7U2p+mS/Bhd0CeM3ywVhLQNrfeh\nE8y891Q51BGum7ECmqDp1c6SovbyGcw8yhva6OHDcTFkjvLRHeeEqYQmeylTx7rG\n7L6JJf7czd5onGbHv/OgT1gGYHwxqSNxBUiwqH2FhJnEn6i/VW5ts40104C+qija\naPsufTy+AVgtwfKzAOd2hv8ERzKbGksQAgdkW0jFAy9xIYnNDueO71Znm8KGqAE=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUdIlxCgvwzm5LiLeZnYLP4zQB5RQwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr6DowN+7Bq3GpVRu4Ii+\n/+Cd1KX8sedJbKiV4vKo7xke7kJ1srGKaLAOjRhGtiD1e3VdqFOWAsnVSeRdiLTo\nr8lVhNIPHXUJL6OsQjNFz5tHF7sjmBuJmnS3X+cO+rUL/lxxqO0KACKNIlBzlYt7\nhMUABXl0LFcHpmuDBu1NsSR0xJwq1ZKalbhYEtIEHugFmVqEzEhjTPPQhkevmWuu\nzBp/sBu5xu4qMWB77ObWEAJITjsgxZ2L2z9EgS5zr7vSzlNgKvxXPzABD16/fCec\n4FpYFCgm7ngoMShFhRwqfCAGadq7NIHFJQp1mZmkyijpBTEy9upgkQsVSoLOPjlE\n+QIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfPDvjL/kK9O7McFZcEB9L01bfAkB6Z5nq8vuVJSHJxTZg8NE5Y9wKbzc/nLE3\n6mtVZ2HKB9CbqyLuIil5RXIn9NZxzSloSItyvmaymrEQ04GCKgPiYNR/rWu/PYwH\n45q9sxKEDFiVnmnv+yuiOtf0YELkgI3ODJhHi+XUjN31CYQqqGBpm6+APiyaoIQU\nj5Gdz+INvhh1pgPBMVVqGwBdmd7muy/7tlkiDTdORWxeV4Hn/8kkuF2DDg0AUXCu\nr/WfXk9KDPUAse5ItSKN1yYZk/MBg6lkSVowqSVqmbgRVZkiYN5K88GwiBCyn14A\njIZ6lvaY3CNWea8GfnUfD5ej\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "control_ec256",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 256,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICMDCCARigAwIBAgIUROjm3tj6kQc+/e3v5MUQAflf4icwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQKWnjKAzQxzcysQMY4ydlHFX/j\nN2hTv5s/FSXyPCkjq+elwBABkQvyTB1oSt3pXJucFFE36QOsusibs24oXZFNozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQAUnuB1MHd+K/g+GH19MBnpi2BY3KL0s3jeKJbe\nnnDMjpJiYaQcRYoNnybnPcZ48qFrAnNzNAskNxkoVS4DCadcvXM/ca0WPygabYfg\n3IzrabpXc4SoFbFBop+fbLXtQBPGx4/sLvJvWPuNb712X3bHSPZnrTfFEgerdIx2\nsV1CnIlD8qR7nv15MXRfUlJbqL7uJXBZKTL8AdsJnAfP3HzKCxXX4hlCHbBFy8XY\nJjXVUS5j5ipZFl01GEMlcPHjCSMlTFSSw1XlVPKJ+vfo4q0PQOz5htQElaW35qre\nDeHadnnummnEuN4BryCcWhIrbU+h1vfOHnVJZADVowkVUEeq\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUdIlxCgvwzm5LiLeZnYLP4zQB5RQwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr6DowN+7Bq3GpVRu4Ii+\n/+Cd1KX8sedJbKiV4vKo7xke7kJ1srGKaLAOjRhGtiD1e3VdqFOWAsnVSeRdiLTo\nr8lVhNIPHXUJL6OsQjNFz5tHF7sjmBuJmnS3X+cO+rUL/lxxqO0KACKNIlBzlYt7\nhMUABXl0LFcHpmuDBu1NsSR0xJwq1ZKalbhYEtIEHugFmVqEzEhjTPPQhkevmWuu\nzBp/sBu5xu4qMWB77ObWEAJITjsgxZ2L2z9EgS5zr7vSzlNgKvxXPzABD16/fCec\n4FpYFCgm7ngoMShFhRwqfCAGadq7NIHFJQp1mZmkyijpBTEy9upgkQsVSoLOPjlE\n+QIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfPDvjL/kK9O7McFZcEB9L01bfAkB6Z5nq8vuVJSHJxTZg8NE5Y9wKbzc/nLE3\n6mtVZ2HKB9CbqyLuIil5RXIn9NZxzSloSItyvmaymrEQ04GCKgPiYNR/rWu/PYwH\n45q9sxKEDFiVnmnv+yuiOtf0YELkgI3ODJhHi+XUjN31CYQqqGBpm6+APiyaoIQU\nj5Gdz+INvhh1pgPBMVVqGwBdmd7muy/7tlkiDTdORWxeV4Hn/8kkuF2DDg0AUXCu\nr/WfXk9KDPUAse5ItSKN1yYZk/MBg6lkSVowqSVqmbgRVZkiYN5K88GwiBCyn14A\njIZ6lvaY3CNWea8GfnUfD5ej\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "200339994582915272855036883689153178489282569188",
+        "sha256": "229c1e303db54aed3dc633207c03c2a9e26f454202718542f6191486e9b9e5da",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "289076068302745898291118652804258505043935790898",
+        "sha256": "cd54c7e6320b10a61a62b4f72a028ebf8f6f01fab497813f1971dd614f6863aa",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "633357086705940585953279669662039757179424057316",
+        "sha256": "c9304173f5522e459792d0ccb9494f569938580e21f24ca00be0ab7742ea80d8",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 0,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": null,
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "140742841902969973885035867100043259376968315528",
+        "sha256": "8887535269cfbe03acb3bbf7d9b06e2f15c143a73e0233611320755bfbdf74ae",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-09-27T00:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "37186002622183340189370179747376929265643664395",
+        "sha256": "6880573ae7031561fdaf85fe4cf536962c8e8f75bee2a29a67c4c851fc986458",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "699060382762310686333997645471558133062632234004",
+        "sha256": "ac37b2a13c0404f0e9a4f0cd90b49f6d472b2852b1b24503a593238498a04fc1",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "678210650345508809139990851864126859676962426529",
+        "sha256": "4e40f7e11e779758b97db132735a19045658ea288148767a2aebc531bd0200a8",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "595860042491592948087382595549479296420781570982",
+        "sha256": "263234d74c56d3df53e22dc3994dc2f8c6932bd614a92bf526108a76517ef6c9",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "retired",
+        "state_timestamp": "2026-10-06T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "144500721366390533509107887088085665876209409354",
+        "sha256": "072b34cbd0fadcee079b948b781ebf6cf802c23a0097b1bc3fd57eab1b8f9e13",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "Tx3uhRGpe2Xc4AvCVA75ifwT4ZANqfagxzwiuQeywwU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "244407822051280443257048342067595013895858866995",
+        "sha256": "9ca79ef3cc16b0750547b3fc875a83ad7b77b89c088148bd9df14c6019a5aa66",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "366505246935625744971547914680837533346589012064",
+        "sha256": "e5b5fae6a8d3d19496ca72a8b540f72f34ee41e3bed5293e8bc27f4a90503091",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "267362185612994490751000697009832712110080568168",
+        "sha256": "e3da53bb621a20e8980d77c6b483be191c1e66e4f59ed65cabc4c8490d62f814",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "control_rsa2048",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIC+zCCAeOgAwIBAgIUPECuZOQcd8KYaQGJMbz/J/TxujowDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqrqvbQZr3dAZRQRFg\n6GIwYu1SBTZjVoAzivkx8Z0v3DKZpP/5z+S1815pvbfHJDEBWTxOjpp04rsnEBuT\nqebct8/Pjg6Sn4Opttvq8f33Fpuxi8y9b6h6AOYASv2B/wzE4ZxCPGy5iVZSwJEo\nMfOD+4xy2jVe4hk1mk8aATRNkjQZN3ZJuiGJoeKnZJ72EnpT9MPQjkYizi/zhXzP\np9qkDjIjcVpt+r7q1CNjbhIcTOGGKmWLud1ZBLZVcY+jmNH8BTqZCtlD5fw1T+Q8\nun7exOCaXm+ZVDnkuStN7uw3+e0UsjO4MYjHBbxR8I1U6tHzCKRQEPybEPQMX/PZ\nf20zAgMBAAGjMTAvMAwGA1UdEwEB/wQCMAAwHwYDVR0RBBgwFoIUY29udHJvbC5l\neGFtcGxlLnRlc3QwDQYJKoZIhvcNAQELBQADggEBAJcOP5Qdj34l2hBJHdg1qaVK\nghlcJeFwKTNgv0VzO1leiz4GcGkDeAhq3W7jAkcVYXNd+1Xc9OWIomuylColhhEe\nUafdEutmHf8AdKQE1qxGoBe3+pY2m75reFwTC5zkTX7P4e6rnAB6zVgmtnCsUY15\nFBfw97JKmeHXdRwLKnq7brm7nWCdGQtzTq7bxgptzHs95RQqEXECRZmjWBbWkLd7\n/oUm+hCPKglYAY7rXg6RQqbvIqBKHSZ8xP/zFayIy/CyU4GDTO1BYUN73qsfu0Y3\nfd9leKY6DJMaCShBD02akxlaRsq6eHqafADhZc7t8YfEH4+5JWxAAwMUuVbb+n4=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUXaDwoLqQQzIcWLq5bpnjB3crY1YwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtQbY71cPK/axUYpLTRsb\nE3PfY5v9mXnZ4yTkrCamrvPcpdyEtDebSstYzOFWYMzkhT96KTjoAaYNZpKP7fwx\nFIIzPXWp0piX5wA5+xv2m8eFnqDDNXQ2BZTN02ZoyWt9lUkHx32QuLfPep26jmPC\n6jWYP+ctbmpn1CgqnluANn8D2VyWDSJ81c6G2MxAEoy7xNAsgOfROZxh6qarTGdP\n1v8NlVYVtn5/UhEETwhUZqssk1lkbornyTkKdPJyTtb8WzlBvPqKJWermyGvUSsA\ncte97IlBFwLDTu+tOANlSJ12iDTItPmFAmdMMKUmAvslercYnwon8g/lCMgLUpwo\nfQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfdXfgPAhVN+Ii/9bpiH0Ejbw+XEcZlXt0RFF8lkCZTifoAqhG04kBWxK1tGsd\n36jyS+06OxyhNuJZgA6Vod0tk6rGEHJCnUDswY8R/Odyifgywrt50iZsSyWIH7Gw\nnB37f4ZtVhr4ESu+HVP2AUlIT8RUdC8RBm9mURuXpjlWETDsmd4T5iI7jasNuzo0\nBT9029PVoXVlwQKTws4t1mUq222Om8iSvpw/9BZvoJd1WS6UIROQ4dYeE7P/nmuh\nwAvLys3yYR/4vYFWHTVmd6awp8AiUVcZlgWoEwK0wBo+V1Ao15KRD7LHDyJiaQPr\ndhYaE34782/ANHCyqHG5pxk1\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "338943592893658076651313809918946129900752069811",
+        "sha256": "39d89c7153690545d6c6f14c0148231682df2bed2499dcf5be37fe1df6baf6c4",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "retired",
+        "state_timestamp": "2026-10-06T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "control_ed25519",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "Ed25519",
+        "key_size": null,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICADCB6aADAgECAhQU3LO0r+LVjU8WOjMv2hCRQdLTeTANBgkqhkiG9w0BAQsF\nADAdMRswGQYDVQQDDBJEVDAwNyBDb250cm9sIFJvb3QwHhcNMjYwOTI3MDAwMDAw\nWhcNMjYxMTA2MDAwMDAwWjAfMR0wGwYDVQQDDBRjb250cm9sLmV4YW1wbGUudGVz\ndDAqMAUGAytlcAMhAFD//SQTQiKJL9EMtJXSAOtUryNfFHU6lwPeTPTVjJSnozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQBpSd/yhGcoUVWeCad0q6E6pilQNX1EWtuw9utn\nifIkhH05FtHqrIxl+x0frU4cFp2neCfqdqIF0+E34JJkocqOEoH3GaKZeKGJGce6\nutOu1sSwUIVTLVNH4kLLFUiqBsoclncM17YGm5HthYYW7KEemmligQY1u2oHHSNb\n92HdRfUhfaHFiVcuOUY3tp2N/f+OOtdf1pauleR7hMexvHi7UgP1WYsxnyNK2uy6\nEesxB1lgFCw46uCKOaqrLBwcCU5gXDBZE7PlrYlf5aIG0a66Ljuu0GMEOk3GdbXJ\nVhGSksqg9v571ukVwx3jf94cXn4cp3H0v1yD9XBTwy96PFMB\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUXaDwoLqQQzIcWLq5bpnjB3crY1YwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtQbY71cPK/axUYpLTRsb\nE3PfY5v9mXnZ4yTkrCamrvPcpdyEtDebSstYzOFWYMzkhT96KTjoAaYNZpKP7fwx\nFIIzPXWp0piX5wA5+xv2m8eFnqDDNXQ2BZTN02ZoyWt9lUkHx32QuLfPep26jmPC\n6jWYP+ctbmpn1CgqnluANn8D2VyWDSJ81c6G2MxAEoy7xNAsgOfROZxh6qarTGdP\n1v8NlVYVtn5/UhEETwhUZqssk1lkbornyTkKdPJyTtb8WzlBvPqKJWermyGvUSsA\ncte97IlBFwLDTu+tOANlSJ12iDTItPmFAmdMMKUmAvslercYnwon8g/lCMgLUpwo\nfQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfdXfgPAhVN+Ii/9bpiH0Ejbw+XEcZlXt0RFF8lkCZTifoAqhG04kBWxK1tGsd\n36jyS+06OxyhNuJZgA6Vod0tk6rGEHJCnUDswY8R/Odyifgywrt50iZsSyWIH7Gw\nnB37f4ZtVhr4ESu+HVP2AUlIT8RUdC8RBm9mURuXpjlWETDsmd4T5iI7jasNuzo0\nBT9029PVoXVlwQKTws4t1mUq222Om8iSvpw/9BZvoJd1WS6UIROQ4dYeE7P/nmuh\nwAvLys3yYR/4vYFWHTVmd6awp8AiUVcZlgWoEwK0wBo+V1Ao15KRD7LHDyJiaQPr\ndhYaE34782/ANHCyqHG5pxk1\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "458002778685210627169177830860381818926765338053",
+        "sha256": "65c9d0fa1d2ef31b82d0ba40989a18ffe5c54f82cc8968cf6d7a0f9567042d70",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "537199905355151354345014740016370979824230823054",
+        "sha256": "c4b1b3d37701ab98eb1a63a019cfef4eb5fbaf4b29ffbb837952d5af88ab0e63",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "579707153658100533542470821000798802775499740668",
+        "sha256": "66aecad4e27f9c5f8e8a47d45e40dd4ab20748a41300eaf6803dff56f20da503",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "41287149695736452663210740498156965881306418976",
+        "sha256": "2d09ac632b259329b0f6889159ec72c8bcbe53ed879e6862e7c8b8b2039c20ad",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "486778189758762941970735980017474170487945237255",
+        "sha256": "15541f84bf6579b3c45122b84acc79ae660f843eaba30a65b5f71a174ac59286",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "control_ec256",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 256,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICMDCCARigAwIBAgIUG2D215jeh4MVZ4W2A94gn1gEX0IwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQJEjjfUv9vTXSzbR8oPhPFzMz8\nx4g+57jLFBg0MoXflV3DBrqENgEM5ZZWnt6PvYKb/ZTNGetRHKr3l2scG9g1ozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQBdpi7ts9V519/lNr1o03nPF+Vnp6NQBpeyJve3\nRqcxFZtladbcrsluBdeiWeSJuMa2/he81cXe7/+la1P5WfkzuO62SeX0aVr1duOC\n7O8N9ukvaG5UCvqhCNZUSvZwnWsCq+QWIPRfAuh9xPeX4UYwJwc9waU9NZZv8HRa\nSaqoy2kLCdmHUtgmMjc8RWLMy5ey6HJwDedzPb/6oMFB8LwNoHZgNHM+r4QxAa33\nxWLxku76b05N5riZdry909ptXdjHUzihVJqbOQJeXLtPK8Nyq/qHGsWoZY8X7Hx5\n8Mev8AtTgh/+TCz1R6o1S1krm3zoekZWh/yd2SdtfL3udu+n\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUXaDwoLqQQzIcWLq5bpnjB3crY1YwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtQbY71cPK/axUYpLTRsb\nE3PfY5v9mXnZ4yTkrCamrvPcpdyEtDebSstYzOFWYMzkhT96KTjoAaYNZpKP7fwx\nFIIzPXWp0piX5wA5+xv2m8eFnqDDNXQ2BZTN02ZoyWt9lUkHx32QuLfPep26jmPC\n6jWYP+ctbmpn1CgqnluANn8D2VyWDSJ81c6G2MxAEoy7xNAsgOfROZxh6qarTGdP\n1v8NlVYVtn5/UhEETwhUZqssk1lkbornyTkKdPJyTtb8WzlBvPqKJWermyGvUSsA\ncte97IlBFwLDTu+tOANlSJ12iDTItPmFAmdMMKUmAvslercYnwon8g/lCMgLUpwo\nfQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfdXfgPAhVN+Ii/9bpiH0Ejbw+XEcZlXt0RFF8lkCZTifoAqhG04kBWxK1tGsd\n36jyS+06OxyhNuJZgA6Vod0tk6rGEHJCnUDswY8R/Odyifgywrt50iZsSyWIH7Gw\nnB37f4ZtVhr4ESu+HVP2AUlIT8RUdC8RBm9mURuXpjlWETDsmd4T5iI7jasNuzo0\nBT9029PVoXVlwQKTws4t1mUq222Om8iSvpw/9BZvoJd1WS6UIROQ4dYeE7P/nmuh\nwAvLys3yYR/4vYFWHTVmd6awp8AiUVcZlgWoEwK0wBo+V1Ao15KRD7LHDyJiaQPr\ndhYaE34782/ANHCyqHG5pxk1\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "678185286054500036660004734405009978258196712010",
+        "sha256": "9840b44e8b9b282d58093ffe6ade50e7967343da8e514cd42db5fc5b009b2ea2",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "394096832551631776525122629227608272293348455110",
+        "sha256": "b7acd09e1d34b5706c1d77e9bbabd126d8a29414819ec45f5956311c8aeb0841",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "control_rsa3072",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 3072,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIDezCCAmOgAwIBAgIUQD84QdvPL7o/+EelAMjU50LcnaAwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQC6AhB/9fEq6BFRH7yt\nhE8RjVjbPxRgxNifGJPJtdXznh+3R/4W7x3VcMAo9/7nmCc9RxKMe89tRqsgUYfr\nQsFhLE3Qpw8SVlZFWCQ13qoZ52ffuxCm61DDf0nELBWKjDRfMWecbS88hPOlK6U8\nkqsaevPin2Ok9Hm1mZ/A6WZz9DFwnXmC40xZdE3IQMazLXebufdMDRrDMhIhZPLD\nahKIH6e9+vRx1wxiOjGd0NkYgJ2Q777zXORVvCsj8UN+bRHlbbntSJSHvheRlVpz\ngQmjHpAOcyUKDPJzQGiQtWqkFdcRZYFtn+h14yutWt1v58a78FnKaaFEC/uv0Mso\nFTUy0dIH2ugv3vkJqHlNCHu+oKpAEIn7fkjK0TeUvPG0vTWPrJH+rCog04oDomXw\nAMp+O8BuqNlkT/aJBI6z1iDZBQefwLQSdGtK+aQQ2DUQrQQ9phoCXoOhArecN+0I\n9kwqF0zn0SbL6/ZMSVbN+ix04Qme0p4TzrOFqc8FuXUvK1kCAwEAAaMxMC8wDAYD\nVR0TAQH/BAIwADAfBgNVHREEGDAWghRjb250cm9sLmV4YW1wbGUudGVzdDANBgkq\nhkiG9w0BAQwFAAOCAQEAD3X79FbrOFck/DFWkNk9ABBohPUGT8cZmeYLPypR7iWd\n3k4RjW7sznurrU37iVYXHXNHfoG3juTZSa9vUgBIQfI+rai9K77TMaBoJJ/Pw+Da\nE4cBfP3Y7gnKg0wRgsJNrhH6IRtlCICOyIB17tLiKEJj069qHK+0r5IqAORjqx8t\nwsukkQS2BG17th8PDidnfQSX5XmCDQozv5SCJSRmZRMwP4ItHcnBtzTJIn121nm/\nv/kN+m0644x90JEiCr0FSugnslppeK5A2Lr19WtTWpzkozFgPCEgWmZCT73IQ2KY\n6ygc9cB/RjQMAuYCGRZM6tIYzK5wV2wx4ZhKdlBEGw==\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUXaDwoLqQQzIcWLq5bpnjB3crY1YwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtQbY71cPK/axUYpLTRsb\nE3PfY5v9mXnZ4yTkrCamrvPcpdyEtDebSstYzOFWYMzkhT96KTjoAaYNZpKP7fwx\nFIIzPXWp0piX5wA5+xv2m8eFnqDDNXQ2BZTN02ZoyWt9lUkHx32QuLfPep26jmPC\n6jWYP+ctbmpn1CgqnluANn8D2VyWDSJ81c6G2MxAEoy7xNAsgOfROZxh6qarTGdP\n1v8NlVYVtn5/UhEETwhUZqssk1lkbornyTkKdPJyTtb8WzlBvPqKJWermyGvUSsA\ncte97IlBFwLDTu+tOANlSJ12iDTItPmFAmdMMKUmAvslercYnwon8g/lCMgLUpwo\nfQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfdXfgPAhVN+Ii/9bpiH0Ejbw+XEcZlXt0RFF8lkCZTifoAqhG04kBWxK1tGsd\n36jyS+06OxyhNuJZgA6Vod0tk6rGEHJCnUDswY8R/Odyifgywrt50iZsSyWIH7Gw\nnB37f4ZtVhr4ESu+HVP2AUlIT8RUdC8RBm9mURuXpjlWETDsmd4T5iI7jasNuzo0\nBT9029PVoXVlwQKTws4t1mUq222Om8iSvpw/9BZvoJd1WS6UIROQ4dYeE7P/nmuh\nwAvLys3yYR/4vYFWHTVmd6awp8AiUVcZlgWoEwK0wBo+V1Ao15KRD7LHDyJiaQPr\ndhYaE34782/ANHCyqHG5pxk1\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "301832777304163000927362819221701203739929072836",
+        "sha256": "26af27cd00acaa19b75e8d22ac57c8b860a4309e2c2683499ae62f5ee3da7b9e",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "other.example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "699877244381779941362261435149988405088173696028",
+        "sha256": "3adde17343925bde756fc043f7da41684968005054e716d888e86f9f84a4e13d",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 0,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": null,
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "596606491895315337396723410522726479514603236864",
+        "sha256": "04e79cefc8a86fdf38748d068d942aaff78168aee155bca797709aff5f475e6d",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "control_ec384",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 384,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICTTCCATWgAwIBAgIUElZxDM0eppUO6dk5WR9bKy++QO0wDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAQv1WmeUCdVeFhuWmQ8wMDza9SRR72E\nU2udGnnDJ2OzTjcx2j2bS+qLjdCchNs16DH6HVzFfP5uztx7Pirk7+RJb2ZyIb+U\ndWX1f7NocZyNGgMLSG0pcscYYa8YI1aW8AejMTAvMAwGA1UdEwEB/wQCMAAwHwYD\nVR0RBBgwFoIUY29udHJvbC5leGFtcGxlLnRlc3QwDQYJKoZIhvcNAQEMBQADggEB\nAJ2SnB85kyY4LmP/lRQR2JtNHmuy134iOAt5aR1teHUcestpj2cEpcoNnOsv5ci4\ns26vrGTtTSJbsg3LOw1p2fKzEEofAMOtNTViX0azjHKBzaLI84F6Cz9kdGMtgD46\nSYtMGQ6MIaufsEO35OFdOQZRG5VOFbb+pkZK83OgIGr5lHDpuHpTmEDoNPo0gHuC\nu5glrqKpQcHg7oTbPMqSylA3Rp4kvyZGsT9e8h8tlFbQmzfL2RiHYJR5Z+yXJIBJ\n2ANuIiWZZyxgf9bP+E7jd8SZBPfuDIzVmrSwnhmyj0kkkM0xxIVgRuvpbTAD6CK8\nyKY/O24N0KHNEVcvg8Hd7FY=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUXaDwoLqQQzIcWLq5bpnjB3crY1YwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtQbY71cPK/axUYpLTRsb\nE3PfY5v9mXnZ4yTkrCamrvPcpdyEtDebSstYzOFWYMzkhT96KTjoAaYNZpKP7fwx\nFIIzPXWp0piX5wA5+xv2m8eFnqDDNXQ2BZTN02ZoyWt9lUkHx32QuLfPep26jmPC\n6jWYP+ctbmpn1CgqnluANn8D2VyWDSJ81c6G2MxAEoy7xNAsgOfROZxh6qarTGdP\n1v8NlVYVtn5/UhEETwhUZqssk1lkbornyTkKdPJyTtb8WzlBvPqKJWermyGvUSsA\ncte97IlBFwLDTu+tOANlSJ12iDTItPmFAmdMMKUmAvslercYnwon8g/lCMgLUpwo\nfQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCfdXfgPAhVN+Ii/9bpiH0Ejbw+XEcZlXt0RFF8lkCZTifoAqhG04kBWxK1tGsd\n36jyS+06OxyhNuJZgA6Vod0tk6rGEHJCnUDswY8R/Odyifgywrt50iZsSyWIH7Gw\nnB37f4ZtVhr4ESu+HVP2AUlIT8RUdC8RBm9mURuXpjlWETDsmd4T5iI7jasNuzo0\nBT9029PVoXVlwQKTws4t1mUq222Om8iSvpw/9BZvoJd1WS6UIROQ4dYeE7P/nmuh\nwAvLys3yYR/4vYFWHTVmd6awp8AiUVcZlgWoEwK0wBo+V1Ao15KRD7LHDyJiaQPr\ndhYaE34782/ANHCyqHG5pxk1\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "702380006078988571611625618570453335996078626043",
+        "sha256": "5629408dc2828d64d1b6fdf649b20d8f85cc64c0936adb14cf86db75e4dca039",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "5YfvzdanvG0isgGMfvfcnQlRs9OMoEYfLb31Bxhy858=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-09-27T00:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "478237660669270494448448774276507894426189305219",
+        "sha256": "6f51bdbc6f7fbf4306dafdc44b0d530e0859163cf27dd3bf8916f6ce144bcd76",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "control_rsa3072",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 3072,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIDezCCAmOgAwIBAgIUL8d8meQN3G45PaHFvoGdpyPxaqYwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQCTU3uqtXzCT2pZRZvU\nAXSaZw+oEDo1OXgjQutau8HrKfJfxT7lxHvVm2Tt800dn/ybPsy/xoUX24AhoXuX\nA7Lzqy0TY0fkWZ1IBX4ytVznDMNmrbBFvxD5hgn+bHMHT23CtYZyzEtLCgR4Pm8a\npptdcHclHBU3TUCym8b0ewg8XsL4iySmMiE0rBoLSdviKkTnB7oxCH1hbi0wq3Tj\nky07FTWrzEVNmhr1K2VJ0NeGYeFWvrcwmL8KeTs8779++XRhLBvOE45hkEsjAVnx\nwTQk34OuY5Z8xC0j/vUaO6+EooP5h4/br/2nuY3zAqfFbfmaGcdfDsxmRLvZrdHn\nGRWLU7e6wtPWK0DQQHUDoJOyvAofH24g9dHrAjIvfKU/DP0x6y8BddVqUOWeaUrX\npAfJ0YX0FA3a+FezchJT3zNa62wBAXyK6pngrST7hlaKReSFOCLTjhxj9c5gXi63\nkWkIQBXFacRRQoiEdnPbsdBDO3/dmsy3nsMDfr91JftaB9MCAwEAAaMxMC8wDAYD\nVR0TAQH/BAIwADAfBgNVHREEGDAWghRjb250cm9sLmV4YW1wbGUudGVzdDANBgkq\nhkiG9w0BAQwFAAOCAQEAmCB+Fy7z/CySOxxFOs7G/c/XcynH9yI90DZorXOyNFMT\nU+KMxP7IhlkPUqeu4hsdcTDhxZBoLsEXF6jbB5V78BJtDB06877UKbVntHWoeg8e\nV+GcIKTxG22QuEdk2K3egLTXidSGDmZy5BOWiGG8KaJ80b0z4f0PNV9hcUVqajho\n7wDXLt0ILJB1JfsL1pkrLcoXN1NcErDZp/JOMy26AacPIwytd7Q8OHJi3rR3/T1J\nfkXoTlGareRAiIqwmfqKQdeZ1njhEVvOUXg2DcuKarDLd2VAwziT1ryKwe7Lcqjx\npqrniZorS+xsAfcXOMEag9bJXrsY6MWPmk6gLIFqOQ==\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUR9mLuPj73jHCuUAebnS8AovWFo0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAorwHW+SObe/mxfHxzXJ8\nmlLeTzBwLw0Yv7Jrrx1ELimYypdqrlsWPqKgf3zMvAq+sH6+EhmfTn0p/Fck3q1T\nS/13FhtM3vcHDGbRyHulXuMubHY6EcuqZJ0Ldg8DCRwJLpqIvifVDi6Uw815aTHc\n6wWqHBJ0PpRd2mhxWR24Wzsp3gUvWXDpcmGcvzGZgttfIz2zXKr7SsFyy0Hhfn+t\nEI+iQq0s0ggu/xOypVwlfBtyIwM0FJwKZCtF14hLNBDIapFb+lzQWchhly4bkn+Y\ntfyyWcaL+tf+vTTLSR5Dbh6GmmCga/Mzt/PWnjjJUmSNvd8IHKOfes93Lo33BC7U\nNwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAtq0w0qVppHOr0WnLdTy4A4kmcycwYBiK2HFCJaDSovHOWVDqDt8DrCowB3sJj\nfeooNR/lqmritr3YVKyNc7H/tFa7bnPf/JKctIuMhmLVZDzB8hREwnuSwTXvdUwk\nT7u3qu2lQmNAopJMAVrEtKqQ28VRSrNnZjv5W4K/IScSje0OIFzCRdM8RE3yyALS\nZbnCPI0mz5X1rSsQ1gymDy2C2IlfMf0R0B0hHI5SjG9FltF/t2xOs/BmjTt1E6sf\n9QApEsodDOLjM/tFmDqpmQqdpDtuD1aZ31OUZKBkf7ot4AIURo/phanyNpzm3XYd\ndyvcpV/F7QyZAq/KoAaYo3V5\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "34676006737938554006875637646030662713517865781",
+        "sha256": "0dd4d94ad16e3349386cea6aeaa3f19e5666ec8ce8b052ef43a689ba790fbd43",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "699331954624082305179437947586034513480503472207",
+        "sha256": "485ed22af2768ac49f509b6d42a0c0badc262f1c86ed032126d3388b33845247",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "568451918764744524691259553885850617019529975146",
+        "sha256": "b63833eec11469a782d9c7a3de4f0fe4c5dce88cfe8f8acd6f4fdd50b9899066",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "424931103838346098628522074286569539497074114286",
+        "sha256": "ae2ca31af4f8b2a1646e3880b56cdbf460e364fcdf5909c91aee0ab7caa5505f",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "control_rsa2048",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIC+zCCAeOgAwIBAgIUM64Jr+RiT/IbGBkYnO8B+nReAV0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCyBlBfZreeLCfqatv4\nfFm33SXOk8cz1h9jQR5whm7qkN7N3NU4Rgdxj8q6vhvp8jvKyF710nmtLTNzVF6W\nZVRk6b5ijb40ZgsOZZ2IppkK4gV4Xg867EQ+xMp/s+oVi6CmEkWJTXwPy1Q4c7i7\ns+/v2KEdFhQVhBfqJnRbEOPahjkreopnW0CywbV6UHGPWfuYTLhRgJPHydjaGw5q\n8vY68TZ1CEEiy5GjX43imdM1tB7Yd/Qw0xRlhnZQ5rl9R6HwOFnTTnfyK0ioq9KW\nLgDJvbXw/oDugnRvP1Uqy3aNrBHPR+oiiBeuIFm0cE2pqbLbB9XzYFprVqpnrUc2\n9yOPAgMBAAGjMTAvMAwGA1UdEwEB/wQCMAAwHwYDVR0RBBgwFoIUY29udHJvbC5l\neGFtcGxlLnRlc3QwDQYJKoZIhvcNAQELBQADggEBAAeRUbarIHxqRAgTRANnHR8k\nrKIf24vyx2TUb0c94fW/RxK9Pck2GQhgMR3BnDDiJt1l3S1tnGXpQdsFxm/9uO4v\nwK526XSJpWNUNDl1wGKuq1WoXYuZzdfvXJsJnCVY7Ra9Xfd4vMoP8d2/22l2zWRM\n208IRUHZYhF0VvDX5jI10hnaA+x+Ru6lsowZxByu0srzUMIxWcMqyZEteIwb9wwH\nQBwpVFGtY3OUFxYSQnUh/QKq6AVZVF8cqkbR8amJ1C8m6vuuUdC/jC673toruMpD\nIqhFLewbXwCNsTB4HGLJU6RZEOz+GeU5njiqgcrzTEGoDqFouQs9cHow1cu9R3E=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUR9mLuPj73jHCuUAebnS8AovWFo0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAorwHW+SObe/mxfHxzXJ8\nmlLeTzBwLw0Yv7Jrrx1ELimYypdqrlsWPqKgf3zMvAq+sH6+EhmfTn0p/Fck3q1T\nS/13FhtM3vcHDGbRyHulXuMubHY6EcuqZJ0Ldg8DCRwJLpqIvifVDi6Uw815aTHc\n6wWqHBJ0PpRd2mhxWR24Wzsp3gUvWXDpcmGcvzGZgttfIz2zXKr7SsFyy0Hhfn+t\nEI+iQq0s0ggu/xOypVwlfBtyIwM0FJwKZCtF14hLNBDIapFb+lzQWchhly4bkn+Y\ntfyyWcaL+tf+vTTLSR5Dbh6GmmCga/Mzt/PWnjjJUmSNvd8IHKOfes93Lo33BC7U\nNwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAtq0w0qVppHOr0WnLdTy4A4kmcycwYBiK2HFCJaDSovHOWVDqDt8DrCowB3sJj\nfeooNR/lqmritr3YVKyNc7H/tFa7bnPf/JKctIuMhmLVZDzB8hREwnuSwTXvdUwk\nT7u3qu2lQmNAopJMAVrEtKqQ28VRSrNnZjv5W4K/IScSje0OIFzCRdM8RE3yyALS\nZbnCPI0mz5X1rSsQ1gymDy2C2IlfMf0R0B0hHI5SjG9FltF/t2xOs/BmjTt1E6sf\n9QApEsodDOLjM/tFmDqpmQqdpDtuD1aZ31OUZKBkf7ot4AIURo/phanyNpzm3XYd\ndyvcpV/F7QyZAq/KoAaYo3V5\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "control_ec256",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 256,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICMDCCARigAwIBAgIUVmAq/pB1+6JwYb+QRL7RVedSzA8wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATCoUzf5DjtpwUAH0b0JA2ar3s/\nbdEolHyjpH+FeyxxO/uPQwnEOf6Inz7z7WwJKkSujVSKubbMxHe0bKHz9D81ozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQByLMp4ofLLJD7wQNLQjoLalgNpQji7fbD77ITm\nDN0shyiayR/b95wW8+RPCtFjUnynwHvrcLpZlwvIu5qTa6iQljtlc0pUES2PG4+t\n7ERNCSZElcvIlEuYY7Mnho8pBUmsATH/Gb8D7JIucc+00TegffyLf9OO1lClK7eO\nPGw88LyWV+6O1FaS2cHfFt0BRbbB3IXf/nWKR9+EZcIHlJmfQBVN6JfusEi8AK5l\nFffL5r1itlywEklUvVfpJfeCc3cUI/kp3QWVnKgHVp+mQrv1q+FSZqEm8QlecVCB\n6j4s+AvEfeUcLw/4gJ/olxXhReVqY7SyzR28bOhtMObvMLyf\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUR9mLuPj73jHCuUAebnS8AovWFo0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAorwHW+SObe/mxfHxzXJ8\nmlLeTzBwLw0Yv7Jrrx1ELimYypdqrlsWPqKgf3zMvAq+sH6+EhmfTn0p/Fck3q1T\nS/13FhtM3vcHDGbRyHulXuMubHY6EcuqZJ0Ldg8DCRwJLpqIvifVDi6Uw815aTHc\n6wWqHBJ0PpRd2mhxWR24Wzsp3gUvWXDpcmGcvzGZgttfIz2zXKr7SsFyy0Hhfn+t\nEI+iQq0s0ggu/xOypVwlfBtyIwM0FJwKZCtF14hLNBDIapFb+lzQWchhly4bkn+Y\ntfyyWcaL+tf+vTTLSR5Dbh6GmmCga/Mzt/PWnjjJUmSNvd8IHKOfes93Lo33BC7U\nNwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAtq0w0qVppHOr0WnLdTy4A4kmcycwYBiK2HFCJaDSovHOWVDqDt8DrCowB3sJj\nfeooNR/lqmritr3YVKyNc7H/tFa7bnPf/JKctIuMhmLVZDzB8hREwnuSwTXvdUwk\nT7u3qu2lQmNAopJMAVrEtKqQ28VRSrNnZjv5W4K/IScSje0OIFzCRdM8RE3yyALS\nZbnCPI0mz5X1rSsQ1gymDy2C2IlfMf0R0B0hHI5SjG9FltF/t2xOs/BmjTt1E6sf\n9QApEsodDOLjM/tFmDqpmQqdpDtuD1aZ31OUZKBkf7ot4AIURo/phanyNpzm3XYd\ndyvcpV/F7QyZAq/KoAaYo3V5\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "563199165682225007680386479920038769220783079432",
+        "sha256": "924ac53056d8940ef7f1cbe68a07ed9e9f60fc52f67dbb800f05358f6042189b",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "81528777897488383509975684369791174659355459230",
+        "sha256": "7e2944e0612b53f306c19ed094ec1e3ab3db3d46e636e643a32f03cf69fd9aaf",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "252903038685271567599891720439704123765019709759",
+        "sha256": "ba1f55a63939b8595b29627263ec4755864f27415d7fe8153f451b6e1e4d6c6a",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "control_ed25519",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "Ed25519",
+        "key_size": null,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICADCB6aADAgECAhRI1MtHUITBU51LAju6bGvNLZOE+zANBgkqhkiG9w0BAQsF\nADAdMRswGQYDVQQDDBJEVDAwNyBDb250cm9sIFJvb3QwHhcNMjYwOTI3MDAwMDAw\nWhcNMjYxMTA2MDAwMDAwWjAfMR0wGwYDVQQDDBRjb250cm9sLmV4YW1wbGUudGVz\ndDAqMAUGAytlcAMhABUoS0NFdyAsyi2YCkj6P50tYWmJ/T767Tfk7EnX4wpXozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQAh4ktSNsotrH/ajgYAH1bXn+yF2DWpmjjN5MZx\nnmSV6pCdSxNKKaCptQSJ7SDPlsCyxbCfj7jQLz134S4pYc31CZQo86Z3JdIa+Ums\nMk8Xs7SwvgEIKZZEg+ZShVqo7BelM6T8r/K+aKAdSuQj99sCUUfo/uK/WSi1yJpt\ncizNI+Y/mbbGgPRdJRUDi9LmOsky29oNh/S2LhtiLjPlOs/AWBs1piBNXS/OK/EB\nvdwohN/Av0IP2XVGCS08tmjqhV9zT8zY2AphvpN/Fc/y/UyvQk2JLGefqbCH4nfW\nu8W2egBkldT8PUGfodyOrKAQ26yxUhdzV/+2Nn+kEPYLxNxq\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUR9mLuPj73jHCuUAebnS8AovWFo0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAorwHW+SObe/mxfHxzXJ8\nmlLeTzBwLw0Yv7Jrrx1ELimYypdqrlsWPqKgf3zMvAq+sH6+EhmfTn0p/Fck3q1T\nS/13FhtM3vcHDGbRyHulXuMubHY6EcuqZJ0Ldg8DCRwJLpqIvifVDi6Uw815aTHc\n6wWqHBJ0PpRd2mhxWR24Wzsp3gUvWXDpcmGcvzGZgttfIz2zXKr7SsFyy0Hhfn+t\nEI+iQq0s0ggu/xOypVwlfBtyIwM0FJwKZCtF14hLNBDIapFb+lzQWchhly4bkn+Y\ntfyyWcaL+tf+vTTLSR5Dbh6GmmCga/Mzt/PWnjjJUmSNvd8IHKOfes93Lo33BC7U\nNwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAtq0w0qVppHOr0WnLdTy4A4kmcycwYBiK2HFCJaDSovHOWVDqDt8DrCowB3sJj\nfeooNR/lqmritr3YVKyNc7H/tFa7bnPf/JKctIuMhmLVZDzB8hREwnuSwTXvdUwk\nT7u3qu2lQmNAopJMAVrEtKqQ28VRSrNnZjv5W4K/IScSje0OIFzCRdM8RE3yyALS\nZbnCPI0mz5X1rSsQ1gymDy2C2IlfMf0R0B0hHI5SjG9FltF/t2xOs/BmjTt1E6sf\n9QApEsodDOLjM/tFmDqpmQqdpDtuD1aZ31OUZKBkf7ot4AIURo/phanyNpzm3XYd\ndyvcpV/F7QyZAq/KoAaYo3V5\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "524843132700035866116704658139784070208074731328",
+        "sha256": "ee5463eef2bd769b42c5f5d63b12b51fe6f5a6e06cb1e7aa9d03dc8ec298f243",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "508756759893511940235188846454504801412788120120",
+        "sha256": "276332fb67e2198e1ac5210511318c32b3a8ef1cdd794a0118089b41619af4bb",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "496642084501795401777258342600751528042867647878",
+        "sha256": "2e0a72150c527ffabb5b5f18c66958bfa274536e193edad2ceccaa0123d27388",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "201601365461045501945425980015438422600553730540",
+        "sha256": "7040f1d3349e5bcbc855c37741a6cbae45c17339a930d7bffb12b0ee71fe2e4e",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "724319942181907613201092101794213143222679950650",
+        "sha256": "091c9332a4545f07f09d90b3cdca5528df2ebd8bd7b43de6f390060f7422d088",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "307060885481837928393716344293598042079559003137",
+        "sha256": "219a7d27383f62f338e41cfe069448ee4b3189357f93fa9761d56b6a8fefde45",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "control_ec384",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 384,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICTTCCATWgAwIBAgIUVVPciUXOlfkSpKdQMOcfH5IwxggwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAQxhK3o7Dr0FjxMuO5nlu/y4VABXY0N\nSk4LImuQXxgAUPuh3gbPPePx5tSmHFvNrpSnrAmaN+ZnDVjI/UvOxjf8ws1H5OqC\nrimDWbkc8WC1D6EBCXParGaAwLsw89SNeI6jMTAvMAwGA1UdEwEB/wQCMAAwHwYD\nVR0RBBgwFoIUY29udHJvbC5leGFtcGxlLnRlc3QwDQYJKoZIhvcNAQEMBQADggEB\nAFU7ISzURiXBxoY4Exa49qbifTXhy0HRIwJQhZt/+TgSojNqdIuBX0j5WCLaRoHa\n9OA0vZLz02iYkjx8cgYhL6yrwzmtxZd+nxR3kui3/v8GuDjLEr/Er+DZHgIx7I25\nKyN2wxQyn87A/Jvu1LOowmwzTAsYWKuguY+hE92YlVc+MYmiN3YnWAEvjfqSkxR+\n8KVFDOBFqgO3cFDmvm463hV/Q/7nnEgdElrjUe/VSVIE019wTUvmYrrhgUkwvNuP\nJJ36nnVpJy3etldsr1RpKc3ehJdAGLPcjAr6iuwp9kdkCLcY50JHWai3//EeJbvs\nTH/b0mERXUUDIuXAPi4gEFo=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUR9mLuPj73jHCuUAebnS8AovWFo0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAorwHW+SObe/mxfHxzXJ8\nmlLeTzBwLw0Yv7Jrrx1ELimYypdqrlsWPqKgf3zMvAq+sH6+EhmfTn0p/Fck3q1T\nS/13FhtM3vcHDGbRyHulXuMubHY6EcuqZJ0Ldg8DCRwJLpqIvifVDi6Uw815aTHc\n6wWqHBJ0PpRd2mhxWR24Wzsp3gUvWXDpcmGcvzGZgttfIz2zXKr7SsFyy0Hhfn+t\nEI+iQq0s0ggu/xOypVwlfBtyIwM0FJwKZCtF14hLNBDIapFb+lzQWchhly4bkn+Y\ntfyyWcaL+tf+vTTLSR5Dbh6GmmCga/Mzt/PWnjjJUmSNvd8IHKOfes93Lo33BC7U\nNwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAtq0w0qVppHOr0WnLdTy4A4kmcycwYBiK2HFCJaDSovHOWVDqDt8DrCowB3sJj\nfeooNR/lqmritr3YVKyNc7H/tFa7bnPf/JKctIuMhmLVZDzB8hREwnuSwTXvdUwk\nT7u3qu2lQmNAopJMAVrEtKqQ28VRSrNnZjv5W4K/IScSje0OIFzCRdM8RE3yyALS\nZbnCPI0mz5X1rSsQ1gymDy2C2IlfMf0R0B0hHI5SjG9FltF/t2xOs/BmjTt1E6sf\n9QApEsodDOLjM/tFmDqpmQqdpDtuD1aZ31OUZKBkf7ot4AIURo/phanyNpzm3XYd\ndyvcpV/F7QyZAq/KoAaYo3V5\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "145518297142903174356807887178860261462811653832",
+        "sha256": "848cfa7fa016db4aeb5eaf0f8c50f32c95b64db584585a57cf1ffa060c1b8416",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "93901679633695562719642196075032541550851966415",
+        "sha256": "a7dd7173ad6bb9e9457eee9ba8c485c193dd82ab1405bb90dad638fa5fc6ace0",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "control_rsa2048",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIC+zCCAeOgAwIBAgIUJ5rRmFQjpZiyeIwdejqTGMBwSHkwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDP88a7xb3FCWcM+Njw\nUcbZztDaaY9rYYJ2KfLuL5SndBm/zUM9ihFWMA55svGE7CIZVONnwzw6GPbiBjb2\nyeRQuEKNJde7xJlqmboKviy1M6vQBYeHkkgknBuSXQ1nTiMu99L4OqqUqKcQV33O\nqQCJZgRTovrc2hDhM7LU0R4OoTEXlvHWUijEoIsa3ykJS6c/QJgru/N9k8RAu0NV\nQnwfUnVbkK00UrUzZO1vFxhRKwnJgGJUPRIRb5xt+mPoVWiFmaQJbGOM0ZSGew7u\nHBE15kizozA1G10bvx9T0/wdlYOANegUmBOfFimoNRfEhxY5DWjyaCrymz+rifVO\nGdXrAgMBAAGjMTAvMAwGA1UdEwEB/wQCMAAwHwYDVR0RBBgwFoIUY29udHJvbC5l\neGFtcGxlLnRlc3QwDQYJKoZIhvcNAQELBQADggEBAEW89KCCO4G+/y3e3nA25nZ8\nsqWY5VQGnGoX8tKCLnFyxtjGHtQsWhhMdeUiL07sUlvze56e4MNDlNL9xJ32bRoL\n5/mzjxYBUel8Ey7tM6kFtb86jaTOIQ8jtTk+ndPV3QPv+JyypteK3rSP/SA2VZBo\nmgtDljbP57C9f6CklyX9F/6T/HHEW6gxJTTGYbrNO9Qw0g6gHgW92U7t+VZY+XGj\nsO7klcSA931hj+DGHuMWchoWRBhjLIRrSZXUY0QAiU8GzNCWFtj0Z7KllJCH7AXO\nclka+tYUzY7pi3hlxI7l7r5vtY0ge+kMZTduGVN3xmpbvUyG/K7ZnyYIrBEAj7Q=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUVRrSDVCdMRbkJPmFP/7FiKesiX0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmwAvHkNnCQNM4ixfM776\nkwqKKcb3o2obxJDDJL4vJh2KQG1pvi8bnHiWNPtQwBmnC19HBC+clZ8PtgMkDDmk\nFM6dlP5Omf4Cm/BE2AX3E5pWU4JHEd25h2E4SYpLYo8TFbXyFZG69HUqJETpK7SH\nT1df62M/5qcFexlPOH2eho9Hn9mq1iE7w5XX479+XwhLHHi4Bf85VcFDTRLzu2KR\n6w0rWAPYhES7N5h9hanZIZJvZDcs5EGxQshUy49sJvi2buVg8mt6Y3qy1l3luIU2\nZNAjp5kl3b5zTisQzyqMUT7sEuogY4A32DJw5qmK7GrvIl99JlGzetRP5rRU4zc6\niwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAOBFLN5Fc1n2FVM1Ujk+F/yDDkw/UhG9vnlcKusB/GX7WQYmmjQnl1pS7lYMnE\n10sp9WklndkPqEy8xHaDjWFUaB3v+MXOVWEv8m+b91c3HWnW9Q6XH4Q6vI1l8LU6\nMcEYGRpa/MLp0tGV2GlZ290LcJuaViNIXJOHf00Xt7l3HO+bbz93lXmHw3YBrw2B\nOQXiBiaqcRgmMWy17QDCFUfG3gYPRDk0HVo6g4/VosmL5zATNmUDBVj82WCRN8n0\n7GdY9uAXrwxReNln+TH8iHsttHQDa0FUZdcqjRwnR0tyMkrGxgtwvGcVw4QUyFup\nbRS/+B7OCnQ1PQopuYFQaLPK\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "550315414095833910593893445941520701373536020473",
+        "sha256": "3e7887cc49e498e8231192e470324d8d662789175bb317f7b70864e201a1ffd9",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "727906375376032528211866376705958930578820690577",
+        "sha256": "2ec0dbe8e47923546bc38e3a22a0c3007c68056148fabcc44743230c8be5d42a",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "175952606656684426982375647241915565632190499445",
+        "sha256": "92df723f2b035df5c1ba4f713a1d09e85b237835bbc4e5e98845854fd10dcab9",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "719250102801036136939575688694845817876179895149",
+        "sha256": "ef3112b9fbf9f419cafdada2097f77d75be4b4c24224cb76c2d6a787a6e78765",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "control_ec384",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 384,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICTTCCATWgAwIBAgIUbL4LpowUrHWROEU9eU3GZp/tCpswDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAASwdXIDYD7Gy4C7Zjb39m5iErxBZ6ea\nKEnry/o3SqkFaDRr7eAKnxkFkNvHYsq//Qj1OKkb2eUaF73nw/n2U56ZQNK36Fpt\nXKpTjRs7lNuXW1bzGa4fMqdmF4QoeqwcswijMTAvMAwGA1UdEwEB/wQCMAAwHwYD\nVR0RBBgwFoIUY29udHJvbC5leGFtcGxlLnRlc3QwDQYJKoZIhvcNAQEMBQADggEB\nAFrwfvXFXfP23tVlFKiqQI6vPzubsGIXRSx+jtuv1ojN33P+A8Gnikj3jLDA9P/K\nS06sRNikG8zbuRZWHBzmkfraieu9tDPqK4+CYLa2BFWXmULLASzDWFSuGfaEWF4f\nShJIms7bMAxtRgba4Tb7HbYSHtX/hmhFVg+l+Mgu4YoOKtJEGnuFDkXoXOsvdJa2\nm6NHxIH8imMeIbzq9PpPRXdQXsfKN6XKFnIU149XIZJnh9kZS3WJyu2onFXvUQvt\n+OphBt8eaTAXVpjzpLORgyzQL9ORDCYnrykLRVq4l1Yh9f6ETq4oZ9ufSQOi749i\ntD9rpETkFPSa89m9kB89gYg=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUVRrSDVCdMRbkJPmFP/7FiKesiX0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmwAvHkNnCQNM4ixfM776\nkwqKKcb3o2obxJDDJL4vJh2KQG1pvi8bnHiWNPtQwBmnC19HBC+clZ8PtgMkDDmk\nFM6dlP5Omf4Cm/BE2AX3E5pWU4JHEd25h2E4SYpLYo8TFbXyFZG69HUqJETpK7SH\nT1df62M/5qcFexlPOH2eho9Hn9mq1iE7w5XX479+XwhLHHi4Bf85VcFDTRLzu2KR\n6w0rWAPYhES7N5h9hanZIZJvZDcs5EGxQshUy49sJvi2buVg8mt6Y3qy1l3luIU2\nZNAjp5kl3b5zTisQzyqMUT7sEuogY4A32DJw5qmK7GrvIl99JlGzetRP5rRU4zc6\niwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAOBFLN5Fc1n2FVM1Ujk+F/yDDkw/UhG9vnlcKusB/GX7WQYmmjQnl1pS7lYMnE\n10sp9WklndkPqEy8xHaDjWFUaB3v+MXOVWEv8m+b91c3HWnW9Q6XH4Q6vI1l8LU6\nMcEYGRpa/MLp0tGV2GlZ290LcJuaViNIXJOHf00Xt7l3HO+bbz93lXmHw3YBrw2B\nOQXiBiaqcRgmMWy17QDCFUfG3gYPRDk0HVo6g4/VosmL5zATNmUDBVj82WCRN8n0\n7GdY9uAXrwxReNln+TH8iHsttHQDa0FUZdcqjRwnR0tyMkrGxgtwvGcVw4QUyFup\nbRS/+B7OCnQ1PQopuYFQaLPK\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "290909246895383347689581221281911246512110316049",
+        "sha256": "0397ceba04dbf8aa2266d93eeaded955fbcc90e6bc57b26970d2f73715a64902",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "396885808972866689499859542880531601009253218698",
+        "sha256": "a3f6cf649b94424896aad5623515c3e38438e4639e3ea9794fd18f7731819710",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "234564356814413869098734151125219427625290492936",
+        "sha256": "db52c97e28cc19e8c589097639008cb38c7c0a6e4c3e030921c9b72ab42329c6",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "control_ed25519",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "Ed25519",
+        "key_size": null,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICADCB6aADAgECAhRVj4OSdavT0W2VBCUaSz1XFivJoTANBgkqhkiG9w0BAQsF\nADAdMRswGQYDVQQDDBJEVDAwNyBDb250cm9sIFJvb3QwHhcNMjYwOTI3MDAwMDAw\nWhcNMjYxMTA2MDAwMDAwWjAfMR0wGwYDVQQDDBRjb250cm9sLmV4YW1wbGUudGVz\ndDAqMAUGAytlcAMhACLQ6aGf9sScISxu9a6QfgEudNMuXfvBCR6d3Qh2rWEgozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQB7JM+qZeC6otNxuaIJxUQJO0URFz48pYVISpTi\nlFOY+Qa/or4tV3AJMyTAed37gkkD29YnE4Q61URUkg9df8PwvGGyGJ5Ri5ITGttB\n0U99C+qx/AX6BT0ip791Lg+j9wJMzyFJkvGslnay7LOVv8cT0a2HebWzFEp/t0Zv\n5kp+F94nvqeMix2NaQzhAigyTuOwf4Zcuu99EnGE9uGv3aGAccbCUlakkRCLOf5m\njroHubAXg8xkAdPIl5z7JSC4BjHtKqNhZOawNX5LlG0HhCuhdum3kzJCnfW6U2Xi\n9B0Grpn+LPPkdS1AwL32DmnstIxo47dMcvMtCRcO4WWqeb/i\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUVRrSDVCdMRbkJPmFP/7FiKesiX0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmwAvHkNnCQNM4ixfM776\nkwqKKcb3o2obxJDDJL4vJh2KQG1pvi8bnHiWNPtQwBmnC19HBC+clZ8PtgMkDDmk\nFM6dlP5Omf4Cm/BE2AX3E5pWU4JHEd25h2E4SYpLYo8TFbXyFZG69HUqJETpK7SH\nT1df62M/5qcFexlPOH2eho9Hn9mq1iE7w5XX479+XwhLHHi4Bf85VcFDTRLzu2KR\n6w0rWAPYhES7N5h9hanZIZJvZDcs5EGxQshUy49sJvi2buVg8mt6Y3qy1l3luIU2\nZNAjp5kl3b5zTisQzyqMUT7sEuogY4A32DJw5qmK7GrvIl99JlGzetRP5rRU4zc6\niwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAOBFLN5Fc1n2FVM1Ujk+F/yDDkw/UhG9vnlcKusB/GX7WQYmmjQnl1pS7lYMnE\n10sp9WklndkPqEy8xHaDjWFUaB3v+MXOVWEv8m+b91c3HWnW9Q6XH4Q6vI1l8LU6\nMcEYGRpa/MLp0tGV2GlZ290LcJuaViNIXJOHf00Xt7l3HO+bbz93lXmHw3YBrw2B\nOQXiBiaqcRgmMWy17QDCFUfG3gYPRDk0HVo6g4/VosmL5zATNmUDBVj82WCRN8n0\n7GdY9uAXrwxReNln+TH8iHsttHQDa0FUZdcqjRwnR0tyMkrGxgtwvGcVw4QUyFup\nbRS/+B7OCnQ1PQopuYFQaLPK\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "117752004323239492447732171634926610188138160409",
+        "sha256": "0a17d163f2c8fe679b465bf52d48e315b4bfa4543890ba65ef57a17aa12ba0d1",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "333131724210256244339147104346989304088296123045",
+        "sha256": "cd75d182c6d9c9398e79d32874d860df4f60ec3a7a3fa82524cb1ec4afbf2b43",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "control_ec256",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 256,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICMDCCARigAwIBAgIUTRMkozqzo1pcdYj/iHgUU6uJ2kwwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATlEQos8nXdl6Yrfn4Ig8vqu+pb\nriSZwam79ep1lN/s6IB4ipNR5Mz/ozvKrrrKAEmqm4ugXFfOYymXJ0a4cGpBozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQAup3z0CaHsgDVCkm+Ih8iNwOJa6CjJffBZ0/Eu\nBvG5ogVsUXfkmdXKzVqe+7ktNZYPTOl3gQ0sUbJkkTIOrQ0H2kjgks48JrBad1Ke\nnnN8SgdPUKeDkXXyzEB6cmU3bOxyfxM2sT9kM2qYIQoc9hRKbYiiZ7FUEoA3mW6b\nZPXftI7uzrqU05XbruXwJDDfMn1VJBTBlHO7pRwTvotgFBVEyOg6JAJ9Q8VWKRWc\nggybjFmIqdyhv/fjlWbNtXP03uoFBRgIUHZGCfF+8AW46BUibP3krSlFLga0JokO\n5psk5dQIx4qOheY1KrkXAo1zCb+WJnt34UgtijLUrndK5RJa\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUVRrSDVCdMRbkJPmFP/7FiKesiX0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmwAvHkNnCQNM4ixfM776\nkwqKKcb3o2obxJDDJL4vJh2KQG1pvi8bnHiWNPtQwBmnC19HBC+clZ8PtgMkDDmk\nFM6dlP5Omf4Cm/BE2AX3E5pWU4JHEd25h2E4SYpLYo8TFbXyFZG69HUqJETpK7SH\nT1df62M/5qcFexlPOH2eho9Hn9mq1iE7w5XX479+XwhLHHi4Bf85VcFDTRLzu2KR\n6w0rWAPYhES7N5h9hanZIZJvZDcs5EGxQshUy49sJvi2buVg8mt6Y3qy1l3luIU2\nZNAjp5kl3b5zTisQzyqMUT7sEuogY4A32DJw5qmK7GrvIl99JlGzetRP5rRU4zc6\niwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAOBFLN5Fc1n2FVM1Ujk+F/yDDkw/UhG9vnlcKusB/GX7WQYmmjQnl1pS7lYMnE\n10sp9WklndkPqEy8xHaDjWFUaB3v+MXOVWEv8m+b91c3HWnW9Q6XH4Q6vI1l8LU6\nMcEYGRpa/MLp0tGV2GlZ290LcJuaViNIXJOHf00Xt7l3HO+bbz93lXmHw3YBrw2B\nOQXiBiaqcRgmMWy17QDCFUfG3gYPRDk0HVo6g4/VosmL5zATNmUDBVj82WCRN8n0\n7GdY9uAXrwxReNln+TH8iHsttHQDa0FUZdcqjRwnR0tyMkrGxgtwvGcVw4QUyFup\nbRS/+B7OCnQ1PQopuYFQaLPK\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "529138984435006895207851903041849814023930138308",
+        "sha256": "01431d7e00a806196cd891286531beb8e3de1b92caccef6aec62c511a9e88ace",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "681591956238688962073620367109448794120635426738",
+        "sha256": "3f42138398094063eb09089207f97b0ebbe1dc1503ba3b97cb7c581198c5fcc7",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "439875942164602896829420387805902378042808726189",
+        "sha256": "24e449782c6e3c0ac358a4b9e529d5ff4b4c6d4a619bcaa7c1414ff953eb2010",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "control_rsa3072",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 3072,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIDezCCAmOgAwIBAgIUVYmv8Rb0sUL6oFHBrDJHPcLEL5cwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQC2RguRdJs0FzEXNtwt\nHWSVxBdOLDDbqojG9rPYShKoqwUg1wWSSYBmL/RM4edW15VBLSQgHKffxYKdcHEx\nkXBV1AbY+0UQ0DVMEZ85bG/p+IUnVrp25dIqP5uaY92DdieGGRbNMa6OOK7nTBl5\nanq3ji6bN9bYittFJFFJpyisfeh/NTX1cpyLd7D/ky3jyWMccLmX+ZMDGsQ0M9Eo\ntvWhYloNHT96BeiELVKCNOL8K4E/2zeAzDhd4PSXXdEuICtNF4Pp+XaqXijB1jxp\ng63K/gPl8lSUurZlThYQQ+/SmEdI2CPDtgsHL2UWyERuzbYTVifMiugFEmxc+D+G\nBWlzUc/X1RNwTHLKyregIa6URw6k4fzprWvViDIGJSdxQ+WpKFXtv9FiOQex6m+f\npybOtMFoTMrt8GciOiYnhNmFShswqitle1EsgPJJ4MgcN+mhLaCpMGnoDwGkdb9d\n7s8woj8pS1ULepcMplSSazTBB2ZilDdmSRjSvN4v8bN1l7kCAwEAAaMxMC8wDAYD\nVR0TAQH/BAIwADAfBgNVHREEGDAWghRjb250cm9sLmV4YW1wbGUudGVzdDANBgkq\nhkiG9w0BAQwFAAOCAQEAB97ayGrvFlm2P1MLC7ePJXPdBZlvlJRQm35tEiRl2nSL\nHmGe2IHeMKueO83TK28dnTFx0XuKqX15gQ77zNwDkGFgaITqA/7msOiKaBe3+2Ct\n3ALkDfTMbWbfY/T8foIZ8IkEhGVVTm9CgiLSjpsGjv1H6Q+rJ5dxA2Cnna3esrFO\nU9RFpkp2E75tE7X3fGPsrTnYnX2WTyB8bmXPnUs5JpaELE/y0/TdGs/7POLva6UM\nq8lU80ovW3YsnErtSCsWRot/mitK6Ca6XHV1hunJWr+DgXc8XBGTdowjSuJ1m/Kl\n2onZGGWP/Gu3A6Xq3nIbwogsAcSicmPd3s4wYYGSxw==\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUVRrSDVCdMRbkJPmFP/7FiKesiX0wDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmwAvHkNnCQNM4ixfM776\nkwqKKcb3o2obxJDDJL4vJh2KQG1pvi8bnHiWNPtQwBmnC19HBC+clZ8PtgMkDDmk\nFM6dlP5Omf4Cm/BE2AX3E5pWU4JHEd25h2E4SYpLYo8TFbXyFZG69HUqJETpK7SH\nT1df62M/5qcFexlPOH2eho9Hn9mq1iE7w5XX479+XwhLHHi4Bf85VcFDTRLzu2KR\n6w0rWAPYhES7N5h9hanZIZJvZDcs5EGxQshUy49sJvi2buVg8mt6Y3qy1l3luIU2\nZNAjp5kl3b5zTisQzyqMUT7sEuogY4A32DJw5qmK7GrvIl99JlGzetRP5rRU4zc6\niwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQAOBFLN5Fc1n2FVM1Ujk+F/yDDkw/UhG9vnlcKusB/GX7WQYmmjQnl1pS7lYMnE\n10sp9WklndkPqEy8xHaDjWFUaB3v+MXOVWEv8m+b91c3HWnW9Q6XH4Q6vI1l8LU6\nMcEYGRpa/MLp0tGV2GlZ290LcJuaViNIXJOHf00Xt7l3HO+bbz93lXmHw3YBrw2B\nOQXiBiaqcRgmMWy17QDCFUfG3gYPRDk0HVo6g4/VosmL5zATNmUDBVj82WCRN8n0\n7GdY9uAXrwxReNln+TH8iHsttHQDa0FUZdcqjRwnR0tyMkrGxgtwvGcVw4QUyFup\nbRS/+B7OCnQ1PQopuYFQaLPK\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "537132170036178807123185244886971658540193108038",
+        "sha256": "09a0f3aed0a66ff4132452604e4f002ea3425395a225d9aabb6858153b447195",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "309594145704421352381663097479135916126900554387",
+        "sha256": "84816ed37871a0bda9a5570f6e3ba26f30eecbdd228afb4bd2abc74a3481384e",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 0,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": null,
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "control_ed25519",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "Ed25519",
+        "key_size": null,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICADCB6aADAgECAhRt0z73GWnru87F3b2SHLJKQPsXxDANBgkqhkiG9w0BAQsF\nADAdMRswGQYDVQQDDBJEVDAwNyBDb250cm9sIFJvb3QwHhcNMjYwOTI3MDAwMDAw\nWhcNMjYxMTA2MDAwMDAwWjAfMR0wGwYDVQQDDBRjb250cm9sLmV4YW1wbGUudGVz\ndDAqMAUGAytlcAMhAM41itz1VVCgR+A1cjJNLQOC7+cX0AvjwVwhe95QpGmQozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQCQzm2QKtnnPRPLRjMMc9qgffNDQsFANusUj3dJ\n4K0mWRUsFhn+ZG6ZsWDTUoNf0dg3+2BPlD3/kczB/MDtn4BrWfJOisyQbPjjjhOw\n5+j0yMUgaRBH2Tssi6zAfnI7omgWoRxiytSyhkf2HsGxm2QkRi8joAkJkAf8zOgS\nSd/L9vi+W6wc/R/yit86/mkFecQ/cNziUq57kfafcxgkVeTMM2+WN22bc/s91dk3\nh2rYWfiKyoDaPeHfY5pSCjZT2CaG40kqvEtTRU529Fe6+znaBBCfR1tclMa57HIe\novdOQgGOCe7WMMcTbfE9Ra6pmhgVH946YmoGsqKdqOhn8Hwf\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUUJjGVkO/WD5kt3b3IW6b28XK0agwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7T+e8xVKTg4pUK661SW6\nrwFZrKIQC4bEGyIG0DJioF9j7SuzGs0y+CEKTMM7FYP1PitwwU+XVOCQm55FGu3c\nEU9KVlxJ/TOKMpjYZ/wU+4YpKu3XF+XJj7gCmI7j98KI2Eq68fehfeEtMVS+Lfdx\n1WKNA65N2frm7ypirI2cBpCAsWyfSQGqv0wrElkJrDM/dbpBXseBmnBGagzO92VI\n4U2r3CAzm/VZU+cRKgX33/EsLgo9amZzU6fxKCLXmgCkpqoENvNhUnLS+8ML9pkC\np3eY9IFXtXbWVHlQhYQhbjdPAHy1B9gFjva4Y7o6Y3DZ2etVtRnn5J9icF/3guzr\nJwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCKTik+S0orwKogR3TGnSnLVMEdYY91EtxZph/O1xvGUUUP3Sx+gVwXFaeO5Q2A\nBQ1UkoWuVl7HBGcn7qITaJbv92mrnt+kVD+juhoiufLOY8vx7SnATXX1cqjcTPP9\nYfTuJg+hFNAGumdP7Q+IPCgccHAm5qNYsCX5R27Sxbk/BD0W193BxZTVKZSWBD4q\nDBG7pnOVNvf1VUUL236IfNNFCysLLT1HCMTMbFwgU0Hp72KNYFcZpuxGhmJZQZcF\nmuimsnH3FTNjiQHB1cUsiSbhIdRQ5Zz5iLyELOMJsk1CuWwckTh/R3rTjdvhW5uY\n+0WusJ1cby1JfbFG794B+e6s\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "control_rsa2048",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIC+zCCAeOgAwIBAgIUO876a5YMtj0QRnh7QkGbVxuj5yAwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCn/4oNW3/SGDUW0Zq/\nQfn6LAGu9jQRjG7Ui5RZ+fwIctwuqw8FHwKSPTvAn50LXgM2RGjFwavBAmUzJX19\nbhH2Ptox6IemAsL5kWCaJ6KmrG3H9PWwVy6kek30XQ1OVfHZsNApdoMyb/YNo2Lz\n8nEDYb+35rQDreddzHcQrxdmNb2cPXYXEfdnYY0lzsxTC0Pz0c46JdeFsD6xweYb\nL5G2PzwUnaFBCsdc4+jdkV27CMJsd3iHYBCOGfv52g1H8hw1AhA4UwOUB8ZFZy4b\nol9KUFuGy1V/WaUtX4A8S9fhjlhHSmSkprCJxOuiPRTWyKl/wFrklXYhCKnWrD9s\nqRJRAgMBAAGjMTAvMAwGA1UdEwEB/wQCMAAwHwYDVR0RBBgwFoIUY29udHJvbC5l\neGFtcGxlLnRlc3QwDQYJKoZIhvcNAQELBQADggEBAKqhB/tUjSrTO95P/UTAfaYp\nkQ8Zso8eOoyuSPMet4o7gnF7P2rC/4aKOtTkYzqeZFGFBgE8fPIFx8a0sSFUNreI\nvT/ZX041mCU/neESMyg/hMVlmneCiyyqX7WDxLtzB+7HQj/pbWQe+yiim2Ib9BhJ\nWglb2CvVbM6iCcp9vtc2Ypz+IXTEBuKv/BohPS+S356ucrP9+Fa/f+tuzpPdq6Sh\n8400q+Pp/ZHcZIz+S7m4ehlWmfooDqqjSe/jI1pUJOECFPj5+elLOfq5PkEzwu5W\ntsIc7RZO5oP7auxLvmGiGSyklocpLMuXOUxOllmV4/XyUT1Dntlbgl7jQWwf8nc=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUUJjGVkO/WD5kt3b3IW6b28XK0agwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7T+e8xVKTg4pUK661SW6\nrwFZrKIQC4bEGyIG0DJioF9j7SuzGs0y+CEKTMM7FYP1PitwwU+XVOCQm55FGu3c\nEU9KVlxJ/TOKMpjYZ/wU+4YpKu3XF+XJj7gCmI7j98KI2Eq68fehfeEtMVS+Lfdx\n1WKNA65N2frm7ypirI2cBpCAsWyfSQGqv0wrElkJrDM/dbpBXseBmnBGagzO92VI\n4U2r3CAzm/VZU+cRKgX33/EsLgo9amZzU6fxKCLXmgCkpqoENvNhUnLS+8ML9pkC\np3eY9IFXtXbWVHlQhYQhbjdPAHy1B9gFjva4Y7o6Y3DZ2etVtRnn5J9icF/3guzr\nJwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCKTik+S0orwKogR3TGnSnLVMEdYY91EtxZph/O1xvGUUUP3Sx+gVwXFaeO5Q2A\nBQ1UkoWuVl7HBGcn7qITaJbv92mrnt+kVD+juhoiufLOY8vx7SnATXX1cqjcTPP9\nYfTuJg+hFNAGumdP7Q+IPCgccHAm5qNYsCX5R27Sxbk/BD0W193BxZTVKZSWBD4q\nDBG7pnOVNvf1VUUL236IfNNFCysLLT1HCMTMbFwgU0Hp72KNYFcZpuxGhmJZQZcF\nmuimsnH3FTNjiQHB1cUsiSbhIdRQ5Zz5iLyELOMJsk1CuWwckTh/R3rTjdvhW5uY\n+0WusJ1cby1JfbFG794B+e6s\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "590356012351266094804220709433878053005981118995",
+        "sha256": "a2081445e60c1d423554f8cb9f1825eb23bd3d14f20265acdb457ab212959c7a",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "702914531168134658097834453777689576476307259121",
+        "sha256": "9d6561763800c2cbc99cddda8b9ffedaa8375fbd4557c4a87cd95c709e078795",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "97190846675372447152930095818702816005788382863",
+        "sha256": "2c1e5a022aef98a1e1a98e5400578273f300d5af340ad51f337d2817ca5dc6f3",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "control_rsa3072",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "RSA",
+        "key_size": 3072,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIIDezCCAmOgAwIBAgIUczn+u5pWHpIcvAsx0/csNpiBSHwwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQC84vBr6zXQ8+uHKp9f\nY6d2oxHQCiTFIpfQeY0DIVqEmSNBzWwFHg1YOnM8Wj1pdSe7rD/I9VdJaFFlM2ND\n7rO3e3g8IT7rr+TnwvdP9s3cZi7rdL3Rts1ZqaJYMLHlAFe4wS/9wHAYEEGqUWay\nIoCOvtfw29tNBhgAnUGQ6HG23bpPI5hWeNBwCRhErmkIhnqeMoE4XQrmGNEuvJcT\nf6UtEePAjMxfR+uJp57xWO0QYs67LENChWM4Re0rrzx4KrCqQBxmXY4deVtUpacC\nhILjlqblWfjSFNX95CD5a19OhXCx42Jp60YUwVIpMQtgCTHIYcro33UfV9JDa2f0\nLaRoy6wmALSQ3R26wL+phTol+OUnRC75NSjzPhsm3vt603TaHjt6MgsGydaNiJPE\nZaQnGkbCvvHJURNtr8TMhlZx/0441PILzKMRrnD0a4HTjtlFwQvEk+p3TsGNFZOE\nFLyPXDLWoTCgYLo5jD16LI2t+GmxMjqREirNMlJqVikMO+sCAwEAAaMxMC8wDAYD\nVR0TAQH/BAIwADAfBgNVHREEGDAWghRjb250cm9sLmV4YW1wbGUudGVzdDANBgkq\nhkiG9w0BAQwFAAOCAQEAUIkFsFAdGzQzHfAFIVFxb2p1Oz1tjKKYDHd7cmsFJpPG\n/BKNaERqUlZ/WDUFffgV0VKcqjkR1HPDSYa2uFPAwRFCuuxg0jPyD1LAjbnm3r1X\n1zxKukLHaI7qYOYhX78rApubKD43r5yV6c99cU0FIYTpzU5C8RQoVfr+v/29JsR7\nuiNhbvacJLJi+d8asP5cklDswERPIMuUzwRIoyWw8bvbeacfbZ87/EQf7wL6/6pc\nvkknNUDpuChuqIBQAfS7nu8nhoUOHrfX8LtfwkZb9C5S7teAOjVinlhkT6pYVR/O\nVsZyFKo1EmzbeBhg7HfdEb53C3aZ9WiMO/vCqUeoIA==\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUUJjGVkO/WD5kt3b3IW6b28XK0agwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7T+e8xVKTg4pUK661SW6\nrwFZrKIQC4bEGyIG0DJioF9j7SuzGs0y+CEKTMM7FYP1PitwwU+XVOCQm55FGu3c\nEU9KVlxJ/TOKMpjYZ/wU+4YpKu3XF+XJj7gCmI7j98KI2Eq68fehfeEtMVS+Lfdx\n1WKNA65N2frm7ypirI2cBpCAsWyfSQGqv0wrElkJrDM/dbpBXseBmnBGagzO92VI\n4U2r3CAzm/VZU+cRKgX33/EsLgo9amZzU6fxKCLXmgCkpqoENvNhUnLS+8ML9pkC\np3eY9IFXtXbWVHlQhYQhbjdPAHy1B9gFjva4Y7o6Y3DZ2etVtRnn5J9icF/3guzr\nJwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCKTik+S0orwKogR3TGnSnLVMEdYY91EtxZph/O1xvGUUUP3Sx+gVwXFaeO5Q2A\nBQ1UkoWuVl7HBGcn7qITaJbv92mrnt+kVD+juhoiufLOY8vx7SnATXX1cqjcTPP9\nYfTuJg+hFNAGumdP7Q+IPCgccHAm5qNYsCX5R27Sxbk/BD0W193BxZTVKZSWBD4q\nDBG7pnOVNvf1VUUL236IfNNFCysLLT1HCMTMbFwgU0Hp72KNYFcZpuxGhmJZQZcF\nmuimsnH3FTNjiQHB1cUsiSbhIdRQ5Zz5iLyELOMJsk1CuWwckTh/R3rTjdvhW5uY\n+0WusJ1cby1JfbFG794B+e6s\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "control_ec256",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 256,
+        "signature_hash": "sha256"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICMDCCARigAwIBAgIUSI9xZ7uHcuIhrHWvnz0Ki53wOrowDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASpdCyBla/h76uyTLXg+SxFo8tM\nhPylsw+VbZzxB4z7qsyHyZyePg7Xgb5y97QJQVq3ex1kOandX11jLgl9Em+QozEw\nLzAMBgNVHRMBAf8EAjAAMB8GA1UdEQQYMBaCFGNvbnRyb2wuZXhhbXBsZS50ZXN0\nMA0GCSqGSIb3DQEBCwUAA4IBAQCCp9zdZ0o1vZMa0UDSRMO7TAKBYgRlhO91KYM3\n/uxdBHc+ZW8Jiw3M43LKsQiIR0PhwVo7OQOv9A1VLcd02o2jIASO6zMaCiiW5KY/\n3tf91BOne68zg6wwB+mDBx/lS5uhwAVea7fKKEG4wqY27KCbN8+2WV0SBve5TNVD\nUJZKhonUIK6VFCJx/oSafv88bsXnwGvpL3RG2HqVQODMEluKjVbcdsDOj2WSdYW/\n4tnRjUExG3ivK/dv2xKmcN1TVY3Ax0HjYH3qhjbKNM38wTHQm3+15XRuF+Gzf0Vz\nh74nC0O5GJrAear7/vHcJwUrO2aDVI6pe1LejcK0/rE9++Dg\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUUJjGVkO/WD5kt3b3IW6b28XK0agwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7T+e8xVKTg4pUK661SW6\nrwFZrKIQC4bEGyIG0DJioF9j7SuzGs0y+CEKTMM7FYP1PitwwU+XVOCQm55FGu3c\nEU9KVlxJ/TOKMpjYZ/wU+4YpKu3XF+XJj7gCmI7j98KI2Eq68fehfeEtMVS+Lfdx\n1WKNA65N2frm7ypirI2cBpCAsWyfSQGqv0wrElkJrDM/dbpBXseBmnBGagzO92VI\n4U2r3CAzm/VZU+cRKgX33/EsLgo9amZzU6fxKCLXmgCkpqoENvNhUnLS+8ML9pkC\np3eY9IFXtXbWVHlQhYQhbjdPAHy1B9gFjva4Y7o6Y3DZ2etVtRnn5J9icF/3guzr\nJwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCKTik+S0orwKogR3TGnSnLVMEdYY91EtxZph/O1xvGUUUP3Sx+gVwXFaeO5Q2A\nBQ1UkoWuVl7HBGcn7qITaJbv92mrnt+kVD+juhoiufLOY8vx7SnATXX1cqjcTPP9\nYfTuJg+hFNAGumdP7Q+IPCgccHAm5qNYsCX5R27Sxbk/BD0W193BxZTVKZSWBD4q\nDBG7pnOVNvf1VUUL236IfNNFCysLLT1HCMTMbFwgU0Hp72KNYFcZpuxGhmJZQZcF\nmuimsnH3FTNjiQHB1cUsiSbhIdRQ5Zz5iLyELOMJsk1CuWwckTh/R3rTjdvhW5uY\n+0WusJ1cby1JfbFG794B+e6s\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "control_ec384",
+    "evidence": {
+      "input_type": "Chứng thư X.509 thực, DER công khai; không có SCT",
+      "mock_used": false,
+      "label_source": "Thuộc tính định trước + OpenSSL store verification độc lập trước engine",
+      "oracle_verified": true,
+      "oracle_limit": "Dùng chung backend OpenSSL; nhãn chỉ về chứng thư trong trust store lab, không về website/CT đầy đủ",
+      "certificate": {
+        "subject": "CN=control.example.test",
+        "issuer": "CN=DT007 Control Root",
+        "key_algorithm": "EC",
+        "key_size": 384,
+        "signature_hash": "sha384"
+      },
+      "leaf_pem": "-----BEGIN CERTIFICATE-----\nMIICTTCCATWgAwIBAgIUNSAV1h7XNNGCq5ybUAK1KyrWwIQwDQYJKoZIhvcNAQEM\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHzEdMBsGA1UEAwwUY29udHJvbC5leGFtcGxlLnRl\nc3QwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAQf25jMNWOOZSbZ3D1dgobovIBwsmL/\nuGpQ41ol2SOb6QU1XdSDP+C5zCWR2efBd0/LnjpJ1VwiYxaOz1MKegSl5tyTha00\nW3J+7TLZYwroWlGDezi+vIpXc+/r+J/W4KajMTAvMAwGA1UdEwEB/wQCMAAwHwYD\nVR0RBBgwFoIUY29udHJvbC5leGFtcGxlLnRlc3QwDQYJKoZIhvcNAQEMBQADggEB\nAOHmkSwAkHbdalN9CzLAs/Er5qkzsoWe3EZfZfdpfHea3v/pkf63IxynBJ1t+2ZM\nTar9/TGc/c4c6oQQg0ses1T2moK0wKRP8PyhXERMbZE3t/T80rtKgqSJj7t+8+AW\noyJZe+rI/lDC/G+NhcFxAVOfHOtoTOaEaAdoifi6VffUWBwfd42sLDyrQFnGe/Lb\nqke0zjV/wkccmOKeSTurhUOTJvA0JSkt35rAj635uGu3IB2hiyjKyKrEd6wtcz8j\nqBMrxBADjC/vrqxP/37/3/LsyB4TOTTh2k7fH02UqHPE5sBAKbdK7nkWNbc1AVq7\nmjFIzZRFZcMAYjm8Sn+Y9vc=\n-----END CERTIFICATE-----\n",
+      "anchor_pem": "-----BEGIN CERTIFICATE-----\nMIIC3jCCAcagAwIBAgIUUJjGVkO/WD5kt3b3IW6b28XK0agwDQYJKoZIhvcNAQEL\nBQAwHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290MB4XDTI2MDkyNzAwMDAw\nMFoXDTI2MTEwNjAwMDAwMFowHTEbMBkGA1UEAwwSRFQwMDcgQ29udHJvbCBSb290\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7T+e8xVKTg4pUK661SW6\nrwFZrKIQC4bEGyIG0DJioF9j7SuzGs0y+CEKTMM7FYP1PitwwU+XVOCQm55FGu3c\nEU9KVlxJ/TOKMpjYZ/wU+4YpKu3XF+XJj7gCmI7j98KI2Eq68fehfeEtMVS+Lfdx\n1WKNA65N2frm7ypirI2cBpCAsWyfSQGqv0wrElkJrDM/dbpBXseBmnBGagzO92VI\n4U2r3CAzm/VZU+cRKgX33/EsLgo9amZzU6fxKCLXmgCkpqoENvNhUnLS+8ML9pkC\np3eY9IFXtXbWVHlQhYQhbjdPAHy1B9gFjva4Y7o6Y3DZ2etVtRnn5J9icF/3guzr\nJwIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUAA4IB\nAQCKTik+S0orwKogR3TGnSnLVMEdYY91EtxZph/O1xvGUUUP3Sx+gVwXFaeO5Q2A\nBQ1UkoWuVl7HBGcn7qITaJbv92mrnt+kVD+juhoiufLOY8vx7SnATXX1cqjcTPP9\nYfTuJg+hFNAGumdP7Q+IPCgccHAm5qNYsCX5R27Sxbk/BD0W193BxZTVKZSWBD4q\nDBG7pnOVNvf1VUUL236IfNNFCysLLT1HCMTMbFwgU0Hp72KNYFcZpuxGhmJZQZcF\nmuimsnH3FTNjiQHB1cUsiSbhIdRQ5Zz5iLyELOMJsk1CuWwckTh/R3rTjdvhW5uY\n+0WusJ1cby1JfbFG794B+e6s\n-----END CERTIFICATE-----\n",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      },
+      "modules": [
+        "crypto_info",
+        "algorithm_policy",
+        "validity_checker",
+        "hostname_validator",
+        "chain_validator",
+        "security_evaluator",
+        "sct_parser",
+        "ct_validator"
+      ]
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "137735503083691345327524968184895362779122655929",
+        "sha256": "7c44905980f90f7088a499594e3907ae435b8fc758088c05442d5d40bc742bd3",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-09-27T00:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "225277487910495325258828787950915644096331309105",
+        "sha256": "ed3e452d30cb0005a45990505471bd798fbb3c152b3637722c3309d1a403754f",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "125774683143639328389821803661118499096778960358",
+        "sha256": "671081fabc93eea613c01859927e87671b1484f9e14d2b406a84b405e1fe1049",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "retired",
+        "state_timestamp": "2026-10-06T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "673457074794499079731651039664694580021988289587",
+        "sha256": "7e658e36c06bb5c3e5a58b2f98f962955c079bcda42df879fac35f60c112eeee",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "other.example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "695042863181746178541098305720677947834179458368",
+        "sha256": "86328929516208e0508c1360d9a8e2cf62e00f93dcbee8c4b86b9e449af9b4df",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "437122406651781882046457817101239564055522801702",
+        "sha256": "b34804d7c59c45bc1bc1c969fe41b4c8449c24408b077afe27ffc8fbd1a27265",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "458428311006346810814698112962763800998846922432",
+        "sha256": "998ce065279cfd4e4d4a5027000e7a443e9fb4ebe6669f299a46646a1b3ceabf",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "729956846122721194189751238271616734072146104382",
+        "sha256": "f852f7e12659e99a3c20bdbfe1549dbd68ecb59520d4891e68d85a2405f130a3",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "704933120978233628198587367817852615746044446723",
+        "sha256": "12c80b55843fa1faae887a1acce053279f30d8ee12e7d10a97e33830fac7ba02",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "GbI0pakCuWOOaMsOiSUxeiYwnBNSDuJXUnFi0jxwdio=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  }
+]

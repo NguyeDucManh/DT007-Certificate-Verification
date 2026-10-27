@@ -1,0 +1,83 @@
+{
+   "checksum": "80a6927b0337aa9a01da2bf12c837b18",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13436096137788401",
+            "date_last_used": "0",
+            "guid": "b3fe5674-e59d-44df-a37e-773c53368fee",
+            "id": "9",
+            "name": "Lenovo Support",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://support.lenovo.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13436096137788272",
+            "date_last_used": "0",
+            "guid": "dc7a6c86-29d7-44f6-970f-375ea57e2f96",
+            "id": "8",
+            "name": "Lenovo",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.lenovo.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13436096137787911",
+            "date_last_used": "0",
+            "guid": "698a94e3-b88e-4682-bc15-d733d0b0ca4d",
+            "id": "7",
+            "name": "McAfee",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://consroute.mcafee.com/app?csrc=browserfavaffid=714clicksrc=browserfav",
+            "visit_count": 0
+         } ],
+         "date_added": "13436096137604676",
+         "date_last_used": "0",
+         "date_modified": "13436096137788401",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13436096137604676",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13436096137604676",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13436096137604676",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

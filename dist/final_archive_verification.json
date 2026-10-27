@@ -1,0 +1,9 @@
+{
+  "archive_files": 416,
+  "manifest_hashes_verified": 415,
+  "protected_files": 127,
+  "expected_source_change": [
+    "experiments/run_validation.py"
+  ],
+  "excluded_temp_cache_environment": true
+}

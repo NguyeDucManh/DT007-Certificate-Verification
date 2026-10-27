@@ -1,0 +1,140 @@
+{
+  "extensions": {
+    "revocation": {
+      "status": "NOT_CHECKED",
+      "reason": "Chưa bật kiểm tra OCSP/CRL; không suy ra chứng thư an toàn.",
+      "evidence": []
+    },
+    "aia": {
+      "status": "NOT_CHECKED",
+      "reason": "Chưa yêu cầu bổ sung chuỗi qua AIA.",
+      "downloads": []
+    },
+    "sct_verification": [],
+    "inclusion": {
+      "status": "NOT_VERIFIED",
+      "reason": "Chưa có STH được xác thực và inclusion proof phù hợp; không suy ra đã được đưa vào log."
+    }
+  },
+  "hostname": "example.com",
+  "target": "example.com:8443",
+  "runtime_seconds": 0.001768199959769845,
+  "scan_error": null,
+  "certificate": {
+    "subject": "CN=example.com",
+    "issuer": "CN=DT007 Intermediate",
+    "serial_number": "92314968830213146431611482063527323460603123869",
+    "version": "v3",
+    "not_before": "2026-09-30T07:59:05+00:00",
+    "not_after": "2026-10-20T07:59:05+00:00"
+  },
+  "hostname_validation": {
+    "requested_hostname": "example.com",
+    "san_count": 1,
+    "san": [
+      "example.com"
+    ],
+    "status": "PASS",
+    "message": "Hostname khớp SAN của certificate."
+  },
+  "validity": {
+    "status": "VALID",
+    "message": "Certificate đang trong khoảng thời gian có hiệu lực.",
+    "not_before": "2026-09-30T07:59:05+00:00",
+    "not_after": "2026-10-20T07:59:05+00:00",
+    "current_time": "2026-10-10T07:59:05.348511+00:00"
+  },
+  "cryptography": {
+    "public_key_algorithm": "RSA",
+    "key_size": 2048,
+    "signature_algorithm": "ECDSA_WITH_SHA256",
+    "signature_oid": "1.2.840.10045.4.3.2",
+    "hash_algorithm": "sha256"
+  },
+  "chain": {
+    "length": 3,
+    "certificates": [
+      {
+        "role": "Leaf",
+        "subject": "CN=example.com",
+        "origin": "Chưa thu thập chuỗi máy chủ gửi",
+        "is_trust_anchor": false,
+        "issuer": "CN=DT007 Intermediate",
+        "not_before": "2026-09-30T07:59:05+00:00",
+        "not_after": "2026-10-20T07:59:05+00:00"
+      },
+      {
+        "role": "Intermediate #1",
+        "subject": "CN=DT007 Intermediate",
+        "origin": "Chưa thu thập chuỗi máy chủ gửi",
+        "is_trust_anchor": false,
+        "issuer": "CN=DT007 Test Root",
+        "not_before": "2026-09-30T07:59:05+00:00",
+        "not_after": "2026-10-20T07:59:05+00:00"
+      },
+      {
+        "role": "Root CA / Trust Anchor",
+        "subject": "CN=DT007 Test Root",
+        "origin": "Chưa thu thập chuỗi máy chủ gửi",
+        "is_trust_anchor": true,
+        "issuer": "CN=DT007 Test Root",
+        "not_before": "2026-09-30T07:59:05+00:00",
+        "not_after": "2026-10-20T07:59:05+00:00"
+      }
+    ],
+    "issuer_subject_links": "PASS",
+    "signature_validation": "PASS",
+    "ca_constraints": "PASS",
+    "validity": "PASS",
+    "tls_usage": "PASS",
+    "trusted_root": "PASS",
+    "status": "PASS",
+    "reasons": [],
+    "trust_anchor_subject": "CN=DT007 Test Root",
+    "trust_explanation": "Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký."
+  },
+  "algorithm_policy": {
+    "algorithm": "RSA",
+    "key_size": 2048,
+    "hash_algorithm": "sha256",
+    "public_key": {
+      "status": "PASS",
+      "message": "Allowed public key algorithm: RSA"
+    },
+    "key_size_rule": {
+      "status": "PASS",
+      "message": "Key size meets policy minimum (2048 bits)"
+    },
+    "hash_rule": {
+      "status": "PASS",
+      "message": "Allowed signature hash: sha256"
+    },
+    "status": "PASS",
+    "reasons": []
+  },
+  "ct": {
+    "sct_count": 0,
+    "matched_scts": 0,
+    "signature_validation": "NOT_VERIFIED",
+    "inclusion_validation": "NOT_VERIFIED",
+    "status": "WARNING",
+    "scts": [],
+    "reasons": [
+      "NO_SCT: certificate has no embedded SCT; policy is WARNING"
+    ]
+  },
+  "security": {
+    "status": "WARNING",
+    "checks": {
+      "Validity": "PASS",
+      "Hostname": "PASS",
+      "Certificate Chain": "PASS",
+      "Algorithm Policy": "PASS",
+      "Certificate Transparency": "WARNING"
+    },
+    "reasons": [
+      "NO_SCT: certificate has no embedded SCT; policy is WARNING"
+    ]
+  },
+  "errors": []
+}

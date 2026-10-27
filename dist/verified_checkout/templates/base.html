@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DT007 — Kiểm tra chứng thư X.509, tên miền, thời hạn, chuỗi tin cậy, thuật toán và Certificate Transparency.">
+  <title>{% block title %}DT007 · Trình xác minh an toàn chứng thư số{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Đến nội dung chính</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ url_for('index') }}" aria-label="DT007 — Trang chủ">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 20 6v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m8.5 12 2.3 2.3 4.7-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong>DT007</strong><span class="brand-caption">Trình xác minh an toàn chứng thư số</span></span>
+      </a>
+      <nav class="local-label" aria-label="Điều hướng chính"><a href="{{ url_for('index') }}">Kiểm tra website thực tế</a><a href="{{ url_for('demo') }}">Demo kiểm thử</a></nav>
+    </div>
+  </header>
+  <main id="main" class="container">{% block content %}{% endblock %}</main>
+  <footer class="site-footer container">
+    <span>DT007 · Trình xác minh chuỗi chứng thư số và chính sách thuật toán</span>
+    <span>Python • Flask • cryptography • OpenSSL • Certificate Transparency</span>
+  </footer>
+</body>
+</html>

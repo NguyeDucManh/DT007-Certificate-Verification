@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://www.gstatic.com/ct/log_list/v3/log_list.json",
+    "file": "response_1.bin",
+    "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32",
+    "bytes": 50629
+  },
+  {
+    "url": "https://www.gstatic.com/ct/log_list/v3/log_list.sig",
+    "file": "response_2.bin",
+    "sha256": "18c0390b0cd592d210fae2ad4561e44a17ee49366f3af3e66a25f89dba19a6a2",
+    "bytes": 512
+  },
+  {
+    "url": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/get-sth",
+    "file": "response_3.bin",
+    "sha256": "a8b12c83888fafc3b60134be55d8761cbd399fbdae36e59531d9cbcd3277461f",
+    "bytes": 241
+  },
+  {
+    "url": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/get-proof-by-hash?hash=VY5qhRlubKyiSdOlskW1JfC6zRIzwlwYuxFt9EoTLn0%3D&tree_size=3423872867",
+    "file": "response_4.bin",
+    "sha256": "2b4af0bddcd06c87d886baae48ef9576b1453983f61b773dd75585461e6bc8b7",
+    "bytes": 1544
+  },
+  {
+    "url": "https://ct.cloudflare.com/logs/nimbus2026/ct/v1/get-sth",
+    "file": "response_5.bin",
+    "sha256": "2af4db02b80244924a71791763178f140bec45f2a997c32e6289895960813a4b",
+    "bytes": 241
+  },
+  {
+    "url": "https://ct.cloudflare.com/logs/nimbus2026/ct/v1/get-proof-by-hash?hash=5pR9K7ei%2FAvoZXZHNsvdysANcN0WCO2ksy0S4Y1jz3U%3D&tree_size=6676349488",
+    "file": "response_6.bin",
+    "sha256": "ac72c104489cb91ae9e354c22c092488fda11388973eb293ce47f1c051bacf49",
+    "bytes": 1450
+  }
+]

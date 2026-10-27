@@ -1,0 +1,184 @@
+<!doctype html><html lang="vi"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>DT007 — Báo cáo chứng thư</title>
+<style>body{font:16px system-ui;max-width:1000px;margin:2rem auto;padding:1rem;color:#153447;background:#f3f7fa}section{padding:1rem;background:white;margin:1rem 0;border-radius:12px}table{width:100%;border-collapse:collapse}td,th{padding:.6rem;text-align:left;border-bottom:1px solid #ddd}.PASS{color:#167340}.WARNING{color:#935400}.FAIL{color:#b02020}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:1.7rem}@media print{body{background:white;margin:0}}</style>
+<h1>Trình xác minh an toàn chứng thư số</h1><p>Tên miền kiểm tra: cloudflare.com:443</p>
+<section><h2>Kết quả cuối cùng: <span class="WARNING">CẢNH BÁO</span></h2>
+<p>Thời gian xử lý: 0.171105 giây</p>
+<table><tr><th>Thành phần kiểm tra</th><th>Kết quả</th></tr><tr><td>Thời hạn chứng thư</td><td class="PASS">ĐẠT</td></tr><tr><td>Tên miền</td><td class="PASS">ĐẠT</td></tr><tr><td>Chuỗi chứng thư</td><td class="PASS">ĐẠT</td></tr><tr><td>Chính sách thuật toán</td><td class="PASS">ĐẠT</td></tr><tr><td>Certificate Transparency</td><td class="WARNING">CẢNH BÁO</td></tr></table>
+<h3>Lý do</h3><p>Chữ ký SCT và bằng chứng đưa vào nhật ký chưa được xác minh đầy đủ; kết quả Certificate Transparency hiện chỉ dựa trên việc đối chiếu CT Log trong bộ dữ liệu.</p></section>
+<section><h2>Thông tin chứng thư</h2><p>Chủ thể: CN=cloudflare.com</p><p>Đơn vị cấp: CN=WE1,O=Google Trust Services,C=US</p><p>Số sê-ri: 283175262338558411663964591884949194155</p><p>Có hiệu lực từ: 2026-09-05T22:29:39+00:00</p><p>Có hiệu lực đến: 2026-12-04T23:29:33+00:00</p></section>
+<section><h2>Giới hạn diễn giải</h2><p>Kết quả kiểm tra chứng thư không xác nhận độ an toàn của nội dung hoặc hoạt động kinh doanh website. NOT_VERIFIED về chữ ký SCT/inclusion proof là giới hạn xác minh; không tự kết luận SCT không hợp lệ.</p></section>
+<section><h2>Chi tiết kỹ thuật — dữ liệu gốc</h2><p>Các mã trạng thái và lý do gốc được giữ nguyên để đối chiếu engine.</p><pre>{
+  &#34;hostname&#34;: &#34;cloudflare.com&#34;,
+  &#34;target&#34;: &#34;cloudflare.com:443&#34;,
+  &#34;runtime_seconds&#34;: 0.17110479998518713,
+  &#34;scan_error&#34;: null,
+  &#34;certificate&#34;: {
+    &#34;subject&#34;: &#34;CN=cloudflare.com&#34;,
+    &#34;issuer&#34;: &#34;CN=WE1,O=Google Trust Services,C=US&#34;,
+    &#34;serial_number&#34;: &#34;283175262338558411663964591884949194155&#34;,
+    &#34;version&#34;: &#34;v3&#34;,
+    &#34;not_before&#34;: &#34;2026-09-05T22:29:39+00:00&#34;,
+    &#34;not_after&#34;: &#34;2026-12-04T23:29:33+00:00&#34;
+  },
+  &#34;hostname_validation&#34;: {
+    &#34;requested_hostname&#34;: &#34;cloudflare.com&#34;,
+    &#34;san_count&#34;: 5,
+    &#34;san&#34;: [
+      &#34;cloudflare.com&#34;,
+      &#34;ns.cloudflare.com&#34;,
+      &#34;*.ns.cloudflare.com&#34;,
+      &#34;*.secondary.cloudflare.com&#34;,
+      &#34;secondary.cloudflare.com&#34;
+    ],
+    &#34;status&#34;: &#34;PASS&#34;,
+    &#34;message&#34;: &#34;Hostname khớp SAN của certificate.&#34;
+  },
+  &#34;validity&#34;: {
+    &#34;status&#34;: &#34;VALID&#34;,
+    &#34;message&#34;: &#34;Certificate đang trong khoảng thời gian có hiệu lực.&#34;,
+    &#34;not_before&#34;: &#34;2026-09-05T22:29:39+00:00&#34;,
+    &#34;not_after&#34;: &#34;2026-12-04T23:29:33+00:00&#34;,
+    &#34;current_time&#34;: &#34;2026-10-10T06:46:11.367595+00:00&#34;
+  },
+  &#34;cryptography&#34;: {
+    &#34;public_key_algorithm&#34;: &#34;EC&#34;,
+    &#34;key_size&#34;: 256,
+    &#34;signature_algorithm&#34;: &#34;ECDSA_WITH_SHA256&#34;,
+    &#34;signature_oid&#34;: &#34;1.2.840.10045.4.3.2&#34;,
+    &#34;hash_algorithm&#34;: &#34;sha256&#34;
+  },
+  &#34;chain&#34;: {
+    &#34;length&#34;: 4,
+    &#34;certificates&#34;: [
+      {
+        &#34;role&#34;: &#34;Leaf&#34;,
+        &#34;subject&#34;: &#34;CN=cloudflare.com&#34;,
+        &#34;origin&#34;: &#34;Máy chủ gửi qua TLS&#34;,
+        &#34;is_trust_anchor&#34;: false,
+        &#34;issuer&#34;: &#34;CN=WE1,O=Google Trust Services,C=US&#34;,
+        &#34;not_before&#34;: &#34;2026-09-05T22:29:39+00:00&#34;,
+        &#34;not_after&#34;: &#34;2026-12-04T23:29:33+00:00&#34;
+      },
+      {
+        &#34;role&#34;: &#34;Intermediate #1&#34;,
+        &#34;subject&#34;: &#34;CN=WE1,O=Google Trust Services,C=US&#34;,
+        &#34;origin&#34;: &#34;Máy chủ gửi qua TLS&#34;,
+        &#34;is_trust_anchor&#34;: false,
+        &#34;issuer&#34;: &#34;CN=GTS Root R4,O=Google Trust Services LLC,C=US&#34;,
+        &#34;not_before&#34;: &#34;2023-12-13T09:00:00+00:00&#34;,
+        &#34;not_after&#34;: &#34;2029-02-20T14:00:00+00:00&#34;
+      },
+      {
+        &#34;role&#34;: &#34;Intermediate #2&#34;,
+        &#34;subject&#34;: &#34;CN=GTS Root R4,O=Google Trust Services LLC,C=US&#34;,
+        &#34;origin&#34;: &#34;Máy chủ gửi qua TLS&#34;,
+        &#34;is_trust_anchor&#34;: false,
+        &#34;issuer&#34;: &#34;CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE&#34;,
+        &#34;not_before&#34;: &#34;2023-11-15T03:43:21+00:00&#34;,
+        &#34;not_after&#34;: &#34;2028-01-28T00:00:42+00:00&#34;
+      },
+      {
+        &#34;role&#34;: &#34;Root CA / Trust Anchor&#34;,
+        &#34;subject&#34;: &#34;CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE&#34;,
+        &#34;origin&#34;: &#34;Bổ sung từ trust store / đường dẫn đã xác minh; không nằm trong chuỗi máy chủ gửi&#34;,
+        &#34;is_trust_anchor&#34;: true,
+        &#34;issuer&#34;: &#34;CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE&#34;,
+        &#34;not_before&#34;: &#34;1998-09-01T12:00:00+00:00&#34;,
+        &#34;not_after&#34;: &#34;2028-01-28T12:00:00+00:00&#34;
+      }
+    ],
+    &#34;issuer_subject_links&#34;: &#34;PASS&#34;,
+    &#34;signature_validation&#34;: &#34;PASS&#34;,
+    &#34;ca_constraints&#34;: &#34;PASS&#34;,
+    &#34;validity&#34;: &#34;PASS&#34;,
+    &#34;tls_usage&#34;: &#34;PASS&#34;,
+    &#34;trusted_root&#34;: &#34;PASS&#34;,
+    &#34;status&#34;: &#34;PASS&#34;,
+    &#34;reasons&#34;: [],
+    &#34;trust_anchor_subject&#34;: &#34;CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE&#34;,
+    &#34;trust_explanation&#34;: &#34;Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký.&#34;
+  },
+  &#34;algorithm_policy&#34;: {
+    &#34;algorithm&#34;: &#34;EC&#34;,
+    &#34;key_size&#34;: 256,
+    &#34;hash_algorithm&#34;: &#34;sha256&#34;,
+    &#34;public_key&#34;: {
+      &#34;status&#34;: &#34;PASS&#34;,
+      &#34;message&#34;: &#34;Allowed public key algorithm: EC&#34;
+    },
+    &#34;key_size_rule&#34;: {
+      &#34;status&#34;: &#34;PASS&#34;,
+      &#34;message&#34;: &#34;Key size meets policy minimum (256 bits)&#34;
+    },
+    &#34;hash_rule&#34;: {
+      &#34;status&#34;: &#34;PASS&#34;,
+      &#34;message&#34;: &#34;Allowed signature hash: sha256&#34;
+    },
+    &#34;status&#34;: &#34;PASS&#34;,
+    &#34;reasons&#34;: []
+  },
+  &#34;ct&#34;: {
+    &#34;sct_count&#34;: 2,
+    &#34;matched_scts&#34;: 2,
+    &#34;signature_validation&#34;: &#34;NOT_VERIFIED&#34;,
+    &#34;inclusion_validation&#34;: &#34;NOT_VERIFIED&#34;,
+    &#34;status&#34;: &#34;WARNING&#34;,
+    &#34;scts&#34;: [
+      {
+        &#34;log_id&#34;: &#34;wjF+V0UZo0XufzjespBB68fCIVoiv3/Vta12mtkOUs0=&#34;,
+        &#34;version&#34;: &#34;v1&#34;,
+        &#34;operator&#34;: &#34;DigiCert&#34;,
+        &#34;description&#34;: &#34;DigiCert &#39;Wyvern2026h2&#39;&#34;,
+        &#34;state&#34;: &#34;usable&#34;,
+        &#34;mmd&#34;: 86400,
+        &#34;url&#34;: &#34;https://wyvern.ct.digicert.com/2026h2/&#34;,
+        &#34;start_interval&#34;: &#34;2026-07-01T00:00:00Z&#34;,
+        &#34;end_interval&#34;: &#34;2027-01-01T00:00:00Z&#34;,
+        &#34;timestamp&#34;: &#34;2026-09-05T23:29:40.554000+00:00&#34;,
+        &#34;timestamp_interval&#34;: &#34;NOT_APPLICABLE&#34;,
+        &#34;certificate_interval&#34;: &#34;PASS&#34;,
+        &#34;log_id_match&#34;: &#34;PASS&#34;,
+        &#34;state_policy&#34;: &#34;PASS&#34;,
+        &#34;status&#34;: &#34;PASS&#34;,
+        &#34;reasons&#34;: []
+      },
+      {
+        &#34;log_id&#34;: &#34;1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=&#34;,
+        &#34;version&#34;: &#34;v1&#34;,
+        &#34;operator&#34;: &#34;Google&#34;,
+        &#34;description&#34;: &#34;Google &#39;Argon2026h2&#39; log&#34;,
+        &#34;state&#34;: &#34;usable&#34;,
+        &#34;mmd&#34;: 86400,
+        &#34;url&#34;: &#34;https://ct.googleapis.com/logs/us1/argon2026h2/&#34;,
+        &#34;start_interval&#34;: &#34;2026-07-01T00:00:00Z&#34;,
+        &#34;end_interval&#34;: &#34;2027-01-01T00:00:00Z&#34;,
+        &#34;timestamp&#34;: &#34;2026-09-05T23:29:40.535000+00:00&#34;,
+        &#34;timestamp_interval&#34;: &#34;NOT_APPLICABLE&#34;,
+        &#34;certificate_interval&#34;: &#34;PASS&#34;,
+        &#34;log_id_match&#34;: &#34;PASS&#34;,
+        &#34;state_policy&#34;: &#34;PASS&#34;,
+        &#34;status&#34;: &#34;PASS&#34;,
+        &#34;reasons&#34;: []
+      }
+    ],
+    &#34;reasons&#34;: [
+      &#34;SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only&#34;
+    ]
+  },
+  &#34;security&#34;: {
+    &#34;status&#34;: &#34;WARNING&#34;,
+    &#34;checks&#34;: {
+      &#34;Validity&#34;: &#34;PASS&#34;,
+      &#34;Hostname&#34;: &#34;PASS&#34;,
+      &#34;Certificate Chain&#34;: &#34;PASS&#34;,
+      &#34;Algorithm Policy&#34;: &#34;PASS&#34;,
+      &#34;Certificate Transparency&#34;: &#34;WARNING&#34;
+    },
+    &#34;reasons&#34;: [
+      &#34;SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only&#34;
+    ]
+  },
+  &#34;errors&#34;: []
+}</pre></section>
+<footer>DT007 — Trình xác minh chuỗi chứng thư số và chính sách thuật toán</footer></html>

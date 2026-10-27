@@ -1,0 +1,5 @@
+case_id,category,case_type,target,expected_result,actual_result,correct,runtime_seconds,reasons,detected,execution_status,evaluation_scope,generation_method
+metric_1,synthetic,EXPIRED_CERTIFICATE,local,FAIL,FAIL,true,1.0,"[""Thông báo, có dấu phẩy""]",true,COMPLETED,Unit-test observation,Metrics fixture
+metric_2,synthetic,BROKEN_CHAIN,local,FAIL,WARNING,false,2.0,"[""Thông báo, có dấu phẩy""]",false,COMPLETED,Unit-test observation,Metrics fixture
+metric_3,synthetic,NO_SCT,local,WARNING,FAIL,false,3.0,"[""Thông báo, có dấu phẩy""]",false,COMPLETED,Unit-test observation,Metrics fixture
+metric_4,real,VALID_SITE,example.com,PASS|WARNING,WARNING,true,4.0,"[""Thông báo, có dấu phẩy""]",,COMPLETED,Unit-test observation,Metrics fixture

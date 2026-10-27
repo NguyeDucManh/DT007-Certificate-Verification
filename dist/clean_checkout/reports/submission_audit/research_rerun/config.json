@@ -1,0 +1,287 @@
+{
+  "repeats": 3,
+  "seed_order_only": 20261010,
+  "reference_time": "2026-10-07T00:00:00+00:00",
+  "manifest": {
+    "schema_version": 1,
+    "synthetic_reference_time": "2026-10-07T00:00:00Z",
+    "notes": [
+      "Real sites are observational normal-case probes; PASS or WARNING is acceptable, not audited security ground truth.",
+      "Synthetic ground truth is defined before execution; do not change expectations to fit actual results.",
+      "NO_SCT expects WARNING. SCT_TIMESTAMP_OUTSIDE_INTERVAL is a regression case: temporal_interval applies only to NotAfter; overall WARNING remains solely because SCT cryptography is NOT_VERIFIED.",
+      "Coverage requires the intended condition to be detected, not merely a matching final status."
+    ],
+    "REAL_WEBSITES": [
+      {
+        "case_id": "case_001",
+        "case_type": "VALID_SITE",
+        "target": "google.com",
+        "expected_result": [
+          "PASS",
+          "WARNING"
+        ],
+        "ground_truth": "Observational HTTPS normal case; network and current certificate may change."
+      },
+      {
+        "case_id": "case_002",
+        "case_type": "VALID_SITE",
+        "target": "github.com",
+        "expected_result": [
+          "PASS",
+          "WARNING"
+        ],
+        "ground_truth": "Observational HTTPS normal case; network and current certificate may change."
+      },
+      {
+        "case_id": "case_003",
+        "case_type": "VALID_SITE",
+        "target": "cloudflare.com",
+        "expected_result": [
+          "PASS",
+          "WARNING"
+        ],
+        "ground_truth": "Observational HTTPS normal case; network and current certificate may change."
+      },
+      {
+        "case_id": "case_004",
+        "case_type": "VALID_SITE",
+        "target": "microsoft.com",
+        "expected_result": [
+          "PASS",
+          "WARNING"
+        ],
+        "ground_truth": "Observational HTTPS normal case; network and current certificate may change."
+      },
+      {
+        "case_id": "case_005",
+        "case_type": "VALID_SITE",
+        "target": "wikipedia.org",
+        "expected_result": [
+          "PASS",
+          "WARNING"
+        ],
+        "ground_truth": "Observational HTTPS normal case; network and current certificate may change."
+      }
+    ],
+    "SYNTHETIC_NEGATIVE_CASES": [
+      {
+        "case_id": "case_101",
+        "case_type": "EXPIRED_CERTIFICATE",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "Leaf NotAfter is one day before the fixed reference time."
+      },
+      {
+        "case_id": "case_102",
+        "case_type": "NOT_YET_VALID_CERTIFICATE",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "Leaf NotBefore is one day after the fixed reference time."
+      },
+      {
+        "case_id": "case_103",
+        "case_type": "HOSTNAME_MISMATCH",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "Request other.example.test while the leaf SAN contains only example.test."
+      },
+      {
+        "case_id": "case_104",
+        "case_type": "RSA_1024",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "Actual leaf RSA key is 1024 bits; evaluate the configured algorithm policy."
+      },
+      {
+        "case_id": "case_105",
+        "case_type": "SHA1_SIGNATURE",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "A mathematically valid leaf RSA/SHA-1 certificate; isolated signature-hash policy test."
+      },
+      {
+        "case_id": "case_106",
+        "case_type": "MD5_SIGNATURE",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "A mathematically valid leaf RSA/MD5 certificate if the backend permits signing; otherwise SKIPPED, never a fabricated result."
+      },
+      {
+        "case_id": "case_107",
+        "case_type": "BROKEN_CHAIN",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "Leaf issuer name differs from the intermediate subject."
+      },
+      {
+        "case_id": "case_108",
+        "case_type": "INVALID_SIGNATURE",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "Leaf issuer name is correct but the leaf is signed by a different private key."
+      },
+      {
+        "case_id": "case_109",
+        "case_type": "NON_CA_INTERMEDIATE",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "Intermediate BasicConstraints has CA=False."
+      },
+      {
+        "case_id": "case_110",
+        "case_type": "SELF_SIGNED_LEAF",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "A self-signed leaf is not a trusted CA chain."
+      },
+      {
+        "case_id": "case_111",
+        "case_type": "UNKNOWN_CT_LOG",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "Embedded SCT log ID is absent from the synthetic CT dataset."
+      },
+      {
+        "case_id": "case_112",
+        "case_type": "RETIRED_CT_LOG",
+        "target": "local",
+        "expected_result": "FAIL",
+        "ground_truth": "SCT was issued after the synthetic log retirement timestamp."
+      },
+      {
+        "case_id": "case_113",
+        "case_type": "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+        "target": "local",
+        "expected_result": "WARNING",
+        "ground_truth": "Regression: SCT timestamp precedes interval start; leaf NotAfter is inside. No timestamp interval warning is valid under Google schema. Metadata match PASS; final WARNING remains because SCT signature/inclusion proof are NOT_VERIFIED."
+      },
+      {
+        "case_id": "case_114",
+        "case_type": "NO_SCT",
+        "target": "local",
+        "expected_result": "WARNING",
+        "ground_truth": "Leaf has no embedded SCT extension; existing 2B policy declares NO_SCT WARNING."
+      }
+    ]
+  },
+  "controls": [
+    {
+      "case_id": "control_rsa2048",
+      "key_type": "RSA",
+      "bits": 2048,
+      "digest": "sha256"
+    },
+    {
+      "case_id": "control_rsa3072",
+      "key_type": "RSA",
+      "bits": 3072,
+      "digest": "sha384"
+    },
+    {
+      "case_id": "control_ec256",
+      "key_type": "EC",
+      "bits": 256,
+      "digest": "sha256"
+    },
+    {
+      "case_id": "control_ec384",
+      "key_type": "EC",
+      "bits": 384,
+      "digest": "sha384"
+    },
+    {
+      "case_id": "control_ed25519",
+      "key_type": "Ed25519",
+      "bits": 256,
+      "digest": "sha256"
+    }
+  ],
+  "policy": {
+    "rsa": {
+      "minimum_key_size": 2048
+    },
+    "ec": {
+      "minimum_key_size": 256
+    },
+    "dsa": {
+      "minimum_key_size": 2048
+    },
+    "hash": {
+      "allowed": [
+        "sha256",
+        "sha384",
+        "sha512"
+      ],
+      "blocked": [
+        "md5",
+        "sha1"
+      ],
+      "allowed_without_external_hash": [
+        "ED25519",
+        "ED448"
+      ]
+    },
+    "public_key_algorithms": {
+      "allowed": [
+        "RSA",
+        "EC",
+        "Ed25519",
+        "Ed448"
+      ],
+      "blocked": [
+        "DSA"
+      ]
+    }
+  },
+  "input_sha256": {
+    "experiments/test_cases.json": "43210e8ed19df5b33571bb15ebd572b68b074d69aa4ee65c331b6c8db7df7c0d",
+    "config/algorithm_policy.json": "e3c408eeea3b32b7cd956428d7461fac36faf0b9f5ab3c87479f5b044be02981",
+    "data/log_list.json": "d0da723b9957e4f74f024278e7311c422e09b6c6452c8457c8dbf9a29f2817b9",
+    "src/__init__.py": "31377a97d5392c799ad7415d8b8b3bdabc917c6c38960718e7775a9577b2b4ac",
+    "src/aia_completion.py": "8b0ee81f3edc0c07b43cfae228e7b257103b174c5db04a0ebee5ecd95a8b93bc",
+    "src/algorithm_policy.py": "d2b01e185c3d56de4a852003a8b452a6bceedd6fd780540fafc3320e8160a904",
+    "src/certificate_fetcher.py": "a9b23c84fc93acaafffad5919b0849f90284c45d018dc1f1109c7c65368b36ce",
+    "src/certificate_parser.py": "7ef76c94ba4e820fc6e33e4aa18ae234a27c10b20e19392aa9d76e981d34a5b9",
+    "src/certificate_security.py": "3351a2773a74b7d8d4780c7b4fab013d0135da0c0bf122a9bc18f30b157e4d31",
+    "src/certificate_service.py": "eb7a88a2edb5d85fbb09191a68b2633f40f220c82b489435b58f4af7cabb60ba",
+    "src/chain_validator.py": "39df1fd97d170ea09da65b01b96f674e99e8830ca212bbea5138b7f2fd5761b0",
+    "src/crypto_info.py": "8e543f32b9113fab450a542111ae42e07d067de267c353b5ca65de2c97b65e59",
+    "src/ct_crypto.py": "d74e21c8774efe7a85f13f0a20818031b7bf1d3efdeeffe8bde53d98d73b40cd",
+    "src/ct_inclusion.py": "440444b33bdfc91f3d584a571553196b1743a7dc6b38ce5df9ca15bfe8997088",
+    "src/ct_log_analyzer.py": "3111a5c0dfcdf388bbe7de7c28060bd179aeedaa6d3a88cfd94b792f9cb8f1f1",
+    "src/ct_registry.py": "3bb14402468b13946fa2287d3be2c625f6091168351a35c0cc334de0e2bd10fe",
+    "src/ct_signed_input.py": "d6c327cefa6146d1cc6323bd524f988f1dd8e316620d920559bd9951a7dc9c09",
+    "src/ct_validator.py": "ad9f30e91ce83641206b5eced0c98d8bde8604800e12835a4216f50c47b08a79",
+    "src/demo_service.py": "4102e318a33d0e3187c0eb58d5b1db432db047333e608fae47fd66bd1878ac32",
+    "src/hostname_validator.py": "4d66c26f7907b42d46cf9f7532437b368f88b9132f346d3b61634f8410817ec3",
+    "src/report_export.py": "5d3e57a814272773d890509fdf207c38275febb5f1b8a97b5da5b6b3b4b59207",
+    "src/revocation_checker.py": "9280169dfde0cbce477934fd45e43f07da17aca91b3cb58cf8eade657efd99f5",
+    "src/revocation_network.py": "4089a9caf35ceca21dc60bdd2859a013bf54219edbec7621b235c97833258da4",
+    "src/sct_parser.py": "53dd9e9f62fc864fb9638105ccd77024115dcedd6bb0a44361ae1d3b761208af",
+    "src/security_console.py": "4961918dbacc9aa34f5ab647c30e85ca6851d69c853afeb0b54a267aa2905db7",
+    "src/security_evaluator.py": "5db3c574a94f14e0e0c01380286b8b431d02d41080e23a114e8c3b02b9d50479",
+    "src/untrusted_tls.py": "ce52ddc4f12fafc812f225598b964a0eb71156830917d9e850a51ed1ff010b71",
+    "src/validity_checker.py": "abd397fba1551823ee43ca5b3be475a1b5c1a005cca0112af9cc751b3a9f779c",
+    "src/web_findings.py": "8da827bc82121966bbdf4246730ee01ca13c374a85108dcad3c8819e61f332f3",
+    "src/web_presentation.py": "41216a260637e2e670d7ae283530d1bdaf1490540bd4f5e3e3d18dbb62fde44a",
+    "experiments/__init__.py": "4645b808eebe9cedb73a6f218b95218b4d8ba628e366822db0c220f0496f5278",
+    "experiments/audit_expanded_study.py": "1113b6c9ded7c7f5dffc782053cb3cce6194763bc716e81de2e0735de88eb1cc",
+    "experiments/audit_research_metrics.py": "74422867de94fef32792dffee765a437a8a66d65bbd249f46875d4143d86fcf5",
+    "experiments/browser_smoke.py": "6a44551ee1c2d73dc4f094ce81e61d5af96de61c2a35323618689b6168472a7c",
+    "experiments/build_scientific_report.py": "d110bbeee1de56c52e34b421bca01c79ec6cf1b91ec88485ed31dfe7592b15bb",
+    "experiments/collect_research_sources.py": "c6efccdb2e9c209e49b0eb00f41a4fe0d51d3664e6296d421f280eb473c05ffe",
+    "experiments/ct_live_probe.py": "4dd543a70ab461e06b316c983ca24fc53a3cfcc82c78a53cf0ba92d8044724fb",
+    "experiments/dataset_profile.py": "2f2045258c3723fe1bed7e33f6639ab09fb6dfbefc03ced2e854ac6498763493",
+    "experiments/research_controls.py": "578f7d22298b1391b573691e759257aa37a877bf858ec25d657b46369575b3a2",
+    "experiments/research_evaluation.py": "fa5a470ef8af29c7701258b01fdad6f0b99b9deead366c20c583681a06a2e44c",
+    "experiments/research_study.py": "1ab0311812459c418e778f1f661b6d835ef9660b594d96401895d559b1cb3fe9",
+    "experiments/resource_metrics.py": "51b8dd1998b530fe8967952620ab3bef5afa43ccc5874cb24c1e760fd289cc47",
+    "experiments/revocation_probe.py": "81776c233dc0567b78f3f236f531fdde457aada2fe52dafb29e9d87a8f355446",
+    "experiments/run_experiments.py": "11435d749594371841b359938b0f06f0807c490259674541c8693265d927d3fe",
+    "experiments/run_validation.py": "53f46e7ccd14c90be46248384b557f6f060d99a0ddc540f152277a4a0851234d",
+    "experiments/synthetic_cases.py": "c79ed4ae5937e3b367928586dbbaa31551e5d1afe3973b67afabcd1961e4591b",
+    "experiments/system_smoke.py": "391c5ef5bb9ec74a70ccecb73bf42325e6e78bdca0e37c5298f7cf74bbda1569",
+    "experiments/validate_ct_snapshot.py": "0bbd8fdbd42b1128da7c9608f84a1bc7ed57a018d75d4a2d47fdf7a9547733b6"
+  },
+  "control_label": "Locally trusted valid X.509; baseline PASS, extended WARNING for absent SCT; set before engine execution"
+}

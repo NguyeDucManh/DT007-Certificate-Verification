@@ -1,0 +1,7 @@
+cryptography
+pyOpenSSL
+requests
+pytest
+jinja2
+pandas
+Flask

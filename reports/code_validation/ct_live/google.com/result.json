@@ -1,0 +1,392 @@
+{
+  "extensions": {
+    "tls_collection": {
+      "status": "NOT_CHECKED",
+      "reason": "Không dùng thu thập TLS chưa tin cậy."
+    },
+    "revocation": {
+      "status": "GOOD",
+      "reason": "Có bằng chứng thu hồi hợp lệ tại thời điểm kiểm tra; không phải kết luận website an toàn.",
+      "evidence": [
+        {
+          "method": "CRL",
+          "status": "GOOD",
+          "reason": "Số sê-ri không có trong CRL đầy đủ của issuer; chữ ký và thời hạn hợp lệ.",
+          "source": "http://c.pki.goog/wr2/75r4ZyA3vA0.crl",
+          "sha256": "350a1b0e4fce16bcb442a4bed6c8ca00e4bb51501ef6a71810e71261206f60bf",
+          "signature_verified": true,
+          "issuer_verified": true,
+          "this_update": "2026-10-10T04:49:30+00:00",
+          "next_update": "2026-10-20T03:49:29+00:00",
+          "revoked_at": null
+        }
+      ]
+    },
+    "aia": {
+      "status": "NOT_CHECKED",
+      "reason": "Chuỗi đã xác minh; không cần tải AIA.",
+      "downloads": []
+    },
+    "sct_verification": [
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "status": "VALID",
+        "reason": "Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.",
+        "signed_data_sha256": "e194c885a9db0ffa3c2cd4201ac6907bcceaef3f4bdb77b193ae58bb34f79a60"
+      },
+      {
+        "log_id": "yzj3FYl8hKFEX1vB3fvJbvKaWc1HCmkFhbDLFMMUWOc=",
+        "status": "VALID",
+        "reason": "Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.",
+        "signed_data_sha256": "06ee2d95289d46c95b396e05ad13ff3684f13daa1da25c1bc29e967ce0634327"
+      }
+    ],
+    "inclusion": {
+      "status": "VALID",
+      "reason": "Kết quả từng SCT ở bằng chứng; giới hạn hai truy vấn proof, consistency chưa có checkpoint độc lập.",
+      "evidence": [
+        {
+          "status": "VALID",
+          "reason": "SCT có chữ ký hợp lệ; leaf khớp inclusion proof trong STH còn mới đã xác thực. Chưa kiểm tra consistency/gossip.",
+          "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+          "consistency": "NOT_VERIFIED",
+          "leaf_hash": "VY5qhRlubKyiSdOlskW1JfC6zRIzwlwYuxFt9EoTLn0=",
+          "tree_size": 3423872867,
+          "leaf_index": 3155152626,
+          "sth_timestamp": 1791622123510,
+          "source": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/",
+          "signed_tree_head": {
+            "tree_size": 3423872867,
+            "timestamp": 1791622123510,
+            "sha256_root_hash": "ZMEw7UVwaF5Uy8pNw/skaHBPs7LaTLaziDvy+WVenSE=",
+            "tree_head_signature": "BAMARzBFAiAuiIgsqKQPu7rkiG85Du1e5g1eDGBy44Uxvfz5qO6BggIhAKmSm1EaJw/FJ/Hk9WeUTD3xQIpYMedtkuPSL5tCmDka"
+          },
+          "audit_path": [
+            "Ve+GTvBVyJBmxF4Vhw6r2QJZS4AtUAI48eJ4bmkhoSk=",
+            "IqdUTF+45phfAAdQKHdiUVYxDpdFJE1MwB4wtQ+BnEM=",
+            "X67n90fnSDAhiA1bbMu2uguy6QGH2CF5Kvzb6OSUvN4=",
+            "FKwg7XrnQP0PtpsPXsF9DkTrv6VTA1Vk4zpnaEB8dvs=",
+            "aPdQJfidm0SvNuiXCNysl/Fvyn95Ac1pUzMqts2vyXU=",
+            "3G+JPM3Y+skLlyTvP7ubZ8pxJj6cTuvY8Pc2rI4qlH0=",
+            "Qo/p0kvYHk0P//F34AFksxzmvIGgvtAYpzob6oA/O0Q=",
+            "7gEyvlrAtfHjVnLK6/pDNNMa8kC7fBd6IHNGnD+ZOiA=",
+            "gG2fX/1En2ZvHUcykcegFZstoEdJMKK+vQLdRixVgYo=",
+            "0S37dS6xSDqppCP1OnVAUAG1Q4jaf8iwa4IDucI8z3w=",
+            "JEIMYIls/9DGYhaG8EWRB0XXwcXMo7xGKP5bxxHbD3U=",
+            "cCZMsjbShD2/C9ZPhIYbhqdixpNj34LUTwLp2dKuFRY=",
+            "eGam6ce0tzS2zedUwD84jITd6d6260ZNBOUftFqkzT0=",
+            "AgsJxY7KoDDSLOeVubO/cNSY7ult71grvCs3+F9Lo1M=",
+            "f9lzPcygJW1Wtw+8l1E/mGcUBavfLH2Rl8T8JcgZCws=",
+            "auuvcWDwl3toFi0Y/lpK/m62TOwftmGirwmBbix4BL0=",
+            "xrs32HS9F644Hd1dWwjaWeMDqh3KmTSs0rUoWqV1ygk=",
+            "gwtno7KOVwifzsbExqpcPvX97Uwp0XnanUubRvAbMMI=",
+            "HcdkPY8xOwvmTf6/Bf3UwE2nMCt/Um7N03BnHSPuVwg=",
+            "XTF9u+3NcEfbmvhjvrlL120ZS+eCC+KwW1dsoS93A90=",
+            "ME1CGdZT9un8Y+gDS2KAK3Drt0u4PbEv+rn93Vx/3q4=",
+            "S2B2fgyV4Wul97zhwdMMeJ8DRVDCt5Rj5Qx7ZLXwzw8=",
+            "Lb1YmrjOvP6sqrdv9wfSnTvRYh+tLyVsuMMCksnIHiE=",
+            "OLOmBr7wuLjPVD7Vgsk8mkPPy6Kr8RWqC0ve0VjPids=",
+            "YHC5rSiWqRtZwfx8b45J1nEkQSu/GzQGkmlhTecU/kg=",
+            "flSfxBRVgJxh8DJe43fa+d09kAgovgQbAn/Yc01TXww=",
+            "KU6IIDcxux9ObkDAEX/F+deU6itOG5fwnjKOAM7cOl4=",
+            "bG0QvPpF0ZRrZ0xUo0/FAplXvqUbci0f/HjQqcfBOYI=",
+            "VpdS7LaSxwExv3R1RKHHLJv2+r2a9gwzA0wmU2qpYGE=",
+            "EXrkToMYUjmvrjWMNpuUlN7ojPkxW/gnzdPqRV7WQBY=",
+            "wEJhLFaBGu8OJdXrpYDH3Z2suxKNpDnUPP/2MJCoeCA=",
+            "cURe7rkd05jj7Qk2CbppYcJ8027YazrpDFxg99TxU6Q="
+          ],
+          "registry_sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+        },
+        {
+          "status": "VALID",
+          "reason": "SCT có chữ ký hợp lệ; leaf khớp inclusion proof trong STH còn mới đã xác thực. Chưa kiểm tra consistency/gossip.",
+          "log_id": "yzj3FYl8hKFEX1vB3fvJbvKaWc1HCmkFhbDLFMMUWOc=",
+          "consistency": "NOT_VERIFIED",
+          "leaf_hash": "5pR9K7ei/AvoZXZHNsvdysANcN0WCO2ksy0S4Y1jz3U=",
+          "tree_size": 6676349488,
+          "leaf_index": 6501906231,
+          "sth_timestamp": 1791619054762,
+          "source": "https://ct.cloudflare.com/logs/nimbus2026/ct/v1/",
+          "signed_tree_head": {
+            "tree_size": 6676349488,
+            "timestamp": 1791619054762,
+            "sha256_root_hash": "nVyCU0xx0e8z67TwrxGVUHn+b7ZBB2NQ2kCrkd8DqoY=",
+            "tree_head_signature": "BAMARjBEAiBCz88jhtAfy50aC8eAOKVUM+IMr6q95/rmPcroWWA3VAIgPRxt9Q0HN81mjZXAPLiW3DuLMq4GxM2JPzl4wJCRVsg="
+          },
+          "audit_path": [
+            "7OTAv74891hu+XB0tlyJBXwI2fhQh5qmLKp8HSG8FVo=",
+            "+3HsHfFIpiXXnfD2S46Cn6RcPeHOfCsSoz6j+TuTHZ4=",
+            "K/16bEDRB8qP7mKMP3oQutH27+jXz8yE+DBC/yBFX5Q=",
+            "XxDVMLgy3xwm/P/9qYAGKlbo9mM0vbH1F+ED9kn8vUo=",
+            "NISQSDzNCgXBA3MGs2Q4pTxRwDtACDihhE+0LmpHIm4=",
+            "bsLcS8+zD92KXV75p/fdeI3jeal0mjQ+pwzwJ09ca1E=",
+            "4KO+79lBUwGN9XDPRnB/0y3AglzCU4LpyNoIVOuzNOE=",
+            "wV0jTVqE3xGQpDVFn8JN7lNq0GmtMMEOEAM8NAyhuJc=",
+            "5cUBMPBvX6X55chE0IBaihWjrSA87bvleSsjaOdIaW4=",
+            "tSyQBSwPP+cDHlBSueAnPbNkmDvINTSLZ9c9ALMm4DE=",
+            "+MD+dCFK0m/LwTpxFnWhlyGz1QzLA+wQoNC+qOsmVWg=",
+            "WD5sc0EVGpDMZfkqLzqwwlVYSJ+UUx3TAdJ5MTvkQ4Y=",
+            "N25lWiE7jNulhbbV026Xgtephi5aFdjpkKCvAUz/41k=",
+            "EePgvKplqEUTjuhfPAkw+1eyjVXY9GVdm5kZmRIBJCs=",
+            "tlajEoNYgZTNvPdFDiSL4WX80dHqFgFT7cy8AHJKboU=",
+            "vw8V9RYHDIi3mqiQEQ8hLsOkIU54ibNPqhXHuqgsurI=",
+            "VNQNhyHn2klsmXfmL8fz13G0rT9IZ+fmNgcbikyrIjY=",
+            "e8Z4WYZtmN8Peqk35zDllIbDcivVJOeNLHED4suomvo=",
+            "56BZUQRxZlUBbRwa3bGh8CdTdTAabmZDmvWMyZBIVtc=",
+            "3LXLBeVrrnSoulzkibQfdQ2flTPnJdi21FlZVIm9iug=",
+            "vJOCVB50TGCWM+rpIwqfm3JevbXmtJgzkArPb1jSF7k=",
+            "26gy72YRBH87HFkF/dQ1jpZQYt6exrNhfuV59Ye3Zw8=",
+            "obMkD89gEkmdDnNffOxYHCT3SqaqTlbXm5SMb8Df4qo=",
+            "9P41yA/+xqasz5datJPyE6TMLXQHPbYeug6THjgI8T8=",
+            "Nb3eSyN1pMlNptNvfIZQ+oGkadPQUjG1cnL3Be5te8o=",
+            "gpH0rPmCVV/hgs7ax1VRwGnzOGIrZ22HzUNy4BjiRBI=",
+            "evVOjMLiUHrVUkmnJ7LsuE6UtM05qYfegU4JLEOFbLk=",
+            "s5vS4R8NTs5S/RXjmutfG36n1CS+0nWAy84xlLpTrI4=",
+            "XqKCJDPROivXudZBZw455MC3Q1Fz3bihcdHWoZUu+kg=",
+            "VZ80Wi2AW4jrSfdMYnuEwx0IXabhn6vEtj2UcHVvW3M="
+          ],
+          "registry_sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+        }
+      ]
+    },
+    "ct_key_source": {
+      "status": "VALID",
+      "reason": "Danh sách Google CT có chữ ký publisher hợp lệ với khóa đã pin.",
+      "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32",
+      "timestamp": "2026-10-09T13:41:13+00:00"
+    }
+  },
+  "hostname": "google.com",
+  "target": "google.com:443",
+  "runtime_seconds": 6.640824500005692,
+  "scan_error": null,
+  "certificate": {
+    "subject": "CN=*.google.com",
+    "issuer": "CN=WR2,O=Google Trust Services,C=US",
+    "serial_number": "312830356175670440074915631830950705781",
+    "version": "v3",
+    "not_before": "2026-09-18T20:00:11+00:00",
+    "not_after": "2026-12-11T20:00:10+00:00"
+  },
+  "hostname_validation": {
+    "requested_hostname": "google.com",
+    "san_count": 65,
+    "san": [
+      "*.google.com",
+      "*.appengine.google.com",
+      "*.bdn.dev",
+      "*.origin-test.bdn.dev",
+      "*.cloud.google.com",
+      "*.crowdsource.google.com",
+      "*.datacompute.google.com",
+      "*.google.ca",
+      "*.google.cl",
+      "*.google.co.in",
+      "*.google.co.jp",
+      "*.google.co.uk",
+      "*.google.com.ar",
+      "*.google.com.au",
+      "*.google.com.br",
+      "*.google.com.co",
+      "*.google.com.mx",
+      "*.google.com.tr",
+      "*.google.com.vn",
+      "*.google.de",
+      "*.google.es",
+      "*.google.fr",
+      "*.google.hu",
+      "*.google.it",
+      "*.google.nl",
+      "*.google.pl",
+      "*.google.pt",
+      "*.gemini.cloud.google.com",
+      "*.gstatic.com",
+      "*.metric.gstatic.com",
+      "*.gvt1.com",
+      "*.gcpcdn.gvt1.com",
+      "*.gvt2.com",
+      "*.gcp.gvt2.com",
+      "*.url.google.com",
+      "*.youtube-nocookie.com",
+      "*.ytimg.com",
+      "ai.android",
+      "android.com",
+      "*.android.com",
+      "*.flash.android.com",
+      "g.co",
+      "*.g.co",
+      "goo.gl",
+      "www.goo.gl",
+      "google-analytics.com",
+      "*.google-analytics.com",
+      "google.com",
+      "googlecommerce.com",
+      "*.googlecommerce.com",
+      "urchin.com",
+      "*.urchin.com",
+      "youtu.be",
+      "youtube.com",
+      "*.youtube.com",
+      "music.youtube.com",
+      "*.music.youtube.com",
+      "youtubeeducation.com",
+      "*.youtubeeducation.com",
+      "youtubekids.com",
+      "*.youtubekids.com",
+      "yt.be",
+      "*.yt.be",
+      "android.clients.google.com",
+      "*.aistudio.google.com"
+    ],
+    "status": "PASS",
+    "message": "Hostname khớp SAN của certificate."
+  },
+  "validity": {
+    "status": "VALID",
+    "message": "Certificate đang trong khoảng thời gian có hiệu lực.",
+    "not_before": "2026-09-18T20:00:11+00:00",
+    "not_after": "2026-12-11T20:00:10+00:00",
+    "current_time": "2026-10-10T08:49:44.857459+00:00"
+  },
+  "cryptography": {
+    "public_key_algorithm": "EC",
+    "key_size": 256,
+    "signature_algorithm": "RSA_WITH_SHA256",
+    "signature_oid": "1.2.840.113549.1.1.11",
+    "hash_algorithm": "sha256"
+  },
+  "chain": {
+    "length": 4,
+    "certificates": [
+      {
+        "role": "Leaf",
+        "subject": "CN=*.google.com",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=WR2,O=Google Trust Services,C=US",
+        "not_before": "2026-09-18T20:00:11+00:00",
+        "not_after": "2026-12-11T20:00:10+00:00"
+      },
+      {
+        "role": "Intermediate #1",
+        "subject": "CN=WR2,O=Google Trust Services,C=US",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=GTS Root R1,O=Google Trust Services LLC,C=US",
+        "not_before": "2023-12-13T09:00:00+00:00",
+        "not_after": "2029-02-20T14:00:00+00:00"
+      },
+      {
+        "role": "Intermediate #2",
+        "subject": "CN=GTS Root R1,O=Google Trust Services LLC,C=US",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "not_before": "2020-06-19T00:00:42+00:00",
+        "not_after": "2028-01-28T00:00:42+00:00"
+      },
+      {
+        "role": "Root CA / Trust Anchor",
+        "subject": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "origin": "Bổ sung từ trust store / đường dẫn đã xác minh; không nằm trong chuỗi máy chủ gửi",
+        "is_trust_anchor": true,
+        "issuer": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "not_before": "1998-09-01T12:00:00+00:00",
+        "not_after": "2028-01-28T12:00:00+00:00"
+      }
+    ],
+    "issuer_subject_links": "PASS",
+    "signature_validation": "PASS",
+    "ca_constraints": "PASS",
+    "validity": "PASS",
+    "tls_usage": "PASS",
+    "trusted_root": "PASS",
+    "status": "PASS",
+    "reasons": [],
+    "trust_anchor_subject": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+    "trust_explanation": "Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký."
+  },
+  "algorithm_policy": {
+    "algorithm": "EC",
+    "key_size": 256,
+    "hash_algorithm": "sha256",
+    "public_key": {
+      "status": "PASS",
+      "message": "Allowed public key algorithm: EC"
+    },
+    "key_size_rule": {
+      "status": "PASS",
+      "message": "Key size meets policy minimum (256 bits)"
+    },
+    "hash_rule": {
+      "status": "PASS",
+      "message": "Allowed signature hash: sha256"
+    },
+    "status": "PASS",
+    "reasons": []
+  },
+  "ct": {
+    "sct_count": 2,
+    "matched_scts": 2,
+    "signature_validation": "VALID",
+    "inclusion_validation": "VALID",
+    "status": "WARNING",
+    "scts": [
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "version": "v1",
+        "operator": "Google",
+        "description": "Google 'Argon2026h2' log",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://ct.googleapis.com/logs/us1/argon2026h2/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-18T21:00:13.780000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      },
+      {
+        "log_id": "yzj3FYl8hKFEX1vB3fvJbvKaWc1HCmkFhbDLFMMUWOc=",
+        "version": "v1",
+        "operator": "Cloudflare",
+        "description": "Cloudflare 'Nimbus2026'",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://ct.cloudflare.com/logs/nimbus2026/",
+        "start_interval": "2026-01-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-18T21:00:13.824000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      }
+    ],
+    "reasons": [
+      "Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập."
+    ]
+  },
+  "security": {
+    "status": "WARNING",
+    "checks": {
+      "Validity": "PASS",
+      "Hostname": "PASS",
+      "Certificate Chain": "PASS",
+      "Algorithm Policy": "PASS",
+      "Certificate Transparency": "WARNING",
+      "Revocation": "PASS"
+    },
+    "reasons": [
+      "Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập."
+    ]
+  },
+  "errors": [],
+  "checked_at": "2026-10-10T08:49:44.857442+00:00"
+}

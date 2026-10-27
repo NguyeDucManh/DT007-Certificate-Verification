@@ -1,0 +1,94 @@
+========================================
+ DT007 - CERTIFICATE SECURITY VERIFIER
+========================================
+
+Target                   : google.com:443
+
+[Certificate]
+Subject                  : N/A
+Issuer                   : N/A
+Serial Number            : N/A
+Version                  : N/A
+Not Before               : N/A
+Not After                : N/A
+
+[Hostname]
+Requested Hostname       : google.com
+SAN Count                : N/A
+SAN                      : N/A
+Status                   : FAIL
+Message                  : Hostname check unavailable
+
+[Validity]
+Status                   : FAIL
+Message                  : Validity check unavailable
+Current Time (UTC)       : N/A
+
+[Public Key]
+Algorithm                : N/A
+Key Size                 : N/A
+
+[Signature]
+Algorithm                : N/A
+OID                      : N/A
+Hash Algorithm           : N/A
+
+[Certificate Chain]
+Chain Length             : 0
+Leaf                     : N/A
+Intermediate             : N/A
+Terminal CA              : N/A
+Verified Trust Anchor    : N/A
+Issuer/Subject Links     : FAIL
+Signature Validation     : FAIL
+CA Constraints           : FAIL
+Chain Validity           : FAIL
+Trust Path               : FAIL
+Self-signed Leaf         : N/A
+Chain Status             : FAIL
+
+[Algorithm Policy]
+Public Key Algorithm     : N/A
+Key Size                 : N/A
+Hash Algorithm           : N/A
+Public Key Policy        : FAIL
+Key Size Policy          : FAIL
+Hash Policy              : FAIL
+Algorithm Status         : FAIL
+
+[Certificate Transparency]
+SCT Count                : N/A
+Matched SCTs             : N/A
+SCT Signatures           : NOT_VERIFIED
+CT Inclusion Proofs      : NOT_VERIFIED
+
+CT Overall Status        : WARNING
+
+[Module Errors]
+TLS Fetch                : CertificateFetchError: Không thể kết nối tới google.com:443: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+[Security Summary]
+Validity                 : FAIL
+Hostname                 : FAIL
+Certificate Chain        : FAIL
+Algorithm Policy         : FAIL
+Certificate Transparency : WARNING
+TLS Fetch                : FAIL
+Revocation               : WARNING
+
+FINAL RESULT: FAIL
+Reasons:
+- Validity check unavailable
+- Hostname check unavailable
+- Certificate Chain check unavailable
+- Algorithm Policy check unavailable
+- Certificate Transparency check unavailable
+- TLS Fetch: CertificateFetchError: Không thể kết nối tới google.com:443: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+- Chưa bật kiểm tra OCSP/CRL; không suy ra chứng thư an toàn.
+
+========================================
+tls_collection: NOT_CHECKED — Không dùng thu thập TLS chưa tin cậy.
+revocation: NOT_CHECKED — Chưa bật kiểm tra OCSP/CRL; không suy ra chứng thư an toàn.
+aia: NOT_CHECKED — Chưa yêu cầu bổ sung chuỗi qua AIA.
+inclusion: NOT_VERIFIED — Chưa có STH được xác thực và inclusion proof phù hợp; không suy ra đã được đưa vào log.
+Lỗi [TLS Fetch]: CertificateFetchError: Không thể kết nối tới google.com:443: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions

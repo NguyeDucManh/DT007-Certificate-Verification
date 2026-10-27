@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "problems": [],
+  "profiles": {
+    "baseline": {
+      "FP": 0,
+      "FN": 6,
+      "positive_completed": 36,
+      "controls_completed": 15
+    },
+    "extended": {
+      "FP": 0,
+      "FN": 0,
+      "positive_completed": 36,
+      "controls_completed": 15
+    }
+  },
+  "raw_sha256": "d22d0ae3afb9fd8de1c662ab7f3abb5b768cf71fc8967b95ea2f173b0a71409b",
+  "observations": 114,
+  "scope": "Independent key-claim audit; recorded detection flags are not independently cryptographically reverified"
+}

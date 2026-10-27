@@ -1,0 +1,402 @@
+<!doctype html><html lang="vi"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>DT007 — Báo cáo chứng thư</title>
+<style>body{font:16px system-ui;max-width:1000px;margin:2rem auto;padding:1rem;color:#153447;background:#f3f7fa}section{padding:1rem;background:white;margin:1rem 0;border-radius:12px}table{width:100%;border-collapse:collapse}td,th{padding:.6rem;text-align:left;border-bottom:1px solid #ddd}.PASS{color:#167340}.WARNING{color:#935400}.FAIL{color:#b02020}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:1.7rem}@media print{body{background:white;margin:0}}</style>
+<h1>Trình xác minh an toàn chứng thư số</h1><p>Tên miền kiểm tra: google.com:443</p>
+<section><h2>Kết quả cuối cùng: <span class="WARNING">CẢNH BÁO</span></h2>
+<p>Thời gian xử lý: 7.004196 giây</p>
+<table><tr><th>Thành phần kiểm tra</th><th>Kết quả</th></tr><tr><td>Thời hạn chứng thư</td><td class="PASS">ĐẠT</td></tr><tr><td>Tên miền</td><td class="PASS">ĐẠT</td></tr><tr><td>Chuỗi chứng thư</td><td class="PASS">ĐẠT</td></tr><tr><td>Chính sách thuật toán</td><td class="PASS">ĐẠT</td></tr><tr><td>Certificate Transparency</td><td class="WARNING">CẢNH BÁO</td></tr><tr><td>Trạng thái thu hồi</td><td class="PASS">ĐẠT</td></tr></table>
+<h3>Lý do</h3><p>Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.</p></section>
+<section><h2>Thông tin chứng thư</h2><p>Chủ thể: CN=*.google.com</p><p>Đơn vị cấp: CN=WR2,O=Google Trust Services,C=US</p><p>Số sê-ri: 113008320809552024517172734962922031200</p><p>Có hiệu lực từ: 2026-09-28T18:38:01+00:00</p><p>Có hiệu lực đến: 2026-12-21T18:38:00+00:00</p></section>
+<section><h2>Kiểm tra bổ sung</h2><p>tls_collection: CHƯA KIỂM TRA — Không dùng thu thập TLS chưa tin cậy.</p><p>revocation: CHƯA BỊ THU HỒI (CÓ BẰNG CHỨNG) — Có bằng chứng thu hồi hợp lệ tại thời điểm kiểm tra; không phải kết luận website an toàn.</p><p>aia: CHƯA KIỂM TRA — Chuỗi đã xác minh; không cần tải AIA.</p><p>inclusion: HỢP LỆ — Kết quả từng SCT ở bằng chứng; giới hạn hai truy vấn proof, consistency chưa có checkpoint độc lập.</p><p>ct_key_source: HỢP LỆ — Danh sách Google CT có chữ ký publisher hợp lệ với khóa đã pin.</p><p>Điểm trình bày năm thành phần lịch sử không bao gồm thu hồi; điểm cao không phủ định FAIL.</p></section>
+<section><h2>Giới hạn diễn giải</h2><p>Kết quả kiểm tra chứng thư không xác nhận độ an toàn của nội dung hoặc hoạt động kinh doanh website. NOT_VERIFIED về chữ ký SCT/inclusion proof là giới hạn xác minh; không tự kết luận SCT không hợp lệ.</p></section>
+<section><h2>Chi tiết kỹ thuật — dữ liệu gốc</h2><p>Các mã trạng thái và lý do gốc được giữ nguyên để đối chiếu engine.</p><pre>{
+  &#34;extensions&#34;: {
+    &#34;tls_collection&#34;: {
+      &#34;status&#34;: &#34;NOT_CHECKED&#34;,
+      &#34;reason&#34;: &#34;Không dùng thu thập TLS chưa tin cậy.&#34;
+    },
+    &#34;revocation&#34;: {
+      &#34;status&#34;: &#34;GOOD&#34;,
+      &#34;reason&#34;: &#34;Có bằng chứng thu hồi hợp lệ tại thời điểm kiểm tra; không phải kết luận website an toàn.&#34;,
+      &#34;evidence&#34;: [
+        {
+          &#34;method&#34;: &#34;CRL&#34;,
+          &#34;status&#34;: &#34;GOOD&#34;,
+          &#34;reason&#34;: &#34;Số sê-ri không có trong CRL đầy đủ của issuer; chữ ký và thời hạn hợp lệ.&#34;,
+          &#34;source&#34;: &#34;http://c.pki.goog/wr2/75r4ZyA3vA0.crl&#34;,
+          &#34;sha256&#34;: &#34;ac0253288900a3f1bfe2a0401fb1bc4ba0cd90cc26ad0135ba395f83890a9b97&#34;,
+          &#34;signature_verified&#34;: true,
+          &#34;issuer_verified&#34;: true,
+          &#34;this_update&#34;: &#34;2026-10-18T11:44:31+00:00&#34;,
+          &#34;next_update&#34;: &#34;2026-10-28T10:44:30+00:00&#34;,
+          &#34;revoked_at&#34;: null
+        }
+      ]
+    },
+    &#34;aia&#34;: {
+      &#34;status&#34;: &#34;NOT_CHECKED&#34;,
+      &#34;reason&#34;: &#34;Chuỗi đã xác minh; không cần tải AIA.&#34;,
+      &#34;downloads&#34;: []
+    },
+    &#34;sct_verification&#34;: [
+      {
+        &#34;log_id&#34;: &#34;lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=&#34;,
+        &#34;status&#34;: &#34;VALID&#34;,
+        &#34;reason&#34;: &#34;Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.&#34;,
+        &#34;signed_data_sha256&#34;: &#34;af8b1be6b736cbddc61817a3f2e9e303068d4fbd8b8d331f2c9fbeaaaf3432a8&#34;
+      },
+      {
+        &#34;log_id&#34;: &#34;1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=&#34;,
+        &#34;status&#34;: &#34;VALID&#34;,
+        &#34;reason&#34;: &#34;Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.&#34;,
+        &#34;signed_data_sha256&#34;: &#34;06a9a7f728949800e14d303375a509a8a72de8a545131e93e036c5f927075d66&#34;
+      }
+    ],
+    &#34;inclusion&#34;: {
+      &#34;status&#34;: &#34;VALID&#34;,
+      &#34;reason&#34;: &#34;Kết quả từng SCT ở bằng chứng; giới hạn hai truy vấn proof, consistency chưa có checkpoint độc lập.&#34;,
+      &#34;evidence&#34;: [
+        {
+          &#34;status&#34;: &#34;VALID&#34;,
+          &#34;reason&#34;: &#34;SCT có chữ ký hợp lệ; leaf khớp inclusion proof trong STH còn mới đã xác thực. Chưa kiểm tra consistency/gossip.&#34;,
+          &#34;log_id&#34;: &#34;lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=&#34;,
+          &#34;consistency&#34;: &#34;NOT_VERIFIED&#34;,
+          &#34;leaf_hash&#34;: &#34;YkvAvuO3eWg4aGr6bscR1vZvpqpY1fTTAXy3CGurBOY=&#34;,
+          &#34;tree_size&#34;: 2138136196,
+          &#34;leaf_index&#34;: 2082536234,
+          &#34;sth_timestamp&#34;: 1792337576589,
+          &#34;source&#34;: &#34;https://sphinx.ct.digicert.com/2026h2/ct/v1/&#34;,
+          &#34;signed_tree_head&#34;: {
+            &#34;tree_size&#34;: 2138136196,
+            &#34;timestamp&#34;: 1792337576589,
+            &#34;sha256_root_hash&#34;: &#34;aE7+bKoxAJHY26pdu8wvEabRM3tCATqlf8Ds3B9iQKU=&#34;,
+            &#34;tree_head_signature&#34;: &#34;BAMARzBFAiAqGlWOq9xrwt7p6TUhnWgsXOStdCnrNyWE0zIYqqSeewIhAO2MbLXdhVHZX2XedyxF+GWclFldthbyBv0OigfUzbFp&#34;
+          },
+          &#34;audit_path&#34;: [
+            &#34;rKfo30Qd/sj74No9ZWwgNBiXh8if36s6Kj1qvpdsfpQ=&#34;,
+            &#34;7bhcz4G2CaXFAvJRsRYtjByG8N/sEmSl/OeV7lghgOY=&#34;,
+            &#34;375OZg6yPyO7FtXQ2qmVM9QQddIqbPOvicv9Izo7Gqc=&#34;,
+            &#34;8c1n60oGgFaJYPCbbQrAc++Q0sSpMtfOMWCTTQ6u4pI=&#34;,
+            &#34;BvAdSBdIrXHLNxJ+xe5eW7W/dbOZbei4ddi/e6NiZVM=&#34;,
+            &#34;FPwXPUWr3IbmLSv2b+ei47262j8xM6dgj+Jk4Ax2sSs=&#34;,
+            &#34;WTw90PvZU/T/VYKAMnRLFDMsUyhWevATYvP5QIJcVik=&#34;,
+            &#34;bK8aC0NPExawfzuqnTcizY1DcodzIUWzk/bQJGAW4Jc=&#34;,
+            &#34;2fT/V+KB+dAfR6Af1Wnty9+l0fiZ26uzYCEwguds6+k=&#34;,
+            &#34;GweqhbmJeVmNb/iue7QL1+I9fBRAlWsSDco6Fb6YHIk=&#34;,
+            &#34;nzZ2bVUo6e7Ugj26nntHQ/GBQ/PckQoyvaEuPCf678s=&#34;,
+            &#34;roUa4Wa7lX6wPMucmDCKw6/k7wiL+5bPs1DErS045LM=&#34;,
+            &#34;PVwzVRD8XM4qz/thgVP6FuLZCzg/mDtE+kdtbWXZFQ0=&#34;,
+            &#34;WGmIgjbE3MgN4SvwvioPs2d3kOFuhXP7P0/12mOTzjE=&#34;,
+            &#34;tfMO6krwMmnfUDlCfGO8kMisCD7Qd9W3zNPzHBcPGPE=&#34;,
+            &#34;p3SlRuc9zg9q7+vJYDpxL1oZZpxWs706KqyG2j8tAz4=&#34;,
+            &#34;ecsoMQYOtAuYUDz2r/A4r5XyGtDuOOizVi1n3vl8gsY=&#34;,
+            &#34;O2LpuD4CwgukGcpzoaXUMQvX+wmjvLyN+zRdgOi3VgA=&#34;,
+            &#34;8m9QV2yt9KoxkjmIOuw7xSb/TC9hJqHc0l9W8Usd5Ws=&#34;,
+            &#34;tD1UP+vFHa0cWrsUjgvOgdU8sHx5fqxzVChF87aq6gQ=&#34;,
+            &#34;vJAL6kX5g7RFZRZDfLLjhs5EYfBsTjPa/kVLaOew+v0=&#34;,
+            &#34;Vl6F2znl/4h4kQS+tgvKPxEzn0xMRyXdQo+EXAwkh/w=&#34;,
+            &#34;46j0Y3SIiheq0gBzQsE9fcs1Ix7+IIvXSYekTFD5OS4=&#34;,
+            &#34;MwE3fAHs1fNh2zhGwjN5rULKuZGjY54Vgbgzfj4PGdQ=&#34;,
+            &#34;2NTHD4abbcktqqSmMO5/ByWPBrglODGdT11IflWv6L8=&#34;,
+            &#34;lqL+xjeOc0gP6Ykz7ZsvdL/HZKuOaKZflh3DG08UL5c=&#34;,
+            &#34;nJKUPceplSnJaxpZH6LZcY9zeTdoRfpYkw+VprY2aeU=&#34;,
+            &#34;hM04crk6AdJLUHonBjxBgM3kwEBFKg1eZb/V0c9S8b4=&#34;,
+            &#34;iaIbpPmkM2JZq/Gt0KOgTARE/eNlySDNeET5pCxgUkk=&#34;,
+            &#34;dHtL38eJXUl76xAFn1aM84Ae7+qx/f4hJQUtMAbKFw4=&#34;,
+            &#34;Pp+7oZs35zCQVJjVWSiUuxtkz6Fzvn5AIaNDC4UmiJc=&#34;
+          ],
+          &#34;registry_sha256&#34;: &#34;2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988&#34;
+        },
+        {
+          &#34;status&#34;: &#34;VALID&#34;,
+          &#34;reason&#34;: &#34;SCT có chữ ký hợp lệ; leaf khớp inclusion proof trong STH còn mới đã xác thực. Chưa kiểm tra consistency/gossip.&#34;,
+          &#34;log_id&#34;: &#34;1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=&#34;,
+          &#34;consistency&#34;: &#34;NOT_VERIFIED&#34;,
+          &#34;leaf_hash&#34;: &#34;GEBBm84UX1Aaf+LT62jkYh6AdHdRsQ/xZ6Ugx8+Cenc=&#34;,
+          &#34;tree_size&#34;: 3442964852,
+          &#34;leaf_index&#34;: 3334165330,
+          &#34;sth_timestamp&#34;: 1792337519118,
+          &#34;source&#34;: &#34;https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/&#34;,
+          &#34;signed_tree_head&#34;: {
+            &#34;tree_size&#34;: 3442964852,
+            &#34;timestamp&#34;: 1792337519118,
+            &#34;sha256_root_hash&#34;: &#34;LSa9TOQm7qKQPQ0X6wciGu7VnAQ0PeT4wqi9khaajAI=&#34;,
+            &#34;tree_head_signature&#34;: &#34;BAMARzBFAiEAoa0VawCy9DX7YoXk1n2GMFJ/9KqqdxL+i7JBQA/iHbgCIBMhNzJR07K69dSDQ1WZKXvTy9Zk2OG1Ff2BdbV2eYwr&#34;
+          },
+          &#34;audit_path&#34;: [
+            &#34;GPfF3RHvu39Ehbrn3hTxuGqPyLR9Ofqp3oF2bmHjYKs=&#34;,
+            &#34;mcsOxp4mgqiLLrHOpG8JpTNmHmQTcf04DwASCKacnsY=&#34;,
+            &#34;MPs936FjHWWFCZd5xRdH4xgylSHorSSzydw8I0sxbBY=&#34;,
+            &#34;MxTPRlNvXLfKTRNDBtwUyNjzstMHRhw+sdB641JdKzI=&#34;,
+            &#34;eB+LWiByBm+BCW1UMHuJX+QzLrCz4tUVfVnyOqoq9BU=&#34;,
+            &#34;rq4JR6B9u++ao8hvRMY38k0k9RvjnroqR5M+1krLPn4=&#34;,
+            &#34;Q4wVG2OMeKCX9Wegl25r/NgnfqF0hd3gqnRyIWnqpB8=&#34;,
+            &#34;oRFCQuZaR1wh70u/a/ftglmFqzvYRESIKCJNsx6vUls=&#34;,
+            &#34;MqKDcTSJsTd+lhwNXsyOl6wNMXpAH3I3EHsAqSYpces=&#34;,
+            &#34;2ieX/mZZ1ha8PAyECeD1abqPu93MpozpkUdlfZMPFWU=&#34;,
+            &#34;Ug9JVgdaZD2j+9VUd/fLOYYneWEiLaX42QG6gP0BQuI=&#34;,
+            &#34;b6p8hWQyke/qid8+X7XuXlTcT1EXl0cd2KZ+gZ6Nyuc=&#34;,
+            &#34;uIuqOnJ9y6cCWoc1W4D4JXQX7vVNvPh6zKC1wsWypdI=&#34;,
+            &#34;uCHk/OIvO211p0gpNwOidP1U626WfsZoXHaF89Sd9KM=&#34;,
+            &#34;w0pXPGLPhskrnpNfB2u5LNhImIGr13v3aHA6e8iaiso=&#34;,
+            &#34;/1MzhyWtMelwR5w+q0kZIWPRWIDwjoxGIMWKUnCVsJo=&#34;,
+            &#34;ztriSZ+1NsXeaMS88NFzjdkf+G8ACNhLNF4z7YWwREg=&#34;,
+            &#34;0fy4xfnIoN74FMO7U9hZ7n0xO7amf2vxwvEPhSlO4oY=&#34;,
+            &#34;WbGlBpA1DndkY27nhSiVhM3nB/jMK/XExwlVRz74Xms=&#34;,
+            &#34;uMnPn1Nfq8rLRwYwxBaBFcbJ8DK1faMMOHBW1v0H9YM=&#34;,
+            &#34;lyEnLcNBuFF++CE2pfZzbMwaUYvGRrZHLyBmvrVnZN0=&#34;,
+            &#34;PzIF37t237v3clFEGkMV4ssnz/VuLdEm2SZWG43INY8=&#34;,
+            &#34;aHg92bGr+RCIT8QyOlocrasX9d4YSXP3RQjltLUSYFg=&#34;,
+            &#34;8vLH82Hemoi5KlF4+vqHX00r9k82xPJFo0fXonDUlqQ=&#34;,
+            &#34;ndoE91AK+JtUm0kqE2Pn2MCK98JNlxDVXDv8xN74cXU=&#34;,
+            &#34;XZfhiwW+RTk5Peqh9C9pRC5n2iw+P5SUDb7gZcaEq30=&#34;,
+            &#34;7wfmpQokxwUOfP2Nw4V/8S6cDdxOrsqpk+fn+WKFCbI=&#34;,
+            &#34;t5xz9vo0UCfnz5z0ggWjjem2mwGLqLHITIgZ3lDwbf8=&#34;,
+            &#34;U1YogAXbB7V8I3/QSIv7cQ50/agtffsBG1RkAsIFwBs=&#34;,
+            &#34;cURe7rkd05jj7Qk2CbppYcJ8027YazrpDFxg99TxU6Q=&#34;
+          ],
+          &#34;registry_sha256&#34;: &#34;2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988&#34;
+        }
+      ]
+    },
+    &#34;ct_key_source&#34;: {
+      &#34;status&#34;: &#34;VALID&#34;,
+      &#34;reason&#34;: &#34;Danh sách Google CT có chữ ký publisher hợp lệ với khóa đã pin.&#34;,
+      &#34;sha256&#34;: &#34;2200b8218835cb2cf44b27c08d46308e5aba7bf5e66b98ac7c598e5fad0a3988&#34;,
+      &#34;timestamp&#34;: &#34;2026-10-17T13:37:58+00:00&#34;
+    }
+  },
+  &#34;hostname&#34;: &#34;google.com&#34;,
+  &#34;target&#34;: &#34;google.com:443&#34;,
+  &#34;runtime_seconds&#34;: 7.00419560004957,
+  &#34;scan_error&#34;: null,
+  &#34;certificate&#34;: {
+    &#34;subject&#34;: &#34;CN=*.google.com&#34;,
+    &#34;issuer&#34;: &#34;CN=WR2,O=Google Trust Services,C=US&#34;,
+    &#34;serial_number&#34;: &#34;113008320809552024517172734962922031200&#34;,
+    &#34;version&#34;: &#34;v3&#34;,
+    &#34;not_before&#34;: &#34;2026-09-28T18:38:01+00:00&#34;,
+    &#34;not_after&#34;: &#34;2026-12-21T18:38:00+00:00&#34;
+  },
+  &#34;hostname_validation&#34;: {
+    &#34;requested_hostname&#34;: &#34;google.com&#34;,
+    &#34;san_count&#34;: 65,
+    &#34;san&#34;: [
+      &#34;*.google.com&#34;,
+      &#34;*.appengine.google.com&#34;,
+      &#34;*.bdn.dev&#34;,
+      &#34;*.origin-test.bdn.dev&#34;,
+      &#34;*.cloud.google.com&#34;,
+      &#34;*.crowdsource.google.com&#34;,
+      &#34;*.datacompute.google.com&#34;,
+      &#34;*.google.ca&#34;,
+      &#34;*.google.cl&#34;,
+      &#34;*.google.co.in&#34;,
+      &#34;*.google.co.jp&#34;,
+      &#34;*.google.co.uk&#34;,
+      &#34;*.google.com.ar&#34;,
+      &#34;*.google.com.au&#34;,
+      &#34;*.google.com.br&#34;,
+      &#34;*.google.com.co&#34;,
+      &#34;*.google.com.mx&#34;,
+      &#34;*.google.com.tr&#34;,
+      &#34;*.google.com.vn&#34;,
+      &#34;*.google.de&#34;,
+      &#34;*.google.es&#34;,
+      &#34;*.google.fr&#34;,
+      &#34;*.google.hu&#34;,
+      &#34;*.google.it&#34;,
+      &#34;*.google.nl&#34;,
+      &#34;*.google.pl&#34;,
+      &#34;*.google.pt&#34;,
+      &#34;*.gemini.cloud.google.com&#34;,
+      &#34;*.gstatic.com&#34;,
+      &#34;*.metric.gstatic.com&#34;,
+      &#34;*.gvt1.com&#34;,
+      &#34;*.gcpcdn.gvt1.com&#34;,
+      &#34;*.gvt2.com&#34;,
+      &#34;*.gcp.gvt2.com&#34;,
+      &#34;*.url.google.com&#34;,
+      &#34;*.youtube-nocookie.com&#34;,
+      &#34;*.ytimg.com&#34;,
+      &#34;ai.android&#34;,
+      &#34;android.com&#34;,
+      &#34;*.android.com&#34;,
+      &#34;*.flash.android.com&#34;,
+      &#34;g.co&#34;,
+      &#34;*.g.co&#34;,
+      &#34;goo.gl&#34;,
+      &#34;www.goo.gl&#34;,
+      &#34;google-analytics.com&#34;,
+      &#34;*.google-analytics.com&#34;,
+      &#34;google.com&#34;,
+      &#34;googlecommerce.com&#34;,
+      &#34;*.googlecommerce.com&#34;,
+      &#34;urchin.com&#34;,
+      &#34;*.urchin.com&#34;,
+      &#34;youtu.be&#34;,
+      &#34;youtube.com&#34;,
+      &#34;*.youtube.com&#34;,
+      &#34;music.youtube.com&#34;,
+      &#34;*.music.youtube.com&#34;,
+      &#34;youtubeeducation.com&#34;,
+      &#34;*.youtubeeducation.com&#34;,
+      &#34;youtubekids.com&#34;,
+      &#34;*.youtubekids.com&#34;,
+      &#34;yt.be&#34;,
+      &#34;*.yt.be&#34;,
+      &#34;android.clients.google.com&#34;,
+      &#34;*.aistudio.google.com&#34;
+    ],
+    &#34;status&#34;: &#34;PASS&#34;,
+    &#34;message&#34;: &#34;Hostname khớp SAN của certificate.&#34;
+  },
+  &#34;validity&#34;: {
+    &#34;status&#34;: &#34;VALID&#34;,
+    &#34;message&#34;: &#34;Certificate đang trong khoảng thời gian có hiệu lực.&#34;,
+    &#34;not_before&#34;: &#34;2026-09-28T18:38:01+00:00&#34;,
+    &#34;not_after&#34;: &#34;2026-12-21T18:38:00+00:00&#34;,
+    &#34;current_time&#34;: &#34;2026-10-18T15:32:54.923181+00:00&#34;
+  },
+  &#34;cryptography&#34;: {
+    &#34;public_key_algorithm&#34;: &#34;EC&#34;,
+    &#34;key_size&#34;: 256,
+    &#34;signature_algorithm&#34;: &#34;RSA_WITH_SHA256&#34;,
+    &#34;signature_oid&#34;: &#34;1.2.840.113549.1.1.11&#34;,
+    &#34;hash_algorithm&#34;: &#34;sha256&#34;
+  },
+  &#34;chain&#34;: {
+    &#34;length&#34;: 4,
+    &#34;certificates&#34;: [
+      {
+        &#34;role&#34;: &#34;Leaf&#34;,
+        &#34;subject&#34;: &#34;CN=*.google.com&#34;,
+        &#34;origin&#34;: &#34;Máy chủ gửi qua TLS&#34;,
+        &#34;is_trust_anchor&#34;: false,
+        &#34;issuer&#34;: &#34;CN=WR2,O=Google Trust Services,C=US&#34;,
+        &#34;not_before&#34;: &#34;2026-09-28T18:38:01+00:00&#34;,
+        &#34;not_after&#34;: &#34;2026-12-21T18:38:00+00:00&#34;
+      },
+      {
+        &#34;role&#34;: &#34;Intermediate #1&#34;,
+        &#34;subject&#34;: &#34;CN=WR2,O=Google Trust Services,C=US&#34;,
+        &#34;origin&#34;: &#34;Máy chủ gửi qua TLS&#34;,
+        &#34;is_trust_anchor&#34;: false,
+        &#34;issuer&#34;: &#34;CN=GTS Root R1,O=Google Trust Services LLC,C=US&#34;,
+        &#34;not_before&#34;: &#34;2023-12-13T09:00:00+00:00&#34;,
+        &#34;not_after&#34;: &#34;2029-02-20T14:00:00+00:00&#34;
+      },
+      {
+        &#34;role&#34;: &#34;Intermediate #2&#34;,
+        &#34;subject&#34;: &#34;CN=GTS Root R1,O=Google Trust Services LLC,C=US&#34;,
+        &#34;origin&#34;: &#34;Máy chủ gửi qua TLS&#34;,
+        &#34;is_trust_anchor&#34;: false,
+        &#34;issuer&#34;: &#34;CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE&#34;,
+        &#34;not_before&#34;: &#34;2020-06-19T00:00:42+00:00&#34;,
+        &#34;not_after&#34;: &#34;2028-01-28T00:00:42+00:00&#34;
+      },
+      {
+        &#34;role&#34;: &#34;Root CA / Trust Anchor&#34;,
+        &#34;subject&#34;: &#34;CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE&#34;,
+        &#34;origin&#34;: &#34;Bổ sung từ trust store / đường dẫn đã xác minh; không nằm trong chuỗi máy chủ gửi&#34;,
+        &#34;is_trust_anchor&#34;: true,
+        &#34;issuer&#34;: &#34;CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE&#34;,
+        &#34;not_before&#34;: &#34;1998-09-01T12:00:00+00:00&#34;,
+        &#34;not_after&#34;: &#34;2028-01-28T12:00:00+00:00&#34;
+      }
+    ],
+    &#34;issuer_subject_links&#34;: &#34;PASS&#34;,
+    &#34;signature_validation&#34;: &#34;PASS&#34;,
+    &#34;ca_constraints&#34;: &#34;PASS&#34;,
+    &#34;validity&#34;: &#34;PASS&#34;,
+    &#34;tls_usage&#34;: &#34;PASS&#34;,
+    &#34;trusted_root&#34;: &#34;PASS&#34;,
+    &#34;status&#34;: &#34;PASS&#34;,
+    &#34;reasons&#34;: [],
+    &#34;trust_anchor_subject&#34;: &#34;CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE&#34;,
+    &#34;trust_explanation&#34;: &#34;Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký.&#34;
+  },
+  &#34;algorithm_policy&#34;: {
+    &#34;algorithm&#34;: &#34;EC&#34;,
+    &#34;key_size&#34;: 256,
+    &#34;hash_algorithm&#34;: &#34;sha256&#34;,
+    &#34;public_key&#34;: {
+      &#34;status&#34;: &#34;PASS&#34;,
+      &#34;message&#34;: &#34;Allowed public key algorithm: EC&#34;
+    },
+    &#34;key_size_rule&#34;: {
+      &#34;status&#34;: &#34;PASS&#34;,
+      &#34;message&#34;: &#34;Key size meets policy minimum (256 bits)&#34;
+    },
+    &#34;hash_rule&#34;: {
+      &#34;status&#34;: &#34;PASS&#34;,
+      &#34;message&#34;: &#34;Allowed signature hash: sha256&#34;
+    },
+    &#34;status&#34;: &#34;PASS&#34;,
+    &#34;reasons&#34;: []
+  },
+  &#34;ct&#34;: {
+    &#34;sct_count&#34;: 2,
+    &#34;matched_scts&#34;: 2,
+    &#34;signature_validation&#34;: &#34;VALID&#34;,
+    &#34;inclusion_validation&#34;: &#34;VALID&#34;,
+    &#34;status&#34;: &#34;WARNING&#34;,
+    &#34;scts&#34;: [
+      {
+        &#34;log_id&#34;: &#34;lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=&#34;,
+        &#34;version&#34;: &#34;v1&#34;,
+        &#34;operator&#34;: &#34;DigiCert&#34;,
+        &#34;description&#34;: &#34;DigiCert &#39;Sphinx2026h2&#39;&#34;,
+        &#34;state&#34;: &#34;usable&#34;,
+        &#34;mmd&#34;: 86400,
+        &#34;url&#34;: &#34;https://sphinx.ct.digicert.com/2026h2/&#34;,
+        &#34;start_interval&#34;: &#34;2026-07-01T00:00:00Z&#34;,
+        &#34;end_interval&#34;: &#34;2027-01-01T00:00:00Z&#34;,
+        &#34;timestamp&#34;: &#34;2026-09-28T19:38:28.152000+00:00&#34;,
+        &#34;timestamp_interval&#34;: &#34;NOT_APPLICABLE&#34;,
+        &#34;certificate_interval&#34;: &#34;PASS&#34;,
+        &#34;log_id_match&#34;: &#34;PASS&#34;,
+        &#34;state_policy&#34;: &#34;PASS&#34;,
+        &#34;status&#34;: &#34;PASS&#34;,
+        &#34;reasons&#34;: []
+      },
+      {
+        &#34;log_id&#34;: &#34;1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=&#34;,
+        &#34;version&#34;: &#34;v1&#34;,
+        &#34;operator&#34;: &#34;Google&#34;,
+        &#34;description&#34;: &#34;Google &#39;Argon2026h2&#39; log&#34;,
+        &#34;state&#34;: &#34;usable&#34;,
+        &#34;mmd&#34;: 86400,
+        &#34;url&#34;: &#34;https://ct.googleapis.com/logs/us1/argon2026h2/&#34;,
+        &#34;start_interval&#34;: &#34;2026-07-01T00:00:00Z&#34;,
+        &#34;end_interval&#34;: &#34;2027-01-01T00:00:00Z&#34;,
+        &#34;timestamp&#34;: &#34;2026-09-28T19:38:27.148000+00:00&#34;,
+        &#34;timestamp_interval&#34;: &#34;NOT_APPLICABLE&#34;,
+        &#34;certificate_interval&#34;: &#34;PASS&#34;,
+        &#34;log_id_match&#34;: &#34;PASS&#34;,
+        &#34;state_policy&#34;: &#34;PASS&#34;,
+        &#34;status&#34;: &#34;PASS&#34;,
+        &#34;reasons&#34;: []
+      }
+    ],
+    &#34;reasons&#34;: [
+      &#34;Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.&#34;
+    ]
+  },
+  &#34;security&#34;: {
+    &#34;status&#34;: &#34;WARNING&#34;,
+    &#34;checks&#34;: {
+      &#34;Validity&#34;: &#34;PASS&#34;,
+      &#34;Hostname&#34;: &#34;PASS&#34;,
+      &#34;Certificate Chain&#34;: &#34;PASS&#34;,
+      &#34;Algorithm Policy&#34;: &#34;PASS&#34;,
+      &#34;Certificate Transparency&#34;: &#34;WARNING&#34;,
+      &#34;Revocation&#34;: &#34;PASS&#34;
+    },
+    &#34;reasons&#34;: [
+      &#34;Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.&#34;
+    ]
+  },
+  &#34;errors&#34;: []
+}</pre></section>
+<footer>DT007 — Trình xác minh chuỗi chứng thư số và chính sách thuật toán</footer></html>

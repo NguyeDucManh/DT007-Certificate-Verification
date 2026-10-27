@@ -1,0 +1,351 @@
+{
+  "demo_total": 14,
+  "demo_success": 14,
+  "historical90": {
+    "source": "C:\\Users\\ADMIN\\Downloads\\DT007\\reports\\research_results",
+    "raw_sha256": "49a33b8a3dd36e1028cb74105131e631cab148c98880e96e712bd11b4b368fab",
+    "observations": 90,
+    "repeats": 3,
+    "profiles": {
+      "baseline": {
+        "runs": [
+          {
+            "repeat": 1,
+            "coverage_percent": 71.42857142857143,
+            "misconfiguration_coverage_percent": 76.92307692307692,
+            "misconfiguration_types_total": 13,
+            "covered_types": [
+              "BROKEN_CHAIN",
+              "EXPIRED_CERTIFICATE",
+              "HOSTNAME_MISMATCH",
+              "INVALID_SIGNATURE",
+              "MD5_SIGNATURE",
+              "NON_CA_INTERMEDIATE",
+              "NOT_YET_VALID_CERTIFICATE",
+              "RSA_1024",
+              "SELF_SIGNED_LEAF",
+              "SHA1_SIGNATURE"
+            ],
+            "agreement_percent": 71.42857142857143,
+            "errors": 0,
+            "valid_controls": 1,
+            "false_positive_fail": 0,
+            "valid_control_warnings": 0,
+            "false_negative_fail": 2,
+            "positive_cases_completed": 12,
+            "false_negative_rate_percent": 16.666666666666668,
+            "false_positive_rate_percent": 0.0,
+            "mean_case_runtime_seconds": 0.00292304,
+            "total_case_runtime_seconds": 0.0438456
+          },
+          {
+            "repeat": 2,
+            "coverage_percent": 71.42857142857143,
+            "misconfiguration_coverage_percent": 76.92307692307692,
+            "misconfiguration_types_total": 13,
+            "covered_types": [
+              "BROKEN_CHAIN",
+              "EXPIRED_CERTIFICATE",
+              "HOSTNAME_MISMATCH",
+              "INVALID_SIGNATURE",
+              "MD5_SIGNATURE",
+              "NON_CA_INTERMEDIATE",
+              "NOT_YET_VALID_CERTIFICATE",
+              "RSA_1024",
+              "SELF_SIGNED_LEAF",
+              "SHA1_SIGNATURE"
+            ],
+            "agreement_percent": 71.42857142857143,
+            "errors": 0,
+            "valid_controls": 1,
+            "false_positive_fail": 0,
+            "valid_control_warnings": 0,
+            "false_negative_fail": 2,
+            "positive_cases_completed": 12,
+            "false_negative_rate_percent": 16.666666666666668,
+            "false_positive_rate_percent": 0.0,
+            "mean_case_runtime_seconds": 0.0027707666666666668,
+            "total_case_runtime_seconds": 0.0415615
+          },
+          {
+            "repeat": 3,
+            "coverage_percent": 71.42857142857143,
+            "misconfiguration_coverage_percent": 76.92307692307692,
+            "misconfiguration_types_total": 13,
+            "covered_types": [
+              "BROKEN_CHAIN",
+              "EXPIRED_CERTIFICATE",
+              "HOSTNAME_MISMATCH",
+              "INVALID_SIGNATURE",
+              "MD5_SIGNATURE",
+              "NON_CA_INTERMEDIATE",
+              "NOT_YET_VALID_CERTIFICATE",
+              "RSA_1024",
+              "SELF_SIGNED_LEAF",
+              "SHA1_SIGNATURE"
+            ],
+            "agreement_percent": 71.42857142857143,
+            "errors": 0,
+            "valid_controls": 1,
+            "false_positive_fail": 0,
+            "valid_control_warnings": 0,
+            "false_negative_fail": 2,
+            "positive_cases_completed": 12,
+            "false_negative_rate_percent": 16.666666666666668,
+            "false_positive_rate_percent": 0.0,
+            "mean_case_runtime_seconds": 0.0028879066666666667,
+            "total_case_runtime_seconds": 0.0433186
+          }
+        ],
+        "FP": 0,
+        "FN": 6,
+        "positive_observations": 36,
+        "valid_control_observations": 3,
+        "FN_evidence": [
+          {
+            "repeat": 1,
+            "case_id": "case_111",
+            "case_type": "UNKNOWN_CT_LOG",
+            "actual": "PASS"
+          },
+          {
+            "repeat": 1,
+            "case_id": "case_112",
+            "case_type": "RETIRED_CT_LOG",
+            "actual": "PASS"
+          },
+          {
+            "repeat": 2,
+            "case_id": "case_111",
+            "case_type": "UNKNOWN_CT_LOG",
+            "actual": "PASS"
+          },
+          {
+            "repeat": 2,
+            "case_id": "case_112",
+            "case_type": "RETIRED_CT_LOG",
+            "actual": "PASS"
+          },
+          {
+            "repeat": 3,
+            "case_id": "case_111",
+            "case_type": "UNKNOWN_CT_LOG",
+            "actual": "PASS"
+          },
+          {
+            "repeat": 3,
+            "case_id": "case_112",
+            "case_type": "RETIRED_CT_LOG",
+            "actual": "PASS"
+          }
+        ]
+      },
+      "extended": {
+        "runs": [
+          {
+            "repeat": 1,
+            "coverage_percent": 100.0,
+            "misconfiguration_coverage_percent": 100.0,
+            "misconfiguration_types_total": 13,
+            "covered_types": [
+              "BROKEN_CHAIN",
+              "EXPIRED_CERTIFICATE",
+              "HOSTNAME_MISMATCH",
+              "INVALID_SIGNATURE",
+              "MD5_SIGNATURE",
+              "NON_CA_INTERMEDIATE",
+              "NOT_YET_VALID_CERTIFICATE",
+              "NO_SCT",
+              "RETIRED_CT_LOG",
+              "RSA_1024",
+              "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+              "SELF_SIGNED_LEAF",
+              "SHA1_SIGNATURE",
+              "UNKNOWN_CT_LOG"
+            ],
+            "agreement_percent": 100.0,
+            "errors": 0,
+            "valid_controls": 1,
+            "false_positive_fail": 0,
+            "valid_control_warnings": 1,
+            "false_negative_fail": 0,
+            "positive_cases_completed": 12,
+            "false_negative_rate_percent": 0.0,
+            "false_positive_rate_percent": 0.0,
+            "mean_case_runtime_seconds": 0.0036580733333333336,
+            "total_case_runtime_seconds": 0.0548711
+          },
+          {
+            "repeat": 2,
+            "coverage_percent": 100.0,
+            "misconfiguration_coverage_percent": 100.0,
+            "misconfiguration_types_total": 13,
+            "covered_types": [
+              "BROKEN_CHAIN",
+              "EXPIRED_CERTIFICATE",
+              "HOSTNAME_MISMATCH",
+              "INVALID_SIGNATURE",
+              "MD5_SIGNATURE",
+              "NON_CA_INTERMEDIATE",
+              "NOT_YET_VALID_CERTIFICATE",
+              "NO_SCT",
+              "RETIRED_CT_LOG",
+              "RSA_1024",
+              "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+              "SELF_SIGNED_LEAF",
+              "SHA1_SIGNATURE",
+              "UNKNOWN_CT_LOG"
+            ],
+            "agreement_percent": 100.0,
+            "errors": 0,
+            "valid_controls": 1,
+            "false_positive_fail": 0,
+            "valid_control_warnings": 1,
+            "false_negative_fail": 0,
+            "positive_cases_completed": 12,
+            "false_negative_rate_percent": 0.0,
+            "false_positive_rate_percent": 0.0,
+            "mean_case_runtime_seconds": 0.003079786666666667,
+            "total_case_runtime_seconds": 0.0461968
+          },
+          {
+            "repeat": 3,
+            "coverage_percent": 100.0,
+            "misconfiguration_coverage_percent": 100.0,
+            "misconfiguration_types_total": 13,
+            "covered_types": [
+              "BROKEN_CHAIN",
+              "EXPIRED_CERTIFICATE",
+              "HOSTNAME_MISMATCH",
+              "INVALID_SIGNATURE",
+              "MD5_SIGNATURE",
+              "NON_CA_INTERMEDIATE",
+              "NOT_YET_VALID_CERTIFICATE",
+              "NO_SCT",
+              "RETIRED_CT_LOG",
+              "RSA_1024",
+              "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+              "SELF_SIGNED_LEAF",
+              "SHA1_SIGNATURE",
+              "UNKNOWN_CT_LOG"
+            ],
+            "agreement_percent": 100.0,
+            "errors": 0,
+            "valid_controls": 1,
+            "false_positive_fail": 0,
+            "valid_control_warnings": 1,
+            "false_negative_fail": 0,
+            "positive_cases_completed": 12,
+            "false_negative_rate_percent": 0.0,
+            "false_positive_rate_percent": 0.0,
+            "mean_case_runtime_seconds": 0.0028387533333333334,
+            "total_case_runtime_seconds": 0.0425813
+          }
+        ],
+        "FP": 0,
+        "FN": 0,
+        "positive_observations": 36,
+        "valid_control_observations": 3,
+        "FN_evidence": []
+      }
+    },
+    "issues": [],
+    "verified": true,
+    "scope": "Kiểm chứng phép tính và kế hoạch; condition_detected là bằng chứng do engine ghi, không phải oracle độc lập."
+  },
+  "historical114": {
+    "verified": true,
+    "problems": [],
+    "profiles": {
+      "baseline": {
+        "FP": 0,
+        "FN": 6,
+        "positive_completed": 36,
+        "controls_completed": 15
+      },
+      "extended": {
+        "FP": 0,
+        "FN": 0,
+        "positive_completed": 36,
+        "controls_completed": 15
+      }
+    },
+    "raw_sha256": "d22d0ae3afb9fd8de1c662ab7f3abb5b768cf71fc8967b95ea2f173b0a71409b",
+    "observations": 114,
+    "scope": "Independent key-claim audit; recorded detection flags are not independently cryptographically reverified"
+  },
+  "cli": [
+    {
+      "mode": "dataset",
+      "exit_code": 0
+    },
+    {
+      "mode": "default",
+      "exit_code": 0,
+      "security": {
+        "status": "WARNING",
+        "checks": {
+          "Validity": "PASS",
+          "Hostname": "PASS",
+          "Certificate Chain": "PASS",
+          "Algorithm Policy": "PASS",
+          "Certificate Transparency": "WARNING"
+        },
+        "reasons": [
+          "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+        ]
+      },
+      "errors": null,
+      "certificate_present": true,
+      "html_export": true
+    },
+    {
+      "mode": "advanced",
+      "exit_code": 0,
+      "security": {
+        "status": "WARNING",
+        "checks": {
+          "Validity": "PASS",
+          "Hostname": "PASS",
+          "Certificate Chain": "PASS",
+          "Algorithm Policy": "PASS",
+          "Certificate Transparency": "WARNING",
+          "Revocation": "PASS"
+        },
+        "reasons": [
+          "Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập."
+        ]
+      },
+      "errors": null,
+      "certificate_present": true,
+      "html_export": true
+    }
+  ],
+  "http": [
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "path": "/demo",
+      "method": "GET",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "path": "/demo",
+      "method": "POST",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "path": "/scan",
+      "method": "POST",
+      "status": 400,
+      "expected": 400
+    }
+  ],
+  "passed": true
+}

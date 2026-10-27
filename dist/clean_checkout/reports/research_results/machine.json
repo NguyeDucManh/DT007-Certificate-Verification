@@ -1,0 +1,22 @@
+﻿{
+    "captured_at":  "2026-10-10T06:23:09.6972555Z",
+    "cpu":  [
+                {
+                    "Name":  "13th Gen Intel(R) Core(TM) i5-13420H",
+                    "NumberOfCores":  8,
+                    "NumberOfLogicalProcessors":  12
+                }
+            ],
+    "machine":  [
+                    {
+                        "TotalPhysicalMemory":  16674521088
+                    }
+                ],
+    "os":  [
+               {
+                   "Caption":  "Microsoft Windows 11 Home Single Language",
+                   "Version":  "10.0.26200",
+                   "OSArchitecture":  "64-bit"
+               }
+           ]
+}

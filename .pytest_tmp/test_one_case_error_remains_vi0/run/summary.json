@@ -1,0 +1,434 @@
+{
+  "created_utc": "2026-10-10T09:18:48.038586+00:00",
+  "python": "3.14.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "repeats": 3,
+  "observations": 114,
+  "total_wall_seconds_including_setup": 3.6762800000142306,
+  "setups": [
+    {
+      "repeat": 1,
+      "profile": "baseline",
+      "wall_seconds": 0.2537444999907166,
+      "cpu_seconds": 0.25,
+      "rss_after_bytes": 103043072
+    },
+    {
+      "repeat": 1,
+      "profile": "extended",
+      "wall_seconds": 0.32000390003668144,
+      "cpu_seconds": 0.328125,
+      "rss_after_bytes": 103043072
+    },
+    {
+      "repeat": 2,
+      "profile": "extended",
+      "wall_seconds": 0.14061339996987954,
+      "cpu_seconds": 0.140625,
+      "rss_after_bytes": 103108608
+    },
+    {
+      "repeat": 2,
+      "profile": "baseline",
+      "wall_seconds": 0.20941289997426793,
+      "cpu_seconds": 0.203125,
+      "rss_after_bytes": 103194624
+    },
+    {
+      "repeat": 3,
+      "profile": "baseline",
+      "wall_seconds": 0.32280940003693104,
+      "cpu_seconds": 0.3125,
+      "rss_after_bytes": 103243776
+    },
+    {
+      "repeat": 3,
+      "profile": "extended",
+      "wall_seconds": 0.20404749998124316,
+      "cpu_seconds": 0.203125,
+      "rss_after_bytes": 103243776
+    }
+  ],
+  "profiles": {
+    "baseline": {
+      "runs": [
+        {
+          "repeat": 1,
+          "attempted": 19,
+          "completed": 18,
+          "errors": 1,
+          "skipped": 0,
+          "coverage_percent": 64.28571428571429,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 69.23076923076923,
+          "agreement_percent": 73.6842105263158,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 11,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 0.4103888000245206,
+          "wall_mean_seconds": 0.021599410527606347,
+          "synthetic_wall_mean_seconds": 0.004659785714466125,
+          "control_wall_mean_seconds": 0.06903036000439897,
+          "cpu_total_seconds": 0.4375,
+          "rss_boundary_max_bytes": 103043072
+        },
+        {
+          "repeat": 2,
+          "attempted": 19,
+          "completed": 18,
+          "errors": 1,
+          "skipped": 0,
+          "coverage_percent": 64.28571428571429,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 69.23076923076923,
+          "agreement_percent": 73.6842105263158,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 11,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 0.48692130018025637,
+          "wall_mean_seconds": 0.02562743685159244,
+          "synthetic_wall_mean_seconds": 0.003633192869269156,
+          "control_wall_mean_seconds": 0.08721132000209764,
+          "cpu_total_seconds": 0.484375,
+          "rss_boundary_max_bytes": 103243776
+        },
+        {
+          "repeat": 3,
+          "attempted": 19,
+          "completed": 18,
+          "errors": 1,
+          "skipped": 0,
+          "coverage_percent": 64.28571428571429,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 69.23076923076923,
+          "agreement_percent": 73.6842105263158,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 11,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 0.17596889997366816,
+          "wall_mean_seconds": 0.009261521051245692,
+          "synthetic_wall_mean_seconds": 0.0040274071465579,
+          "control_wall_mean_seconds": 0.023917039984371512,
+          "cpu_total_seconds": 0.1875,
+          "rss_boundary_max_bytes": 103243776
+        }
+      ],
+      "FP": 0,
+      "FN": 6,
+      "positive_completed": 33,
+      "controls_completed": 15,
+      "descriptive": {
+        "coverage_percent": {
+          "n": 3,
+          "mean": 64.28571428571429,
+          "sample_std": 0.0,
+          "min": 64.28571428571429,
+          "max": 64.28571428571429,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            64.28571428571429,
+            64.28571428571429
+          ]
+        },
+        "misconfiguration_coverage_percent": {
+          "n": 3,
+          "mean": 69.23076923076923,
+          "sample_std": 0.0,
+          "min": 69.23076923076923,
+          "max": 69.23076923076923,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            69.23076923076923,
+            69.23076923076923
+          ]
+        },
+        "wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.018829456143481492,
+          "sample_std": 0.008527325809631598,
+          "min": 0.009261521051245692,
+          "max": 0.02562743685159244,
+          "cv_percent": 45.28715935634522,
+          "t95_mean_interval": [
+            -0.0023535954814029245,
+            0.04001250776836591
+          ]
+        },
+        "synthetic_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.00410679524343106,
+          "sample_std": 0.0005178803625319834,
+          "min": 0.003633192869269156,
+          "max": 0.004659785714466125,
+          "cv_percent": 12.61032829334134,
+          "t95_mean_interval": [
+            0.002820309104642046,
+            0.005393281382220074
+          ]
+        },
+        "control_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.0600529066636227,
+          "sample_std": 0.032588149258663685,
+          "min": 0.023917039984371512,
+          "max": 0.08721132000209764,
+          "cv_percent": 54.26573178414375,
+          "t95_mean_interval": [
+            -0.020900543869016783,
+            0.1410063571962622
+          ]
+        },
+        "cpu_total_seconds": {
+          "n": 3,
+          "mean": 0.3697916666666667,
+          "sample_std": 0.1595995150629642,
+          "min": 0.1875,
+          "max": 0.484375,
+          "cv_percent": 43.159305481815665,
+          "t95_mean_interval": [
+            -0.026675507493217676,
+            0.766258840826551
+          ]
+        }
+      }
+    },
+    "extended": {
+      "runs": [
+        {
+          "repeat": 1,
+          "attempted": 19,
+          "completed": 18,
+          "errors": 1,
+          "skipped": 0,
+          "coverage_percent": 92.85714285714286,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 92.3076923076923,
+          "agreement_percent": 94.73684210526316,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 11,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 0.28386670001782477,
+          "wall_mean_seconds": 0.014940352632517093,
+          "synthetic_wall_mean_seconds": 0.004215114292622145,
+          "control_wall_mean_seconds": 0.04497101998422295,
+          "cpu_total_seconds": 0.25,
+          "rss_boundary_max_bytes": 103108608
+        },
+        {
+          "repeat": 2,
+          "attempted": 19,
+          "completed": 18,
+          "errors": 1,
+          "skipped": 0,
+          "coverage_percent": 92.85714285714286,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 92.3076923076923,
+          "agreement_percent": 94.73684210526316,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 11,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 0.3769979999633506,
+          "wall_mean_seconds": 0.019841999998071083,
+          "synthetic_wall_mean_seconds": 0.0043192785732182005,
+          "control_wall_mean_seconds": 0.06330561998765916,
+          "cpu_total_seconds": 0.375,
+          "rss_boundary_max_bytes": 103194624
+        },
+        {
+          "repeat": 3,
+          "attempted": 19,
+          "completed": 18,
+          "errors": 1,
+          "skipped": 0,
+          "coverage_percent": 92.85714285714286,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 92.3076923076923,
+          "agreement_percent": 94.73684210526316,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 11,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 0.3450878998846747,
+          "wall_mean_seconds": 0.018162521046561825,
+          "synthetic_wall_mean_seconds": 0.005445128564523267,
+          "control_wall_mean_seconds": 0.05377121999626979,
+          "cpu_total_seconds": 0.359375,
+          "rss_boundary_max_bytes": 103247872
+        }
+      ],
+      "FP": 0,
+      "FN": 0,
+      "positive_completed": 33,
+      "controls_completed": 15,
+      "descriptive": {
+        "coverage_percent": {
+          "n": 3,
+          "mean": 92.85714285714286,
+          "sample_std": 0.0,
+          "min": 92.85714285714286,
+          "max": 92.85714285714286,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            92.85714285714286,
+            92.85714285714286
+          ]
+        },
+        "misconfiguration_coverage_percent": {
+          "n": 3,
+          "mean": 92.3076923076923,
+          "sample_std": 0.0,
+          "min": 92.3076923076923,
+          "max": 92.3076923076923,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            92.3076923076923,
+            92.3076923076923
+          ]
+        },
+        "wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.017648291225716668,
+          "sample_std": 0.0024909558317130847,
+          "min": 0.014940352632517093,
+          "max": 0.019841999998071083,
+          "cv_percent": 14.114430682576925,
+          "t95_mean_interval": [
+            0.011460413905621074,
+            0.02383616854581226
+          ]
+        },
+        "synthetic_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.004659840476787871,
+          "sample_std": 0.0006820708063627705,
+          "min": 0.004215114292622145,
+          "max": 0.005445128564523267,
+          "cv_percent": 14.637213650561204,
+          "t95_mean_interval": [
+            0.0029654826645544342,
+            0.006354198289021307
+          ]
+        },
+        "control_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.054015953322717296,
+          "sample_std": 0.009169749730625494,
+          "min": 0.04497101998422295,
+          "max": 0.06330561998765916,
+          "cv_percent": 16.97600276688814,
+          "t95_mean_interval": [
+            0.03123703220870141,
+            0.07679487443673318
+          ]
+        },
+        "cpu_total_seconds": {
+          "n": 3,
+          "mean": 0.328125,
+          "sample_std": 0.06810779599282303,
+          "min": 0.25,
+          "max": 0.375,
+          "cv_percent": 20.75666163590797,
+          "t95_mean_interval": [
+            0.15893585550366748,
+            0.4973141444963325
+          ]
+        }
+      }
+    }
+  },
+  "raw_sha256": "f7cbc24c361d1f61b3ab798d32351bc927746071b25dd75ce34b4afdf3623766",
+  "limitations": [
+    "CPU time is process-wide at case boundaries; Windows timer may quantize short cases to zero",
+    "RSS sampled before/after; process peak is lifetime high-water mark, NOT each case peak",
+    "Runtime includes fixture generation and oracle; setup measured separately",
+    "Profiles have matched properties, freshly generated different keys; not byte-identical paired input",
+    "Only 5 control types repeated 3 times; not 15 independent population samples",
+    "t95 intervals assume independent approximately normal repeat means; n=3, descriptive only; identical fixture coverage does not prove population coverage",
+    "Control oracle shares OpenSSL backend with engine; independent invocation and predetermined labels, not independent implementation",
+    "CT fixtures structured placeholders, SCT signatures/inclusion proofs NOT_VERIFIED",
+    "CT ablation is DT007 baseline; not reproduction of the governance paper's quantitative findings"
+  ]
+}

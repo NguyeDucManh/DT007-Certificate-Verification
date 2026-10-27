@@ -1,0 +1,15 @@
+{
+  "method": "sRGB relative luminance contrast on specified solid foreground/background pairs",
+  "ratios": {
+    "PASS": 6.49,
+    "WARNING": 6.37,
+    "FAIL": 6.8,
+    "ERROR": 6.91,
+    "UNKNOWN": 6.5,
+    "NOT_CHECKED": 6.74,
+    "NOT_VERIFIED": 6.17,
+    "UNSUPPORTED": 6.6,
+    "PRIMARY_BUTTON": 6.7
+  },
+  "all_at_least_4_5": true
+}

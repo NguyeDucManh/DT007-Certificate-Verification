@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-10-10T06:46:07.436505+00:00",
+  "test_url": "http://127.0.0.1:53243",
+  "normal_web_url": "http://127.0.0.1:5000",
+  "http": [
+    {
+      "name": "home",
+      "status": 200,
+      "sha256": "3c1cda2dac63feccea1497ec89d885082be9dfe752e8f5c616e236e67bc286a7",
+      "traceback_in_response": false
+    },
+    {
+      "name": "demo",
+      "status": 200,
+      "sha256": "6d3ebece644bdb1d364f9fb3e018a00c322842b023a6117fef2b2746cd801715",
+      "traceback_in_response": false
+    },
+    {
+      "name": "invalid",
+      "status": 400,
+      "sha256": "93b49892e8beb9e5e456ba6fb599c564ea8bc13527094288fae2283c5182a56c",
+      "traceback_in_response": false
+    },
+    {
+      "name": "oversized",
+      "status": 413,
+      "sha256": "6d3c9fb5b4bcea862a0e55337af50acfe091dd625fb66175dafcbbcb4ce22ba6",
+      "traceback_in_response": false
+    },
+    {
+      "name": "demo_all",
+      "status": 200,
+      "sha256": "5b26885d9dbdeb066a5335bf6984afba8f7c01f52356240ccca9fa971abc8f4a",
+      "traceback_in_response": false
+    },
+    {
+      "name": "google.com",
+      "status": 200,
+      "sha256": "98f02aee0b1c9f11a307d0b7e95eff526ac6b013839fe12d08f910b4d4375038",
+      "traceback_in_response": false
+    },
+    {
+      "name": "github.com",
+      "status": 200,
+      "sha256": "3079fa13c68842fbbe2d63cd43458a4bac8c1d562975267e56c8025ec70b5a99",
+      "traceback_in_response": false
+    },
+    {
+      "name": "cloudflare.com",
+      "status": 200,
+      "sha256": "37cbd244bad42e218bc0e4a590ebb9be2f232aa5705d0506ba1da5f8a4946c2c",
+      "traceback_in_response": false
+    }
+  ],
+  "cli": [
+    {
+      "target": "dataset",
+      "exit_code": 0
+    },
+    {
+      "target": "google.com",
+      "exit_code": 0,
+      "final_result": "WARNING",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      }
+    },
+    {
+      "target": "github.com",
+      "exit_code": 0,
+      "final_result": "WARNING",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      }
+    },
+    {
+      "target": "cloudflare.com",
+      "exit_code": 0,
+      "final_result": "WARNING",
+      "checks": {
+        "Validity": "PASS",
+        "Hostname": "PASS",
+        "Certificate Chain": "PASS",
+        "Algorithm Policy": "PASS",
+        "Certificate Transparency": "WARNING"
+      }
+    }
+  ]
+}

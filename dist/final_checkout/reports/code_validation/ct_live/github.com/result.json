@@ -1,0 +1,330 @@
+{
+  "extensions": {
+    "tls_collection": {
+      "status": "NOT_CHECKED",
+      "reason": "Không dùng thu thập TLS chưa tin cậy."
+    },
+    "revocation": {
+      "status": "ERROR",
+      "reason": "Có lỗi kiểm tra; không đủ cơ sở xác nhận trạng thái chưa bị thu hồi.",
+      "evidence": [
+        {
+          "method": "OCSP",
+          "status": "ERROR",
+          "reason": "Không chấp nhận bằng chứng OCSP: Phản hồi OCSP quá cũ so với chính sách freshness.",
+          "source": "http://ocsp.sectigo.com",
+          "sha256": "71d8b4365b89606003c8d32b68ffd9880c7a7508646405fb425202052af65526",
+          "signature_verified": true,
+          "issuer_verified": true,
+          "this_update": "2026-10-07T13:14:45+00:00",
+          "next_update": "2026-10-14T13:14:44+00:00",
+          "revoked_at": null
+        }
+      ]
+    },
+    "aia": {
+      "status": "NOT_CHECKED",
+      "reason": "Chuỗi đã xác minh; không cần tải AIA.",
+      "downloads": []
+    },
+    "sct_verification": [
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "status": "VALID",
+        "reason": "Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.",
+        "signed_data_sha256": "9dae04b600658eba811f9f4ae4b976ab706c173e1accbc032d592209ad5f4de2"
+      },
+      {
+        "log_id": "yKPEf8ezrbk1awE/anoSbeM6TkOlxkb5l605dZkdz5o=",
+        "status": "VALID",
+        "reason": "Chữ ký SCT hợp lệ với khóa log tin cậy; chưa chứng minh inclusion.",
+        "signed_data_sha256": "889b8d29798dde23050118cf80952c5f92052ec3d71de2c72085fff9061c1217"
+      }
+    ],
+    "inclusion": {
+      "status": "VALID",
+      "reason": "Kết quả từng SCT ở bằng chứng; giới hạn hai truy vấn proof, consistency chưa có checkpoint độc lập.",
+      "evidence": [
+        {
+          "status": "VALID",
+          "reason": "SCT có chữ ký hợp lệ; leaf khớp inclusion proof trong STH còn mới đã xác thực. Chưa kiểm tra consistency/gossip.",
+          "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+          "consistency": "NOT_VERIFIED",
+          "leaf_hash": "ijiNECpAUSA8ARYljhQgmCRoB4CtffXxDI0rwGFlVV4=",
+          "tree_size": 3423872947,
+          "leaf_index": 2820279912,
+          "sth_timestamp": 1791622134194,
+          "source": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/",
+          "signed_tree_head": {
+            "tree_size": 3423872947,
+            "timestamp": 1791622134194,
+            "sha256_root_hash": "rViYEdnVhD/tB1ayalOWA+JMjEiZoimzFG9yliCumt8=",
+            "tree_head_signature": "BAMARjBEAiAK+JjtL4sSiIb48M0rbhK53X7ZGLStsZvH91ZRnUMeigIgVv7ZZskd0Vsn/M1rJjSofp7ctpy1M5AD95aB7nR68Kc="
+          },
+          "audit_path": [
+            "il1dHXvJhHai5w8ZOMuF8zvnHCXOvj7/5DSSiFtxf1k=",
+            "ltsr5pVgevKYaQT4/4WaVXFKubb8ghkPirtoRetXxTw=",
+            "DsGZydY8yHAT5xvSZaeoSjx/+XOfG5jVKKcyHSSjtGA=",
+            "VIzMVf8jyyt+Ba24gArvUGyNEFXxPr9bnQSZSZ7HN+g=",
+            "ivl89TuCnEChnK/w/q2l7o8rSEMx+MdiK/fP8pMs8U4=",
+            "oHlXJF/MpoJRRFX+omDjfoURAZW5HybxSkmpIt5hBu8=",
+            "OKUaKTuJRGAl+Hm8/FCOuhtZnFOoy/nfgjnesXdHCdM=",
+            "J6onaXEPFvCCWIaT6oQ57cKW6XnT/wa7DPbOnc2auv4=",
+            "uEHRDI3IF63Ei4/glgCLxij5oWYy00IxBKZah4w1sMk=",
+            "q1jAVYCPzgrRLppb8gFqKxTbVbDF8Ox6DretO1f2J+Y=",
+            "eEyMiPa9ikFB5su4DNTqE0f2fs583BnC0VvN6Hql8Kw=",
+            "0uwyZD2BKZtr3XNto8VkZpfe29ZV/ifvQCBGAsYSKvI=",
+            "E8D++Tse0VBw0+6uZvqf72itI2OY9vRYdS/zLnEoGS4=",
+            "lK3YcjDMiH9VZMjAmPw/GcXkFOsFlIpHBRmoT2fhRcY=",
+            "Ch+bpLbAvncGBcBXHk13kXKv9XjNwvcXWrKqXpLzyYE=",
+            "zgQ9am8uUeF29V+Lm76Dri4rBNhWHW6oxb0ITDycl6c=",
+            "tjDwMdIaZOHn5eGZn8oLhkMQsAjp/DGzYnAMmxyUdjQ=",
+            "KujWoFG7HrLztCdbSBhEdgPh+pZZuOTKZ5M3ySFV3W4=",
+            "iaZuEbxinz8BX2IP7l3HIIzCXsRNR2IhaJs+1SPD//Q=",
+            "j27xZeM9TNrzxKmb4USzbPfWP7SUlH5q/RBMzXFyfC0=",
+            "U2notIb5tcaAzMi/ElyUa1VOEca0qGi1KojgpE+nO50=",
+            "LpZbGurfU+LmYofqOLnti5XPPadjCV3eusA7TOVD4Is=",
+            "zXLU8odjvE00QTWeLcu7z1X2P8Kktq9nhWeqP1Pb4bQ=",
+            "+jtoJ1Iv2vm8RKPtlFY1ww2B8Tw+ZRmDvvh88chkb9Y=",
+            "i1XGOuQh74NT0SkNRsqFbdMGcW92ZId3mH1xeEN+rEM=",
+            "bUokRCAYMW5SnkQzuI74mUfP0WydVBQZn2XIOdPGJNs=",
+            "A1QzwYj8hJGjAB48CaGZz8j9y+ciTNMGyPBi+ZL18Cc=",
+            "16VJ6uTLVV6HIAkvXMMUFssWbSxZ/U6mYF/IEpRLBLs=",
+            "Lk5q27J/Zs+hNazxAvTGP7NGD+rT58WdbvSnRylpBFU=",
+            "EXrkToMYUjmvrjWMNpuUlN7ojPkxW/gnzdPqRV7WQBY=",
+            "m9tqhxOE2rylmDhjKRAuOQ3OsrvJetWzjmG01FZv1hY=",
+            "cURe7rkd05jj7Qk2CbppYcJ8027YazrpDFxg99TxU6Q="
+          ],
+          "registry_sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+        },
+        {
+          "status": "VALID",
+          "reason": "SCT có chữ ký hợp lệ; leaf khớp inclusion proof trong STH còn mới đã xác thực. Chưa kiểm tra consistency/gossip.",
+          "log_id": "yKPEf8ezrbk1awE/anoSbeM6TkOlxkb5l605dZkdz5o=",
+          "consistency": "NOT_VERIFIED",
+          "leaf_hash": "qzQQesNUMrJ5OEhQiQVTuXN/xBtAa/Nqb5V7GVX5NgQ=",
+          "tree_size": 2418189914,
+          "leaf_index": 2170305512,
+          "sth_timestamp": 1791622035128,
+          "source": "https://tiger2026h2.ct.sectigo.com/ct/v1/",
+          "signed_tree_head": {
+            "tree_size": 2418189914,
+            "timestamp": 1791622035128,
+            "sha256_root_hash": "uMFXJHurxSWlAxDLmCb+hb9avoJi2JUJHCPssVEThoQ=",
+            "tree_head_signature": "BAMARzBFAiEAha+JVlS5NLMMQizUnhqmHEMtdLG9zSzNuts9jXMgSKICIE2CCugD9OlYbt15HSnQ4Z6+MRHAl8wp8X5/ayx1Myzg"
+          },
+          "audit_path": [
+            "LVP9mCFzMxSfOrfatz3FdwNrO3wW6PMaxIFPJRKIdfI=",
+            "KqIQQivEpmG324thqvg5VLWP+BteazwW+k0FK/MYp/4=",
+            "V0NJxiwxn9rNTH/YowaxAMw9CT2HgxphGjfseyrMI+Q=",
+            "qbK09tl7zcvNRrS/uu5JyPCKcRWrFUBTufCsKgXEUr4=",
+            "PhPAR0N5WAVXKe0BZFHgJt4sU+oVhzegFVSVFfr/Tqg=",
+            "YAOxAVx5B8SfnlhpPaySLSGWCqFJultX8ra+U413LEc=",
+            "sED90J6m41c69ftZrndn3WQ+QPWipipB+kkBR0cL2k4=",
+            "9GmPJi3hC6vYdfBmnf1ETAOIm9AxSPuAfTccFJxx+Io=",
+            "+GkINJwPbNPCIe4yJ+H6e3V3QqO9YZQKSUFjkud+w/8=",
+            "ZO7nAtMLTbeweC7wilxFwkhnFqiUFcznEotCn5Xrx7g=",
+            "cZtMhLf0dxu2/yTkw2fGBstSDNhNlCmfDEHVbsrsY1g=",
+            "wTS7wFfGKO7cchk43jLgmVg/a1y2PaDx9yASHBXcxWU=",
+            "0K2A6UleKthF5oJRrDky0+0TgAY0GiBNaiU64HP4prY=",
+            "0ATyZVwTsrqyfQiT85NrgcOUQE6VGGrZzq7bPWF/JMk=",
+            "lkgsQVqE75RnCLTFMeFgjkcpLkhYk9CrlBb/VTe+LhU=",
+            "UB/oXI4BaCZ3PVTvnTJW/glXtlKnSPAKTkSaV6Nzoe0=",
+            "gLvU1WpJnwuu8+Uw4+NCxSWZEK37mIw1XViNHwRwvek=",
+            "1gF5qoT32AjoCXjN5a2lLT420w2DcLXpu7YelYBTY/s=",
+            "Rf+OiXLiEEqS2hO8oTLrzV2q7ByvUb0QherYjnC6iKk=",
+            "37xvB3W18XDyksd13YCmFImABaHaGHzNfZ2wtglmkTU=",
+            "w+gvKBfK41pGG3/IWHwR4ODC22V41/nALP7IY62nviY=",
+            "GynXYu+graVztIJlzqWFtnFgiDkaPu18MjNXBHZ4T34=",
+            "byEGXoUmmoTGR6hpUVjyjzzXDkTLLlV06a+ypPjE1FM=",
+            "rqXBbeMewZyGEY+lHCL+vTv2p9f0UuLp/OIZjrtuXnk=",
+            "j0CmTafgtbZroEAmoviXMb1BzF9sFipBTe2aNBjTQIw=",
+            "i4lPzuDb1km3ZaSkN77u3L9Nf10Z2RWUIW4Ux+ZVD1s=",
+            "fHsJe1MsmKIMsVXLKtTIc8CDYKswTBwdrV/f5n2wbBU=",
+            "aUUjXi2/yaPkFEysAuSZMSuIqWU8IM5RoPKTLIhVoQ0=",
+            "JeAkCOz6ao4VJwCVaTKb/oYw1aUFMCXEs34x89ALzb4=",
+            "zysrqkKDGdI34aHRFWYvsg2/B9HtoGLQyl5Tmak58Ig="
+          ],
+          "registry_sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+        }
+      ]
+    },
+    "ct_key_source": {
+      "status": "VALID",
+      "reason": "Danh sách Google CT có chữ ký publisher hợp lệ với khóa đã pin.",
+      "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32",
+      "timestamp": "2026-10-09T13:41:13+00:00"
+    }
+  },
+  "hostname": "github.com",
+  "target": "github.com:443",
+  "runtime_seconds": 6.044276400003582,
+  "scan_error": null,
+  "certificate": {
+    "subject": "CN=github.com",
+    "issuer": "CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB",
+    "serial_number": "220146849970436463178178372053574587708",
+    "version": "v3",
+    "not_before": "2026-09-01T00:00:00+00:00",
+    "not_after": "2026-11-29T23:59:59+00:00"
+  },
+  "hostname_validation": {
+    "requested_hostname": "github.com",
+    "san_count": 2,
+    "san": [
+      "github.com",
+      "www.github.com"
+    ],
+    "status": "PASS",
+    "message": "Hostname khớp SAN của certificate."
+  },
+  "validity": {
+    "status": "VALID",
+    "message": "Certificate đang trong khoảng thời gian có hiệu lực.",
+    "not_before": "2026-09-01T00:00:00+00:00",
+    "not_after": "2026-11-29T23:59:59+00:00",
+    "current_time": "2026-10-10T08:49:51.503067+00:00"
+  },
+  "cryptography": {
+    "public_key_algorithm": "EC",
+    "key_size": 256,
+    "signature_algorithm": "ECDSA_WITH_SHA256",
+    "signature_oid": "1.2.840.10045.4.3.2",
+    "hash_algorithm": "sha256"
+  },
+  "chain": {
+    "length": 4,
+    "certificates": [
+      {
+        "role": "Leaf",
+        "subject": "CN=github.com",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB",
+        "not_before": "2026-09-01T00:00:00+00:00",
+        "not_after": "2026-11-29T23:59:59+00:00"
+      },
+      {
+        "role": "Intermediate #1",
+        "subject": "CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=Sectigo Public Server Authentication Root E46,O=Sectigo Limited,C=GB",
+        "not_before": "2021-03-22T00:00:00+00:00",
+        "not_after": "2036-03-21T23:59:59+00:00"
+      },
+      {
+        "role": "Intermediate #2",
+        "subject": "CN=Sectigo Public Server Authentication Root E46,O=Sectigo Limited,C=GB",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US",
+        "not_before": "2021-03-22T00:00:00+00:00",
+        "not_after": "2038-01-18T23:59:59+00:00"
+      },
+      {
+        "role": "Root CA / Trust Anchor",
+        "subject": "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US",
+        "origin": "Bổ sung từ trust store / đường dẫn đã xác minh; không nằm trong chuỗi máy chủ gửi",
+        "is_trust_anchor": true,
+        "issuer": "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US",
+        "not_before": "2010-02-01T00:00:00+00:00",
+        "not_after": "2038-01-18T23:59:59+00:00"
+      }
+    ],
+    "issuer_subject_links": "PASS",
+    "signature_validation": "PASS",
+    "ca_constraints": "PASS",
+    "validity": "PASS",
+    "tls_usage": "PASS",
+    "trusted_root": "PASS",
+    "status": "PASS",
+    "reasons": [],
+    "trust_anchor_subject": "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US",
+    "trust_explanation": "Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký."
+  },
+  "algorithm_policy": {
+    "algorithm": "EC",
+    "key_size": 256,
+    "hash_algorithm": "sha256",
+    "public_key": {
+      "status": "PASS",
+      "message": "Allowed public key algorithm: EC"
+    },
+    "key_size_rule": {
+      "status": "PASS",
+      "message": "Key size meets policy minimum (256 bits)"
+    },
+    "hash_rule": {
+      "status": "PASS",
+      "message": "Allowed signature hash: sha256"
+    },
+    "status": "PASS",
+    "reasons": []
+  },
+  "ct": {
+    "sct_count": 2,
+    "matched_scts": 2,
+    "signature_validation": "VALID",
+    "inclusion_validation": "VALID",
+    "status": "WARNING",
+    "scts": [
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "version": "v1",
+        "operator": "Google",
+        "description": "Google 'Argon2026h2' log",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://ct.googleapis.com/logs/us1/argon2026h2/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-01T00:10:32.017000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      },
+      {
+        "log_id": "yKPEf8ezrbk1awE/anoSbeM6TkOlxkb5l605dZkdz5o=",
+        "version": "v1",
+        "operator": "Sectigo",
+        "description": "Sectigo 'Tiger2026h2'",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://tiger2026h2.ct.sectigo.com/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-01T00:10:31.981000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      }
+    ],
+    "reasons": [
+      "Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập."
+    ]
+  },
+  "security": {
+    "status": "WARNING",
+    "checks": {
+      "Validity": "PASS",
+      "Hostname": "PASS",
+      "Certificate Chain": "PASS",
+      "Algorithm Policy": "PASS",
+      "Certificate Transparency": "WARNING",
+      "Revocation": "WARNING"
+    },
+    "reasons": [
+      "Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.",
+      "Có lỗi kiểm tra; không đủ cơ sở xác nhận trạng thái chưa bị thu hồi."
+    ]
+  },
+  "errors": [],
+  "checked_at": "2026-10-10T08:49:51.503030+00:00"
+}

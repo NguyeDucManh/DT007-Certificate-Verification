@@ -1,0 +1,14 @@
+2026-10-18 16:01:46.120: [INFO] CurrentProfilePath: C:\Users\ADMIN\Downloads\DT007\.cache\ui_browser_416a76e8974840cb8839162ea304875a\Default
+2026-10-18 16:01:46.120: [INFO] Profiles total count: 1
+2026-10-18 16:01:46.120: [INFO] Profile: name=Profile 1 path=C:\Users\ADMIN\Downloads\DT007\.cache\ui_browser_416a76e8974840cb8839162ea304875a\Default lastActive=null
+2026-10-18 16:01:46.120: [INFO] LastUsedProfileDir: C:\Users\ADMIN\Downloads\DT007\.cache\ui_browser_416a76e8974840cb8839162ea304875a\Default
+2026-10-18 16:01:46.120: [INFO] VisibilityChanged: 0
+2026-10-18 16:01:46.155: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-18 16:01:46.155: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-18 16:01:46.156: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-18 16:01:46.156: [INFO] OnDoneLoading sync enabled: 0
+2026-10-18 16:01:46.156: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-18 16:01:46.156: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-18 16:01:46.156: [INFO] BookmarksSnapshot Startup total=3 bar=3 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-18 16:01:46.240: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-18 16:02:03.645: [INFO] BookmarksSnapshot Shutdown total=3 bar=3 other=0 mobile=0 showBar=0 showBarNTP=1

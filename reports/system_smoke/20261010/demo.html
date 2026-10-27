@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DT007 — Kiểm tra chứng thư X.509, tên miền, thời hạn, chuỗi tin cậy, thuật toán và Certificate Transparency.">
+  <title>Phòng kiểm thử chứng thư số · DT007</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Đến nội dung chính</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="DT007 — Trang chủ">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 20 6v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m8.5 12 2.3 2.3 4.7-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong>DT007</strong><span class="brand-caption">Trình xác minh an toàn chứng thư số</span></span>
+      </a>
+      <nav class="local-label" aria-label="Điều hướng chính"><a href="/">Kiểm tra website thực tế</a><a href="/demo">Demo kiểm thử</a></nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+<section class="home-hero"><p class="eyebrow">DỮ LIỆU GIẢ LẬP – PHỤC VỤ KIỂM THỬ</p><h1>PHÒNG KIỂM THỬ CHỨNG THƯ SỐ</h1><p class="hero-description">Tạo lại chứng thư trong RAM và chạy validators thật từ bộ experiments. Đây không phải chứng thư của website thực tế.</p></section>
+<section class="scan-card"><h2>Chọn trường hợp giả lập</h2>
+<form method="post" action="/demo" class="batch-form"><input type="hidden" name="action" value="all"><button class="button button-primary batch-run" type="submit">CHẠY TOÀN BỘ 14 CA KIỂM THỬ</button><p class="batch-progress" role="status" hidden>Đang thực thi tất cả các ca trong manifest. Vui lòng đợi...</p></form>
+<form method="post" action="/demo" id="demo-form"><label for="case-id">Trường hợp kiểm thử</label><select id="case-id" name="case_id" required><option value="case_101" >Chứng thư hết hạn</option><option value="case_102" >Chứng thư chưa có hiệu lực</option><option value="case_103" >Tên miền không khớp SAN</option><option value="case_104" >Khóa RSA 1024 bit</option><option value="case_105" >Chữ ký SHA1</option><option value="case_106" >Chữ ký MD5</option><option value="case_107" >Chuỗi sai liên kết đơn vị cấp</option><option value="case_108" >Chữ ký không hợp lệ</option><option value="case_109" >Chứng thư trung gian không phải CA</option><option value="case_110" >Chứng thư máy chủ tự ký</option><option value="case_111" >CT Log không có trong dữ liệu</option><option value="case_112" >CT Log ngừng hoạt động</option><option value="case_113" >Thời điểm SCT ngoài khoảng chẩn đoán</option><option value="case_114" >Không có SCT nhúng</option></select><button class="button button-primary" type="submit" id="demo-button">CHẠY KIỂM THỬ</button><p id="demo-progress" role="status" hidden>Đang tạo dữ liệu giả lập và chạy kiểm tra...</p></form></section>
+
+
+<div class="result-bottom"><a href="/">Chuyển sang kiểm tra website thực tế</a></div>
+
+
+</main>
+  <footer class="site-footer container">
+    <span>DT007 · Trình xác minh chuỗi chứng thư số và chính sách thuật toán</span>
+    <span>Python • Flask • cryptography • OpenSSL • Certificate Transparency</span>
+  </footer>
+</body>
+</html>

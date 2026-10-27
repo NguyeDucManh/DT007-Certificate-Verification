@@ -1,0 +1,6 @@
+# Công cụ nghiên cứu/báo cáo, không cần cho web hoặc CLI hiện có.
+-r requirements.txt
+jsonschema
+matplotlib
+reportlab
+pypdf

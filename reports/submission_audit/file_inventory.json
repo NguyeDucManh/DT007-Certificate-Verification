@@ -1,0 +1,4678 @@
+[
+  {
+    "path": ".cache/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".gitignore",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 212,
+    "sha256": "28c62e0f73448093ab22eb14bad73a6bfa356a5c9f747f2c6f4626ed2c5156b3"
+  },
+  {
+    "path": ".pytest_audit/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".pytest_cache/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".pytest_ct_pipeline/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".pytest_extensions/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".pytest_local/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".pytest_research/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".pytest_system/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".pytest_tmp/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": ".venv/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": "__pycache__/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": "app.py",
+    "group": "B",
+    "included": true,
+    "reason": "Localhost Flask demo",
+    "bytes": 5720,
+    "sha256": "50e2106979f1d00777c7579e1d1244f30d4c14633e13393f3361f7112b180a9a"
+  },
+  {
+    "path": "config/algorithm_policy.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 373,
+    "sha256": "e3c408eeea3b32b7cd956428d7461fac36faf0b9f5ab3c87479f5b044be02981"
+  },
+  {
+    "path": "config/ct_log_list_pubkey.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 800,
+    "sha256": "a284e4ad744211a6636a03c59aca9446ecd5ff2c14d7cb6edd69f7ba2108bf95"
+  },
+  {
+    "path": "data/log_list.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 51883,
+    "sha256": "d0da723b9957e4f74f024278e7311c422e09b6c6452c8457c8dbf9a29f2817b9"
+  },
+  {
+    "path": "DATA_NOTICE.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1717,
+    "sha256": "75530ce1dd40a45c5131f39fc4bc7b2ae9493dba0651d34cd11e85291312996c"
+  },
+  {
+    "path": "dist/",
+    "group": "C",
+    "included": false,
+    "reason": "Local environment/cache/build tree, excluded recursively"
+  },
+  {
+    "path": "experiments/__init__.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 92,
+    "sha256": "4645b808eebe9cedb73a6f218b95218b4d8ba628e366822db0c220f0496f5278"
+  },
+  {
+    "path": "experiments/__pycache__/__init__.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/audit_expanded_study.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/audit_research_metrics.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/browser_smoke.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/build_scientific_report.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/collect_research_sources.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/ct_live_probe.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/dataset_profile.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/research_controls.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/research_evaluation.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/research_study.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/resource_metrics.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/revocation_probe.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/run_experiments.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/run_validation.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/synthetic_cases.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/system_smoke.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/__pycache__/validate_ct_snapshot.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "experiments/audit_expanded_study.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5202,
+    "sha256": "1113b6c9ded7c7f5dffc782053cb3cce6194763bc716e81de2e0735de88eb1cc"
+  },
+  {
+    "path": "experiments/audit_research_metrics.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 8426,
+    "sha256": "74422867de94fef32792dffee765a437a8a66d65bbd249f46875d4143d86fcf5"
+  },
+  {
+    "path": "experiments/baseline_before_partial_chain_fix/results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6882,
+    "sha256": "9d2b3f4427b10fe08d5bdb673cc192b1e0b7bc0a18dab4f5b0d4f5488b366fb2"
+  },
+  {
+    "path": "experiments/baseline_before_partial_chain_fix/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4938,
+    "sha256": "6218d101994ac235a991b177573f4e11e2e83837211627c77d2f202671088678"
+  },
+  {
+    "path": "experiments/browser_smoke.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 12634,
+    "sha256": "6a44551ee1c2d73dc4f094ce81e61d5af96de61c2a35323618689b6168472a7c"
+  },
+  {
+    "path": "experiments/build_scientific_report.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 46860,
+    "sha256": "d110bbeee1de56c52e34b421bca01c79ec6cf1b91ec88485ed31dfe7592b15bb"
+  },
+  {
+    "path": "experiments/collect_research_sources.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1971,
+    "sha256": "c6efccdb2e9c209e49b0eb00f41a4fe0d51d3664e6296d421f280eb473c05ffe"
+  },
+  {
+    "path": "experiments/ct_live_probe.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3147,
+    "sha256": "4dd543a70ab461e06b316c983ca24fc53a3cfcc82c78a53cf0ba92d8044724fb"
+  },
+  {
+    "path": "experiments/dataset_profile.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3325,
+    "sha256": "2f2045258c3723fe1bed7e33f6639ab09fb6dfbefc03ced2e854ac6498763493"
+  },
+  {
+    "path": "experiments/package_submission.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5324,
+    "sha256": "c00eacc8a9582439c39b9b07ee5b1907b12d867c3df770c594974a2668da1543"
+  },
+  {
+    "path": "experiments/research_controls.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6641,
+    "sha256": "578f7d22298b1391b573691e759257aa37a877bf858ec25d657b46369575b3a2"
+  },
+  {
+    "path": "experiments/research_evaluation.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 13000,
+    "sha256": "fa5a470ef8af29c7701258b01fdad6f0b99b9deead366c20c583681a06a2e44c"
+  },
+  {
+    "path": "experiments/research_study.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 11097,
+    "sha256": "1ab0311812459c418e778f1f661b6d835ef9660b594d96401895d559b1cb3fe9"
+  },
+  {
+    "path": "experiments/resource_metrics.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1640,
+    "sha256": "51b8dd1998b530fe8967952620ab3bef5afa43ccc5874cb24c1e760fd289cc47"
+  },
+  {
+    "path": "experiments/results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6402,
+    "sha256": "b970c740ab79f27c62b7cd0cd6defc507b8fbadff2932900ee45fc44426bcb7d"
+  },
+  {
+    "path": "experiments/revocation_probe.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2871,
+    "sha256": "81776c233dc0567b78f3f236f531fdde457aada2fe52dafb29e9d87a8f355446"
+  },
+  {
+    "path": "experiments/run_experiments.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 19871,
+    "sha256": "11435d749594371841b359938b0f06f0807c490259674541c8693265d927d3fe"
+  },
+  {
+    "path": "experiments/run_validation.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2470,
+    "sha256": "b323f58168886f31a17179f3d21f1cb4fd3edb46946c6ab1960951a1859996dd"
+  },
+  {
+    "path": "experiments/submission_smoke.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3699,
+    "sha256": "747913a8df17eb62c32122137c70352323fde15a7cb0dffd7d7f0b6b0f7c1a79"
+  },
+  {
+    "path": "experiments/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5237,
+    "sha256": "9ac4782864c5e1b5e11571d7acc53067d5477adc92e1ebf01a6cd4c3bff82ca0"
+  },
+  {
+    "path": "experiments/synthetic_cases.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 15090,
+    "sha256": "c79ed4ae5937e3b367928586dbbaa31551e5d1afe3973b67afabcd1961e4591b"
+  },
+  {
+    "path": "experiments/system_smoke.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3193,
+    "sha256": "391c5ef5bb9ec74a70ccecb73bf42325e6e78bdca0e37c5298f7cf74bbda1569"
+  },
+  {
+    "path": "experiments/test_cases.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4706,
+    "sha256": "43210e8ed19df5b33571bb15ebd572b68b074d69aa4ee65c331b6c8db7df7c0d"
+  },
+  {
+    "path": "experiments/validate_ct_snapshot.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2934,
+    "sha256": "0bbd8fdbd42b1128da7c9608f84a1bc7ed57a018d75d4a2d47fdf7a9547733b6"
+  },
+  {
+    "path": "FINAL_ACCEPTANCE.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 12043,
+    "sha256": "47799073390957dfb63138bcfa28dbf1dae01de864146274bc28cd614c3dc9ec"
+  },
+  {
+    "path": "HANDOFF.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3166,
+    "sha256": "8f62bb07679f3f0661bc8373d1571c387254ad84674655256b71353a9ff97aaa"
+  },
+  {
+    "path": "main.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5190,
+    "sha256": "6a5d03b93d852906d74d45945fbc014b42aa43504e81d1adb7eb68171f114942"
+  },
+  {
+    "path": "pytest.ini",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 42,
+    "sha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003"
+  },
+  {
+    "path": "README.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 50021,
+    "sha256": "62d5480ed5127afe48a15d5edcd818c3fa9e5af55e30dca25802ced1de85cd46"
+  },
+  {
+    "path": "reports/bao_cao_khung.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2343,
+    "sha256": "b418391ded093b72ddba5a478fabd9051462520404ccd9b141bfc86a3b20d298"
+  },
+  {
+    "path": "reports/browser_smoke/20261010/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 311,
+    "sha256": "5d4d17224495e1f389f05cb296305c4bc199389142870f8944717f69d7fa9ac2"
+  },
+  {
+    "path": "reports/browser_smoke/final_20261010/batch_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 36891,
+    "sha256": "0cbaf2f600b96eabfe21fc2a10246abfdf3968282bfd6745f40519cf6e2e0d97"
+  },
+  {
+    "path": "reports/browser_smoke/final_20261010/DT007-kiem-thu-tong-hop.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7511,
+    "sha256": "316f1d403af759122528589c1c4987bda83f7c5ea8b96bb2ccadc46939f3b10d"
+  },
+  {
+    "path": "reports/browser_smoke/final_20261010/home_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 54857,
+    "sha256": "f23562284a4c8816527d99b5c3f8bcff4d9309eab2c3d31d68503cac2d14ea6d"
+  },
+  {
+    "path": "reports/browser_smoke/final_20261010/result_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 60473,
+    "sha256": "8cbe02fba218b6f8b2be8d4b24e7adc39b5e6139a02325a9b8223bb33b427173"
+  },
+  {
+    "path": "reports/browser_smoke/final_20261010/result_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 37389,
+    "sha256": "8536a06d9f4a60b2f2d0e01f3586a97bb8ad8c6abf6b8df342dc45b1d1d6e814"
+  },
+  {
+    "path": "reports/browser_smoke/final_20261010/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 778,
+    "sha256": "0b44fe97346268ccc8d13ba596bed7d15c85c854156c99b4323edd4a52067ce3"
+  },
+  {
+    "path": "reports/browser_smoke/verified_20261010/batch_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 36515,
+    "sha256": "8aa80b30bcd6280f232d82e5f7a3847363edc66e70055d37836205c92ce47a7d"
+  },
+  {
+    "path": "reports/browser_smoke/verified_20261010/DT007-kiem-thu-tong-hop.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7511,
+    "sha256": "302b94222d78ae88e015eb9ec5327419dc425e61238e96b752bbb93d962f71b1"
+  },
+  {
+    "path": "reports/browser_smoke/verified_20261010/home_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 54857,
+    "sha256": "f23562284a4c8816527d99b5c3f8bcff4d9309eab2c3d31d68503cac2d14ea6d"
+  },
+  {
+    "path": "reports/browser_smoke/verified_20261010/result_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 60451,
+    "sha256": "57521fb3a690da4b18dff4674e7c4f6c864a3e6e3809c1a597ab86d7285aa640"
+  },
+  {
+    "path": "reports/browser_smoke/verified_20261010/result_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 37385,
+    "sha256": "169d132f63acca25e078c0b2228ebe9c9951327ff77a8b5c237dcf03affa6a17"
+  },
+  {
+    "path": "reports/browser_smoke/verified_20261010/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 780,
+    "sha256": "3bb1d48294448ac404811f3215520edd127d57ab1477fc88c7876e2b46e858c6"
+  },
+  {
+    "path": "reports/chain_review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3080,
+    "sha256": "27e55bfb24a5290544079d9515ab856ff9cf5217abaa08f2903bf39a6cb05143"
+  },
+  {
+    "path": "reports/code_validation/browser/batch_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 36547,
+    "sha256": "41fa3bd47c0d93f620e3d81e0d26e3952137b2008f0ce6ce8e0d000573842854"
+  },
+  {
+    "path": "reports/code_validation/browser/DT007-kiem-thu-tong-hop.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7511,
+    "sha256": "084a511ffbe8cf42be39405846b78282fbaaaf7c942d7e61761cfd3f2f49220c"
+  },
+  {
+    "path": "reports/code_validation/browser/home_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57275,
+    "sha256": "64fcf92cd60d42463688447d6828d1c87aa955f42f9778c02ceee18efc866acb"
+  },
+  {
+    "path": "reports/code_validation/browser/result_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 60430,
+    "sha256": "8f9a493c94c0ffb97d63b826c9d3f429f2ed94169f30b74d427934aa1c225b74"
+  },
+  {
+    "path": "reports/code_validation/browser/result_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 37382,
+    "sha256": "8ca529303b3d727eba232e850d119b9f1720eb6ebefbc46ce34e39594a552156"
+  },
+  {
+    "path": "reports/code_validation/browser/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 778,
+    "sha256": "0b44fe97346268ccc8d13ba596bed7d15c85c854156c99b4323edd4a52067ce3"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced/batch_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 36719,
+    "sha256": "137eee27b93bee4c45c58f89573e70bbc18d5d7b46ca99a232cb925f53b8a41a"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced/DT007-kiem-thu-tong-hop.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7511,
+    "sha256": "08e31d4d8771cb89db569ba509fe73feede3e6a3d7a95fffc02091ea35a4e21f"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced/home_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57275,
+    "sha256": "64fcf92cd60d42463688447d6828d1c87aa955f42f9778c02ceee18efc866acb"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced/result_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 56053,
+    "sha256": "b1cf7e8eb1f17547ca198144cbf8a357018327d8f2ab4484e403861d2eb26c22"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced/result_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 35308,
+    "sha256": "0f485d6356b41e36d1b2a2479c3d50c3fb7838ab072a9176299b3e2fcb067f7b"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 959,
+    "sha256": "e5d1897269e29296ddf1947c90e082168bd31646e155d735f702a1012363f242"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced_verified/batch_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 36747,
+    "sha256": "623ee05aa56d5b2c40bf24e819fcad8f3bbbbffe023c418c5c1e1285ec1e14fc"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced_verified/DT007-kiem-thu-tong-hop.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7511,
+    "sha256": "790b5db1d6b47a16c776594e20d80bdfc1e89f7fa2c64948f043357d26482dcb"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced_verified/home_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57275,
+    "sha256": "64fcf92cd60d42463688447d6828d1c87aa955f42f9778c02ceee18efc866acb"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced_verified/result_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 56058,
+    "sha256": "a5a71ef4ff74371fb6b0eb9a4ffba217c97e8352128e9a2bdbdbcead255ebd18"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced_verified/result_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 35285,
+    "sha256": "4ebf374722d3db0ee20473aaea9cc89fe72ed4f686c13db0a713dc9e8f1b9fac"
+  },
+  {
+    "path": "reports/code_validation/browser_advanced_verified/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 957,
+    "sha256": "de7926192d1f8648fa04d1aa4b37c9022da565183fc234a7d20cbcd7688ed8eb"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/chain_0.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 983,
+    "sha256": "961034ebe73c0aab92ee5c127a4265b99abc36cdf0b53b82b10788e087a72a14"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/chain_1.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 675,
+    "sha256": "1dfc1605fbad358d8bc844f76d15203fac9ca5c1a79fd4857ffaf2864fbebf96"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/chain_2.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 894,
+    "sha256": "76b27b80a58027dc3cf1da68dac17010ed93997d0b603e2fadbe85012493b5a7"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/chain_3.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 889,
+    "sha256": "ebd41040e4bb3ec742c9e381d31ef2a41a48b6685c96e7cef3c1df6cd4331c99"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/downloads.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1456,
+    "sha256": "9eeec4d001430d86d4e9c3c5922f99e31dd95b3128272883fa96cede201c6630"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 50629,
+    "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/response_2.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 512,
+    "sha256": "18c0390b0cd592d210fae2ad4561e44a17ee49366f3af3e66a25f89dba19a6a2"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/response_3.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 241,
+    "sha256": "69f8eb1e018e2537e321dd9607cfbd45bd0ff07496e1e374720b9ef2eb831c7b"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/response_4.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1544,
+    "sha256": "e834b04b823b4c827390a9351715e2db825df1299dda2918762245c91736444a"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/response_5.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 241,
+    "sha256": "67cd79b6da958d0ef437d40bd32cd89ddabea6df91df5032b71787abb1aafa51"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/response_6.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1544,
+    "sha256": "ee2af379e439ed7e5b2cb0e53274663ad5cffbedb2330f6527616f1ed5d719d4"
+  },
+  {
+    "path": "reports/code_validation/ct_live/cloudflare.com/result.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14434,
+    "sha256": "82967948f02b2fe7d67636ec96767ccb2836aaa50b00a07fd3aae888f3598122"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/chain_0.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1009,
+    "sha256": "46b601ee08b418cf8a3a1ebfe670ba5ce43bb05a917fa8b2dd087a30471cfc63"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/chain_1.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 867,
+    "sha256": "873f0ba80e3ac222656dfd04158cc15c2927d42d5d05f01dee4a47eb43a916df"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/chain_2.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 842,
+    "sha256": "ea6b89ed6907a209ff9188676fb164e7aced894b8996dfbe5ce5bbcc22de4ddd"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/chain_3.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 659,
+    "sha256": "4ff460d54b9c86dabfbcfc5712e0400d2bed3fbc4d4fbdaa86e06adcd2a9ad7a"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/downloads.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1450,
+    "sha256": "65f072d1754c31c8420afaa2923fd908da24ed73a6596ab978072875e7ab0e56"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 50629,
+    "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/response_2.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 512,
+    "sha256": "18c0390b0cd592d210fae2ad4561e44a17ee49366f3af3e66a25f89dba19a6a2"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/response_3.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 241,
+    "sha256": "9efd5623314658dff60ea6310388c942ac3073aa0e2a96cf8eb901a5d83946f5"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/response_4.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1544,
+    "sha256": "e964122f1fcecf5d149efb572c6bd84d41d44fe0ed9c084039c1c610cd9772b0"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/response_5.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 241,
+    "sha256": "9a1d0e687549e3d95a4759d1d35db55a47704ea1022bfb2837636a246ac99f78"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/response_6.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1450,
+    "sha256": "9aa543c40a4ad9740ec8046dd31943b0a60ab386a4281541bcfcc45d92b425ed"
+  },
+  {
+    "path": "reports/code_validation/ct_live/github.com/result.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14568,
+    "sha256": "c39e1f0c4abadc7ff41a83a1c6b9be8000511169975d98016eb61fb856e6e15b"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/chain_0.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2137,
+    "sha256": "30b52cea476e0aab5b9450ccfc33cbf957b24bf1b45d3d7dbb10a602818e54f5"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/chain_1.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1295,
+    "sha256": "e6fe22bf45e4f0d3b85c59e02c0f495418e1eb8d3210f788d48cd5e1cb547cd4"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/chain_2.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1382,
+    "sha256": "3ee0278df71fa3c125c4cd487f01d774694e6fc57e0cd94c24efd769133918e5"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/chain_3.der",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 889,
+    "sha256": "ebd41040e4bb3ec742c9e381d31ef2a41a48b6685c96e7cef3c1df6cd4331c99"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/downloads.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1462,
+    "sha256": "1b5f2ff3916df2be08cc941129ed39a3ca7e33551512455124f029c88607eccf"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 50629,
+    "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/response_2.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 512,
+    "sha256": "18c0390b0cd592d210fae2ad4561e44a17ee49366f3af3e66a25f89dba19a6a2"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/response_3.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 241,
+    "sha256": "a8b12c83888fafc3b60134be55d8761cbd399fbdae36e59531d9cbcd3277461f"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/response_4.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1544,
+    "sha256": "2b4af0bddcd06c87d886baae48ef9576b1453983f61b773dd75585461e6bc8b7"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/response_5.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 241,
+    "sha256": "2af4db02b80244924a71791763178f140bec45f2a997c32e6289895960813a4b"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/response_6.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1450,
+    "sha256": "ac72c104489cb91ae9e354c22c092488fda11388973eb293ce47f1c051bacf49"
+  },
+  {
+    "path": "reports/code_validation/ct_live/google.com/result.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 15804,
+    "sha256": "5c87d060ed771b98211b79ff5bf9fac148b076fb5173dfccf0af5cae090dd532"
+  },
+  {
+    "path": "reports/code_validation/ct_live/publisher.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 800,
+    "sha256": "a284e4ad744211a6636a03c59aca9446ecd5ff2c14d7cb6edd69f7ba2108bf95"
+  },
+  {
+    "path": "reports/code_validation/final_suite/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 49723,
+    "sha256": "070bd8ab8fc00cf19c1c90f33e3d01c25d6ca1ce9e63f3d1c6215896db6938e3"
+  },
+  {
+    "path": "reports/code_validation/final_suite/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 59272,
+    "sha256": "e1be9f77ee8d481bcfc1775689eeb15712dd29624516cce508c4c354d5a57a38"
+  },
+  {
+    "path": "reports/code_validation/final_suite/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1855,
+    "sha256": "b15fe76f3e5bb238ba968cb7d4e3631aab3ac5161ab7434e82fb3f9d99b97f28"
+  },
+  {
+    "path": "reports/code_validation/full_suite/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 49640,
+    "sha256": "1322e7c052e2ae51946b05aa0916a455f2bb38c2997fa2be749d57869b5691fa"
+  },
+  {
+    "path": "reports/code_validation/full_suite/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 59165,
+    "sha256": "d66844395ed26a397e8644ac83446e83e426849ea86e2154d32bc8f54147f2bc"
+  },
+  {
+    "path": "reports/code_validation/full_suite/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1854,
+    "sha256": "17c5c2befc34f93a71a9bb9d34df96e658459fd002f07fade7ffad164fdc2d7e"
+  },
+  {
+    "path": "reports/code_validation/google.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 17472,
+    "sha256": "f1c569d1bf43c7aa286074904ee533fd76febcf3411a0d43577a5b48c26c3dcd"
+  },
+  {
+    "path": "reports/code_validation/google.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 11003,
+    "sha256": "29d40bb5c7a6d41f882cfdc1451a5e6a7049cdb7c5fa39320935f268bfced995"
+  },
+  {
+    "path": "reports/code_validation/google_cli.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 10926,
+    "sha256": "8121f960c362c499c2ed713eb54dd6ecc36044212d2075ec38173f1031b2e29f"
+  },
+  {
+    "path": "reports/code_validation/official_pubkey.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 800,
+    "sha256": "a284e4ad744211a6636a03c59aca9446ecd5ff2c14d7cb6edd69f7ba2108bf95"
+  },
+  {
+    "path": "reports/code_validation/preservation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1575,
+    "sha256": "80f4a601aa2f2d5db40629a76c15d45e6c194b8a18fcd7223856f6b8214bd0c4"
+  },
+  {
+    "path": "reports/ct_dataset_profile.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1005,
+    "sha256": "1ec91de40c58ef964c5a0882743d82fa8a3ebf968a44283eff9dac5b0ac27b88"
+  },
+  {
+    "path": "reports/ct_interval_review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2839,
+    "sha256": "6bdfdf5ec27fd3d7b44f8ce86e6e666cae505cbbf7d8fc641c821dd70d5702d6"
+  },
+  {
+    "path": "reports/ct_snapshot_validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1591,
+    "sha256": "80f5fa7901649a5bb5da8095cf72d1c50244cfb066d22b2af267635a31409a80"
+  },
+  {
+    "path": "reports/demo_script.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4177,
+    "sha256": "04c22c2050904c5f7291f020b4877bdceec5082badd76a960d36b984745129cc"
+  },
+  {
+    "path": "reports/demo_validation.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6875,
+    "sha256": "b87f69d227e554e34f8230d670d3ed0f860f093891436d1412719876408120ca"
+  },
+  {
+    "path": "reports/final_acceptance/before_scientific/defense_slides.html",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/before_scientific/document_validation.json",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/before_scientific/figures/coverage.png",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/before_scientific/figures/coverage.svg",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/before_scientific/figures/runtime.png",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/before_scientific/figures/runtime.svg",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/before_scientific/scientific_report.html",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/before_scientific/scientific_report.pdf",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/browser/batch_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 36514,
+    "sha256": "f2cd92c3de9b40d2b4ed07bf253780d940c278039ffdb92eb1d3478f80340f25"
+  },
+  {
+    "path": "reports/final_acceptance/browser/DT007-kiem-thu-tong-hop.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7511,
+    "sha256": "3dfa6c609c48e37c23e8d08c76a81873c0c0db4646d84df7258a8bc33ab045d5"
+  },
+  {
+    "path": "reports/final_acceptance/browser/home_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57275,
+    "sha256": "64fcf92cd60d42463688447d6828d1c87aa955f42f9778c02ceee18efc866acb"
+  },
+  {
+    "path": "reports/final_acceptance/browser/result_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 60408,
+    "sha256": "875223e1d1f40532be42c3bc4ebf827c3125a71684c0a2b3def065b96fef5b47"
+  },
+  {
+    "path": "reports/final_acceptance/browser/result_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 37297,
+    "sha256": "9063b9850879d80f481737e89f5aa1c05508a0259d1b641b50a767549ad3683a"
+  },
+  {
+    "path": "reports/final_acceptance/browser/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 778,
+    "sha256": "0b44fe97346268ccc8d13ba596bed7d15c85c854156c99b4323edd4a52067ce3"
+  },
+  {
+    "path": "reports/final_acceptance/live_cli.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 10742,
+    "sha256": "ca366080947f5a8010167acfcabdf3b9471cf1da19645b63fbfde5bf4b94fb60"
+  },
+  {
+    "path": "reports/final_acceptance/live_google.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 15420,
+    "sha256": "14ca39c7fb4998b364d8c56f624c98fe42fa6ba74a83f845ece575605469c74f"
+  },
+  {
+    "path": "reports/final_acceptance/live_google.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 9334,
+    "sha256": "6d484f5e0ecf08112d245a34e0ee5eccbb60c2d6ae700794bc71917b652e5ed6"
+  },
+  {
+    "path": "reports/final_acceptance/live_web.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 28606,
+    "sha256": "81cd92a695277174cac94b7c5de2415a22dc617672dfaccf0cdc09cb80e87bb7"
+  },
+  {
+    "path": "reports/final_acceptance/preservation_after.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1697,
+    "sha256": "2fe5321ccccfc86bad52694702c6217764486749033b2dce335a8030077d6985"
+  },
+  {
+    "path": "reports/final_acceptance/preservation_before.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 655,
+    "sha256": "7cf88560f5ab100e8fdcb6842fcda9421f6f197318ca6c93586caf99ac4c492b"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_final/defense_slides.html",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_final/document_validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 891,
+    "sha256": "a8bc2dc3b150643279939a2b30e66fbd60ebc50768f800899adeea46594c1d09"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_final/figures/coverage.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57628,
+    "sha256": "56f9d2716ce4aa551963c18c9b2a8d59f1b66a6ff8514244391e1320b191f256"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_final/figures/coverage.svg",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 48715,
+    "sha256": "be6012904d4a5e0c8701b72b54256eace18cf679d323e37c506f091235b1f471"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_final/figures/runtime.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 59534,
+    "sha256": "8cad90ed6342a09d1ea7598dddec89e479b27c38e14eeae85eb6e13a89ddb2bf"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_final/figures/runtime.svg",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 39174,
+    "sha256": "bf52b9f3dafedb771151f74f5be89e5b45ec724f6d817a3af2452ab4057b5dae"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_final/scientific_report.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 41830,
+    "sha256": "a3897cbdb225f3c2e8d078703f9363cf542f909bb6eeb3ced8682c6d659cd949"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_final/scientific_report.pdf",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 213786,
+    "sha256": "1899d0cd6cc8c96968b0e22b45561ab3e7b81db6aa3258e5a3491af0e9bfca29"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_updated/defense_slides.html",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_updated/document_validation.json",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_updated/figures/coverage.png",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_updated/figures/coverage.svg",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_updated/figures/runtime.png",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_updated/figures/runtime.svg",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_updated/scientific_report.html",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/scientific_updated/scientific_report.pdf",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/final_acceptance/validation/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 47016,
+    "sha256": "26f1ef2c026265306cfbda42525296535656ec3fd981b03463d3aa0e90d468e9"
+  },
+  {
+    "path": "reports/final_acceptance/validation/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 56582,
+    "sha256": "e8cec10721b6ec5d590fe82a3d05d84f9ac8ced6f0e7d3db2c7f2d768e9d3ba2"
+  },
+  {
+    "path": "reports/final_acceptance/validation/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1744,
+    "sha256": "6a6eb9b88dec2cbbfa52bc799510b3b090994ab1a37e5887f1b9cbe5823af541"
+  },
+  {
+    "path": "reports/final_acceptance/validation_final/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 47022,
+    "sha256": "8be8bd80f6241a4fc0141cd07ffaf005b46311af08985a190cfdcd0d66df5efb"
+  },
+  {
+    "path": "reports/final_acceptance/validation_final/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 56582,
+    "sha256": "135fa6d40adba062805ce1c0cae0166bff6b3e5316bd5a0beeb0324cae7b4ba3"
+  },
+  {
+    "path": "reports/final_acceptance/validation_final/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1750,
+    "sha256": "f83092780f4df1220f18765c1a089727c667dfc318665f30bcbb65c87a45a79d"
+  },
+  {
+    "path": "reports/final_acceptance/web_checks.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 66,
+    "sha256": "eb1aba5b20cf4b0842ff2567d6f28fe47cc3d900ffd75710e30a0efa949ecb8b"
+  },
+  {
+    "path": "reports/final_experiments/run_1/results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6400,
+    "sha256": "17beeaafe70e107d876b40c90eec5d21426ee288d337283eef564d9194515120"
+  },
+  {
+    "path": "reports/final_experiments/run_1/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5238,
+    "sha256": "d56a4d300ff8fcd72ab808019bd6460acc89946e3141be0ec3b4992e7ae5d4f6"
+  },
+  {
+    "path": "reports/final_experiments/run_2/results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6401,
+    "sha256": "bdb184bef2721a74655c299a3cbbbcf0fb8456670517e06e6afcf2070bc787b6"
+  },
+  {
+    "path": "reports/final_experiments/run_2/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5237,
+    "sha256": "985946673eb48238bd5d6bf71b1e3cef6c6d32c606274d9f6d58f89b0435ed49"
+  },
+  {
+    "path": "reports/final_experiments/run_3/results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6398,
+    "sha256": "d44c48445623324ecb00b67dab7df20c43ba409583be6229c90e140de777e5a1"
+  },
+  {
+    "path": "reports/final_experiments/run_3/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5239,
+    "sha256": "45c22a9a9ffabd47ff400113d27cd9197257ff57faad2ba169d4775dce733f6a"
+  },
+  {
+    "path": "reports/final_review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6744,
+    "sha256": "ff6d38d03bec0f64403db637d30cfe709220ee692df7a8edff3a639cd88a91ab"
+  },
+  {
+    "path": "reports/final_validation/final_20261010/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 37352,
+    "sha256": "9145812cc86a6c86e1e5e865f6414dbed7a5e65e213c66f762bdb21fc2549a1c"
+  },
+  {
+    "path": "reports/final_validation/final_20261010/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 44573,
+    "sha256": "4aaa442bdb12803d0ec4b6f4301458c321bbf5b5f1686a95fb228692b06b7c7e"
+  },
+  {
+    "path": "reports/final_validation/final_20261010/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1540,
+    "sha256": "831a51a791654435f3d374d58495d6874a5de67aefeffc558b9e3aa4902dda15"
+  },
+  {
+    "path": "reports/final_validation/final_browser_20261010/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 38194,
+    "sha256": "6402c3d52bd3a10cb787b5c463b1a57bb41241154b53696fef69b7f57f6be404"
+  },
+  {
+    "path": "reports/final_validation/final_browser_20261010/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 45582,
+    "sha256": "6965f3c8c84ed5de16bcf7c6269e9497b41e6fdded026ab86baed13f65626182"
+  },
+  {
+    "path": "reports/final_validation/final_browser_20261010/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1582,
+    "sha256": "f30ef60455fdb34a47d8e63bde2f7ae8ebc7fe342350cb36f4f6b8a8a5459094"
+  },
+  {
+    "path": "reports/final_validation/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 74466,
+    "sha256": "edbb72bd1860f6e488c48f502469bea59fa64eeb9dd1e8317c21bcd8c0352d48"
+  },
+  {
+    "path": "reports/final_validation/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 44443,
+    "sha256": "b79c2c13d5590edbd32c150c8ccd158342944b286d966698a2bd7464be1d5588"
+  },
+  {
+    "path": "reports/live_repeats/run_1/execution.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2056,
+    "sha256": "8e2e3af8d0745589294fdef4c557b27b1e565aaf2a047d91105f393f06d5338f"
+  },
+  {
+    "path": "reports/live_repeats/run_1/results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6399,
+    "sha256": "f23c97d54ea1b157c2efdbbccaacf8600f5b85452747de61e2d6012fdca99d22"
+  },
+  {
+    "path": "reports/live_repeats/run_1/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5236,
+    "sha256": "67c892052b69ceeb04e47a46c603b745c867a77e361ad243092e246f662f8dda"
+  },
+  {
+    "path": "reports/live_repeats/run_2/execution.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2056,
+    "sha256": "a20843881d041cd7ff4d57acf7824282396713d277ff6b700e7d324796b47d5a"
+  },
+  {
+    "path": "reports/live_repeats/run_2/results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6405,
+    "sha256": "725339b5ac566cf6812566a71dd730f5b4488e73869387a8bca9c92920d9ff18"
+  },
+  {
+    "path": "reports/live_repeats/run_2/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5241,
+    "sha256": "2852fb5cded15f081841f8d111c9b5533c6b530208e902a761013168ac4205c3"
+  },
+  {
+    "path": "reports/live_repeats/run_3/execution.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2056,
+    "sha256": "afe653c33e05abca10d3b919b70f5487a3b1e86f31b26b567419470b5e3fc8d0"
+  },
+  {
+    "path": "reports/live_repeats/run_3/results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6402,
+    "sha256": "61eae45f38e56304213a2e45b8b08478f4e1cd204796b915464652fe5c6e2ac9"
+  },
+  {
+    "path": "reports/live_repeats/run_3/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5238,
+    "sha256": "39edbd6a781894d53e60a06cd7175f31be892fa87731b27e47f687ef05627e6f"
+  },
+  {
+    "path": "reports/metrics_audit/audit.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 8356,
+    "sha256": "13e482a505adb1144cece72f42a7a81ff4eb79fe4014d5770483252338588e55"
+  },
+  {
+    "path": "reports/metrics_audit/report.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3664,
+    "sha256": "1a8c0124b7832f492d9c086997fefc8160a9ea56940b9a1738998f2199374904"
+  },
+  {
+    "path": "reports/paper_review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5669,
+    "sha256": "b1317404afc698a80c6199cdf0d3ade68bf9998b512fc583f31af4f884ab1d04"
+  },
+  {
+    "path": "reports/phase4_review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3838,
+    "sha256": "7972c24b1e9cc4978a2e0282be54379b4eab5e6f2a08df8d132811118e71569e"
+  },
+  {
+    "path": "reports/preservation_check.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 982,
+    "sha256": "368b343f2f630e7758ab977f08ed635faf62e353d8575c0fd9a7a1bb431009a2"
+  },
+  {
+    "path": "reports/requirements_traceability.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7890,
+    "sha256": "936e8fa9b35511c5f59d22ea9d170e14f4a99937a8938b719b24684940349eb0"
+  },
+  {
+    "path": "reports/research_expanded/post_tls_20261010/config.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 11013,
+    "sha256": "79c187719d8cf9cc2f81db901c3cd3eacc9232a0b977558c340b8e59abbbcbb2"
+  },
+  {
+    "path": "reports/research_expanded/post_tls_20261010/evidence.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 201879,
+    "sha256": "2cd300f930392ed4c2089c15d593a5cb79f1a8615c195466429125fa44d33128"
+  },
+  {
+    "path": "reports/research_expanded/post_tls_20261010/execution.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57587,
+    "sha256": "c43f6f9f64e0d7a185f0f8c1a1ba85ad09ca3ce389447fc9d6477fe7f9ab4301"
+  },
+  {
+    "path": "reports/research_expanded/post_tls_20261010/machine.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 340,
+    "sha256": "3dfd7cf675c77915b8d82647b621c7a4d301dda324fa568ac9ee0e18931cb0fd"
+  },
+  {
+    "path": "reports/research_expanded/post_tls_20261010/metrics_audit.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 542,
+    "sha256": "6034a0f20f75df5e2cf6007266b4259b968f2cb0eca39717476590dcad07cdf3"
+  },
+  {
+    "path": "reports/research_expanded/post_tls_20261010/raw_results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 26096,
+    "sha256": "d22d0ae3afb9fd8de1c662ab7f3abb5b768cf71fc8967b95ea2f173b0a71409b"
+  },
+  {
+    "path": "reports/research_expanded/post_tls_20261010/requirements_lock.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 738,
+    "sha256": "7df4bb9ccc12a304acf094d16eb52dea48bb682f16cfa86ffd08ce33474dd872"
+  },
+  {
+    "path": "reports/research_expanded/post_tls_20261010/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14409,
+    "sha256": "d322dc5435d7ad1c6affa9d539ee245fa20d8a6ace6d1b73683dcfe0e31eaa34"
+  },
+  {
+    "path": "reports/research_expanded/review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4934,
+    "sha256": "4bc858a31209c466d8e77c416088704f2c88f42c71ca5ceb5d781ba59262adb9"
+  },
+  {
+    "path": "reports/research_expanded/run_20261010/config.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 10584,
+    "sha256": "9dff911fd2327bf917eadbebac0177ef1ee70445b0d4cc45236ea4b4805365c7"
+  },
+  {
+    "path": "reports/research_expanded/run_20261010/evidence.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 201874,
+    "sha256": "414fed8049dbb0fb451606a78526a72901e972f3a4e7f557160857880d96038a"
+  },
+  {
+    "path": "reports/research_expanded/run_20261010/execution.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57603,
+    "sha256": "db3e8b282e00bcd958c7edf4a6df791e3df3a616b8973ed553bc1c15c7aeacf3"
+  },
+  {
+    "path": "reports/research_expanded/run_20261010/machine.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 340,
+    "sha256": "159ec10059b0fc3008e4c31b235051c51d7acdaacfb8da19da39e201b188fa94"
+  },
+  {
+    "path": "reports/research_expanded/run_20261010/raw_results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 26112,
+    "sha256": "aa545901453bd463ffa60eae802a77ccb51141ed707d586ab329abc2aec1a6a1"
+  },
+  {
+    "path": "reports/research_expanded/run_20261010/requirements_lock.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 738,
+    "sha256": "7df4bb9ccc12a304acf094d16eb52dea48bb682f16cfa86ffd08ce33474dd872"
+  },
+  {
+    "path": "reports/research_expanded/run_20261010/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14403,
+    "sha256": "5521366bce0255573726ada672848cee6d175d8afc415603b0f3ef70dce168b2"
+  },
+  {
+    "path": "reports/research_integration_review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5936,
+    "sha256": "4d1755921d76cb69f7e7c6db0a6787260afcdf39111ef7fffa8b060690a42328"
+  },
+  {
+    "path": "reports/research_protocol.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7333,
+    "sha256": "e60125ddd7b3d00ee4697f727b1d99469d6331e262fd89b2bfbe5beb6863cc45"
+  },
+  {
+    "path": "reports/research_results/addon_provenance.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 129,
+    "sha256": "475b40f8dd0c376ddc94e065182d0efab78151d4cddf09963fbf846a24f9a6e7"
+  },
+  {
+    "path": "reports/research_results/config.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6671,
+    "sha256": "7e5b086ca0d7364f9e3024a51bb000500d52fa1bed2a0c1ac59373a60598a1a1"
+  },
+  {
+    "path": "reports/research_results/evidence.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 112778,
+    "sha256": "434428757949ca7238b8cdcf2ee9a7e327ae581087c23746871b8da51134c415"
+  },
+  {
+    "path": "reports/research_results/execution.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6270,
+    "sha256": "8fddb3fe2e24a124dd31a4b1ba89c053d10a1b0bd7074f0abec1544e5baebc1e"
+  },
+  {
+    "path": "reports/research_results/machine.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 678,
+    "sha256": "11849be30f2b70729b9cb42e2283a32815f13da2886b3d5027c94154ea40ab7b"
+  },
+  {
+    "path": "reports/research_results/raw_results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 24426,
+    "sha256": "49a33b8a3dd36e1028cb74105131e631cab148c98880e96e712bd11b4b368fab"
+  },
+  {
+    "path": "reports/research_results/report.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1991,
+    "sha256": "70d29d685b209bb143f1da5ebfff904e6cd6991b921c92961baf71e12872db94"
+  },
+  {
+    "path": "reports/research_results/requirements_lock.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 467,
+    "sha256": "ab2ee91aab95c9038760a22503da994b18dd4a46b967d9497b12d88675049ae3"
+  },
+  {
+    "path": "reports/research_results/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 13026,
+    "sha256": "986fefbec0a09f5402eb396d14c01543465bb51ed6071d87f72743cff6ead494"
+  },
+  {
+    "path": "reports/research_sources/20261010/ct_log_list_schema.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 10726,
+    "sha256": "a391f85bd3cd2ada41dbaa73845d0196cb6f56ecaaa7cdc4d4f33aefbbf53fbf"
+  },
+  {
+    "path": "reports/research_sources/20261010/ct_log_lists.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3351,
+    "sha256": "d12796227cddb76c549a90245e7015197127561d43a47fc29fd2da6b69b6a62c"
+  },
+  {
+    "path": "reports/research_sources/20261010/paper_crossref.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 18916,
+    "sha256": "4555c32ca93b27ad0e8e7064ee7333d5f28f42a0021481599fdd0339e7de4500"
+  },
+  {
+    "path": "reports/research_sources/20261010/sources.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1549,
+    "sha256": "c7a0ffe47c8c86a83a06ccf7e4e3d883019956f9e19f217c7e80d4bb5d79aabd"
+  },
+  {
+    "path": "reports/research_sources/verification.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3024,
+    "sha256": "f40c56977d7e83bf83393b0ef32c7de12fd741b9279ed37a505814ca56f71f62"
+  },
+  {
+    "path": "reports/revocation_phase2.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7832,
+    "sha256": "89ff92ceb84a2f33a8dfbdc3179ee2dc70630e15bd3c23870012fefcecae5b47"
+  },
+  {
+    "path": "reports/scientific/defense_slides.html",
+    "group": "C",
+    "included": false,
+    "reason": "Duplicate scientific report or presentation; canonical report retained"
+  },
+  {
+    "path": "reports/scientific/document_validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 891,
+    "sha256": "a8bc2dc3b150643279939a2b30e66fbd60ebc50768f800899adeea46594c1d09"
+  },
+  {
+    "path": "reports/scientific/figures/coverage.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57628,
+    "sha256": "56f9d2716ce4aa551963c18c9b2a8d59f1b66a6ff8514244391e1320b191f256"
+  },
+  {
+    "path": "reports/scientific/figures/coverage.svg",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 48715,
+    "sha256": "be6012904d4a5e0c8701b72b54256eace18cf679d323e37c506f091235b1f471"
+  },
+  {
+    "path": "reports/scientific/figures/runtime.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 59534,
+    "sha256": "8cad90ed6342a09d1ea7598dddec89e479b27c38e14eeae85eb6e13a89ddb2bf"
+  },
+  {
+    "path": "reports/scientific/figures/runtime.svg",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 39174,
+    "sha256": "bf52b9f3dafedb771151f74f5be89e5b45ec724f6d817a3af2452ab4057b5dae"
+  },
+  {
+    "path": "reports/scientific/scientific_report.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 41830,
+    "sha256": "a3897cbdb225f3c2e8d078703f9363cf542f909bb6eeb3ced8682c6d659cd949"
+  },
+  {
+    "path": "reports/scientific/scientific_report.pdf",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 213786,
+    "sha256": "1899d0cd6cc8c96968b0e22b45561ab3e7b81db6aa3258e5a3491af0e9bfca29"
+  },
+  {
+    "path": "reports/security_extension_review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7656,
+    "sha256": "82f0cad0b4d5ea929593101912a802d29e30a69f31aecd114b9647d4325c7381"
+  },
+  {
+    "path": "reports/security_extensions/browser_20261010/batch_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 36401,
+    "sha256": "ee4820524d38ce8ed3cdef9516a412dbcf875158effcecec1f13af5c1648c591"
+  },
+  {
+    "path": "reports/security_extensions/browser_20261010/DT007-kiem-thu-tong-hop.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7511,
+    "sha256": "ccd54f57d688a3fa511a815b87e2e500e65bafb9511eb9404790c70e3860ff34"
+  },
+  {
+    "path": "reports/security_extensions/browser_20261010/home_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57275,
+    "sha256": "64fcf92cd60d42463688447d6828d1c87aa955f42f9778c02ceee18efc866acb"
+  },
+  {
+    "path": "reports/security_extensions/browser_20261010/result_desktop.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 60359,
+    "sha256": "c430d91f5a872abe0ec8229edebeafc023c431fb92ed0ff8c3c1114e6713ab6a"
+  },
+  {
+    "path": "reports/security_extensions/browser_20261010/result_mobile.png",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 37287,
+    "sha256": "22ad1a7e312853d08dea1ae7d587b23fb90631cd7748ceed7d7aa32fa66a892a"
+  },
+  {
+    "path": "reports/security_extensions/browser_20261010/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 778,
+    "sha256": "0b44fe97346268ccc8d13ba596bed7d15c85c854156c99b4323edd4a52067ce3"
+  },
+  {
+    "path": "reports/security_extensions/final_precise_20261010/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 46221,
+    "sha256": "dcdd35b44d977bc832bc072143733923f5dcde75d6922ff87b1bf6d6d3b6f006"
+  },
+  {
+    "path": "reports/security_extensions/final_precise_20261010/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 55599,
+    "sha256": "6d64dd4d66f02078448cbf36832240f5c901cb28b76ae9dda00ae5fb28c0e247"
+  },
+  {
+    "path": "reports/security_extensions/final_precise_20261010/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1733,
+    "sha256": "134ef3a5d167175be4017db545650cb054bfe1432f20a30850a68970b2acbb99"
+  },
+  {
+    "path": "reports/security_extensions/final_validation_20261010/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 45536,
+    "sha256": "c9996f11117c49fae3713e3646bffdee849f799213f6c5cea56c44d1e9590044"
+  },
+  {
+    "path": "reports/security_extensions/final_validation_20261010/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 54764,
+    "sha256": "d3eac93412459d08ed1a0c1c644f90a42d799fa7d81ad69f61634a15a53cc872"
+  },
+  {
+    "path": "reports/security_extensions/final_validation_20261010/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1736,
+    "sha256": "bd0cb61f62996e9411230e25b25b5feb84bbcecad2a232bd32dfa9c208cef30b"
+  },
+  {
+    "path": "reports/security_extensions/final_verified_20261010/preservation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1652,
+    "sha256": "e5f7a2f5d0475ecbabb417d968914254cbde33de722b5ae41fbecf651cfc9a13"
+  },
+  {
+    "path": "reports/security_extensions/final_verified_20261010/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 46222,
+    "sha256": "7710a7ed51b715136eab6d758c19e42d8386540ac9887f2b8ddaea03559e6cd2"
+  },
+  {
+    "path": "reports/security_extensions/final_verified_20261010/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 55599,
+    "sha256": "6d304b42ae035e3b6d7e83fdec676d8e6f61b2d55515fe5788f45077404dd60a"
+  },
+  {
+    "path": "reports/security_extensions/final_verified_20261010/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1734,
+    "sha256": "9df05365396770244f0eed71767c9571d46453f074cce9233ba4dccec435c696"
+  },
+  {
+    "path": "reports/security_extensions/integration_live_20261010/cli.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 10604,
+    "sha256": "69019a525f5b23271025ea2e5c17df14c3e1d90ea1fdc7eb9bd9b7f6831eb6e3"
+  },
+  {
+    "path": "reports/security_extensions/integration_live_20261010/demo_batch.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 38346,
+    "sha256": "6b87f1b7497df5d96ffa5b54eef750c70213f9ca4d9c586fec2ed45c18c5244b"
+  },
+  {
+    "path": "reports/security_extensions/integration_live_20261010/google.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14566,
+    "sha256": "8e5e4082875620a4b88cf96e4399bbd4a5f46c220e97ddedbecac59d1317ca22"
+  },
+  {
+    "path": "reports/security_extensions/integration_live_20261010/google.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 9192,
+    "sha256": "e361edece74a81e4f35a3ab87b78ab737dbc03c73644d2c5644295bd4003e606"
+  },
+  {
+    "path": "reports/security_extensions/integration_live_20261010/web.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 28009,
+    "sha256": "84cf5987d4f2eb69f9d1bb4978f467d8ff9c674910e14fd8eb2f01a1b046fc45"
+  },
+  {
+    "path": "reports/security_extensions/integration_live_20261010/web_status.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 63,
+    "sha256": "95a12a256dfce10bac56f7605d62f7e4955e7b2f8c7de16a8469c2d51224e0d5"
+  },
+  {
+    "path": "reports/security_extensions/phase1_suite/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 431013,
+    "sha256": "0288b48b14dac4c2c0a396837dd148839d45332ee5c748ea443f5e3a51a891e6"
+  },
+  {
+    "path": "reports/security_extensions/phase1_suite/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 438996,
+    "sha256": "d854f1a279e3759712b3f65a1f51161311a191b4cfd7f2683d5f617c0fca1419"
+  },
+  {
+    "path": "reports/security_extensions/phase1_suite/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1575,
+    "sha256": "3ca4d205f66f6e8fbe15ef84b63bd6ff2ad24914e0c9cf4a3db15571431aaa6e"
+  },
+  {
+    "path": "reports/security_extensions/phase1_validation/preservation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1652,
+    "sha256": "fd0a9aaa6f4e393bc093208a9b91fe0fa71027bba0a4dfffbdfc889c779ddf0b"
+  },
+  {
+    "path": "reports/security_extensions/phase1_verified/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 38190,
+    "sha256": "223beb293137b9ab412161255c378c9453abf8d920ef0105fb6eb990535d15c6"
+  },
+  {
+    "path": "reports/security_extensions/phase1_verified/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 45582,
+    "sha256": "5de28ab6e5d28a4ed2e2063c3cbbfac2b18ddcbbc69ef2b5ab312f0311b682b9"
+  },
+  {
+    "path": "reports/security_extensions/phase1_verified/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1578,
+    "sha256": "28669db68aab34ed3c1c99fa90b6ea597a2e111a36fe8af2fe0ec534c1e161a4"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/cloudflare.com/certificate_0.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1387,
+    "sha256": "f33e8d68b3f8aca6ebdf6b17b29dfac286ed8a23651fe4ca580cb215970d949a"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/cloudflare.com/certificate_1.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 969,
+    "sha256": "9b31ef9391a16f076750e135f1f346052abcebdc5fb51b2b7dfe27794141a1d5"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/cloudflare.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 308,
+    "sha256": "2b8cb5fac9720a3dc4e4b055d2d4355d515b33446ca096a0b2eeaecf0636d337"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/github.com/certificate_0.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1424,
+    "sha256": "97baed381c38ab0924c143184dd2e85619fd46cfaa8472dfb719bc1a5c9d524e"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/github.com/certificate_1.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1229,
+    "sha256": "7c6a6533e40bafb4cbb46d60e8098b1529829053f903aa5b195ce61d5a9f2fd6"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/github.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 281,
+    "sha256": "71d8b4365b89606003c8d32b68ffd9880c7a7508646405fb425202052af65526"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/google.com/certificate_0.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2951,
+    "sha256": "c86a17b47f6deef4c61e06c8916f3b799f7b0351e1eee3f4f524aaf9398f24b2"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/google.com/certificate_1.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1809,
+    "sha256": "fd565de88eadfaa816dc37b877e25c5fcd489f7b5ba4d6015bad35baec901bfc"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/google.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 91634,
+    "sha256": "350a1b0e4fce16bcb442a4bed6c8ca00e4bb51501ef6a71810e71261206f60bf"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_20261010/results.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3944,
+    "sha256": "7bb7a0c6ef6b924a87286711d474c2ee52a45c11bec7acb0d8923a625a82686f"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/cloudflare.com/certificate_0.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1387,
+    "sha256": "f33e8d68b3f8aca6ebdf6b17b29dfac286ed8a23651fe4ca580cb215970d949a"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/cloudflare.com/certificate_1.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 969,
+    "sha256": "9b31ef9391a16f076750e135f1f346052abcebdc5fb51b2b7dfe27794141a1d5"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/cloudflare.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 308,
+    "sha256": "2b8cb5fac9720a3dc4e4b055d2d4355d515b33446ca096a0b2eeaecf0636d337"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/github.com/certificate_0.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1424,
+    "sha256": "97baed381c38ab0924c143184dd2e85619fd46cfaa8472dfb719bc1a5c9d524e"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/github.com/certificate_1.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1229,
+    "sha256": "7c6a6533e40bafb4cbb46d60e8098b1529829053f903aa5b195ce61d5a9f2fd6"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/github.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 281,
+    "sha256": "71d8b4365b89606003c8d32b68ffd9880c7a7508646405fb425202052af65526"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/google.com/certificate_0.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2951,
+    "sha256": "c86a17b47f6deef4c61e06c8916f3b799f7b0351e1eee3f4f524aaf9398f24b2"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/google.com/certificate_1.pem",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1809,
+    "sha256": "fd565de88eadfaa816dc37b877e25c5fcd489f7b5ba4d6015bad35baec901bfc"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/google.com/response_1.bin",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 91634,
+    "sha256": "350a1b0e4fce16bcb442a4bed6c8ca00e4bb51501ef6a71810e71261206f60bf"
+  },
+  {
+    "path": "reports/security_extensions/phase2_live_final_20261010/results.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3946,
+    "sha256": "9b1a4ac441629d95d88a21c2a1d6cc55f1f0172abbec697531761f21d50d14d4"
+  },
+  {
+    "path": "reports/security_extensions/phase2_verified/preservation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1652,
+    "sha256": "e5f7a2f5d0475ecbabb417d968914254cbde33de722b5ae41fbecf651cfc9a13"
+  },
+  {
+    "path": "reports/security_extensions/phase2_verified/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 45098,
+    "sha256": "13eb6f21ea9a5c2268b94a4e8b99ab546c09843b0e6ef874b62363190a764d3d"
+  },
+  {
+    "path": "reports/security_extensions/phase2_verified/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 54217,
+    "sha256": "b7a31e0b9b36f803442fa291f21aa1c5b6a8768c2007edd4705bd604afe79fb5"
+  },
+  {
+    "path": "reports/security_extensions/phase2_verified/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1677,
+    "sha256": "1421682450191e28468d6767810789aa223e1074716b141bcf1c8c4f1fa057b1"
+  },
+  {
+    "path": "reports/security_extensions_completion.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 8830,
+    "sha256": "bb82505ddfb1055c1a5b002d9a0741d8b077a093c1ae36dec94e7bdd55a5506d"
+  },
+  {
+    "path": "reports/submission_audit/clean_dependency_check.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 31,
+    "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+  },
+  {
+    "path": "reports/submission_audit/clean_isolation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5856,
+    "sha256": "1b8284392b9e7c4eba4bcc0e80691bbb7ecfdca335d4e9b561dc83f094b27a12"
+  },
+  {
+    "path": "reports/submission_audit/clean_requirements_freeze.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 738,
+    "sha256": "7df4bb9ccc12a304acf094d16eb52dea48bb682f16cfa86ffd08ce33474dd872"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/advanced.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 15817,
+    "sha256": "f403744ef0d21be660fc7b38369110a7cad57f0ac616ed61c4968bf7a1b97de1"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/advanced.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 9530,
+    "sha256": "1389774551fe43a84c0c56dce53da6bf4f47d79f281304de997c244a1ac1c97e"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/advanced.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5965,
+    "sha256": "55f4bebddc07521d4ef8ab6a69d9da90e61d57c6e8595de29915963e1a4bfdbc"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/dataset.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2536,
+    "sha256": "0d1f9d8fd7400da58b8ae7251945739f5b63901547bc67e894fab1da7cab87a4"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/default.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14465,
+    "sha256": "37bef79b791bf6ee6430c769350c776f8a0edac7c64e894e1979d1a3ad992fd4"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/default.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 8677,
+    "sha256": "0f5d0469e902490b99d25a6b4a704f3d3f5e6bbf0c1f02ccfb223840b8f4e6d8"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/default.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5376,
+    "sha256": "8390ba7e5f38206b4897b42a9817748f11a7604af7c0ad8c34435dffe8c1b349"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/demos.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 38348,
+    "sha256": "cd017d6ec3d9c179bdc2abc83584bbc65e3cde3738022ac158d81f1073136158"
+  },
+  {
+    "path": "reports/submission_audit/clean_smoke/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 11271,
+    "sha256": "25a767d59be14cf7a31e059d9042c984d9fd17e85413321dd01155f6da2354e0"
+  },
+  {
+    "path": "reports/submission_audit/clean_suite/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 49801,
+    "sha256": "5d0c29aead7f61ece41f3e973670cda97699df0a086a4c7f3b0711cb3f2f586a"
+  },
+  {
+    "path": "reports/submission_audit/clean_suite/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 59272,
+    "sha256": "b91deaec3519b0b4e84a3f54fa34958e8d23aea00f61de28a881bf9d08f61afa"
+  },
+  {
+    "path": "reports/submission_audit/clean_suite/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2062,
+    "sha256": "697077bd82b0b03460989e6b43c6af68acb227720a3c3667c7b501dc54bdc87c"
+  },
+  {
+    "path": "reports/submission_audit/environment.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 280,
+    "sha256": "13bcf41b09e9b7a674575dd624f4ff18a2a3ba14bc596b1a2894de8ac275c033"
+  },
+  {
+    "path": "reports/submission_audit/historical_metrics.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 9537,
+    "sha256": "cf69702c0dfa7b4bda122ce1882ab8c23c4476cc915f69a6d797bffb9dba2877"
+  },
+  {
+    "path": "reports/submission_audit/preservation_after.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 171,
+    "sha256": "cbd03433eeb1c490d29afc7c54ace40d76c662a1e9e52353401868027f664902"
+  },
+  {
+    "path": "reports/submission_audit/preservation_before.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 13706,
+    "sha256": "0ec6b136d9111e64324b18c26e14f4ba0f05c564b8222a0d567594f5dd2562c5"
+  },
+  {
+    "path": "reports/submission_audit/research_rerun/config.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 12446,
+    "sha256": "10ee7be58086039b7e11f76cf5915179601023467c0b115feaa3c78c29c1c0d8"
+  },
+  {
+    "path": "reports/submission_audit/research_rerun/evidence.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 201867,
+    "sha256": "047a9b6b0e21b51ceb3601ebf00bf0e674b0793c404406044e1d84b6a5a25b39"
+  },
+  {
+    "path": "reports/submission_audit/research_rerun/execution.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57815,
+    "sha256": "83376328a2cf2154420e7b3ca4930f0d8774b07abab78c787b617fdf04a5b664"
+  },
+  {
+    "path": "reports/submission_audit/research_rerun/machine.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 280,
+    "sha256": "13bcf41b09e9b7a674575dd624f4ff18a2a3ba14bc596b1a2894de8ac275c033"
+  },
+  {
+    "path": "reports/submission_audit/research_rerun/raw_results.csv",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 26324,
+    "sha256": "fff59da5f2d5549af11cfa836b1f3c1e68c729450de27509a5dc7bb8c46020c4"
+  },
+  {
+    "path": "reports/submission_audit/research_rerun/requirements_lock.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 738,
+    "sha256": "7df4bb9ccc12a304acf094d16eb52dea48bb682f16cfa86ffd08ce33474dd872"
+  },
+  {
+    "path": "reports/submission_audit/research_rerun/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14322,
+    "sha256": "770ab1f6b34782178acee510028f954bd672230f87ddff17ac10b4beed98f2b0"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_csv_export0/nested/results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_json0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_bad_e0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_bad_h0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_bad_s0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_bad_t0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_bool_0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_dupli0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_dupli1/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_empty0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_missi0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_missi1/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_missi2/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_mixed0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_naive0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_nonlo0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_root_0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_versi0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_invalid_case_schema_wrong0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/tmp_probe/test_json_summary_export0/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/advanced.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 22789,
+    "sha256": "8908120fc8893a15401de0a34ed923e6f815b05231fedb77f7cd9da797500b7b"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/advanced.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 15686,
+    "sha256": "837dc5c80830a8a90b102606c8a3ab35bf1637cec3c0c8a5395a60ba8c617b51"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/advanced.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5919,
+    "sha256": "bd062829c1388205b42e9955bb8d46f21af73eb3cac083b75b1b7311e5ce2281"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/dataset.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2536,
+    "sha256": "0d1f9d8fd7400da58b8ae7251945739f5b63901547bc67e894fab1da7cab87a4"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/default.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14465,
+    "sha256": "702840d9c2094ec6bf227cefb8888282055e240afaa2c4f9910a01352add1f22"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/default.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 8677,
+    "sha256": "74f84d9d8f0cbf56a10bae1be36cdf19ccbda071fc8c5fb34eea95bc22e8df2e"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/default.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5376,
+    "sha256": "a34b602f3d1a8c188841d44160bf0b8f3351c5dd34472b8e4cce9fd1f6bd275f"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/demos.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 38343,
+    "sha256": "acdd44fc89b74e0ed5c1fcc5498723a34db737e29f738ce85e5c7096adac91ab"
+  },
+  {
+    "path": "reports/submission_audit/workspace_live/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 11279,
+    "sha256": "e708c08aa57b7d9ffc6ffd972edb9a47dfe7b18824c7af595aeedda19ce3aad6"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/advanced.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6251,
+    "sha256": "8cf0971d69be17719d85a6757a7a788cbf0e1e31563aa4372f87fcb9d51f2a59"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/advanced.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2221,
+    "sha256": "8f3d9f0833d06ee8ff2dc66e36a69c03fa458a35a5074f44b66a9f7f27bf83d0"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/advanced.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3351,
+    "sha256": "dfca1a072cb1d64c87a4a4dce204b4c93f2f56dac846957e27fab6bd944c85cf"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/dataset.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2536,
+    "sha256": "0d1f9d8fd7400da58b8ae7251945739f5b63901547bc67e894fab1da7cab87a4"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/default.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5961,
+    "sha256": "bf9e4c9facb7816e11a9fab25a246a376b1e676e1a9891dc97a6e37ca7767824"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/default.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2108,
+    "sha256": "f64fae3bf50134283f338b0a57e539190add18797367ef811256aa9455db5052"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/default.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3242,
+    "sha256": "d30310e826fb58bebacead9b80c8cc811363c025de973dd226fba03c08054e6e"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/demos.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 38345,
+    "sha256": "6a7cd90e43584f8dfeae3b28e86feeed96d0fecfbc1420756afa8586ee0112c2"
+  },
+  {
+    "path": "reports/submission_audit/workspace_smoke/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 12395,
+    "sha256": "bfb70d634731daf06696bf190c55e8bba6be6ec888a0e234c74d04b563ab53f3"
+  },
+  {
+    "path": "reports/submission_audit/workspace_suite/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 455794,
+    "sha256": "a22d96a774e0a9d1a9200d57f4fa42dc14612763f1c9dbc2868ae989e8524b8d"
+  },
+  {
+    "path": "reports/submission_audit/workspace_suite/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 466493,
+    "sha256": "a69e09efbc648d0901a6b9818a6f7935b10cd34afb1cb8aadbb78d448ce486c9"
+  },
+  {
+    "path": "reports/submission_audit/workspace_suite/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1860,
+    "sha256": "e3d23fc9a6f4328ba9b277afae120c7f96dde57695f2c8ed6cdcdba71217deec"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/pytest.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 49731,
+    "sha256": "0ddb5506e0c38794b41f60e7329603c35992a19581ae618274d42c62e07fa4be"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/pytest.xml",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 59273,
+    "sha256": "e5d033e7296b75a641591e54ee2f1a7011c8d3e16f8b2b12ec1f454bdb408add"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_audit_detects_duplicate_o0/config.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_audit_detects_duplicate_o0/raw_results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_audit_detects_duplicate_o0/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_audit_detects_forged_agre0/config.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_audit_detects_forged_agre0/raw_results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_audit_detects_forged_agre0/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_cli_exports_one_engine_in0/report.html",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_cli_exports_one_engine_in0/report.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_corrupt_snapshot_is_repor0/corrupt.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_corrupt_snapshot_is_repor1/corrupt.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_corrupt_snapshot_is_repor2/corrupt.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_csv_export0/nested/results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_dataset_quality_warns_bad0/data.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_engine_calls_authenticate0/logs.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_execution_error_is_not_co0/config.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_execution_error_is_not_co0/raw_results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_execution_error_is_not_co0/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_expected_labels_cannot_be0/config.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_expected_labels_cannot_be0/raw_results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_expected_labels_cannot_be0/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_historical_metrics_and_ra0/config.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_historical_metrics_and_ra0/raw_results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_historical_metrics_and_ra0/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_html_escapes_hostname_and0/report.html",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_json0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_bad_e0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_bad_h0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_bad_s0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_bad_t0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_bool_0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_dupli0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_dupli1/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_empty0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_missi0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_missi1/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_missi2/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_mixed0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_naive0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_nonlo0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_root_0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_versi0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_case_schema_wrong0/cases.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_json0/bad.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_policy_json0/policy.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_invalid_root0/list.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_json_summary_export0/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_junit_counts_require_actu0/tests.xml",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_log_id_hash_mismatch_cann0/corrupt.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_missing_intermediate_reco0/key.pem",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_missing_intermediate_reco0/leaf.pem",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_missing_intermediate_reco0/root.pem",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_no_overwrite_or_under_rep0/evidence.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_non_object_policy0/policy.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_one_case_error_remains_vi0/run/config.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_one_case_error_remains_vi0/run/evidence.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_one_case_error_remains_vi0/run/execution.log",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_one_case_error_remains_vi0/run/raw_results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_one_case_error_remains_vi0/run/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_original_runner_refuses_o0/evidence.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_original_status_and_json_0/report.html",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_original_status_and_json_0/report.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_original_status_and_json_1/report.html",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_original_status_and_json_1/report.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_original_status_and_json_2/report.html",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_original_status_and_json_2/report.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_read_json0/dataset.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_report_is_real_20_to_30_p0/defense_slides.html",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_report_is_real_20_to_30_p0/document_validation.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_report_is_real_20_to_30_p0/figures/coverage.png",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_report_is_real_20_to_30_p0/figures/coverage.svg",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_report_is_real_20_to_30_p0/figures/runtime.png",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_report_is_real_20_to_30_p0/figures/runtime.svg",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_report_is_real_20_to_30_p0/scientific_report.html",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_report_is_real_20_to_30_p0/scientific_report.pdf",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_research_exports_real_met0/config.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_research_exports_real_met0/evidence.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_research_exports_real_met0/execution.log",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_research_exports_real_met0/raw_results.csv",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_research_exports_real_met0/report.md",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_research_exports_real_met0/summary.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/tmp/test_utf8_bom0/bom.json",
+    "group": "C",
+    "included": false,
+    "reason": "Ephemeral pytest fixtures (may contain generated private test keys)"
+  },
+  {
+    "path": "reports/submission_audit/workspace_verified/validation.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1938,
+    "sha256": "6479ca248bb2d1f7f9ea1d4cdf77ba0f2459387505bad64ad5a21a7f717805f2"
+  },
+  {
+    "path": "reports/system_review.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3785,
+    "sha256": "3ce37825a0c1bf42a4ae127f1020d50ed4a1e75455cec8eaecf2304710f0b0de"
+  },
+  {
+    "path": "reports/system_smoke/20261010/cli_cloudflare.com.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4047,
+    "sha256": "4f4cd8b21b4456035262233a5de97b4d3317b12398464e0097d91cfaef23c226"
+  },
+  {
+    "path": "reports/system_smoke/20261010/cli_dataset.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2536,
+    "sha256": "0d1f9d8fd7400da58b8ae7251945739f5b63901547bc67e894fab1da7cab87a4"
+  },
+  {
+    "path": "reports/system_smoke/20261010/cli_github.com.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4123,
+    "sha256": "5c4d7690e2991ad92954b281a7d499bfdac7f85ddbe4aff7b668c5cf6a648ed1"
+  },
+  {
+    "path": "reports/system_smoke/20261010/cli_google.com.log",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4999,
+    "sha256": "835b9935eeb68a8fe58ffb16b6c02b6809ae196b173d5483da77729f7c7dab30"
+  },
+  {
+    "path": "reports/system_smoke/20261010/cloudflare.com.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 24358,
+    "sha256": "37cbd244bad42e218bc0e4a590ebb9be2f232aa5705d0506ba1da5f8a4946c2c"
+  },
+  {
+    "path": "reports/system_smoke/20261010/cloudflare.com.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6002,
+    "sha256": "ea9db67143f67b3373166fb82c848423b2a9838cef4f0440483a8f216d167879"
+  },
+  {
+    "path": "reports/system_smoke/20261010/cloudflare.com_report.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 10417,
+    "sha256": "82d96a4e99e09c9d1659f2a4c1a4731d363ccb6448e747a88cb8e8cb56ca00d3"
+  },
+  {
+    "path": "reports/system_smoke/20261010/demo.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3753,
+    "sha256": "6d3ebece644bdb1d364f9fb3e018a00c322842b023a6117fef2b2746cd801715"
+  },
+  {
+    "path": "reports/system_smoke/20261010/demo_all.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 57005,
+    "sha256": "5b26885d9dbdeb066a5335bf6984afba8f7c01f52356240ccca9fa971abc8f4a"
+  },
+  {
+    "path": "reports/system_smoke/20261010/github.com.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 24614,
+    "sha256": "3079fa13c68842fbbe2d63cd43458a4bac8c1d562975267e56c8025ec70b5a99"
+  },
+  {
+    "path": "reports/system_smoke/20261010/github.com.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6190,
+    "sha256": "04a4a9c944f547a86d48592fd6d051efd3fc0ab0b43a7d3521624578772141a6"
+  },
+  {
+    "path": "reports/system_smoke/20261010/github.com_report.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 10610,
+    "sha256": "ae84bc5ecc5333fb9b4d7173628c65e53d70be4ccafd8d11633ebe44ea346d2a"
+  },
+  {
+    "path": "reports/system_smoke/20261010/google.com.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 25720,
+    "sha256": "98f02aee0b1c9f11a307d0b7e95eff526ac6b013839fe12d08f910b4d4375038"
+  },
+  {
+    "path": "reports/system_smoke/20261010/google.com.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7489,
+    "sha256": "641768df3ddd96fb6fed53b8f6bd60c52d60cb3333fb07efcb674cf5041c5a4c"
+  },
+  {
+    "path": "reports/system_smoke/20261010/google.com_report.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 12378,
+    "sha256": "61ccc1846e535bebb1b32b09d87df755b28decaf46ac23f0e03b5d84b00e807b"
+  },
+  {
+    "path": "reports/system_smoke/20261010/home.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3984,
+    "sha256": "3c1cda2dac63feccea1497ec89d885082be9dfe752e8f5c616e236e67bc286a7"
+  },
+  {
+    "path": "reports/system_smoke/20261010/invalid.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4219,
+    "sha256": "93b49892e8beb9e5e456ba6fb599c564ea8bc13527094288fae2283c5182a56c"
+  },
+  {
+    "path": "reports/system_smoke/20261010/oversized.html",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4156,
+    "sha256": "6d3c9fb5b4bcea862a0e55337af50acfe091dd625fb66175dafcbbcb4ce22ba6"
+  },
+  {
+    "path": "reports/system_smoke/20261010/summary.json",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2679,
+    "sha256": "7d87b0d8648b18b729086bf2e4a66ba222b917843962d63be02e9c1b687ad4ce"
+  },
+  {
+    "path": "requirements-lock.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 738,
+    "sha256": "7df4bb9ccc12a304acf094d16eb52dea48bb682f16cfa86ffd08ce33474dd872"
+  },
+  {
+    "path": "requirements-research.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 140,
+    "sha256": "23e615dd1a724dbc78c753c3bb6196afb619c62df6c0416fa2af0807e0103418"
+  },
+  {
+    "path": "requirements.txt",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 59,
+    "sha256": "387474689a3b399e6f26a2a4e7af0e5b9b284e9da869c64d982248744b062d0b"
+  },
+  {
+    "path": "RESEARCH_ADDON_README.md",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1940,
+    "sha256": "7fe52e7d636746ad67ad08bc40430444e5623fabcc58b6d42e880e35faf3ff36"
+  },
+  {
+    "path": "src/__init__.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 75,
+    "sha256": "31377a97d5392c799ad7415d8b8b3bdabc917c6c38960718e7775a9577b2b4ac"
+  },
+  {
+    "path": "src/__pycache__/__init__.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/aia_completion.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/algorithm_policy.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/certificate_fetcher.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/certificate_parser.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/certificate_security.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/certificate_service.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/chain_validator.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/crypto_info.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/ct_crypto.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/ct_inclusion.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/ct_log_analyzer.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/ct_registry.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/ct_signed_input.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/ct_validator.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/demo_service.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/hostname_validator.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/report_export.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/revocation_checker.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/revocation_network.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/sct_parser.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/security_console.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/security_evaluator.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/untrusted_tls.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/validity_checker.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/web_findings.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/__pycache__/web_presentation.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "src/aia_completion.py",
+    "group": "B",
+    "included": true,
+    "reason": "Working optional security extension",
+    "bytes": 4654,
+    "sha256": "8b0ee81f3edc0c07b43cfae228e7b257103b174c5db04a0ebee5ecd95a8b93bc"
+  },
+  {
+    "path": "src/algorithm_policy.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4901,
+    "sha256": "d2b01e185c3d56de4a852003a8b452a6bceedd6fd780540fafc3320e8160a904"
+  },
+  {
+    "path": "src/certificate_fetcher.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4505,
+    "sha256": "a9b23c84fc93acaafffad5919b0849f90284c45d018dc1f1109c7c65368b36ce"
+  },
+  {
+    "path": "src/certificate_parser.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2045,
+    "sha256": "7ef76c94ba4e820fc6e33e4aa18ae234a27c10b20e19392aa9d76e981d34a5b9"
+  },
+  {
+    "path": "src/certificate_security.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 10764,
+    "sha256": "3351a2773a74b7d8d4780c7b4fab013d0135da0c0bf122a9bc18f30b157e4d31"
+  },
+  {
+    "path": "src/certificate_service.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 8091,
+    "sha256": "eb7a88a2edb5d85fbb09191a68b2633f40f220c82b489435b58f4af7cabb60ba"
+  },
+  {
+    "path": "src/chain_validator.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 9881,
+    "sha256": "39df1fd97d170ea09da65b01b96f674e99e8830ca212bbea5138b7f2fd5761b0"
+  },
+  {
+    "path": "src/crypto_info.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2017,
+    "sha256": "8e543f32b9113fab450a542111ae42e07d067de267c353b5ca65de2c97b65e59"
+  },
+  {
+    "path": "src/ct_crypto.py",
+    "group": "B",
+    "included": true,
+    "reason": "Working optional security extension",
+    "bytes": 7584,
+    "sha256": "d74e21c8774efe7a85f13f0a20818031b7bf1d3efdeeffe8bde53d98d73b40cd"
+  },
+  {
+    "path": "src/ct_inclusion.py",
+    "group": "B",
+    "included": true,
+    "reason": "Working optional security extension",
+    "bytes": 6286,
+    "sha256": "440444b33bdfc91f3d584a571553196b1743a7dc6b38ce5df9ca15bfe8997088"
+  },
+  {
+    "path": "src/ct_log_analyzer.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5632,
+    "sha256": "3111a5c0dfcdf388bbe7de7c28060bd179aeedaa6d3a88cfd94b792f9cb8f1f1"
+  },
+  {
+    "path": "src/ct_registry.py",
+    "group": "B",
+    "included": true,
+    "reason": "Working optional security extension",
+    "bytes": 2962,
+    "sha256": "3bb14402468b13946fa2287d3be2c625f6091168351a35c0cc334de0e2bd10fe"
+  },
+  {
+    "path": "src/ct_signed_input.py",
+    "group": "B",
+    "included": true,
+    "reason": "Working optional security extension",
+    "bytes": 5589,
+    "sha256": "d6c327cefa6146d1cc6323bd524f988f1dd8e316620d920559bd9951a7dc9c09"
+  },
+  {
+    "path": "src/ct_validator.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6316,
+    "sha256": "ad9f30e91ce83641206b5eced0c98d8bde8604800e12835a4216f50c47b08a79"
+  },
+  {
+    "path": "src/demo_service.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7986,
+    "sha256": "4102e318a33d0e3187c0eb58d5b1db432db047333e608fae47fd66bd1878ac32"
+  },
+  {
+    "path": "src/hostname_validator.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3119,
+    "sha256": "4d66c26f7907b42d46cf9f7532437b368f88b9132f346d3b61634f8410817ec3"
+  },
+  {
+    "path": "src/report_export.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3928,
+    "sha256": "5d3e57a814272773d890509fdf207c38275febb5f1b8a97b5da5b6b3b4b59207"
+  },
+  {
+    "path": "src/revocation_checker.py",
+    "group": "B",
+    "included": true,
+    "reason": "Working optional security extension",
+    "bytes": 22683,
+    "sha256": "9280169dfde0cbce477934fd45e43f07da17aca91b3cb58cf8eade657efd99f5"
+  },
+  {
+    "path": "src/revocation_network.py",
+    "group": "B",
+    "included": true,
+    "reason": "Working optional security extension",
+    "bytes": 7775,
+    "sha256": "4089a9caf35ceca21dc60bdd2859a013bf54219edbec7621b235c97833258da4"
+  },
+  {
+    "path": "src/sct_parser.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6071,
+    "sha256": "53dd9e9f62fc864fb9638105ccd77024115dcedd6bb0a44361ae1d3b761208af"
+  },
+  {
+    "path": "src/security_console.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6085,
+    "sha256": "4961918dbacc9aa34f5ab647c30e85ca6851d69c853afeb0b54a267aa2905db7"
+  },
+  {
+    "path": "src/security_evaluator.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2932,
+    "sha256": "5db3c574a94f14e0e0c01380286b8b431d02d41080e23a114e8c3b02b9d50479"
+  },
+  {
+    "path": "src/untrusted_tls.py",
+    "group": "B",
+    "included": true,
+    "reason": "Working optional security extension",
+    "bytes": 1900,
+    "sha256": "ce52ddc4f12fafc812f225598b964a0eb71156830917d9e850a51ed1ff010b71"
+  },
+  {
+    "path": "src/validity_checker.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1401,
+    "sha256": "abd397fba1551823ee43ca5b3be475a1b5c1a005cca0112af9cc751b3a9f779c"
+  },
+  {
+    "path": "src/web_findings.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3886,
+    "sha256": "8da827bc82121966bbdf4246730ee01ca13c374a85108dcad3c8819e61f332f3"
+  },
+  {
+    "path": "src/web_presentation.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 12074,
+    "sha256": "41216a260637e2e670d7ae283530d1bdaf1490540bd4f5e3e3d18dbb62fde44a"
+  },
+  {
+    "path": "static/css/style.css",
+    "group": "B",
+    "included": true,
+    "reason": "Localhost Flask demo",
+    "bytes": 17803,
+    "sha256": "864fba29d4831037d9860beffacd727eea9f7188e2b8bacfb0b7de67d94cb1bb"
+  },
+  {
+    "path": "static/js/main.js",
+    "group": "B",
+    "included": true,
+    "reason": "Localhost Flask demo",
+    "bytes": 3633,
+    "sha256": "bcccaf90a87e27199b79942cd78f52b5fa709d9b3056590787ce42d30ac570f7"
+  },
+  {
+    "path": "templates/base.html",
+    "group": "B",
+    "included": true,
+    "reason": "Localhost Flask demo",
+    "bytes": 1815,
+    "sha256": "5f7ffc78b0c3708a67121d2dce31ec24e7ce4787e2572a054cd7d831e4925afb"
+  },
+  {
+    "path": "templates/demo.html",
+    "group": "B",
+    "included": true,
+    "reason": "Localhost Flask demo",
+    "bytes": 10880,
+    "sha256": "3fff6d0d730409cfdcc4a9638eadb08e561f40a0287b2cce795eafc4455c41f8"
+  },
+  {
+    "path": "templates/index.html",
+    "group": "B",
+    "included": true,
+    "reason": "Localhost Flask demo",
+    "bytes": 2744,
+    "sha256": "2edf86bcff6a0834c0883fcd6205905b3cf8d46f47d4cb65d632b33038a06758"
+  },
+  {
+    "path": "templates/result.html",
+    "group": "B",
+    "included": true,
+    "reason": "Localhost Flask demo",
+    "bytes": 17166,
+    "sha256": "d4177f4b9535fbf0ebb5684beaec00a235a7500d8602c490b97e544afeabeb75"
+  },
+  {
+    "path": "tests/__pycache__/conftest.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/conftest.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_aia_local_tls.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_algorithm_policy.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_algorithm_policy.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_browser_transport.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_certificate_fetcher.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_certificate_fetcher.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_certificate_parser.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_certificate_parser.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_chain_provenance.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_chain_validator.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_chain_validator.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_crypto_info.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_crypto_info.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_ct_log_analyzer.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_ct_log_analyzer.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_ct_pipeline.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_ct_snapshot_quality.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_ct_validator.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_ct_validator.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_demo_4b.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_demo_batch.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_demo_lab.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_expanded_audit.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_experiments.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_experiments.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_final_acceptance.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_hostname_validator.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_hostname_validator.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_main.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_main.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_metrics_audit.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_phase4.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_report_export.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_research_evaluation.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_research_study.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_revocation_checker.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_revocation_network.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_scientific_report.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_sct_parser.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_sct_parser.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_security_evaluator.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_security_evaluator.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_security_extensions.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_tls_chain_purpose.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_validity_checker.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_validity_checker.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_web.cpython-314-pytest-9.1.1.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/__pycache__/test_web.cpython-314.pyc",
+    "group": "C",
+    "included": false,
+    "reason": "Environment/cache/temp/build output; retained on workstation"
+  },
+  {
+    "path": "tests/conftest.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 8137,
+    "sha256": "cae2ab46b91ce0c65d2ffea22effd7c7aca838aa1b7f7bb97e19b4f174410c43"
+  },
+  {
+    "path": "tests/test_aia_local_tls.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4867,
+    "sha256": "509f5954f1c4e3cdec93d0e487543b60a50d1f560a9d770f36f302b8ccf23f1a"
+  },
+  {
+    "path": "tests/test_algorithm_policy.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3521,
+    "sha256": "51b6763f9b887a015d5784ea07a74a1702a1deab4793652c6310591cdb0feffe"
+  },
+  {
+    "path": "tests/test_browser_transport.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1849,
+    "sha256": "edc2335cc3eabe94b0c7734a91efb9e96fa50aa9c69c2f813377b03150d1076a"
+  },
+  {
+    "path": "tests/test_certificate_fetcher.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 6245,
+    "sha256": "5acdbbcd7ec2d0ae0b9c9b5fbe373b1c2dd17e4876e12aff7535def607c4ca83"
+  },
+  {
+    "path": "tests/test_certificate_parser.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2093,
+    "sha256": "73dfff980e30e3422f884e9a58ebd691697f6816b4d0a6d6f30f69d408ec573f"
+  },
+  {
+    "path": "tests/test_chain_provenance.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1953,
+    "sha256": "436a80e5206cf87d22255ef4ab8e883098d16625c3e8fb18c465b928f965b614"
+  },
+  {
+    "path": "tests/test_chain_validator.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7038,
+    "sha256": "bbf2d5508d447eb5e26d815a002e9cb02b7d820cb88ee7429d61fb67c85def10"
+  },
+  {
+    "path": "tests/test_crypto_info.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2730,
+    "sha256": "f2ac8a04aaba2ef2190ae95e8b7860e6dda1ad1a105261b94facf50e8a770132"
+  },
+  {
+    "path": "tests/test_ct_log_analyzer.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5800,
+    "sha256": "77db4f2fdd608c7d0fa1f3ce54b1488a934a71c3fc0c43fd4329f222b6fe2d54"
+  },
+  {
+    "path": "tests/test_ct_pipeline.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 14444,
+    "sha256": "93c6f1ce676d555211727e96a54a775ca8d4b76e21140ff2bf625edc2c570dc3"
+  },
+  {
+    "path": "tests/test_ct_snapshot_quality.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1621,
+    "sha256": "f231014fced42208e5242baf9b6cf584f6fd851a8a836a706d16a578626361ef"
+  },
+  {
+    "path": "tests/test_ct_validator.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7537,
+    "sha256": "c90095e5599963c7f89bab31b9957a2c2d428a81df4b7b57e0aa338126216339"
+  },
+  {
+    "path": "tests/test_demo_4b.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2191,
+    "sha256": "d3ddf949a05aeef12f363897836cab5eebe5c2226c989a0561cd4381a7089104"
+  },
+  {
+    "path": "tests/test_demo_batch.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3201,
+    "sha256": "46e55776465d7981ad11bf020c3a77fc78dc8a0b51017d794b74a8a9a3a778a8"
+  },
+  {
+    "path": "tests/test_demo_lab.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1818,
+    "sha256": "7818208563fb8069b186e4472f057f31fa93c545c9f188252c49d781964c9d48"
+  },
+  {
+    "path": "tests/test_expanded_audit.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1404,
+    "sha256": "c32cbafa655d1aad63b12d85323764304636edd285f540c2f7c6ea8c96406e4e"
+  },
+  {
+    "path": "tests/test_experiments.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 12621,
+    "sha256": "0902e95a96df58bc68d1867567c87211bc0ce119b2c025f3f069e45b697c9a46"
+  },
+  {
+    "path": "tests/test_final_acceptance.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3344,
+    "sha256": "21eec128fcf9e0ca3a3826195f61feb8b9e03c1502feca078853e188a401e342"
+  },
+  {
+    "path": "tests/test_hostname_validator.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3211,
+    "sha256": "6d28ac78e155f0f1582cf9e98e0d8c17c3334ff4e48e99e6a5188ec217797a9b"
+  },
+  {
+    "path": "tests/test_main.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3308,
+    "sha256": "fe06e0aded253d2ff6046aca3417188555e46fa3b934e36760c08c3f70a1082c"
+  },
+  {
+    "path": "tests/test_metrics_audit.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2858,
+    "sha256": "c0f9f7249a65db9d0cc5d630dde59334e9e0a91e5bb1a65b0b64766f4a2a2295"
+  },
+  {
+    "path": "tests/test_phase4.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 4167,
+    "sha256": "9a8d6bc41ef25a91f5b9c01649fb44fa36472e0f2d7ee25b7c822d8d1d10e41b"
+  },
+  {
+    "path": "tests/test_report_export.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2638,
+    "sha256": "c435ac252da964603ef787284d70fb5a305b3af8fb4cc61d09f76cea34a739cb"
+  },
+  {
+    "path": "tests/test_research_evaluation.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2800,
+    "sha256": "9542d074b78eb74c4d1454e4c8fb8a58c98c28fc95c6381f983a3083dd1241a8"
+  },
+  {
+    "path": "tests/test_research_study.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2871,
+    "sha256": "59741317c44de836d5af6f10b28231680aa6b1d0d1b68731a3b69faa173e754c"
+  },
+  {
+    "path": "tests/test_revocation_checker.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 13491,
+    "sha256": "6f7844b99d34af299633e1716481d57c56016300afa238f64a68a5842c00f374"
+  },
+  {
+    "path": "tests/test_revocation_network.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 5606,
+    "sha256": "584bb0f9b07c54a2de3d9649c43df4072c5def11ff4a100e80b401bb76258d56"
+  },
+  {
+    "path": "tests/test_scientific_report.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1555,
+    "sha256": "11998a9488686df9ece914a56e4c06df9145abe5cb0e6dd2d2ca6690ec4ae612"
+  },
+  {
+    "path": "tests/test_sct_parser.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 1627,
+    "sha256": "fc5faa1478d01db37882ad21e12903ad853f4506539ea49c94c23f6d5080913c"
+  },
+  {
+    "path": "tests/test_security_evaluator.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 3839,
+    "sha256": "13aea6eff8d60f8a1b027f6551f67b026a1f7406cc9ecbc9ea130b63a80b328d"
+  },
+  {
+    "path": "tests/test_security_extensions.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 7892,
+    "sha256": "11c635f7152642277de8f4fc8a5413717644b0d9a62dc3bd121ce72fcf3e37db"
+  },
+  {
+    "path": "tests/test_tls_chain_purpose.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2495,
+    "sha256": "ac932737fdec7c602cd3ac9c780d32754263a5e8f11ee466d20423e62e5b5793"
+  },
+  {
+    "path": "tests/test_validity_checker.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 2237,
+    "sha256": "679cea6cb27b9d48e17a36ca256a7b06d06f436b5c9fa61b8fa44a848ba76154"
+  },
+  {
+    "path": "tests/test_web.py",
+    "group": "A",
+    "included": true,
+    "reason": "Source/config/tests/reproducibility or original research evidence",
+    "bytes": 15427,
+    "sha256": "11e74d8b26db41944da11b6c326cf12588adcfefee7fb834c4fdae3b45aeb0a6"
+  }
+]

@@ -1,0 +1,440 @@
+{
+  "created_utc": "2026-10-18T15:25:10.299281+00:00",
+  "python": "3.14.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "repeats": 3,
+  "observations": 114,
+  "total_wall_seconds_including_setup": 18.750753899978008,
+  "setups": [
+    {
+      "repeat": 1,
+      "profile": "baseline",
+      "wall_seconds": 0.4182604000088759,
+      "cpu_seconds": 0.421875,
+      "rss_after_bytes": 37892096
+    },
+    {
+      "repeat": 1,
+      "profile": "extended",
+      "wall_seconds": 0.5445562999811955,
+      "cpu_seconds": 0.53125,
+      "rss_after_bytes": 39710720
+    },
+    {
+      "repeat": 2,
+      "profile": "extended",
+      "wall_seconds": 1.4632094000116922,
+      "cpu_seconds": 1.421875,
+      "rss_after_bytes": 40144896
+    },
+    {
+      "repeat": 2,
+      "profile": "baseline",
+      "wall_seconds": 1.0737112000351772,
+      "cpu_seconds": 1.0625,
+      "rss_after_bytes": 40390656
+    },
+    {
+      "repeat": 3,
+      "profile": "baseline",
+      "wall_seconds": 2.2746354999835603,
+      "cpu_seconds": 1.25,
+      "rss_after_bytes": 40468480
+    },
+    {
+      "repeat": 3,
+      "profile": "extended",
+      "wall_seconds": 1.2791566999512725,
+      "cpu_seconds": 1.21875,
+      "rss_after_bytes": 40628224
+    }
+  ],
+  "profiles": {
+    "baseline": {
+      "runs": [
+        {
+          "repeat": 1,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 71.42857142857143,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "agreement_percent": 78.94736842105263,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 0.8270695999963209,
+          "wall_mean_seconds": 0.04352997894717479,
+          "synthetic_wall_mean_seconds": 0.00976795714398447,
+          "control_wall_mean_seconds": 0.13806363999610766,
+          "cpu_total_seconds": 0.75,
+          "rss_boundary_max_bytes": 39706624
+        },
+        {
+          "repeat": 2,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 71.42857142857143,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "agreement_percent": 78.94736842105263,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 2.3352765999152325,
+          "wall_mean_seconds": 0.12290929473238066,
+          "synthetic_wall_mean_seconds": 0.03378395713350203,
+          "control_wall_mean_seconds": 0.37246024000924083,
+          "cpu_total_seconds": 1.921875,
+          "rss_boundary_max_bytes": 40468480
+        },
+        {
+          "repeat": 3,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 71.42857142857143,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "agreement_percent": 78.94736842105263,
+          "FP": 0,
+          "FN": 2,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 0,
+          "wall_total_seconds": 2.95815650006989,
+          "wall_mean_seconds": 0.15569244737209947,
+          "synthetic_wall_mean_seconds": 0.026489578574130843,
+          "control_wall_mean_seconds": 0.5174604800064116,
+          "cpu_total_seconds": 2.765625,
+          "rss_boundary_max_bytes": 40620032
+        }
+      ],
+      "FP": 0,
+      "FN": 6,
+      "positive_completed": 36,
+      "controls_completed": 15,
+      "descriptive": {
+        "coverage_percent": {
+          "n": 3,
+          "mean": 71.42857142857143,
+          "sample_std": 0.0,
+          "min": 71.42857142857143,
+          "max": 71.42857142857143,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            71.42857142857143,
+            71.42857142857143
+          ]
+        },
+        "misconfiguration_coverage_percent": {
+          "n": 3,
+          "mean": 76.92307692307692,
+          "sample_std": 0.0,
+          "min": 76.92307692307692,
+          "max": 76.92307692307692,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            76.92307692307692,
+            76.92307692307692
+          ]
+        },
+        "wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.10737724035055164,
+          "sample_std": 0.05767181604374122,
+          "min": 0.04352997894717479,
+          "max": 0.15569244737209947,
+          "cv_percent": 53.70953458615771,
+          "t95_mean_interval": [
+            -0.0358874927942215,
+            0.2506419734953248
+          ]
+        },
+        "synthetic_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.02334716428387245,
+          "sample_std": 0.012312519626495709,
+          "min": 0.00976795714398447,
+          "max": 0.03378395713350203,
+          "cv_percent": 52.73668132365369,
+          "t95_mean_interval": [
+            -0.007238830048121897,
+            0.0539331586158668
+          ]
+        },
+        "control_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.3426614533372534,
+          "sample_std": 0.19144572682040467,
+          "min": 0.13806363999610766,
+          "max": 0.5174604800064116,
+          "cv_percent": 55.87022554065352,
+          "t95_mean_interval": [
+            -0.13291609642865082,
+            0.8182390031031577
+          ]
+        },
+        "cpu_total_seconds": {
+          "n": 3,
+          "mean": 1.8125,
+          "sample_std": 1.012254021046595,
+          "min": 0.75,
+          "max": 2.765625,
+          "cv_percent": 55.84849771291558,
+          "t95_mean_interval": [
+            -0.7020783876473264,
+            4.327078387647326
+          ]
+        }
+      }
+    },
+    "extended": {
+      "runs": [
+        {
+          "repeat": 1,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 100.0,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 100.0,
+          "agreement_percent": 100.0,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 1.6700267999549396,
+          "wall_mean_seconds": 0.08789614736604945,
+          "synthetic_wall_mean_seconds": 0.024642764278853844,
+          "control_wall_mean_seconds": 0.2650056200101972,
+          "cpu_total_seconds": 1.625,
+          "rss_boundary_max_bytes": 40144896
+        },
+        {
+          "repeat": 2,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 100.0,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 100.0,
+          "agreement_percent": 100.0,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 1.2080566000659019,
+          "wall_mean_seconds": 0.06358192631925799,
+          "synthetic_wall_mean_seconds": 0.024439607144034068,
+          "control_wall_mean_seconds": 0.17318042000988498,
+          "cpu_total_seconds": 1.109375,
+          "rss_boundary_max_bytes": 40390656
+        },
+        {
+          "repeat": 3,
+          "attempted": 19,
+          "completed": 19,
+          "errors": 0,
+          "skipped": 0,
+          "coverage_percent": 100.0,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "misconfiguration_coverage_percent": 100.0,
+          "agreement_percent": 100.0,
+          "FP": 0,
+          "FN": 0,
+          "positive_completed": 12,
+          "controls_completed": 5,
+          "control_warnings": 5,
+          "wall_total_seconds": 1.9412334999069571,
+          "wall_mean_seconds": 0.10217018420562933,
+          "synthetic_wall_mean_seconds": 0.028489228562518423,
+          "control_wall_mean_seconds": 0.30847686000633984,
+          "cpu_total_seconds": 1.796875,
+          "rss_boundary_max_bytes": 40652800
+        }
+      ],
+      "FP": 0,
+      "FN": 0,
+      "positive_completed": 36,
+      "controls_completed": 15,
+      "descriptive": {
+        "coverage_percent": {
+          "n": 3,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            100.0,
+            100.0
+          ]
+        },
+        "misconfiguration_coverage_percent": {
+          "n": 3,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "cv_percent": 0.0,
+          "t95_mean_interval": [
+            100.0,
+            100.0
+          ]
+        },
+        "wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.08454941929697893,
+          "sample_std": 0.019510608736082617,
+          "min": 0.06358192631925799,
+          "max": 0.10217018420562933,
+          "cv_percent": 23.075981950333464,
+          "t95_mean_interval": [
+            0.03608238035464792,
+            0.13301645823930994
+          ]
+        },
+        "synthetic_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.025857199995135444,
+          "sample_std": 0.0022816658366196204,
+          "min": 0.024439607144034068,
+          "max": 0.028489228562518423,
+          "cv_percent": 8.824102520956925,
+          "t95_mean_interval": [
+            0.020189227844563118,
+            0.03152517214570777
+          ]
+        },
+        "control_wall_mean_seconds": {
+          "n": 3,
+          "mean": 0.24888763334214067,
+          "sample_std": 0.0690733218370328,
+          "min": 0.17318042000988498,
+          "max": 0.30847686000633984,
+          "cv_percent": 27.75281395443185,
+          "t95_mean_interval": [
+            0.0772999896844469,
+            0.42047527699983445
+          ]
+        },
+        "cpu_total_seconds": {
+          "n": 3,
+          "mean": 1.5104166666666667,
+          "sample_std": 0.3577863436582416,
+          "min": 1.109375,
+          "max": 1.796875,
+          "cv_percent": 23.687923442200823,
+          "t95_mean_interval": [
+            0.6216261176025399,
+            2.3992072157307938
+          ]
+        }
+      }
+    }
+  },
+  "raw_sha256": "fff59da5f2d5549af11cfa836b1f3c1e68c729450de27509a5dc7bb8c46020c4",
+  "limitations": [
+    "CPU time is process-wide at case boundaries; Windows timer may quantize short cases to zero",
+    "RSS sampled before/after; process peak is lifetime high-water mark, NOT each case peak",
+    "Runtime includes fixture generation and oracle; setup measured separately",
+    "Profiles have matched properties, freshly generated different keys; not byte-identical paired input",
+    "Only 5 control types repeated 3 times; not 15 independent population samples",
+    "t95 intervals assume independent approximately normal repeat means; n=3, descriptive only; identical fixture coverage does not prove population coverage",
+    "Control oracle shares OpenSSL backend with engine; independent invocation and predetermined labels, not independent implementation",
+    "CT fixtures structured placeholders, SCT signatures/inclusion proofs NOT_VERIFIED",
+    "CT ablation is DT007 baseline; not reproduction of the governance paper's quantitative findings"
+  ]
+}

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %}Phòng kiểm thử chứng thư số · DT007<div class="section-heading"><div><p class="eyebrow">BỘ CA CÓ KIỂM SOÁT</p><h2>Chọn một tình huống</h2></div><span class="input-help">14 ca · Thực thi offline</span></div>
+{% set descriptions={
+'EXPIRED_CERTIFICATE':'Chứng thư đã hết hạn tại đồng hồ giả lập.',
+'NOT_YET_VALID_CERTIFICATE':'Chứng thư chưa tới thời điểm có hiệu lực.',
+'HOSTNAME_MISMATCH':'Tên miền yêu cầu không khớp danh sách SAN.',
+'RSA_1024':'Khóa RSA ngắn hơn mức tối thiểu trong policy.',
+'SHA1_SIGNATURE':'Đối chiếu chữ ký SHA-1 với chính sách thuật toán.',
+'MD5_SIGNATURE':'Kiểm tra chính sách chữ ký MD5 khi backend hỗ trợ.',
+'BROKEN_CHAIN':'Liên kết giữa đơn vị cấp và chủ thể không khớp.',
+'INVALID_SIGNATURE':'Chữ ký chứng thư không được xác minh bởi issuer.',
+'NON_CA_INTERMEDIATE':'Chứng thư trung gian không có quyền CA.',
+'SELF_SIGNED_LEAF':'Chứng thư tự ký không thuộc chuỗi tin cậy lab.',
+'UNKNOWN_CT_LOG':'Log ID của SCT không có trong dữ liệu giả lập.',
+'RETIRED_CT_LOG':'SCT được ghi nhận sau khi CT Log ngừng hoạt động.',
+'SCT_TIMESTAMP_OUTSIDE_INTERVAL':'Ca hồi quy phân biệt thời điểm SCT và khoảng hết hạn.',
+'NO_SCT':'Chứng thư không có SCT nhúng để đối chiếu.'} %}
+<div class="demo-case-grid">{% for case in cases %}<article class="case-card"><div class="case-top"><span class="case-number">{{ '%02d'|format(loop.index) }}</span><span class="case-category">{{ 'Minh bạch CT' if case.type in ('UNKNOWN_CT_LOG','RETIRED_CT_LOG','SCT_TIMESTAMP_OUTSIDE_INTERVAL','NO_SCT') else 'Chứng thư X.509' }}</span></div><h3>{{ case.label }}</h3><p>{{ descriptions.get(case.type,'Tạo dữ liệu và đối chiếu kết quả thực thi.') }}</p><form method="post" action="{{ url_for('demo') }}" class="case-form"><input type="hidden" name="case_id" value="{{ case.id }}"><button class="button button-secondary" type="submit">Chạy ca này <span aria-hidden="true">→</span></button><p class="case-progress input-help" role="status" hidden>Đang chạy kiểm thử…</p></form></article>{% endfor %}</div>
+{% endblock %}
+{% block content %}
+<section class="page-heading"><p class="eyebrow">DỮ LIỆU GIẢ LẬP – PHỤC VỤ KIỂM THỬ</p><h1>Phòng Demo chứng thư số</h1><p class="hero-description">14 tình huống có kiểm soát. Chạy từng ca để khám phá, hoặc kiểm tra toàn bộ trong một lượt.</p><span class="visually-hidden">PHÒNG KIỂM THỬ CHỨNG THƯ SỐ</span></section>
+<section class="demo-controls scan-card"><div><h2>Chạy bộ kiểm thử</h2><p>Mỗi lần chạy tạo chứng thư mới và gọi các bộ xác minh thực.</p></div><form method="post" action="{{ url_for('demo') }}" class="batch-form"><input type="hidden" name="action" value="all"><button class="button button-primary batch-run" type="submit">CHẠY TOÀN BỘ 14 CA KIỂM THỬ</button><p class="batch-progress" role="status" hidden>Đang thực thi tất cả các ca trong manifest. Vui lòng đợi...</p></form>
+{% if error %}<div class="notice notice-error" role="alert">{{ error }}</div>{% endif %}
+<details class="quick-select"><summary>Chọn nhanh một ca kiểm thử</summary><form method="post" action="{{ url_for('demo') }}" id="demo-form"><label for="case-id">Trường hợp kiểm thử</label><div class="input-row"><select id="case-id" name="case_id" required>{% for case in cases %}<option value="{{ case.id }}" {% if outcome and outcome.case_id == case.id %}selected{% endif %}>{{ case.label }}</option>{% endfor %}</select><button class="button button-secondary" type="submit" id="demo-button">CHẠY KIỂM THỬ</button></div><p id="demo-progress" role="status" hidden>Đang tạo dữ liệu giả lập và chạy kiểm tra...</p></form></details></section>
+<div class="notice notice-info"><span class="notice-symbol" aria-hidden="true">ⓘ</span><p><strong>Hai kết quả, hai ý nghĩa.</strong> Chứng thư cố tình sai có thể <strong>KHÔNG ĐẠT</strong> bảo mật nhưng bài kiểm thử vẫn <strong>THÀNH CÔNG</strong> khi công cụ phát hiện đúng điều kiện khảo sát.</p></div>
+{% if outcome %}<div class="demo-verdicts"><div class="card"><p class="eyebrow">KẾT QUẢ BẢO MẬT CHỨNG THƯ</p><span class="badge status-{{ 'fail' if outcome.status == 'FAIL' else 'warning' if outcome.status == 'WARNING' else 'pass' if outcome.status == 'PASS' else 'neutral' }}" data-status="{{ outcome.status }}">{{ outcome.status|translate_status }}</span></div><div class="card"><p class="eyebrow">KẾT QUẢ BÀI KIỂM THỬ</p><span class="badge status-{{ 'pass' if outcome.test_success else 'fail' }}">{{ '✓ KIỂM THỬ THÀNH CÔNG' if outcome.test_success else '× KIỂM THỬ THẤT BẠI' }}</span></div></div>{% endif %}
+{% if outcome %}<section class="card demo-result" id="demo-comparison"><h2>Tình huống và đối chiếu kết quả</h2><p><strong>Tên lỗi:</strong> {{ outcome.label }}</p><p><strong>Mô tả tình huống:</strong> {{ outcome.description }}</p><p><strong>Kết quả mong đợi:</strong> {% for status in outcome.expected %}{{ status|translate_status }}{% if not loop.last %} / {% endif %}{% endfor %}</p><p><strong>Đối chiếu thực tế và mong đợi:</strong> <span class="badge status-{{ 'pass' if outcome.matches_expected else 'fail' }}">{{ 'KHỚP KỲ VỌNG' if outcome.matches_expected else 'KHÔNG KHỚP KỲ VỌNG' }}</span></p><p>Khớp kỳ vọng là kết quả kiểm thử, không có nghĩa chứng thư đạt an toàn. Việc phát hiện đúng điều kiện khảo sát được báo riêng bên dưới.</p><details class="technical-details"><summary>Chi tiết kỹ thuật tình huống trong manifest</summary><pre>{{ outcome.ground_truth }}</pre></details></section>{% endif %}
+{% if outcome %}<section class="card demo-result"><p class="eyebrow">KẾT QUẢ GIẢ LẬP · CHẠY MỚI</p><h2>{{ outcome.label }}</h2><p>Kết quả thực tế: <strong data-status="{{ outcome.status }}">{{ outcome.status|translate_status }}</strong></p><p>Đã phát hiện đúng điều kiện khảo sát: <strong>{{ 'Có' if outcome.detected else 'Chưa' }}</strong></p><p>Phạm vi / thành phần phát hiện: {{ outcome.scope }}</p><p>Trường hợp / thuật toán: <span class="mono">{{ outcome.case_type }}</span></p><p>Đồng hồ giả lập cố định: {{ outcome.clock }}</p><p>Thời gian tạo và kiểm tra: {{ '%.4f'|format(outcome.runtime) }} giây</p><h3>Lý do từ validators</h3>{% for reason in outcome.reasons %}{% set translated=reason|translate_reason %}<p>{{ translated.text }}</p><details class="technical-details"><summary>Chi tiết kỹ thuật</summary><pre>{{ reason }}</pre></details>{% endfor %}<details class="technical-details"><summary>Chi tiết kỹ thuật tạo dữ liệu</summary><pre>{{ outcome.generation }}</pre></details><div class="notice notice-warning">SCT giả lập chỉ phục vụ kiểm tra parser và matching; chữ ký SCT placeholder không chứng minh tính hợp lệ mật mã. Cảnh báo CT không được tự đổi thành đạt.</div></section>{% endif %}
+<div class="result-bottom"><a href="{{ url_for('index') }}">Chuyển sang kiểm tra website thực tế</a></div>
+{% if outcome %}
+<details class="detail-panel" id="lab-evidence"><summary><span class="panel-icon" aria-hidden="true">≡</span><span class="panel-label"><span class="panel-title">Bằng chứng thực thi</span><span class="panel-description">Chứng thư, nguồn dữ liệu và module đã chạy</span></span><span class="panel-chevron" aria-hidden="true">⌄</span></summary><div class="panel-body">
+<h2>Bằng chứng thực thi</h2>
+<p><strong>Đối chiếu trạng thái:</strong> {{ 'ĐÚNG' if outcome.matches_expected else 'SAI' }}.</p>
+<p class="notice notice-{{ 'warning' if outcome.test_success else 'error' }}"><strong>{{ 'KIỂM THỬ THÀNH CÔNG' if outcome.test_success else 'KIỂM THỬ THẤT BẠI' }}</strong> — {{ 'Kết quả khớp kỳ vọng và phát hiện đúng điều kiện khảo sát.' if outcome.test_success else 'Kết quả khác kỳ vọng hoặc chưa phát hiện đúng điều kiện khảo sát. Kết quả engine được giữ nguyên.' }}</p>
+<p><strong>Nguồn dữ liệu thử nghiệm:</strong> {{ outcome.source }}</p>
+{% if outcome.evidence %}
+<p><strong>Loại dữ liệu đầu vào:</strong> {{ outcome.evidence.input_type }}</p>
+<p><strong>Sử dụng mock:</strong> {{ 'Có' if outcome.evidence.mock_used else 'Không. Validators nhận chứng thư và dữ liệu thật được tạo mới trong lần chạy này.' }}</p>
+<h3>Module được thực thi</h3><ul>{% for module in outcome.evidence.modules %}<li class="mono">{{ module }}</li>{% endfor %}</ul>
+<h3>Thông tin chứng thư X.509 vừa tạo</h3>
+{% set labels={'subject':'Chủ thể','issuer':'Đơn vị cấp','serial':'Số sê-ri','sha256':'Vân tay SHA256','not_before':'Có hiệu lực từ','not_after':'Có hiệu lực đến','key_algorithm':'Thuật toán khóa','key_size':'Độ dài khóa (bit)','signature_hash':'Thuật toán băm chữ ký'} %}
+<dl class="kv-list">{% for key,value in outcome.evidence.certificate.items() %}<div class="kv-row"><dt>{{ labels.get(key,key) }}</dt><dd class="mono">{{ value }}</dd></div>{% endfor %}</dl>
+{% if outcome.evidence.structured_ct %}<h3>Cấu trúc thử nghiệm CT / SCT</h3>
+{% set ct_labels={'requested_hostname':'Tên miền yêu cầu','sct_count':'Số lượng SCT','log_id':'Log ID trong dữ liệu lab','state':'Trạng thái CT Log','state_timestamp':'Thời điểm trạng thái','interval_start':'Bắt đầu khoảng CT Log','interval_end':'Kết thúc khoảng CT Log','sct_timestamp':'Thời điểm SCT','signature_verified':'Chữ ký SCT đã xác minh'} %}
+<dl class="kv-list">{% for key,value in outcome.evidence.structured_ct.items() %}<div class="kv-row"><dt>{{ ct_labels.get(key,key) }}</dt><dd class="mono">{% if key == 'signature_verified' %}CHƯA XÁC MINH{% elif key == 'state' %}{{ value|translate_status }}{% else %}{{ value if value is not none else 'Không có dữ liệu' }}{% endif %}</dd></div>{% endfor %}</dl>
+{% else %}<p>Chạy riêng chính sách thuật toán. CT, hostname và chain không được xác minh trong kết quả của case này.</p>{% endif %}
+{% else %}<p>Không có bằng chứng đầu vào kèm kết quả. Không suy diễn rằng chứng thư hoặc CT đã được kiểm tra đầy đủ.</p>{% endif %}
+<p>Lab chạy offline với root tin cậy và đồng hồ riêng. Không đo TLS/DNS thực tế, thu hồi OCSP/CRL hoặc tính an toàn toàn diện của website.</p>
+</div></details>
+{% endif %}
+{% if batch %}
+<section class="card demo-result" id="batch-results"><h2>Tổng hợp lần kiểm thử vừa chạy</h2>
+<div class="ct-metrics"><div>Tổng số ca<strong>{{ batch.total }}</strong></div><div>Thành công<strong>{{ batch.success }}</strong></div><div>Thất bại / chưa hoàn tất<strong>{{ batch.failed }}</strong></div></div>
+<p>Tỷ lệ khớp kỳ vọng trên toàn bộ ca đã chọn: {{ '%.2f'|format(batch.match_rate) if batch.match_rate is not none else 'Không có dữ liệu' }}%. Hoàn tất: {{ batch.completed }}; lỗi hoặc không tạo được dữ liệu: {{ batch.errors }}.</p>
+<p>Tổng thời gian thực thi: {{ '%.4f'|format(batch.runtime) }} giây (gồm tạo dữ liệu và điều phối).</p>
+<p>Chứng thư KHÔNG ĐẠT vẫn có thể là KIỂM THỬ THÀNH CÔNG khi đúng kỳ vọng và phát hiện đúng lỗi. Tỷ lệ này chỉ mô tả bộ ca lab, không phải độ chính xác ngoài thực tế hoặc tỷ lệ website an toàn. Lỗi/chưa chạy vẫn nằm trong mẫu số toàn bộ ca.</p>
+<button type="button" class="button button-primary" id="export-batch">XUẤT BÁO CÁO CSV</button><script type="application/json" id="batch-csv">{{ csv_report|tojson }}</script>
+<div class="table-scroll"><table class="policy-table"><thead><tr><th>STT</th><th>Trường hợp</th><th>Module kiểm tra</th><th>Mong đợi</th><th>Thực tế</th><th>Phát hiện điều kiện</th><th>Đối chiếu</th><th>Kết luận kiểm thử</th><th>Thời gian</th></tr></thead><tbody>
+{% for row in batch.rows %}<tr class="{{ 'policy-fail' if not row.test_success else '' }}"><td>{{ loop.index }}</td><td><a href="#batch-case-{{ loop.index }}" class="batch-detail-link">{{ row.label }}</a></td><td>{{ row.evidence.modules|join(', ') if row.evidence else 'Chưa hoàn tất' }}</td><td>{% for status in row.expected %}{{ status|translate_status }}{% endfor %}</td><td>{{ row.status|translate_status if row.status else 'CHƯA CÓ KẾT QUẢ' }}</td><td>{{ 'Có' if row.detected else 'Chưa' }}</td><td>{{ 'ĐÚNG' if row.matches_expected else 'SAI' }}</td><td>{{ 'KIỂM THỬ THÀNH CÔNG' if row.test_success else 'KIỂM THỬ THẤT BẠI' }}</td><td>{{ '%.4f'|format(row.runtime) }} giây</td></tr>{% endfor %}
+</tbody></table></div>
+{% for row in batch.rows %}<details class="sct-card" id="batch-case-{{ loop.index }}"><summary>{{ loop.index }}. {{ row.label }} · Xem chứng thư và bằng chứng</summary><div class="batch-evidence">
+{% if row.error %}<p class="notice notice-error">{{ row.error }} Không có verdict bảo mật cho ca chưa hoàn tất.</p>{% endif %}
+{% if row.evidence %}<h3>Thông tin X.509 của lần chạy này</h3><dl class="kv-list">{% for key,value in row.evidence.certificate.items() %}<div class="kv-row"><dt>{{ {'subject':'Chủ thể','issuer':'Đơn vị cấp','serial':'Số sê-ri','sha256':'Vân tay SHA256','not_before':'Có hiệu lực từ','not_after':'Có hiệu lực đến','key_algorithm':'Thuật toán khóa','key_size':'Độ dài khóa','signature_hash':'Băm chữ ký'}.get(key,key) }}</dt><dd class="mono">{{ value }}</dd></div>{% endfor %}</dl><p>Loại dữ liệu: {{ row.evidence.input_type }}</p><p>Module đã chạy: {{ row.evidence.modules|join(', ') }}</p><details class="technical-details"><summary>Cấu trúc dữ liệu CT kỹ thuật</summary><pre>{{ row.evidence.structured_ct|tojson(indent=2) }}</pre></details>{% endif %}
+{% for reason in row.reasons %}<p>{{ (reason|translate_reason).text }}</p><details class="technical-details"><summary>Nguyên nhân gốc</summary><pre>{{ reason }}</pre></details>{% endfor %}
+</div></details>{% endfor %}
+</section>
+{% endif %}
+<div class="section-heading"><div><p class="eyebrow">BỘ CA CÓ KIỂM SOÁT</p><h2>Chọn một tình huống</h2></div><span class="input-help">14 ca · Thực thi offline</span></div>
+{% set descriptions={
+'EXPIRED_CERTIFICATE':'Chứng thư đã hết hạn tại đồng hồ giả lập.',
+'NOT_YET_VALID_CERTIFICATE':'Chứng thư chưa tới thời điểm có hiệu lực.',
+'HOSTNAME_MISMATCH':'Tên miền yêu cầu không khớp danh sách SAN.',
+'RSA_1024':'Khóa RSA ngắn hơn mức tối thiểu trong policy.',
+'SHA1_SIGNATURE':'Đối chiếu chữ ký SHA-1 với chính sách thuật toán.',
+'MD5_SIGNATURE':'Kiểm tra chính sách chữ ký MD5 khi backend hỗ trợ.',
+'BROKEN_CHAIN':'Liên kết giữa đơn vị cấp và chủ thể không khớp.',
+'INVALID_SIGNATURE':'Chữ ký chứng thư không được xác minh bởi issuer.',
+'NON_CA_INTERMEDIATE':'Chứng thư trung gian không có quyền CA.',
+'SELF_SIGNED_LEAF':'Chứng thư tự ký không thuộc chuỗi tin cậy lab.',
+'UNKNOWN_CT_LOG':'Log ID của SCT không có trong dữ liệu giả lập.',
+'RETIRED_CT_LOG':'SCT được ghi nhận sau khi CT Log ngừng hoạt động.',
+'SCT_TIMESTAMP_OUTSIDE_INTERVAL':'Ca hồi quy phân biệt thời điểm SCT và khoảng hết hạn.',
+'NO_SCT':'Chứng thư không có SCT nhúng để đối chiếu.'} %}
+<div class="demo-case-grid">{% for case in cases %}<article class="case-card"><div class="case-top"><span class="case-number">{{ '%02d'|format(loop.index) }}</span><span class="case-category">{{ 'Minh bạch CT' if case.type in ('UNKNOWN_CT_LOG','RETIRED_CT_LOG','SCT_TIMESTAMP_OUTSIDE_INTERVAL','NO_SCT') else 'Chứng thư X.509' }}</span></div><h3>{{ case.label }}</h3><p>{{ descriptions.get(case.type,'Tạo dữ liệu và đối chiếu kết quả thực thi.') }}</p><form method="post" action="{{ url_for('demo') }}" class="case-form"><input type="hidden" name="case_id" value="{{ case.id }}"><button class="button button-secondary" type="submit">Chạy ca này <span aria-hidden="true">→</span></button><p class="case-progress input-help" role="status" hidden>Đang chạy kiểm thử…</p></form></article>{% endfor %}</div>
+{% endblock %}

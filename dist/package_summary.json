@@ -1,0 +1,16 @@
+{
+  "archive": "C:\\Users\\ADMIN\\Downloads\\DT007\\dist\\DT007_submit.zip",
+  "bytes": 3033760,
+  "sha256": "afa299c19e6704d66e06e2de264abbdd7ccf8f5f17fe9441159c29a24c3637da",
+  "files": 416,
+  "deleted_source_files": [],
+  "note": "No previous ZIP existed in workspace at audit start",
+  "final_extracted_pytest": {
+    "tests": 539,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "final_extracted_smoke_passed": true,
+  "demo_success": 14
+}

@@ -1,0 +1,30 @@
+2026-10-10 08:55:37.746: [INFO] CurrentProfilePath: C:\Users\ADMIN\Downloads\DT007\.cache\browser_db2495b95df246bb93a6855b4eb70c5a\Default
+2026-10-10 08:55:37.746: [INFO] Profiles total count: 1
+2026-10-10 08:55:37.746: [INFO] Profile: name=Profile 1 path=C:\Users\ADMIN\Downloads\DT007\.cache\browser_db2495b95df246bb93a6855b4eb70c5a\Default lastActive=null
+2026-10-10 08:55:37.746: [INFO] LastUsedProfileDir: C:\Users\ADMIN\Downloads\DT007\.cache\browser_db2495b95df246bb93a6855b4eb70c5a\Default
+2026-10-10 08:55:37.746: [INFO] VisibilityChanged: 0
+2026-10-10 08:55:37.765: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.766: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.767: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.768: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.769: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.769: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.770: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.771: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.773: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.773: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:37.788: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-10 08:55:37.788: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-10 08:55:37.788: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-10 08:55:37.788: [INFO] OnDoneLoading sync enabled: 0
+2026-10-10 08:55:37.788: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-10 08:55:37.788: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-10 08:55:37.788: [INFO] BookmarksSnapshot Startup total=3 bar=3 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-10 08:55:37.852: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:39.119: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-10 08:55:39.122: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-10 08:55:39.124: [INFO] Primary account changed.
+2026-10-10 08:55:39.124: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-10-10 08:55:39.130: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-10 08:55:39.157: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-10 08:55:48.141: [INFO] BookmarksSnapshot Shutdown total=3 bar=3 other=0 mobile=0 showBar=0 showBarNTP=1

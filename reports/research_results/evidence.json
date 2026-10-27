@@ -1,0 +1,3008 @@
+[
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "20400143345908685222770243924429538655167623101",
+        "sha256": "82e39cbe7293aad62e87874330728a2ea20b2a247d8ce802ad6b5e6b2a59f9cc",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "717211733669358580678343506453456512628931556483",
+        "sha256": "1fd97c430e694160179e85e1473b45f402f0e0a4158c4d6d36b880b59d77efaf",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "447229219653502574230724576257695034580434849989",
+        "sha256": "ea67aafa229eafd3d8e5da3720c16bb23220a3becc301b0389bde54daa5d6629",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "other.example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "712047805361312649342056317774463462558423692361",
+        "sha256": "43cdc76f4886f2e3c8d432c165639b8bf02b498e776e61032a0db5ee696b5944",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "82778306013175908021636526520113225287551341971",
+        "sha256": "ad80fed03976a4eea7537d9f5b9f05fa1529846f208c0bf1e9eead2f63589d95",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "371393857202451121494662070303664009090865735918",
+        "sha256": "7b900cabe70e43a9c74d72a7643b63b28d1fc46e6ff11bdec3f8e0e07e85d169",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "487478493052415419100491379868281222955837064642",
+        "sha256": "45579fb2d67e5f4d09d486ed33510ec5f560ef7a47ccd43779191129e05ad853",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "229433970723087789991840241893134966671303192483",
+        "sha256": "fe1e398a57c33985d02da1d3a8f506891281c1d02008159cde86d374531d6876",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "640034334986927771417265482318573121510583339730",
+        "sha256": "cc1397411f1fffb9172320bf938d9b69a725baef9e7b36bb241c01435e9104f4",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "457450147326858202402391525569744741659907164287",
+        "sha256": "a453146990353897461b9725c9422a4ad511c1c420faae7e870f74d83a4db168",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "265871096386980293883373273888968922454041803412",
+        "sha256": "6dd888797053e635d2ac4072b96f2f13c79dd9631daa5ee212549d2dfd3893c6",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "515273057535242357413197707209677267880236816520",
+        "sha256": "917ce0c9f5c7f71854ad788d0d5e51d391899ea1602f63795d701b9f119a740b",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "retired",
+        "state_timestamp": "2026-10-06T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "615310423148461059669831202066358003931174672558",
+        "sha256": "fbfde176a745848d3d045e599303d7c2c6912174d1e4d22208bcfd58ffb6c5d0",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-09-27T00:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "386123736852611874083675135126047429319729409795",
+        "sha256": "3960daec7c5d63bcb7ee7104b1aefc86de64611e0b7d8827b20a1ef86c6c4574",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 0,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": null,
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "extended",
+    "case_id": "control_valid_001",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "77686224628561823640039230768229851490369742482",
+        "sha256": "9d90057e79e8198eae75683843d4deb9ab21d7d98ab01978e8f8c1cd7f2fad49",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "cf7zjbBtrXc9iUuDlbZECyLO+JzFK3bIr3LY55dpNeQ=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "192191235368291143518975984126309703199224248497",
+        "sha256": "2a53d2a6a6b26ff02344c3e439302097ce4d0070c810e5d27ebb11e1da2a387a",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "396021477738367188924202635388648419498551543898",
+        "sha256": "b71ebe36acc03e4e41091289335ee2bf8835631304d1a541a813bd13b0fa1672",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "532784568091226781910262255275879006722743147965",
+        "sha256": "c1d68800015087c7664b48b82f6a28f861c8a1b3ae733570ca36ae25a05eff4b",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "318890541787610631620187064604996687385738677416",
+        "sha256": "8e99a0247785827d918e73e36f9bb0fb5cac8ec73533eed21cde90a5a4ad66c9",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "33992056163594468773500715435507546617089924411",
+        "sha256": "427fc0169cf435b0ff28da64059684b8d1ca82e79655cb0e9dafe337d4348b23",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "87725642524144598892949462703248024244623355211",
+        "sha256": "986faca5855c05bb3ae47c81c8faa89dfc7d85172ce08ab27c36495e9f8073f5",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "698627228879680556725183438579180119389789753594",
+        "sha256": "7203abad8674dedd8530254955fe1910fc0a8c1d14a745b5a05d302d023de8b2",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "390327711435349611661332336499032200057065009576",
+        "sha256": "c8d322b3339bdbc10e0ef839706e42f8aa30542f607577f046b67557acd77c95",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "302470827878839554665263820221694891418910370154",
+        "sha256": "35e6226047d3595d111f1707e56722065ef32b33abbffc176dd148fd4b5abaf8",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "220280553175164005420737437966954378383581011578",
+        "sha256": "fdfc96bec7c03c4aebc87d0e1e6754ede10d67571ec608c2ef6619f30dd42f23",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "429156739090374257867876031592349359363737394456",
+        "sha256": "8b0910ad2b0fd99f6198a5673fd2cc1c87fd2a2aaf6b3db660e21732b6dbdf7c",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "80175688280603984922201006061625082011480425653",
+        "sha256": "015a7f318fc00cc54ca97c87dccfa3a42a3c2a4e163c9a194ec5225a968dce88",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "217223661936581897869039962396560279730852280460",
+        "sha256": "8657dbc87ee6698d26b5ea336241c78a5de4728dab3519607ea1c8e750a316bc",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "216285036714911697771959844849148951439982482256",
+        "sha256": "690de7f19d28d0bcdc301b3e2240721424267630440f935aae8183d86efcce40",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 1,
+    "profile": "baseline",
+    "case_id": "control_valid_001",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "119108911415835236359982534710682507462398737139",
+        "sha256": "3e62747b5564d6c04c9a43d8cd6a9d2d6ffa09bce589b9b08cf53ec439e7a601",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "387665417929520489550559782030765263355837160787",
+        "sha256": "671de528d5d65dd2399ac18f558a6fdd4d53620b94de8c0cb426c44166c2dcd1",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "337444429397601483254388158257244959820746844842",
+        "sha256": "47ac132b7004b31cd74f4db9d34708409163e78cedcc4d154c3f38fb0895b3e9",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "639773161086374844969197101737088066703386975078",
+        "sha256": "b239fac1d75c5d582ef34610aa687a949f64eb92abb2704889d79da0b4cdeac8",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "153589641798341942863905805814561562960273745422",
+        "sha256": "63497c954c9b342ce8aff4c6aa2fe15311ea52fc6007b5dfce55b3f3dcd60995",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "287656752010273885505260056042764877791703683817",
+        "sha256": "5d61e461bbdf7a2b384e62756e109bab75a3dacc82c7e2550c83e1496d71a6f1",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "189630691486894468694422058537076954375373420838",
+        "sha256": "f5ec50438f0b2e466910f39341506d9c6a0f9a1b0c27ff1ad6e3df1bc23221ae",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "76196809038414990876228768787786988375611816860",
+        "sha256": "1a14eb97e93b4ba85519f431a17e4073ccb15a3c34cd95f7ee40cc92e25a8e1f",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "687689894634293487008393276815029426093173515239",
+        "sha256": "488439af14999b36ecf92bbc0fabeb0c52bed65466c48f856d1bd4528e23ba7f",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "87544291677796539146242777990555708532377197680",
+        "sha256": "9f5b3e47e81b8d634f2ac55ac29b39af8872d6c4360a2f8abd739f91229bccca",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "670803914384852125046177811351386785151876502020",
+        "sha256": "212ab79b5263bdcb40906d4d1aa9da8f41930ccb20b11885d83c0f8bf60a6e23",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "10553210953520549459819635140069064626284416734",
+        "sha256": "5882ddfaa93b5cc3967eee2ef4d824cfe3956e8af2c701ea391a36f313c55f43",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "330359810999623364639916680376058626213197840675",
+        "sha256": "383f68b17bfce87586ab83af775d4cc9ffe751820be7ad351fcdc109e061cef6",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "500675342906584085138115475145933850738901237818",
+        "sha256": "d36c5241e35da84f9352c32c9417f898ee231d345fe8a74040cb70e04192cebc",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "207417966345670535470720482451510747730065459165",
+        "sha256": "53b8f3515adab210762731c629af5d6da0e739b3d7ec07a0162e1bd66287dafb",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "baseline",
+    "case_id": "control_valid_001",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "543003859496395100623152362176147731415839526054",
+        "sha256": "b19080e1478accc926ebecb4e7135a2b2c31aefa0ea75fd0f0707d731de72d6a",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "259799076454798815812649222382169531506021191199",
+        "sha256": "c040d9680f56b528b918d5e69357f4663d8d04282b2f4aac1cdcbc988a064c25",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "15842692051508366038863243563031747415425620484",
+        "sha256": "9c0b412611973551eb484eb895b3d259cd9f14c94b7de61d4a001a952afbf7eb",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "550236709438884658947742609001451348894298830170",
+        "sha256": "b4875b2e6b62649e3200dc9cd80dab3743cac54ec3e4a54e7926a585efe9bf5d",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "other.example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "20026557748171774548803034802054615093358016961",
+        "sha256": "07c1ee2d5b83bdef76eef7a665f11037d44120b6ee5b740d1e07965d7a58c2ff",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "265037259565579981723073850391256626727996521775",
+        "sha256": "b0d0248c2a65b9e87afa17afdb9ee6954108c073edd1313a84ea8feecd61fa7d",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "38308634891687841653198786145079694851944942438",
+        "sha256": "e22f63fb010fbd62d72581ec0a22ec2e1e8bba2338a2c75fcfa658b94e1e27cc",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "331281913896709501066545137940560608579122031591",
+        "sha256": "1f2dc2202ff3adbabb228d7cadb9a199bab185f0e8061c52055e0404ea0e6916",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "715272275933594370369520132452790151532959237389",
+        "sha256": "3ff4fca86a9674c7e1f5b3fbd19eadff018ad98ab060a762f3e502569490bce1",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "351750019407091515743523139505191447966813794680",
+        "sha256": "5801dea068cb46ed190ef006ad675c2d9c6559a03a960a3e55d0fcd63c7eb4f8",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "54996937343188428703514046018614050935374927572",
+        "sha256": "dbdfc3f854dd421b18bcef71170caf77b7d75604ad44e7dc6df55f9580b2491b",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "160357416689958211383001653388119146834958966040",
+        "sha256": "512442f15fb69bc33b9a8c8f082ef66cef5f039a4e636c699117f9d5c8496cc4",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "440759793204892853599749893398962547467669122461",
+        "sha256": "0e44f4ba0d9d6d945e1e8a46af45c349d6dd57a16e8b13a72a3081ef7026c30b",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "retired",
+        "state_timestamp": "2026-10-06T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "578394211614516235263489225840626645875072879474",
+        "sha256": "636f1ee5f8b0b1a43dd25d906a1af0ddb31ca53e7c2b4fcdce71375479708492",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-09-27T00:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "116471622583837392432907483184094590278722495843",
+        "sha256": "fd952981e216ce2480f337edea6b23012bfff514f80b56e7dda98e80d7944b56",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 0,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": null,
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 2,
+    "profile": "extended",
+    "case_id": "control_valid_001",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "206538128896412387491461959467418147238836833295",
+        "sha256": "dfd12bfecb11446d7482af9cb480a3ff3b5ba8d87939ec8da30ed21e131feae9",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "01vvN0qMhg0FlAgyBEET+L97wYwHpwFuAhb7o5w/U0s=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "648973812797410827163055816388429987160449830034",
+        "sha256": "ae5131dcf18d66aa329a78927beeda7620ade302e5843585b1f85024cd4e2b2d",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "18541555839409138854427889990344634798663194370",
+        "sha256": "80857844b68995c73cb1d70474621920469c4233dc9cb14518b7e4927a743c2f",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "700932152870233583659101636595083030957699768807",
+        "sha256": "07eaa844c373185a8edb74b8f977b550c90b15d4b9327b58e03b6330bc2e13c3",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "other.example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "514843074378323765691870749285022996450504886142",
+        "sha256": "bea3cdba9218753049920cecc68d4c6b46abca2abe1c8ff994a718ccca7a485b",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "81931735086286773874984189362115749023562084161",
+        "sha256": "662a96233e3faa94fbf233429572a8a2877bf8c26f6572827f76d2b82156e33c",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "510394353074042152906161170878611807666615085207",
+        "sha256": "87c99b4f91a61efce65362ed84a68eaaa1b09ac9ec226edd2b0a443d4b6bd1e9",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "288105371233848280068311272724730704849588125950",
+        "sha256": "86b80b91ed8f7825bdca7e3e8619a5645bed8ea73030bc79d5fbfbcfc41c0b35",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "357856859302213504363177696919501862930815965943",
+        "sha256": "c21cf9f3062de18d2a4693aa0032d614d8cb7c1dafd141989d09f0c54431292a",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "178538200113809164970359792153108090400647400492",
+        "sha256": "7dbe910b7fc022d3a3f35d18e6bc20bd752b503e6e40bc5c3bbe83f2d395dc5b",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "687921728883377607861009070271379249118136877712",
+        "sha256": "94778bf0131249ccbbf1c5448750cc38add2ce103bf1a8d26cf0879acca96816",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "544131353320957657656418603658228388819382278793",
+        "sha256": "ecf7f2ab7ccf28cc260210d4eb9da2e4edf96d509db3f9b6b6bacf7ef2e4e2f0",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "367628352994497540291727403877006612617785503367",
+        "sha256": "7346e2b5e8f5e865de49568db6edf85b3ada9b7fdcc650d5d42cce41bbedd1c4",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "retired",
+        "state_timestamp": "2026-10-06T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "311302699131121780385908098670322688414915871016",
+        "sha256": "5742276c24d953e405a92084286efd327b7ebdceeb87f7017b83a6071287ee22",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-09-27T00:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "325204458777877405231390514328775839696895890829",
+        "sha256": "0ee8a52d4f432ef4740d81cff66ffbee52966ae6c4d4a76557517d1e7db0e371",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 0,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": null,
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "extended",
+    "case_id": "control_valid_001",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "318319698715655211291884695572445003105036541248",
+        "sha256": "cffcbc244126207686f97ea3a7f2d4710a13b6d810c63a277ae3a18a0d756201",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "ct_log_analyzer.analyze_dataset",
+        "sct_parser.parse_scts",
+        "ct_validator.validate_ct",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": {
+        "requested_hostname": "example.test",
+        "sct_count": 1,
+        "log_id": "YzXvVMADowCSD8+s7DgEJridwYLkJKYW3rNM5HTtKFU=",
+        "state": "usable",
+        "state_timestamp": "2026-09-07T00:00:00+00:00",
+        "interval_start": "2026-10-02T00:00:00+00:00",
+        "interval_end": "2026-12-06T00:00:00+00:00",
+        "sct_timestamp": "2026-10-06T23:00:00+00:00",
+        "signature_verified": false
+      }
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_101",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "106928769439647284742500674419869412172408119526",
+        "sha256": "6e61297393922e2fecdadaefb06776ee19af9e668dcba6ee7eff3c56a424c69f",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-10-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_102",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "277835160691950851468210430087240795635976532260",
+        "sha256": "3e35cb824350aeaea6ed9a33857f63a3c3206102534337ceb2991082d68caabf",
+        "not_before": "2026-10-08T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_103",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "279736672895181408671814822994659344630911861743",
+        "sha256": "858aad4ee29eb04926d9ab02b605fde643904e518dbda7d47476f762d0b17121",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_104",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "37600940979557995900519401717283278770921296982",
+        "sha256": "6737835b6ecb22c4f4304efdd5936628d0dc5ba7a8019fc5bdc1bd362baf0ca1",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 1024,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_105",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "164976643894836195450919632894334101848962511784",
+        "sha256": "d852dd808a4d449eec828335d83562e152840fdba332411b4eab9870ab8aa121",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha1"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_106",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "582206815435076117379117398660402066062637045474",
+        "sha256": "75f625bdeead889474a5ea54609a69fa3bcf87b0e34ecfdf47dc851cf10fe27f",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "md5"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_107",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=Broken Issuer",
+        "serial": "279773797418671852655015631287464050644285503135",
+        "sha256": "c2e56bdae47c5a0622319a3a4c6f4364b156bdfed5c4e29b9150cce490f39c77",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_108",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "234863007105291085336705504056661749011168959790",
+        "sha256": "afcf98876b965cd34c642bd6f02ed5552a2f4ff7cda7a14c32ab65e5b890b128",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_109",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "450483474422144863117161541095414950263609399445",
+        "sha256": "c83ebf3422362df35d56ab28259887f722aef48b538827d787747f1d143a0091",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_110",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=example.test",
+        "serial": "463404805248618272735348694094425601712374508684",
+        "sha256": "c8b4b6887424cc77f463917dcdb8df6b3c8732cd373f04e25c0527773b8b1881",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_111",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "338068594310705788413449146127197450429655258161",
+        "sha256": "d66b04f448243e78589878bca253a0c06b9f95f0b5776cecfcc2a598eee0a889",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_112",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "46960392632305434021843993294277121157114264391",
+        "sha256": "8a2a79e3fd9ff2df982f3b47cfa1e5dbf78ff66ef9b8359a4513775411da6608",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_113",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "154471478596841836089101299964303658099501073669",
+        "sha256": "7e4b18f90a5839848995e78955cac341a65f45cb8e31d9739c9c7068007aeddd",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "case_114",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "3412826774728704772940823625932611092484642902",
+        "sha256": "9726fd8def8910e86ada138062009f67730715ca8269056a2756eaa44cad48b4",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  },
+  {
+    "repeat": 3,
+    "profile": "baseline",
+    "case_id": "control_valid_001",
+    "evidence": {
+      "certificate": {
+        "subject": "CN=example.test",
+        "issuer": "CN=DT007 Lab Intermediate",
+        "serial": "377186748768609210708776194640326459576056052428",
+        "sha256": "b057d86c182b663d16b0660786573d9f86ffb9fa19a11aa6bbc482f901a7cfbd",
+        "not_before": "2026-09-07T00:00:00+00:00",
+        "not_after": "2026-11-06T00:00:00+00:00",
+        "key_algorithm": "RSA",
+        "key_size": 2048,
+        "signature_hash": "sha256"
+      },
+      "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+      "modules": [
+        "crypto_info.get_crypto_info",
+        "algorithm_policy.evaluate_algorithm",
+        "validity_checker.check_validity",
+        "hostname_validator.validate_hostname",
+        "chain_validator.validate_chain",
+        "security_evaluator.evaluate_security"
+      ],
+      "mock_used": false,
+      "structured_ct": null
+    }
+  }
+]

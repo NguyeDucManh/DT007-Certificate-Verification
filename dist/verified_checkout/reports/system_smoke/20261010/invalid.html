@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DT007 — Kiểm tra chứng thư X.509, tên miền, thời hạn, chuỗi tin cậy, thuật toán và Certificate Transparency.">
+  <title>DT007 · Trình xác minh an toàn chứng thư số</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Đến nội dung chính</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="DT007 — Trang chủ">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 20 6v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m8.5 12 2.3 2.3 4.7-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong>DT007</strong><span class="brand-caption">Trình xác minh an toàn chứng thư số</span></span>
+      </a>
+      <nav class="local-label" aria-label="Điều hướng chính"><a href="/">Kiểm tra website thực tế</a><a href="/demo">Demo kiểm thử</a></nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+<section class="home-hero">
+  <p class="eyebrow">XÁC MINH CHỨNG THƯ SỐ</p>
+  <h1>TRÌNH XÁC MINH AN TOÀN<br>CHỨNG THƯ SỐ<span class="accent-dot">.</span></h1>
+  <p class="hero-description">Kiểm tra chứng thư X.509, tên miền, thời hạn, chuỗi tin cậy,<br class="desktop-break"> chính sách thuật toán và Certificate Transparency.</p>
+</section>
+<section class="scan-card" aria-labelledby="scan-title">
+  <div class="scan-heading"><span class="step-number" aria-hidden="true">01</span><div><h2 id="scan-title">Kiểm tra một tên miền</h2><p>Nhập tên miền để xem chứng thư và kết quả xác minh.</p></div></div>
+  <div class="notice notice-error" role="alert" id="server-error">Tên miền không hợp lệ. Vui lòng nhập dạng google.com, không kèm http://, https:// hoặc khoảng trắng.</div>
+  <form action="/scan" method="post" id="scan-form">
+    <label for="hostname">Tên miền / Hostname</label>
+    <div class="input-row">
+      <input type="text" id="hostname" name="hostname" placeholder="google.com" value="https://invalid.test/path" maxlength="253" required autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="hostname-help client-error" aria-invalid="true">
+      <button type="submit" class="button button-primary" id="scan-button"><span id="scan-spinner" class="spinner" aria-hidden="true" hidden></span><span id="button-label">KIỂM TRA CHỨNG THƯ</span><span aria-hidden="true" class="button-arrow">↗</span></button>
+    </div>
+    <p id="hostname-help" class="input-help">Chỉ nhập tên miền, không nhập <code>https://</code> hoặc đường dẫn. Kết nối qua cổng 443.</p>
+    <p id="client-error" class="form-error" role="alert" hidden></p>
+    <p id="scan-progress" class="scan-progress" role="status" aria-live="polite" hidden>Đang kết nối TLS và kiểm tra chứng thư. Vui lòng đợi…</p>
+  </form>
+</section>
+<section class="feature-grid" aria-label="Các bước xác minh">
+  <article><span class="feature-number">01 / DANH TÍNH</span><h3>Đúng tên miền</h3><p>Đối chiếu tên miền với SAN và kiểm tra thời hạn chứng thư.</p></article>
+  <article><span class="feature-number">02 / CHUỖI TIN CẬY</span><h3>Đúng chữ ký</h3><p>Xác minh chuỗi chứng thư, CA tin cậy và chữ ký số.</p></article>
+  <article><span class="feature-number">03 / MINH BẠCH</span><h3>Rõ kết quả</h3><p>Đối chiếu SCT, CT Log và hiển thị trạng thái minh bạch cùng lý do.</p></article>
+</section>
+</main>
+  <footer class="site-footer container">
+    <span>DT007 · Trình xác minh chuỗi chứng thư số và chính sách thuật toán</span>
+    <span>Python • Flask • cryptography • OpenSSL • Certificate Transparency</span>
+  </footer>
+</body>
+</html>

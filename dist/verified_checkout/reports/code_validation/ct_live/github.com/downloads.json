@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://www.gstatic.com/ct/log_list/v3/log_list.json",
+    "file": "response_1.bin",
+    "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32",
+    "bytes": 50629
+  },
+  {
+    "url": "https://www.gstatic.com/ct/log_list/v3/log_list.sig",
+    "file": "response_2.bin",
+    "sha256": "18c0390b0cd592d210fae2ad4561e44a17ee49366f3af3e66a25f89dba19a6a2",
+    "bytes": 512
+  },
+  {
+    "url": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/get-sth",
+    "file": "response_3.bin",
+    "sha256": "9efd5623314658dff60ea6310388c942ac3073aa0e2a96cf8eb901a5d83946f5",
+    "bytes": 241
+  },
+  {
+    "url": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/get-proof-by-hash?hash=ijiNECpAUSA8ARYljhQgmCRoB4CtffXxDI0rwGFlVV4%3D&tree_size=3423872947",
+    "file": "response_4.bin",
+    "sha256": "e964122f1fcecf5d149efb572c6bd84d41d44fe0ed9c084039c1c610cd9772b0",
+    "bytes": 1544
+  },
+  {
+    "url": "https://tiger2026h2.ct.sectigo.com/ct/v1/get-sth",
+    "file": "response_5.bin",
+    "sha256": "9a1d0e687549e3d95a4759d1d35db55a47704ea1022bfb2837636a246ac99f78",
+    "bytes": 241
+  },
+  {
+    "url": "https://tiger2026h2.ct.sectigo.com/ct/v1/get-proof-by-hash?hash=qzQQesNUMrJ5OEhQiQVTuXN%2FxBtAa%2FNqb5V7GVX5NgQ%3D&tree_size=2418189914",
+    "file": "response_6.bin",
+    "sha256": "9aa543c40a4ad9740ec8046dd31943b0a60ab386a4281541bcfcc45d92b425ed",
+    "bytes": 1450
+  }
+]

@@ -1,0 +1,350 @@
+{
+  "study": "DT007 matched-scenario offline ablation: baseline without CT vs extended with CT",
+  "created_at_utc": "2026-10-10T06:27:15.396446+00:00",
+  "repeats": 3,
+  "seed_python_only": 20261007,
+  "fixed_reference_time": "2026-10-07T00:00:00+00:00",
+  "python": "3.14.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "openssl": "OpenSSL 3.5.9 29 Sep 2026",
+  "case_count_per_profile_repeat": 15,
+  "inputs_sha256": {
+    "experiments/test_cases.json": "43210e8ed19df5b33571bb15ebd572b68b074d69aa4ee65c331b6c8db7df7c0d",
+    "config/algorithm_policy.json": "e3c408eeea3b32b7cd956428d7461fac36faf0b9f5ab3c87479f5b044be02981",
+    "data/log_list.json": "d0da723b9957e4f74f024278e7311c422e09b6c6452c8457c8dbf9a29f2817b9",
+    "experiments/synthetic_cases.py": "c79ed4ae5937e3b367928586dbbaa31551e5d1afe3973b67afabcd1961e4591b",
+    "experiments/research_evaluation.py": "4257974803a83b58b9dd97a1e4e6f7ddb1aac4f4e1a26cef568b50e42474d35c",
+    "src/__init__.py": "31377a97d5392c799ad7415d8b8b3bdabc917c6c38960718e7775a9577b2b4ac",
+    "src/algorithm_policy.py": "d2b01e185c3d56de4a852003a8b452a6bceedd6fd780540fafc3320e8160a904",
+    "src/certificate_fetcher.py": "a9b23c84fc93acaafffad5919b0849f90284c45d018dc1f1109c7c65368b36ce",
+    "src/certificate_parser.py": "7ef76c94ba4e820fc6e33e4aa18ae234a27c10b20e19392aa9d76e981d34a5b9",
+    "src/certificate_security.py": "055e3a5e14a12fe396fc06c85b0f7a6ec77529b281c3eb873cfabff6c5e46140",
+    "src/certificate_service.py": "b714a3e6c343fc04f8e98417445b1a4b92e81ff0ddbaf94addadc3bb09caec3c",
+    "src/chain_validator.py": "7593b905ec1d0a0fda1f034296bba5252cefd2143769c646babe0b457b13ff6d",
+    "src/crypto_info.py": "8e543f32b9113fab450a542111ae42e07d067de267c353b5ca65de2c97b65e59",
+    "src/ct_log_analyzer.py": "3111a5c0dfcdf388bbe7de7c28060bd179aeedaa6d3a88cfd94b792f9cb8f1f1",
+    "src/ct_validator.py": "ad9f30e91ce83641206b5eced0c98d8bde8604800e12835a4216f50c47b08a79",
+    "src/demo_service.py": "4102e318a33d0e3187c0eb58d5b1db432db047333e608fae47fd66bd1878ac32",
+    "src/hostname_validator.py": "4d66c26f7907b42d46cf9f7532437b368f88b9132f346d3b61634f8410817ec3",
+    "src/sct_parser.py": "6ddf47a00cb08df6e69db9a26e64b7883d9e2988b67d3c8c3911f1de152f1dc4",
+    "src/security_console.py": "4961918dbacc9aa34f5ab647c30e85ca6851d69c853afeb0b54a267aa2905db7",
+    "src/security_evaluator.py": "5db3c574a94f14e0e0c01380286b8b431d02d41080e23a114e8c3b02b9d50479",
+    "src/validity_checker.py": "abd397fba1551823ee43ca5b3be475a1b5c1a005cca0112af9cc751b3a9f779c",
+    "src/web_findings.py": "8da827bc82121966bbdf4246730ee01ca13c374a85108dcad3c8819e61f332f3",
+    "src/web_presentation.py": "95b45ad5b69ed4c7488c0b69f3895b586bc07d3f4cd54c93bc524af733f0f9f8"
+  },
+  "setup_runs": [
+    {
+      "repeat": 1,
+      "profile": "extended",
+      "setup_seconds": 0.14732400001958013
+    },
+    {
+      "repeat": 1,
+      "profile": "baseline",
+      "setup_seconds": 0.07724939999752678
+    },
+    {
+      "repeat": 2,
+      "profile": "baseline",
+      "setup_seconds": 0.1781906000105664
+    },
+    {
+      "repeat": 2,
+      "profile": "extended",
+      "setup_seconds": 0.10732399998232722
+    },
+    {
+      "repeat": 3,
+      "profile": "extended",
+      "setup_seconds": 0.1506842999951914
+    },
+    {
+      "repeat": 3,
+      "profile": "baseline",
+      "setup_seconds": 0.09721529998932965
+    }
+  ],
+  "profiles": {
+    "baseline": {
+      "runs": [
+        {
+          "repeat": 1,
+          "coverage_percent": 71.42857142857143,
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "misconfiguration_types_total": 13,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "agreement_percent": 71.42857142857143,
+          "errors": 0,
+          "valid_controls": 1,
+          "false_positive_fail": 0,
+          "valid_control_warnings": 0,
+          "false_negative_fail": 2,
+          "positive_cases_completed": 12,
+          "false_negative_rate_percent": 16.666666666666668,
+          "false_positive_rate_percent": 0.0,
+          "mean_case_runtime_seconds": 0.00292304,
+          "total_case_runtime_seconds": 0.0438456
+        },
+        {
+          "repeat": 2,
+          "coverage_percent": 71.42857142857143,
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "misconfiguration_types_total": 13,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "agreement_percent": 71.42857142857143,
+          "errors": 0,
+          "valid_controls": 1,
+          "false_positive_fail": 0,
+          "valid_control_warnings": 0,
+          "false_negative_fail": 2,
+          "positive_cases_completed": 12,
+          "false_negative_rate_percent": 16.666666666666668,
+          "false_positive_rate_percent": 0.0,
+          "mean_case_runtime_seconds": 0.0027707666666666668,
+          "total_case_runtime_seconds": 0.0415615
+        },
+        {
+          "repeat": 3,
+          "coverage_percent": 71.42857142857143,
+          "misconfiguration_coverage_percent": 76.92307692307692,
+          "misconfiguration_types_total": 13,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "RSA_1024",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE"
+          ],
+          "agreement_percent": 71.42857142857143,
+          "errors": 0,
+          "valid_controls": 1,
+          "false_positive_fail": 0,
+          "valid_control_warnings": 0,
+          "false_negative_fail": 2,
+          "positive_cases_completed": 12,
+          "false_negative_rate_percent": 16.666666666666668,
+          "false_positive_rate_percent": 0.0,
+          "mean_case_runtime_seconds": 0.0028879066666666667,
+          "total_case_runtime_seconds": 0.0433186
+        }
+      ],
+      "coverage_percent": {
+        "mean": 71.42857142857143,
+        "sample_std": 0.0,
+        "min": 71.42857142857143,
+        "max": 71.42857142857143
+      },
+      "misconfiguration_coverage_percent": {
+        "mean": 76.92307692307692,
+        "sample_std": 0.0,
+        "min": 76.92307692307692,
+        "max": 76.92307692307692
+      },
+      "agreement_percent": {
+        "mean": 71.42857142857143,
+        "sample_std": 0.0,
+        "min": 71.42857142857143,
+        "max": 71.42857142857143
+      },
+      "mean_case_runtime_seconds": {
+        "mean": 0.0028605711111111113,
+        "sample_std": 7.973215448775514e-05,
+        "min": 0.0027707666666666668,
+        "max": 0.00292304
+      },
+      "false_positive_rate_percent": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "false_negative_rate_percent": {
+        "mean": 16.666666666666668,
+        "sample_std": 0.0,
+        "min": 16.666666666666668,
+        "max": 16.666666666666668
+      },
+      "false_positive_count": 0,
+      "false_negative_count": 6
+    },
+    "extended": {
+      "runs": [
+        {
+          "repeat": 1,
+          "coverage_percent": 100.0,
+          "misconfiguration_coverage_percent": 100.0,
+          "misconfiguration_types_total": 13,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "agreement_percent": 100.0,
+          "errors": 0,
+          "valid_controls": 1,
+          "false_positive_fail": 0,
+          "valid_control_warnings": 1,
+          "false_negative_fail": 0,
+          "positive_cases_completed": 12,
+          "false_negative_rate_percent": 0.0,
+          "false_positive_rate_percent": 0.0,
+          "mean_case_runtime_seconds": 0.0036580733333333336,
+          "total_case_runtime_seconds": 0.0548711
+        },
+        {
+          "repeat": 2,
+          "coverage_percent": 100.0,
+          "misconfiguration_coverage_percent": 100.0,
+          "misconfiguration_types_total": 13,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "agreement_percent": 100.0,
+          "errors": 0,
+          "valid_controls": 1,
+          "false_positive_fail": 0,
+          "valid_control_warnings": 1,
+          "false_negative_fail": 0,
+          "positive_cases_completed": 12,
+          "false_negative_rate_percent": 0.0,
+          "false_positive_rate_percent": 0.0,
+          "mean_case_runtime_seconds": 0.003079786666666667,
+          "total_case_runtime_seconds": 0.0461968
+        },
+        {
+          "repeat": 3,
+          "coverage_percent": 100.0,
+          "misconfiguration_coverage_percent": 100.0,
+          "misconfiguration_types_total": 13,
+          "covered_types": [
+            "BROKEN_CHAIN",
+            "EXPIRED_CERTIFICATE",
+            "HOSTNAME_MISMATCH",
+            "INVALID_SIGNATURE",
+            "MD5_SIGNATURE",
+            "NON_CA_INTERMEDIATE",
+            "NOT_YET_VALID_CERTIFICATE",
+            "NO_SCT",
+            "RETIRED_CT_LOG",
+            "RSA_1024",
+            "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+            "SELF_SIGNED_LEAF",
+            "SHA1_SIGNATURE",
+            "UNKNOWN_CT_LOG"
+          ],
+          "agreement_percent": 100.0,
+          "errors": 0,
+          "valid_controls": 1,
+          "false_positive_fail": 0,
+          "valid_control_warnings": 1,
+          "false_negative_fail": 0,
+          "positive_cases_completed": 12,
+          "false_negative_rate_percent": 0.0,
+          "false_positive_rate_percent": 0.0,
+          "mean_case_runtime_seconds": 0.0028387533333333334,
+          "total_case_runtime_seconds": 0.0425813
+        }
+      ],
+      "coverage_percent": {
+        "mean": 100.0,
+        "sample_std": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "misconfiguration_coverage_percent": {
+        "mean": 100.0,
+        "sample_std": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "agreement_percent": {
+        "mean": 100.0,
+        "sample_std": 0.0,
+        "min": 100.0,
+        "max": 100.0
+      },
+      "mean_case_runtime_seconds": {
+        "mean": 0.0031922044444444445,
+        "sample_std": 0.00042106962983617143,
+        "min": 0.0028387533333333334,
+        "max": 0.0036580733333333336
+      },
+      "false_positive_rate_percent": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "false_negative_rate_percent": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "false_positive_count": 0,
+      "false_negative_count": 0
+    }
+  },
+  "limitations": [
+    "No live website ground-truth labeling",
+    "SCT signatures and inclusion proofs not verified",
+    "One valid control per repeat; false-positive rate not representative",
+    "Cryptographic key generation is nondeterministic even with Python random seed",
+    "Baseline is a CT ablation, not the paper's original implementation",
+    "Case SCT_TIMESTAMP_OUTSIDE_INTERVAL is a corrected semantics regression, not a misconfiguration",
+    "Profiles use freshly generated independent certificates with matched properties, not byte-identical inputs",
+    "CT matching uses synthetic metadata; pinned Google snapshot is profiled but not used as synthetic ground truth"
+  ]
+}

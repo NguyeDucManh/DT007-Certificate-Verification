@@ -1,0 +1,820 @@
+{
+  "rows": [
+    {
+      "case_id": "case_101",
+      "label": "Chứng thư hết hạn",
+      "case_type": "EXPIRED_CERTIFICATE",
+      "description": "Chứng thư máy chủ hết hạn một ngày trước đồng hồ giả lập.",
+      "ground_truth": "Leaf NotAfter is one day before the fixed reference time.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Certificate validity: EXPIRED; Certificate đã hết hạn.",
+        "Certificate #1 validity: EXPIRED",
+        "OpenSSL path verification failed: certificate has expired",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "270341040936222321932840231578066379442739807824",
+          "sha256": "10593e3f15cbac8da3dcf8e41e6b823c5810ad21d3c36a8448c0d56227b29dad",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-10-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "9FhX2SST/EA1ErMNa8ULQgTrvni7eIkka4Hv3HGDRDc=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.13455870002508163,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_102",
+      "label": "Chứng thư chưa có hiệu lực",
+      "case_type": "NOT_YET_VALID_CERTIFICATE",
+      "description": "Chứng thư máy chủ bắt đầu có hiệu lực một ngày sau đồng hồ giả lập.",
+      "ground_truth": "Leaf NotBefore is one day after the fixed reference time.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Certificate validity: NOT_YET_VALID; Certificate chưa đến thời điểm có hiệu lực.",
+        "Certificate #1 validity: NOT_YET_VALID",
+        "OpenSSL path verification failed: certificate is not yet valid or the system clock is incorrect",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "26970132807232392162732305083105044238980627963",
+          "sha256": "5a9481382ecfb69a7acfa8ed48f58be401da7cca85a6521f14099dc931c6f18c",
+          "not_before": "2026-10-08T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "e+EMIfmEboVurWQjoDT7QLRcUbiq3qgMyBjMV3J/cj0=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.1881709999870509,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_103",
+      "label": "Tên miền không khớp SAN",
+      "case_type": "HOSTNAME_MISMATCH",
+      "description": "Yêu cầu other.example.test nhưng SAN chỉ chứa example.test.",
+      "ground_truth": "Request other.example.test while the leaf SAN contains only example.test.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Hostname mismatch: Hostname không khớp SAN của certificate.",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "174915374141023848539860290124999670040329535441",
+          "sha256": "035cf8097f3bc02b2c38f9d9944f8dab3d6a3f002d6494585f6ccdc7adc0f0b7",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "other.example.test",
+          "sct_count": 1,
+          "log_id": "hbFDe0VZPFHO/CfLVmRLeEI4dz3XXsklWD+jsnh/uDU=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.22405380004784092,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_104",
+      "label": "Khóa RSA 1024 bit",
+      "case_type": "RSA_1024",
+      "description": "Chứng thư thật có khóa RSA 1024 bit; đối chiếu với chính sách thuật toán hiện tại.",
+      "ground_truth": "Actual leaf RSA key is 1024 bits; evaluate the configured algorithm policy.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "RSA key size below policy minimum (2048 bits)"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "655785336629856787426733178133275090604947704511",
+          "sha256": "aba81a42bdecb5495102e24693cbf953075d9644ae6c7f9216fb527afd0b398e",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 1024,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm"
+        ],
+        "mock_used": false,
+        "structured_ct": null
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Chính sách thuật toán (kiểm tra riêng)",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.22095659998012707,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_105",
+      "label": "Chữ ký SHA1",
+      "case_type": "SHA1_SIGNATURE",
+      "description": "Chứng thư có chữ ký RSA/SHA-1 hợp lệ về toán học; kiểm tra riêng chính sách thuật toán băm.",
+      "ground_truth": "A mathematically valid leaf RSA/SHA-1 certificate; isolated signature-hash policy test.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Blocked signature hash: sha1"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "546669955447617013586626950745635169220649272721",
+          "sha256": "a34e2fb997b9089ea261570e312c3644acc77e1635b211936761cec840dc016c",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha1"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm"
+        ],
+        "mock_used": false,
+        "structured_ct": null
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Chính sách thuật toán (kiểm tra riêng)",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.1783415999962017,
+      "generation": "cryptography X.509 + pyOpenSSL RSA/sha1; fixture signature verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_106",
+      "label": "Chữ ký MD5",
+      "case_type": "MD5_SIGNATURE",
+      "description": "Chứng thư có chữ ký RSA/MD5 nếu backend hỗ trợ; không tạo được thì báo chưa chạy, không giả kết quả.",
+      "ground_truth": "A mathematically valid leaf RSA/MD5 certificate if the backend permits signing; otherwise SKIPPED, never a fabricated result.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Blocked signature hash: md5"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "92185438981052637129649993854364652667696935008",
+          "sha256": "95d35ea5b465270c1682ca9f308cde9424b7a00cfc672ec04a326e6f05ddf073",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "md5"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm"
+        ],
+        "mock_used": false,
+        "structured_ct": null
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Chính sách thuật toán (kiểm tra riêng)",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.16714660002617165,
+      "generation": "cryptography X.509 + pyOpenSSL RSA/md5; fixture signature verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_107",
+      "label": "Chuỗi sai liên kết đơn vị cấp",
+      "case_type": "BROKEN_CHAIN",
+      "description": "Tên đơn vị cấp của chứng thư máy chủ khác chủ thể chứng thư trung gian.",
+      "ground_truth": "Leaf issuer name differs from the intermediate subject.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Broken issuer/subject link at certificate #1",
+        "Invalid signature/issuer at certificate #1",
+        "OpenSSL path verification failed: unable to get local issuer certificate",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=Broken Issuer",
+          "serial": "506628950387909362174757558411579326673225490122",
+          "sha256": "c1d66e9e792263bb44df9aa8af90931bbc23b5d957efc62f2c8f047eee7df336",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "kICdyTjLg8JKyNgi65lHyRWDeB2/Q3hm5DxcXUnhXGA=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.16207660001236945,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_108",
+      "label": "Chữ ký không hợp lệ",
+      "case_type": "INVALID_SIGNATURE",
+      "description": "Tên đơn vị cấp đúng nhưng chứng thư được ký bằng khóa riêng khác.",
+      "ground_truth": "Leaf issuer name is correct but the leaf is signed by a different private key.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Invalid signature/issuer at certificate #1",
+        "OpenSSL path verification failed: certificate signature failure",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "373924145283501125210487226475079143013201763921",
+          "sha256": "5b560fcf91920cb413c99bbcc353a33fb99b7b45c29969bfe151792e66865c52",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "6bw21VVkrRNWzO27sfIPmxmkDeiq2VVCgPBJDFifxvQ=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.1031955000362359,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_109",
+      "label": "Chứng thư trung gian không phải CA",
+      "case_type": "NON_CA_INTERMEDIATE",
+      "description": "Chứng thư trung gian có BasicConstraints CA=False.",
+      "ground_truth": "Intermediate BasicConstraints has CA=False.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Issuer certificate #2 is not a CA (BasicConstraints)",
+        "OpenSSL path verification failed: invalid CA certificate",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "591663147685196115176974995963372392539743255428",
+          "sha256": "76e975f4743bf3c28641ac21622334f3c76104bf4cc39114a26a37d08ebca02e",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "7Jkh81/Wtp01ouW/vuEIWp+jJsICD6mjmSNCfwKen3Q=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.14262090000556782,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_110",
+      "label": "Chứng thư máy chủ tự ký",
+      "case_type": "SELF_SIGNED_LEAF",
+      "description": "Chứng thư máy chủ tự ký, không thuộc chuỗi CA tin cậy của lab.",
+      "ground_truth": "A self-signed leaf is not a trusted CA chain.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "Self-signed leaf certificate",
+        "Missing issuer/trusted root: terminal certificate is not an independent trust anchor",
+        "Missing issuer: chain must contain a leaf and CA",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=example.test",
+          "serial": "354268870398881012247640488432596632959509001407",
+          "sha256": "09b3e27da458f58ca8b9c7b42f29842fd855bb371cacfa2bcbb6da82f75264c1",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "NTzi2tz7nLySh2caZkK6qyrGAhMr6fomID2fJZrU/n0=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.13663399999495596,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_111",
+      "label": "CT Log không có trong dữ liệu",
+      "case_type": "UNKNOWN_CT_LOG",
+      "description": "Log ID trong SCT không có trong bộ dữ liệu CT giả lập.",
+      "ground_truth": "Embedded SCT log ID is absent from the synthetic CT dataset.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "SCT #1: Unknown CT log ID",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "206713345600112106663568002995474406438936162108",
+          "sha256": "b059c04c85041cadbf7719fae4e3c824a86b474f3ea55ebff6657a2636badfdb",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "mz62LwBFuQFaer3I18wMvJCpLjvlijKjKH/xCwf1dZI=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.1548929000273347,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_112",
+      "label": "CT Log ngừng hoạt động",
+      "case_type": "RETIRED_CT_LOG",
+      "description": "SCT được phát hành sau thời điểm CT Log giả lập ngừng hoạt động.",
+      "ground_truth": "SCT was issued after the synthetic log retirement timestamp.",
+      "expected": [
+        "FAIL"
+      ],
+      "matches_expected": true,
+      "status": "FAIL",
+      "reasons": [
+        "SCT #1: CT log is retired; SCT is not proven to predate retirement",
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "495965545552630478087643261898753209736408438566",
+          "sha256": "4355d0495546ee561ed6b65b886288817fb66854eb252c28c54c50f00368dbd7",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "W9X8ByWpW++AD7xSGRFoKdqcIQISb8N83Q47TV8eHVI=",
+          "state": "retired",
+          "state_timestamp": "2026-10-06T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-10-06T23:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.20068710000487044,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_113",
+      "label": "Thời điểm SCT ngoài khoảng chẩn đoán",
+      "case_type": "SCT_TIMESTAMP_OUTSIDE_INTERVAL",
+      "description": "Ca hồi quy: SCT trước temporal_interval nhưng NotAfter nằm trong khoảng. Không cảnh báo timestamp theo interval; tổng CT vẫn cảnh báo vì chưa xác minh chữ ký SCT/inclusion proof.",
+      "ground_truth": "Regression: SCT timestamp precedes interval start; leaf NotAfter is inside. No timestamp interval warning is valid under Google schema. Metadata match PASS; final WARNING remains because SCT signature/inclusion proof are NOT_VERIFIED.",
+      "expected": [
+        "WARNING"
+      ],
+      "matches_expected": true,
+      "status": "WARNING",
+      "reasons": [
+        "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "247618197367707806019104061521817885362754724293",
+          "sha256": "427180ae70b539a015413ea45df01824872760ae4dd3cce64a7a4e45a4ebc974",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 1,
+          "log_id": "i3HWuigV0Wi+57EVMouPXuF+C/fYsTqo6B8xGlLUWTU=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": "2026-09-27T00:00:00+00:00",
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.1969239999889396,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    },
+    {
+      "case_id": "case_114",
+      "label": "Không có SCT nhúng",
+      "case_type": "NO_SCT",
+      "description": "Chứng thư máy chủ không có SCT nhúng; chính sách hiện tại trả cảnh báo.",
+      "ground_truth": "Leaf has no embedded SCT extension; existing 2B policy declares NO_SCT WARNING.",
+      "expected": [
+        "WARNING"
+      ],
+      "matches_expected": true,
+      "status": "WARNING",
+      "reasons": [
+        "NO_SCT: certificate has no embedded SCT; policy is WARNING"
+      ],
+      "detected": true,
+      "evidence": {
+        "certificate": {
+          "subject": "CN=example.test",
+          "issuer": "CN=DT007 Lab Intermediate",
+          "serial": "620997266729623325451422360447095444543008464103",
+          "sha256": "e78200e79630e92429889afd5f37afb1dc5e3b104d5607570a6fb90d8fad1bf6",
+          "not_before": "2026-09-07T00:00:00+00:00",
+          "not_after": "2026-11-06T00:00:00+00:00",
+          "key_algorithm": "RSA",
+          "key_size": 2048,
+          "signature_hash": "sha256"
+        },
+        "input_type": "Chứng thư X.509 thực được tạo trong RAM; serialize/parse DER lại; SCT và CT Log là dữ liệu giả lập có cấu trúc",
+        "modules": [
+          "crypto_info.get_crypto_info",
+          "algorithm_policy.evaluate_algorithm",
+          "validity_checker.check_validity",
+          "hostname_validator.validate_hostname",
+          "chain_validator.validate_chain",
+          "ct_log_analyzer.analyze_dataset",
+          "sct_parser.parse_scts",
+          "ct_validator.validate_ct",
+          "security_evaluator.evaluate_security"
+        ],
+        "mock_used": false,
+        "structured_ct": {
+          "requested_hostname": "example.test",
+          "sct_count": 0,
+          "log_id": "/v8GsdDU7cBB40Ei0hcZ31UMWhmKdYY+G5CwEkepOjA=",
+          "state": "usable",
+          "state_timestamp": "2026-09-07T00:00:00+00:00",
+          "interval_start": "2026-10-02T00:00:00+00:00",
+          "interval_end": "2026-12-06T00:00:00+00:00",
+          "sct_timestamp": null,
+          "signature_verified": false
+        }
+      },
+      "test_success": true,
+      "source": "experiments/test_cases.json (tình huống, kỳ vọng, đồng hồ) + experiments/synthetic_cases.py (tạo dữ liệu và gọi validators); chính sách từ config/algorithm_policy.json",
+      "scope": "Tổng hợp validators offline: thời hạn, tên miền, chuỗi, thuật toán và CT",
+      "clock": "2026-10-07T00:00:00+00:00",
+      "runtime": 0.171572900027968,
+      "generation": "cryptography X.509; SCT metadata fixture, signatures not verified",
+      "execution_status": "COMPLETED"
+    }
+  ],
+  "total": 14,
+  "success": 14,
+  "failed": 0,
+  "matched": 14,
+  "match_rate": 100.0,
+  "completed": 14,
+  "errors": 0,
+  "runtime": 2.3906106000067666
+}

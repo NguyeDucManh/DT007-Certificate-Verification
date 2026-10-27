@@ -1,0 +1,36 @@
+{
+  "browser": "Microsoft Edge headless, actual engine",
+  "checks": {
+    "home_desktop_no_horizontal_overflow": true,
+    "loading": true,
+    "advanced_sections": true,
+    "chain_timeline": true,
+    "security_score": false,
+    "sct_accordion": true,
+    "result_desktop_no_horizontal_overflow": true,
+    "result_mobile_no_horizontal_overflow": true,
+    "fourteen_cases": true,
+    "single_execution": true,
+    "batch_execution": true,
+    "detail_link": true,
+    "csv_download": true,
+    "batch_mobile_no_horizontal_overflow": true
+  },
+  "limitations": [
+    "Viewport emulation, not a physical phone",
+    "No OS clipboard write, no oral/video defense verification"
+  ],
+  "advanced_crypto_statuses": [
+    "NOT_CHECKED",
+    "GOOD",
+    "NOT_CHECKED",
+    "VALID",
+    "VALID",
+    "VALID",
+    "VALID"
+  ],
+  "actual_result": "WARNING",
+  "score_actual": "90",
+  "sct_count": 2,
+  "all_checks_passed": false
+}

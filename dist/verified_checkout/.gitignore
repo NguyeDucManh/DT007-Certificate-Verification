@@ -1,0 +1,15 @@
+.venv/
+.tools/
+__pycache__/
+.pytest_cache/
+.pytest_tmp/
+*.pyc
+.pytest_audit/
+.pytest_research/
+.pytest_system/
+.pytest_purpose/
+.pytest_revocation/
+.pytest_extensions/
+.pytest_local/
+.pytest_ct_pipeline/
+.cache/

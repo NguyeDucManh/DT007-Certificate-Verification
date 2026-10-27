@@ -1,0 +1,80 @@
+========================================
+ DT007 - CT LOG DATASET ANALYZER
+========================================
+
+Dataset version     : 93.6
+Dataset timestamp   : 2026-10-06T13:36:54Z
+Total operators     : 10
+Total logs          : 69
+
+Logs by operator:
+- Google        : 10
+- Cloudflare    : 2
+- DigiCert      : 6
+- Sectigo       : 8
+- Let's Encrypt : 7
+- TrustAsia     : 4
+- Geomys        : 11
+- IPng Networks : 11
+- Microsec      : 5
+- GoDaddy       : 5
+
+Logs by state:
+- usable    : 43
+- qualified : 21
+- readonly  : 2
+- retired   : 3
+- pending   : 0
+- rejected  : 0
+
+========================================
+
+CT log #1
+Operator            : Google
+Description         : Google 'Argon2026h2' log
+Log ID              : 1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=
+State               : usable
+MMD                 : 86400
+URL / Submission URL: https://ct.googleapis.com/logs/us1/argon2026h2/
+Start               : 2026-07-01T00:00:00Z
+End                 : 2027-01-01T00:00:00Z
+
+CT log #2
+Operator            : Google
+Description         : Google 'Argon2027h1'
+Log ID              : 1tWNqdAXU/NqSqDHV0kCr+vH3CzTjNn3ZMgMiRkenwI=
+State               : usable
+MMD                 : 86400
+URL / Submission URL: https://ct.googleapis.com/logs/us1/argon2027h1/
+Start               : 2027-01-01T00:00:00Z
+End                 : 2027-07-01T00:00:00Z
+
+CT log #3
+Operator            : Google
+Description         : Google 'Xenon2026h2' log
+Log ID              : 2AlVO5RPev/IFhlvlE+Fq7D4/F6HVSYPFdEucrtFSxQ=
+State               : usable
+MMD                 : 86400
+URL / Submission URL: https://ct.googleapis.com/logs/eu1/xenon2026h2/
+Start               : 2026-07-01T00:00:00Z
+End                 : 2027-01-01T00:00:00Z
+
+CT log #4
+Operator            : Google
+Description         : Google 'Xenon2027h1'
+Log ID              : RMK9DOkUDmSlyUoBkwpaobs1lw4A7hEWiWgqHETXtWY=
+State               : usable
+MMD                 : 86400
+URL / Submission URL: https://ct.googleapis.com/logs/eu1/xenon2027h1/
+Start               : 2027-01-01T00:00:00Z
+End                 : 2027-07-01T00:00:00Z
+
+CT log #5
+Operator            : Google
+Description         : Google 'ParcelYard2026h2' log
+Log ID              : utuIpG+cr6QJDoLlk1bbbni0pT9YLbCBl5UkLym2jJg=
+State               : usable
+MMD                 : 60
+URL / Submission URL: https://parcelyard2026h2.prod.certificate.transparency.goog/
+Start               : 2026-07-01T00:00:00Z
+End                 : 2027-01-01T00:00:00Z

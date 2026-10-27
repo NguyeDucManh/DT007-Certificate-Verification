@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="home-hero">
+  <p class="eyebrow">XÁC MINH CHỨNG THƯ SỐ</p>
+  <h1>TRÌNH XÁC MINH AN TOÀN<br>CHỨNG THƯ SỐ<span class="accent-dot">.</span></h1>
+  <p class="hero-description">Kiểm tra chứng thư X.509, tên miền, thời hạn, chuỗi tin cậy,<br class="desktop-break"> chính sách thuật toán và Certificate Transparency.</p>
+</section>
+<section class="scan-card" aria-labelledby="scan-title">
+  <div class="scan-heading"><span class="step-number" aria-hidden="true">01</span><div><h2 id="scan-title">Kiểm tra một tên miền</h2><p>Nhập tên miền để xem chứng thư và kết quả xác minh.</p></div></div>
+  {% if error %}<div class="notice notice-error" role="alert" id="server-error">{{ error }}</div>{% endif %}
+  <form action="{{ url_for('scan') }}" method="post" id="scan-form">
+    <label for="hostname">Tên miền / Hostname</label>
+    <div class="input-row">
+      <input type="text" id="hostname" name="hostname" placeholder="google.com" value="{{ hostname }}" maxlength="253" required autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="hostname-help client-error" {% if error %}aria-invalid="true"{% endif %}>
+      <button type="submit" class="button button-primary" id="scan-button"><span id="scan-spinner" class="spinner" aria-hidden="true" hidden></span><span id="button-label">KIỂM TRA CHỨNG THƯ</span><span aria-hidden="true" class="button-arrow">↗</span></button>
+    </div>
+    <p id="hostname-help" class="input-help">Chỉ nhập tên miền, không nhập <code>https://</code> hoặc đường dẫn. Kết nối qua cổng 443.</p>
+    <label><input type="checkbox" name="advanced"> Kiểm tra bổ sung OCSP/CRL và AIA (có truy vấn mạng, tối đa bốn nguồn thu hồi)</label>
+    <p id="client-error" class="form-error" role="alert" hidden></p>
+    <p id="scan-progress" class="scan-progress" role="status" aria-live="polite" hidden>Đang kết nối TLS và kiểm tra chứng thư. Vui lòng đợi…</p>
+  </form>
+</section>
+<section class="feature-grid" aria-label="Các bước xác minh">
+  <article><span class="feature-number">01 / DANH TÍNH</span><h3>Đúng tên miền</h3><p>Đối chiếu tên miền với SAN và kiểm tra thời hạn chứng thư.</p></article>
+  <article><span class="feature-number">02 / CHUỖI TIN CẬY</span><h3>Đúng chữ ký</h3><p>Xác minh chuỗi chứng thư, CA tin cậy và chữ ký số.</p></article>
+  <article><span class="feature-number">03 / MINH BẠCH</span><h3>Rõ kết quả</h3><p>Đối chiếu SCT, CT Log và hiển thị trạng thái minh bạch cùng lý do.</p></article>
+</section>
+{% endblock %}

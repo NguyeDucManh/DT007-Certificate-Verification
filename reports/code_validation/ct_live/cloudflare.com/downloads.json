@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://www.gstatic.com/ct/log_list/v3/log_list.json",
+    "file": "response_1.bin",
+    "sha256": "a9bedc95ab1d014c9d9dc0ead835c1246c79a821d258ae7f0a7bf468d4441f32",
+    "bytes": 50629
+  },
+  {
+    "url": "https://www.gstatic.com/ct/log_list/v3/log_list.sig",
+    "file": "response_2.bin",
+    "sha256": "18c0390b0cd592d210fae2ad4561e44a17ee49366f3af3e66a25f89dba19a6a2",
+    "bytes": 512
+  },
+  {
+    "url": "https://wyvern.ct.digicert.com/2026h2/ct/v1/get-sth",
+    "file": "response_3.bin",
+    "sha256": "69f8eb1e018e2537e321dd9607cfbd45bd0ff07496e1e374720b9ef2eb831c7b",
+    "bytes": 241
+  },
+  {
+    "url": "https://wyvern.ct.digicert.com/2026h2/ct/v1/get-proof-by-hash?hash=6yFdx7YOBMQUvNrfv6GQHEoQBElbVsjGg1sbm1KMDl4%3D&tree_size=2152765955",
+    "file": "response_4.bin",
+    "sha256": "e834b04b823b4c827390a9351715e2db825df1299dda2918762245c91736444a",
+    "bytes": 1544
+  },
+  {
+    "url": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/get-sth",
+    "file": "response_5.bin",
+    "sha256": "67cd79b6da958d0ef437d40bd32cd89ddabea6df91df5032b71787abb1aafa51",
+    "bytes": 241
+  },
+  {
+    "url": "https://ct.googleapis.com/logs/us1/argon2026h2/ct/v1/get-proof-by-hash?hash=4kk4qQ%2FlinZERQv4Q2k7F%2FvMZezGOn1pLr10bYPyr8c%3D&tree_size=3423873120",
+    "file": "response_6.bin",
+    "sha256": "ee2af379e439ed7e5b2cb0e53274663ad5cffbedb2330f6527616f1ed5d719d4",
+    "bytes": 1544
+  }
+]

@@ -1,0 +1,112 @@
+========================================
+ DT007 - CERTIFICATE SECURITY VERIFIER
+========================================
+
+Target                   : github.com:443
+
+[Certificate]
+Subject                  : CN=github.com
+Issuer                   : CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB
+Serial Number            : 220146849970436463178178372053574587708
+Version                  : v3
+Not Before               : 2026-09-01T00:00:00+00:00
+Not After                : 2026-11-29T23:59:59+00:00
+
+[Hostname]
+Requested Hostname       : github.com
+SAN Count                : 2
+SAN                      : github.com, www.github.com
+Status                   : PASS
+Message                  : Hostname khớp SAN của certificate.
+
+[Validity]
+Status                   : VALID
+Message                  : Certificate đang trong khoảng thời gian có hiệu lực.
+Current Time (UTC)       : 2026-10-10T06:46:10.930672+00:00
+
+[Public Key]
+Algorithm                : EC
+Key Size                 : 256
+
+[Signature]
+Algorithm                : ECDSA_WITH_SHA256
+OID                      : 1.2.840.10045.4.3.2
+Hash Algorithm           : sha256
+
+[Certificate Chain]
+Chain Length             : 4
+Leaf                     : CN=github.com
+Intermediate             : CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB -> CN=Sectigo Public Server Authentication Root E46,O=Sectigo Limited,C=GB
+Terminal CA              : CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US
+Verified Trust Anchor    : CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US
+Issuer/Subject Links     : PASS
+Signature Validation     : PASS
+CA Constraints           : PASS
+Chain Validity           : PASS
+Trust Path               : PASS
+Self-signed Leaf         : False
+Chain Status             : PASS
+
+[Algorithm Policy]
+Public Key Algorithm     : EC
+Key Size                 : 256
+Hash Algorithm           : sha256
+Public Key Policy        : PASS
+Key Size Policy          : PASS
+Hash Policy              : PASS
+Algorithm Status         : PASS
+
+[Certificate Transparency]
+SCT Count                : 2
+Matched SCTs             : 2
+SCT Signatures           : NOT_VERIFIED
+CT Inclusion Proofs      : NOT_VERIFIED
+
+SCT #1
+Log ID                   : 1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=
+Version                  : v1
+Operator                 : Google
+Log                      : Google 'Argon2026h2' log
+State                    : usable
+MMD                      : 86400
+URL / Submission URL     : https://ct.googleapis.com/logs/us1/argon2026h2/
+Start interval           : 2026-07-01T00:00:00Z
+End interval             : 2027-01-01T00:00:00Z
+Timestamp                : 2026-09-01T00:10:32.017000+00:00
+SCT vs NotAfter Interval : NOT_APPLICABLE
+Cert Expiry Interval     : PASS
+Log ID Match             : PASS
+State Policy             : PASS
+Status                   : PASS
+
+SCT #2
+Log ID                   : yKPEf8ezrbk1awE/anoSbeM6TkOlxkb5l605dZkdz5o=
+Version                  : v1
+Operator                 : Sectigo
+Log                      : Sectigo 'Tiger2026h2'
+State                    : usable
+MMD                      : 86400
+URL / Submission URL     : https://tiger2026h2.ct.sectigo.com/
+Start interval           : 2026-07-01T00:00:00Z
+End interval             : 2027-01-01T00:00:00Z
+Timestamp                : 2026-09-01T00:10:31.981000+00:00
+SCT vs NotAfter Interval : NOT_APPLICABLE
+Cert Expiry Interval     : PASS
+Log ID Match             : PASS
+State Policy             : PASS
+Status                   : PASS
+
+CT Overall Status        : WARNING
+
+[Security Summary]
+Validity                 : PASS
+Hostname                 : PASS
+Certificate Chain        : PASS
+Algorithm Policy         : PASS
+Certificate Transparency : WARNING
+
+FINAL RESULT: WARNING
+Reasons:
+- SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only
+
+========================================

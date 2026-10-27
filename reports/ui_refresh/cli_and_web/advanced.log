@@ -1,0 +1,120 @@
+========================================
+ DT007 - CERTIFICATE SECURITY VERIFIER
+========================================
+
+Target                   : google.com:443
+
+[Certificate]
+Subject                  : CN=*.google.com
+Issuer                   : CN=WR2,O=Google Trust Services,C=US
+Serial Number            : 113008320809552024517172734962922031200
+Version                  : v3
+Not Before               : 2026-09-28T18:38:01+00:00
+Not After                : 2026-12-21T18:38:00+00:00
+
+[Hostname]
+Requested Hostname       : google.com
+SAN Count                : 65
+SAN                      : *.google.com, *.appengine.google.com, *.bdn.dev, *.origin-test.bdn.dev, *.cloud.google.com, *.crowdsource.google.com, *.datacompute.google.com, *.google.ca, *.google.cl, *.google.co.in, *.google.co.jp, *.google.co.uk, *.google.com.ar, *.google.com.au, *.google.com.br, *.google.com.co, *.google.com.mx, *.google.com.tr, *.google.com.vn, *.google.de, *.google.es, *.google.fr, *.google.hu, *.google.it, *.google.nl, *.google.pl, *.google.pt, *.gemini.cloud.google.com, *.gstatic.com, *.metric.gstatic.com, *.gvt1.com, *.gcpcdn.gvt1.com, *.gvt2.com, *.gcp.gvt2.com, *.url.google.com, *.youtube-nocookie.com, *.ytimg.com, ai.android, android.com, *.android.com, *.flash.android.com, g.co, *.g.co, goo.gl, www.goo.gl, google-analytics.com, *.google-analytics.com, google.com, googlecommerce.com, *.googlecommerce.com, urchin.com, *.urchin.com, youtu.be, youtube.com, *.youtube.com, music.youtube.com, *.music.youtube.com, youtubeeducation.com, *.youtubeeducation.com, youtubekids.com, *.youtubekids.com, yt.be, *.yt.be, android.clients.google.com, *.aistudio.google.com
+Status                   : PASS
+Message                  : Hostname khớp SAN của certificate.
+
+[Validity]
+Status                   : VALID
+Message                  : Certificate đang trong khoảng thời gian có hiệu lực.
+Current Time (UTC)       : 2026-10-18T15:51:53.342387+00:00
+
+[Public Key]
+Algorithm                : EC
+Key Size                 : 256
+
+[Signature]
+Algorithm                : RSA_WITH_SHA256
+OID                      : 1.2.840.113549.1.1.11
+Hash Algorithm           : sha256
+
+[Certificate Chain]
+Chain Length             : 4
+Leaf                     : CN=*.google.com
+Intermediate             : CN=WR2,O=Google Trust Services,C=US -> CN=GTS Root R1,O=Google Trust Services LLC,C=US
+Terminal CA              : CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE
+Verified Trust Anchor    : CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE
+Issuer/Subject Links     : PASS
+Signature Validation     : PASS
+CA Constraints           : PASS
+Chain Validity           : PASS
+Trust Path               : PASS
+Self-signed Leaf         : False
+Chain Status             : PASS
+
+[Algorithm Policy]
+Public Key Algorithm     : EC
+Key Size                 : 256
+Hash Algorithm           : sha256
+Public Key Policy        : PASS
+Key Size Policy          : PASS
+Hash Policy              : PASS
+Algorithm Status         : PASS
+
+[Certificate Transparency]
+SCT Count                : 2
+Matched SCTs             : 2
+SCT Signatures           : VALID
+CT Inclusion Proofs      : VALID
+
+SCT #1
+Log ID                   : lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=
+Version                  : v1
+Operator                 : DigiCert
+Log                      : DigiCert 'Sphinx2026h2'
+State                    : usable
+MMD                      : 86400
+URL / Submission URL     : https://sphinx.ct.digicert.com/2026h2/
+Start interval           : 2026-07-01T00:00:00Z
+End interval             : 2027-01-01T00:00:00Z
+Timestamp                : 2026-09-28T19:38:28.152000+00:00
+SCT vs NotAfter Interval : NOT_APPLICABLE
+Cert Expiry Interval     : PASS
+Log ID Match             : PASS
+State Policy             : PASS
+Status                   : PASS
+
+SCT #2
+Log ID                   : 1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=
+Version                  : v1
+Operator                 : Google
+Log                      : Google 'Argon2026h2' log
+State                    : usable
+MMD                      : 86400
+URL / Submission URL     : https://ct.googleapis.com/logs/us1/argon2026h2/
+Start interval           : 2026-07-01T00:00:00Z
+End interval             : 2027-01-01T00:00:00Z
+Timestamp                : 2026-09-28T19:38:27.148000+00:00
+SCT vs NotAfter Interval : NOT_APPLICABLE
+Cert Expiry Interval     : PASS
+Log ID Match             : PASS
+State Policy             : PASS
+Status                   : PASS
+
+CT Overall Status        : WARNING
+
+[Security Summary]
+Validity                 : PASS
+Hostname                 : PASS
+Certificate Chain        : PASS
+Algorithm Policy         : PASS
+Certificate Transparency : WARNING
+Revocation               : PASS
+
+FINAL RESULT: WARNING
+Reasons:
+- Kiểm tra CT bổ sung: chữ ký VALID; inclusion VALID; chưa kiểm tra consistency với checkpoint độc lập.
+
+========================================
+tls_collection: NOT_CHECKED — Không dùng thu thập TLS chưa tin cậy.
+revocation: GOOD — Có bằng chứng thu hồi hợp lệ tại thời điểm kiểm tra; không phải kết luận website an toàn.
+aia: NOT_CHECKED — Chuỗi đã xác minh; không cần tải AIA.
+inclusion: VALID — Kết quả từng SCT ở bằng chứng; giới hạn hai truy vấn proof, consistency chưa có checkpoint độc lập.
+ct_key_source: VALID — Danh sách Google CT có chữ ký publisher hợp lệ với khóa đã pin.
+C:\Users\ADMIN\Downloads\DT007\src\certificate_parser.py:38: CryptographyDeprecationWarning: Parsed a serial number which wasn't positive (i.e., it was negative or zero), which is disallowed by RFC 5280. Loading this certificate will cause an exception in a future release of cryptography.
+  return x509.load_der_x509_certificate(data)

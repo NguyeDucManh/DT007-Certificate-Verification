@@ -1,0 +1,170 @@
+{
+  "hostname": "github.com",
+  "target": "github.com:443",
+  "runtime_seconds": 0.18067089997930452,
+  "scan_error": null,
+  "certificate": {
+    "subject": "CN=github.com",
+    "issuer": "CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB",
+    "serial_number": "220146849970436463178178372053574587708",
+    "version": "v3",
+    "not_before": "2026-09-01T00:00:00+00:00",
+    "not_after": "2026-11-29T23:59:59+00:00"
+  },
+  "hostname_validation": {
+    "requested_hostname": "github.com",
+    "san_count": 2,
+    "san": [
+      "github.com",
+      "www.github.com"
+    ],
+    "status": "PASS",
+    "message": "Hostname khớp SAN của certificate."
+  },
+  "validity": {
+    "status": "VALID",
+    "message": "Certificate đang trong khoảng thời gian có hiệu lực.",
+    "not_before": "2026-09-01T00:00:00+00:00",
+    "not_after": "2026-11-29T23:59:59+00:00",
+    "current_time": "2026-10-10T06:46:10.930672+00:00"
+  },
+  "cryptography": {
+    "public_key_algorithm": "EC",
+    "key_size": 256,
+    "signature_algorithm": "ECDSA_WITH_SHA256",
+    "signature_oid": "1.2.840.10045.4.3.2",
+    "hash_algorithm": "sha256"
+  },
+  "chain": {
+    "length": 4,
+    "certificates": [
+      {
+        "role": "Leaf",
+        "subject": "CN=github.com",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB",
+        "not_before": "2026-09-01T00:00:00+00:00",
+        "not_after": "2026-11-29T23:59:59+00:00"
+      },
+      {
+        "role": "Intermediate #1",
+        "subject": "CN=Sectigo Public Server Authentication CA DV E36,O=Sectigo Limited,C=GB",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=Sectigo Public Server Authentication Root E46,O=Sectigo Limited,C=GB",
+        "not_before": "2021-03-22T00:00:00+00:00",
+        "not_after": "2036-03-21T23:59:59+00:00"
+      },
+      {
+        "role": "Intermediate #2",
+        "subject": "CN=Sectigo Public Server Authentication Root E46,O=Sectigo Limited,C=GB",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US",
+        "not_before": "2021-03-22T00:00:00+00:00",
+        "not_after": "2038-01-18T23:59:59+00:00"
+      },
+      {
+        "role": "Root CA / Trust Anchor",
+        "subject": "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US",
+        "origin": "Bổ sung từ trust store / đường dẫn đã xác minh; không nằm trong chuỗi máy chủ gửi",
+        "is_trust_anchor": true,
+        "issuer": "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US",
+        "not_before": "2010-02-01T00:00:00+00:00",
+        "not_after": "2038-01-18T23:59:59+00:00"
+      }
+    ],
+    "issuer_subject_links": "PASS",
+    "signature_validation": "PASS",
+    "ca_constraints": "PASS",
+    "validity": "PASS",
+    "tls_usage": "PASS",
+    "trusted_root": "PASS",
+    "status": "PASS",
+    "reasons": [],
+    "trust_anchor_subject": "CN=USERTrust ECC Certification Authority,O=The USERTRUST Network,L=Jersey City,ST=New Jersey,C=US",
+    "trust_explanation": "Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký."
+  },
+  "algorithm_policy": {
+    "algorithm": "EC",
+    "key_size": 256,
+    "hash_algorithm": "sha256",
+    "public_key": {
+      "status": "PASS",
+      "message": "Allowed public key algorithm: EC"
+    },
+    "key_size_rule": {
+      "status": "PASS",
+      "message": "Key size meets policy minimum (256 bits)"
+    },
+    "hash_rule": {
+      "status": "PASS",
+      "message": "Allowed signature hash: sha256"
+    },
+    "status": "PASS",
+    "reasons": []
+  },
+  "ct": {
+    "sct_count": 2,
+    "matched_scts": 2,
+    "signature_validation": "NOT_VERIFIED",
+    "inclusion_validation": "NOT_VERIFIED",
+    "status": "WARNING",
+    "scts": [
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "version": "v1",
+        "operator": "Google",
+        "description": "Google 'Argon2026h2' log",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://ct.googleapis.com/logs/us1/argon2026h2/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-01T00:10:32.017000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      },
+      {
+        "log_id": "yKPEf8ezrbk1awE/anoSbeM6TkOlxkb5l605dZkdz5o=",
+        "version": "v1",
+        "operator": "Sectigo",
+        "description": "Sectigo 'Tiger2026h2'",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://tiger2026h2.ct.sectigo.com/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-01T00:10:31.981000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      }
+    ],
+    "reasons": [
+      "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+    ]
+  },
+  "security": {
+    "status": "WARNING",
+    "checks": {
+      "Validity": "PASS",
+      "Hostname": "PASS",
+      "Certificate Chain": "PASS",
+      "Algorithm Policy": "PASS",
+      "Certificate Transparency": "WARNING"
+    },
+    "reasons": [
+      "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,59 @@
+{
+  "extensions": {
+    "tls_collection": {
+      "status": "NOT_CHECKED",
+      "reason": "Không dùng thu thập TLS chưa tin cậy."
+    },
+    "revocation": {
+      "status": "NOT_CHECKED",
+      "reason": "Chưa bật kiểm tra OCSP/CRL; không suy ra chứng thư an toàn.",
+      "evidence": []
+    },
+    "aia": {
+      "status": "NOT_CHECKED",
+      "reason": "Chưa yêu cầu bổ sung chuỗi qua AIA.",
+      "downloads": []
+    },
+    "sct_verification": [],
+    "inclusion": {
+      "status": "NOT_VERIFIED",
+      "reason": "Chưa có STH được xác thực và inclusion proof phù hợp; không suy ra đã được đưa vào log."
+    }
+  },
+  "hostname": "google.com",
+  "target": "google.com:443",
+  "runtime_seconds": 0.1594473000150174,
+  "scan_error": "CertificateFetchError: Không thể kết nối tới google.com:443: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions",
+  "certificate": null,
+  "hostname_validation": null,
+  "validity": null,
+  "cryptography": null,
+  "chain": null,
+  "algorithm_policy": null,
+  "ct": null,
+  "security": {
+    "status": "FAIL",
+    "checks": {
+      "Validity": "FAIL",
+      "Hostname": "FAIL",
+      "Certificate Chain": "FAIL",
+      "Algorithm Policy": "FAIL",
+      "Certificate Transparency": "WARNING",
+      "TLS Fetch": "FAIL"
+    },
+    "reasons": [
+      "Validity check unavailable",
+      "Hostname check unavailable",
+      "Certificate Chain check unavailable",
+      "Algorithm Policy check unavailable",
+      "Certificate Transparency check unavailable",
+      "TLS Fetch: CertificateFetchError: Không thể kết nối tới google.com:443: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"
+    ]
+  },
+  "errors": [
+    {
+      "module": "TLS Fetch",
+      "message": "CertificateFetchError: Không thể kết nối tới google.com:443: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"
+    }
+  ]
+}

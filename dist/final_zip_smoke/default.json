@@ -1,0 +1,267 @@
+{
+  "extensions": {
+    "tls_collection": {
+      "status": "NOT_CHECKED",
+      "reason": "Không dùng thu thập TLS chưa tin cậy."
+    },
+    "revocation": {
+      "status": "NOT_CHECKED",
+      "reason": "Chưa bật kiểm tra OCSP/CRL; không suy ra chứng thư an toàn.",
+      "evidence": []
+    },
+    "aia": {
+      "status": "NOT_CHECKED",
+      "reason": "Chưa yêu cầu bổ sung chuỗi qua AIA.",
+      "downloads": []
+    },
+    "sct_verification": [
+      {
+        "log_id": "lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=",
+        "status": "NOT_VERIFIED",
+        "reason": "Chưa có khóa CT Log được tin cậy độc lập cho Log ID này.",
+        "signed_data_sha256": null
+      },
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "status": "NOT_VERIFIED",
+        "reason": "Chưa có khóa CT Log được tin cậy độc lập cho Log ID này.",
+        "signed_data_sha256": null
+      }
+    ],
+    "inclusion": {
+      "status": "NOT_VERIFIED",
+      "reason": "Chưa có STH được xác thực và inclusion proof phù hợp; không suy ra đã được đưa vào log."
+    }
+  },
+  "hostname": "google.com",
+  "target": "google.com:443",
+  "runtime_seconds": 0.1752575999707915,
+  "scan_error": null,
+  "certificate": {
+    "subject": "CN=*.google.com",
+    "issuer": "CN=WR2,O=Google Trust Services,C=US",
+    "serial_number": "113008320809552024517172734962922031200",
+    "version": "v3",
+    "not_before": "2026-09-28T18:38:01+00:00",
+    "not_after": "2026-12-21T18:38:00+00:00"
+  },
+  "hostname_validation": {
+    "requested_hostname": "google.com",
+    "san_count": 65,
+    "san": [
+      "*.google.com",
+      "*.appengine.google.com",
+      "*.bdn.dev",
+      "*.origin-test.bdn.dev",
+      "*.cloud.google.com",
+      "*.crowdsource.google.com",
+      "*.datacompute.google.com",
+      "*.google.ca",
+      "*.google.cl",
+      "*.google.co.in",
+      "*.google.co.jp",
+      "*.google.co.uk",
+      "*.google.com.ar",
+      "*.google.com.au",
+      "*.google.com.br",
+      "*.google.com.co",
+      "*.google.com.mx",
+      "*.google.com.tr",
+      "*.google.com.vn",
+      "*.google.de",
+      "*.google.es",
+      "*.google.fr",
+      "*.google.hu",
+      "*.google.it",
+      "*.google.nl",
+      "*.google.pl",
+      "*.google.pt",
+      "*.gemini.cloud.google.com",
+      "*.gstatic.com",
+      "*.metric.gstatic.com",
+      "*.gvt1.com",
+      "*.gcpcdn.gvt1.com",
+      "*.gvt2.com",
+      "*.gcp.gvt2.com",
+      "*.url.google.com",
+      "*.youtube-nocookie.com",
+      "*.ytimg.com",
+      "ai.android",
+      "android.com",
+      "*.android.com",
+      "*.flash.android.com",
+      "g.co",
+      "*.g.co",
+      "goo.gl",
+      "www.goo.gl",
+      "google-analytics.com",
+      "*.google-analytics.com",
+      "google.com",
+      "googlecommerce.com",
+      "*.googlecommerce.com",
+      "urchin.com",
+      "*.urchin.com",
+      "youtu.be",
+      "youtube.com",
+      "*.youtube.com",
+      "music.youtube.com",
+      "*.music.youtube.com",
+      "youtubeeducation.com",
+      "*.youtubeeducation.com",
+      "youtubekids.com",
+      "*.youtubekids.com",
+      "yt.be",
+      "*.yt.be",
+      "android.clients.google.com",
+      "*.aistudio.google.com"
+    ],
+    "status": "PASS",
+    "message": "Hostname khớp SAN của certificate."
+  },
+  "validity": {
+    "status": "VALID",
+    "message": "Certificate đang trong khoảng thời gian có hiệu lực.",
+    "not_before": "2026-09-28T18:38:01+00:00",
+    "not_after": "2026-12-21T18:38:00+00:00",
+    "current_time": "2026-10-18T15:32:54.125767+00:00"
+  },
+  "cryptography": {
+    "public_key_algorithm": "EC",
+    "key_size": 256,
+    "signature_algorithm": "RSA_WITH_SHA256",
+    "signature_oid": "1.2.840.113549.1.1.11",
+    "hash_algorithm": "sha256"
+  },
+  "chain": {
+    "length": 4,
+    "certificates": [
+      {
+        "role": "Leaf",
+        "subject": "CN=*.google.com",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=WR2,O=Google Trust Services,C=US",
+        "not_before": "2026-09-28T18:38:01+00:00",
+        "not_after": "2026-12-21T18:38:00+00:00"
+      },
+      {
+        "role": "Intermediate #1",
+        "subject": "CN=WR2,O=Google Trust Services,C=US",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=GTS Root R1,O=Google Trust Services LLC,C=US",
+        "not_before": "2023-12-13T09:00:00+00:00",
+        "not_after": "2029-02-20T14:00:00+00:00"
+      },
+      {
+        "role": "Intermediate #2",
+        "subject": "CN=GTS Root R1,O=Google Trust Services LLC,C=US",
+        "origin": "Máy chủ gửi qua TLS",
+        "is_trust_anchor": false,
+        "issuer": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "not_before": "2020-06-19T00:00:42+00:00",
+        "not_after": "2028-01-28T00:00:42+00:00"
+      },
+      {
+        "role": "Root CA / Trust Anchor",
+        "subject": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "origin": "Bổ sung từ trust store / đường dẫn đã xác minh; không nằm trong chuỗi máy chủ gửi",
+        "is_trust_anchor": true,
+        "issuer": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+        "not_before": "1998-09-01T12:00:00+00:00",
+        "not_after": "2028-01-28T12:00:00+00:00"
+      }
+    ],
+    "issuer_subject_links": "PASS",
+    "signature_validation": "PASS",
+    "ca_constraints": "PASS",
+    "validity": "PASS",
+    "tls_usage": "PASS",
+    "trusted_root": "PASS",
+    "status": "PASS",
+    "reasons": [],
+    "trust_anchor_subject": "CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
+    "trust_explanation": "Đường dẫn đã được OpenSSL xác minh tới CA trong trust store độc lập. Điểm neo có thể là CA trung gian được tin cậy trực tiếp, không nhất thiết là root tự ký."
+  },
+  "algorithm_policy": {
+    "algorithm": "EC",
+    "key_size": 256,
+    "hash_algorithm": "sha256",
+    "public_key": {
+      "status": "PASS",
+      "message": "Allowed public key algorithm: EC"
+    },
+    "key_size_rule": {
+      "status": "PASS",
+      "message": "Key size meets policy minimum (256 bits)"
+    },
+    "hash_rule": {
+      "status": "PASS",
+      "message": "Allowed signature hash: sha256"
+    },
+    "status": "PASS",
+    "reasons": []
+  },
+  "ct": {
+    "sct_count": 2,
+    "matched_scts": 2,
+    "signature_validation": "NOT_VERIFIED",
+    "inclusion_validation": "NOT_VERIFIED",
+    "status": "WARNING",
+    "scts": [
+      {
+        "log_id": "lE5Dh/rswe+B8xkkJqgYZQHH0184AgE/cmd9VTcuGdg=",
+        "version": "v1",
+        "operator": "DigiCert",
+        "description": "DigiCert 'Sphinx2026h2'",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://sphinx.ct.digicert.com/2026h2/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-28T19:38:28.152000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      },
+      {
+        "log_id": "1219ENGn9XfCx+lf1wC/+YLJM1pl4dCzAXMXwMjFaXc=",
+        "version": "v1",
+        "operator": "Google",
+        "description": "Google 'Argon2026h2' log",
+        "state": "usable",
+        "mmd": 86400,
+        "url": "https://ct.googleapis.com/logs/us1/argon2026h2/",
+        "start_interval": "2026-07-01T00:00:00Z",
+        "end_interval": "2027-01-01T00:00:00Z",
+        "timestamp": "2026-09-28T19:38:27.148000+00:00",
+        "timestamp_interval": "NOT_APPLICABLE",
+        "certificate_interval": "PASS",
+        "log_id_match": "PASS",
+        "state_policy": "PASS",
+        "status": "PASS",
+        "reasons": []
+      }
+    ],
+    "reasons": [
+      "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+    ]
+  },
+  "security": {
+    "status": "WARNING",
+    "checks": {
+      "Validity": "PASS",
+      "Hostname": "PASS",
+      "Certificate Chain": "PASS",
+      "Algorithm Policy": "PASS",
+      "Certificate Transparency": "WARNING"
+    },
+    "reasons": [
+      "SCT signatures/inclusion proofs are NOT_VERIFIED; CT result covers dataset matching only"
+    ]
+  },
+  "errors": []
+}

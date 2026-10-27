@@ -1,0 +1,116 @@
+[
+  {
+    "hostname": "google.com",
+    "checked_at": "2026-10-10T07:40:54.105110+00:00",
+    "chain_status": "PASS",
+    "sources": {
+      "ocsp_urls": [],
+      "crl_urls": [
+        "http://c.pki.goog/wr2/75r4ZyA3vA0.crl"
+      ],
+      "unsupported_crl_scope": false
+    },
+    "revocation": {
+      "status": "GOOD",
+      "reason": "Có bằng chứng thu hồi hợp lệ tại thời điểm kiểm tra; không phải kết luận website an toàn.",
+      "evidence": [
+        {
+          "method": "CRL",
+          "status": "GOOD",
+          "reason": "Số sê-ri không có trong CRL đầy đủ của issuer; chữ ký và thời hạn hợp lệ.",
+          "source": "http://c.pki.goog/wr2/75r4ZyA3vA0.crl",
+          "sha256": "350a1b0e4fce16bcb442a4bed6c8ca00e4bb51501ef6a71810e71261206f60bf",
+          "signature_verified": true,
+          "issuer_verified": true,
+          "this_update": "2026-10-10T04:49:30+00:00",
+          "next_update": "2026-10-20T03:49:29+00:00",
+          "revoked_at": null
+        }
+      ]
+    },
+    "downloads": [
+      {
+        "source": "http://c.pki.goog/wr2/75r4ZyA3vA0.crl",
+        "file": "response_1.bin",
+        "bytes": 91634,
+        "sha256": "350a1b0e4fce16bcb442a4bed6c8ca00e4bb51501ef6a71810e71261206f60bf"
+      }
+    ]
+  },
+  {
+    "hostname": "github.com",
+    "checked_at": "2026-10-10T07:40:54.471940+00:00",
+    "chain_status": "PASS",
+    "sources": {
+      "ocsp_urls": [
+        "http://ocsp.sectigo.com"
+      ],
+      "crl_urls": [],
+      "unsupported_crl_scope": false
+    },
+    "revocation": {
+      "status": "ERROR",
+      "reason": "Có lỗi kiểm tra; không đủ cơ sở xác nhận trạng thái chưa bị thu hồi.",
+      "evidence": [
+        {
+          "method": "OCSP",
+          "status": "ERROR",
+          "reason": "Không chấp nhận bằng chứng OCSP: Phản hồi OCSP quá cũ so với chính sách freshness.",
+          "source": "http://ocsp.sectigo.com",
+          "sha256": "71d8b4365b89606003c8d32b68ffd9880c7a7508646405fb425202052af65526",
+          "signature_verified": true,
+          "issuer_verified": true,
+          "this_update": "2026-10-07T13:14:45+00:00",
+          "next_update": "2026-10-14T13:14:44+00:00",
+          "revoked_at": null
+        }
+      ]
+    },
+    "downloads": [
+      {
+        "source": "http://ocsp.sectigo.com",
+        "file": "response_1.bin",
+        "bytes": 281,
+        "sha256": "71d8b4365b89606003c8d32b68ffd9880c7a7508646405fb425202052af65526"
+      }
+    ]
+  },
+  {
+    "hostname": "cloudflare.com",
+    "checked_at": "2026-10-10T07:40:54.844636+00:00",
+    "chain_status": "PASS",
+    "sources": {
+      "ocsp_urls": [],
+      "crl_urls": [
+        "http://c.pki.goog/we1/gAooAfzx9uw.crl"
+      ],
+      "unsupported_crl_scope": false
+    },
+    "revocation": {
+      "status": "GOOD",
+      "reason": "Có bằng chứng thu hồi hợp lệ tại thời điểm kiểm tra; không phải kết luận website an toàn.",
+      "evidence": [
+        {
+          "method": "CRL",
+          "status": "GOOD",
+          "reason": "Số sê-ri không có trong CRL đầy đủ của issuer; chữ ký và thời hạn hợp lệ.",
+          "source": "http://c.pki.goog/we1/gAooAfzx9uw.crl",
+          "sha256": "2b8cb5fac9720a3dc4e4b055d2d4355d515b33446ca096a0b2eeaecf0636d337",
+          "signature_verified": true,
+          "issuer_verified": true,
+          "this_update": "2026-10-10T03:17:26+00:00",
+          "next_update": "2026-10-20T02:17:25+00:00",
+          "revoked_at": null
+        }
+      ]
+    },
+    "downloads": [
+      {
+        "source": "http://c.pki.goog/we1/gAooAfzx9uw.crl",
+        "file": "response_1.bin",
+        "bytes": 308,
+        "sha256": "2b8cb5fac9720a3dc4e4b055d2d4355d515b33446ca096a0b2eeaecf0636d337"
+      }
+    ]
+  }
+]

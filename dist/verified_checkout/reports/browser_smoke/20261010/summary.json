@@ -1,0 +1,10 @@
+{
+  "browser": "Microsoft Edge headless, actual engine",
+  "checks": {},
+  "limitations": [
+    "Viewport emulation, not a physical phone",
+    "No OS clipboard write, no oral/video defense verification"
+  ],
+  "error": "ValueError: WebSocket handshake bị từ chối",
+  "all_checks_passed": false
+}

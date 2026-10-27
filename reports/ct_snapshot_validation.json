@@ -1,0 +1,35 @@
+{
+  "dataset_profile": {
+    "source_url": "https://www.gstatic.com/ct/log_list/v3/log_list.json",
+    "local_file": "data\\log_list.json",
+    "schema_url": "https://www.gstatic.com/ct/log_list/v3/log_list_schema.json",
+    "license_status": "Not verified: source URL does not by itself establish redistribution permission",
+    "acquisition_time": "Not recorded for this existing local snapshot; profile_created_utc is not download time",
+    "profile_created_utc": "2026-10-10T06:40:56.340061+00:00",
+    "dataset_timestamp": "2026-10-06T13:36:54Z",
+    "version": "93.6",
+    "size_bytes": 51883,
+    "sha256": "d0da723b9957e4f74f024278e7311c422e09b6c6452c8457c8dbf9a29f2817b9",
+    "operators": 10,
+    "logs_by_type": {
+      "logs": 26,
+      "tiled_logs": 43
+    },
+    "states": {
+      "usable": 43,
+      "readonly": 2,
+      "retired": 3,
+      "qualified": 21
+    },
+    "unique_log_ids": 69,
+    "quality_warnings": [],
+    "notes": "CT Log List metadata, NOT a dataset of labeled TLS certificates; pin snapshot for reproducibility."
+  },
+  "schema_sha256": "a391f85bd3cd2ada41dbaa73845d0196cb6f56ecaaa7cdc4d4f33aefbbf53fbf",
+  "schema_errors": [],
+  "public_keys_and_ids_verified": 69,
+  "key_errors": [],
+  "publisher_signature": "NOT_VERIFIED: không có detached signature của snapshot tương ứng",
+  "license": "Chrome CT Log Lists Acceptable Use Policy đã lưu; không xác nhận quyền tái phân phối không giới hạn",
+  "source_policy": "https://github.com/GoogleChrome/CertificateTransparency/blob/main/log_lists.md"
+}
